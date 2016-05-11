@@ -257,6 +257,23 @@ en:
         reference_ids: Subset ids
         references_type: Subset
         rule_parameter_set_id: 
+      export_task:
+        created_at: Created on
+        end_date: End date
+        end_date_greater_than_start_date: End date must be greater than start date
+        end_date_less_than: End date must be less than or equal to %{tt_ed_date}.
+        extensions: Extensions
+        ignore_end_chars: ignore last chars
+        ignore_last_word: ignore last word
+        max_distance_for_commercial: Max distance for commercial stop
+        max_distance_for_connection_link: Max distance for connection link
+        name: Export name
+        object_id_prefix: Neptune Id prefix
+        reference_ids: Associated Data
+        references_type: Associated Data Type
+        start_date: Start date
+        start_date_greater_than: Start date must be greater than or equal to %{tt_st_date}.
+        status: Status
       file_validation:
         created_at: Executed at
         file_name: Tested data
@@ -270,13 +287,267 @@ en:
         created_at: Date
         full_message: Message
         position: N.
+      import_task:
+        ignore_end_chars: ignore last chars
+        ignore_last_word: ignore last word
+        max_distance_for_commercial: Max distance for commercial stop
+        max_distance_for_connection_link: Max distance for connection link
+        name: Import name
+        no_save: No save
+        object_id_prefix: Neptune Id prefix
+        references_type: Data to be imported
+        resources: File to import
+        rule_parameter_set_id: Rule parameter set for compliance check
+      stop_area_copy:
+        area_type: Area type
+      subscription:
+        current_password: Actual password
+        email: Email address
+        organisation_name: Organisation
+        password: Password
+        password_confirmation: Password confirmation
+        user_name: User full name
+      time_table_combination:
+        combined_id: Time table id
+        operation: operation
+      validation:
+        created_at: Created on
+        ignore_end_chars: ignore last chars
+        ignore_last_word: ignore last word
+        max_distance_for_commercial: Max distance for commercial stop
+        max_distance_for_connection_link: Max distance for connection link
+        no_save: No save
+        object_id_prefix: Neptune Id prefix
+        references_type: subset
+        resources: File to validate
+        rule_parameter_set_id: Rule parameter set for compliance check
+        status: Status
+      validation_result:
+        1-NEPTUNE-XML-1: Conformité à la syntaxe XML suivant les recommandations du W3C.
+        1-NEPTUNE-XML-2: Conformité au schéma défini par la XSD du profil TRIDENT/NEPTUNE.
+        2-NEPTUNE-AccessLink-1: Correcte référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+        2-NEPTUNE-AccessLink-2: Correcte référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+        2-NEPTUNE-AccessPoint-1: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-2: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-3: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-4: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> de type 'in'.
+        2-NEPTUNE-AccessPoint-5: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> sur les accès de type 'out'.
+        2-NEPTUNE-AccessPoint-6: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>  sur les accès de type 'inout'.
+        2-NEPTUNE-AccessPoint-7: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-AreaCentroid-1: Correcte référence à des arrêts <StopArea> dans la classe d’objets <AreaCentroid>.
+        2-NEPTUNE-AreaCentroid-2: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-Common-1: Unicité des éléments objectId des différents objets d'un lot de fichiers Neptune.
+        2-NEPTUNE-Common-2: Unicité des éléments regitrationNumber des différents objets d'un lot de fichiers Neptune.
+        2-NEPTUNE-ConnectionLink-1: Correcte référence aux arrêts <StopArea> définissant des tronçons de correspondance <ConnectionLink>.
+        2-NEPTUNE-Facility-1: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-2: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-3: Existence de la ligne <Line> référencée par l'équipement <Facility>.
+        2-NEPTUNE-Facility-4: Existence de la correspondance <ConnectionLink> référencée par l'équipement <Facility>.
+        2-NEPTUNE-Facility-5: Existence de l'arrêt <StopPoint> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-6: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-GroupOfLine-1: Correcte référence à des lignes <Line> dans groupe de lignes <GroupOfLine>.
+        2-NEPTUNE-ITL-1: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type ITL.
+        2-NEPTUNE-ITL-2: Correcte référence à des arrêts <StopArea> de type ITL dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-3: Correcte référence à des arrêts <StopArea> dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-4: Vérification du type de référence à des arrêts <StopArea> type ITL dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-5: Bonne référence à la ligne <Line> dans la classe d’objets <ITL>.
+        2-NEPTUNE-JourneyPattern-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la mission <JourneyPattern>.
+        2-NEPTUNE-JourneyPattern-2: Existence des arrêts <StopPoint> référencés par la mission <JourneyPattern>.
+        2-NEPTUNE-JourneyPattern-3: Existence de la ligne <Line> référencée par la mission <JourneyPattern>.
+        2-NEPTUNE-Line-1: Correcte référence au réseau dans l'objet ligne <Line>.
+        2-NEPTUNE-Line-2: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+        2-NEPTUNE-Line-3: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+        2-NEPTUNE-Line-4: Correcte référence  aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+        2-NEPTUNE-Line-5: Correcte référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+        2-NEPTUNE-Network-1: Correcte référence à des lignes <Line> dans version du réseau <PTNetwork>.
+        2-NEPTUNE-PtLink-1: Existence des  arrêts <StopPoint> référencés par les  tronçons commerciaux <PTLink>.
+        2-NEPTUNE-Route-1: Existence des missions <JourneyPattern> référencées par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-10: référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-11: Cohérence des sens de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-12: Cohérence des terminus de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-2: Existence des tronçons commerciaux <PtLink> référencés par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-3: Existence de la séquence opposée <ChouetteRoute> référencée par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-4: Correcte référence à un tronçon commercial <PtLink> dans une séquence d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-5: Vérification que tous les points d'arrêts sur parcours sont rattachés à une séquence d'arrêts <ChouetteRoute> au départ d'un tronçon commercial <PtLink> et/ou à l'arrivée d'un autre tronçon commercial <PtLink> de la même séquence d'arrêts.
+        2-NEPTUNE-Route-6: Vérification du correct ordonnancement des points d'arrêts sur parcours <StopPoint> dans le chainage des tronçons <PtLink> d'une séquence d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-7: référence mutuelle des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-8: Cohérence des références aux points d'arrêt des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-9: Utilité des points d'arrêts sur parcours des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-StopArea-1: Correcte référence à des arrêts <StopArea> et/ou à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea>.
+        2-NEPTUNE-StopArea-2: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type StopPlace.
+        2-NEPTUNE-StopArea-3: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type CommercialStopPoint.
+        2-NEPTUNE-StopArea-4: Correcte référence à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea> de type BoardingPosition ou Quay.
+        2-NEPTUNE-StopArea-5: Correcte référence à une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+        2-NEPTUNE-StopArea-6: référenceréciproque d'une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+        2-NEPTUNE-StopPoint-1: Existence de la ligne <Line> référencée par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-2: Existence du réseau <PTNetwork> référence par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-3: Existence de l'arrêt   <StopArea> référencé par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-4: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-Timetable-1: Utilité des calendriers.
+        2-NEPTUNE-Timetable-2: Utilité des calendriers.
+        2-NEPTUNE-VehicleJourney-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-2: Existence de la mission <JourneyPattern> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-3: Existence de la ligne <Line> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-4: Existence de l'opérateur <Company> référencé par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-5: Existence de la tranche horaire <TimeSlot> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-6: Cohérence entre la course, la mission et la séquence d'arrêts.
+        2-NEPTUNE-VehicleJourney-7: Utilité des missions
+        2-NEPTUNE-VehicleJourneyAtStop-1: Existence de l'arrêt <StopPoint> référencé par l'horaire <VehicleJourneyAtStop>.
+        2-NEPTUNE-VehicleJourneyAtStop-2: Existence de la course <VehicleJourney> référenceé par l'horaire <VehicleJourneyAtStop>.
+        2-NEPTUNE-VehicleJourneyAtStop-3: adéquation des horaires de la course à la séquence d'arrêts.
+        2-NEPTUNE-VehicleJourneyAtStop-4: adéquation des horaires de la course à la mission.
+        3-AccessLink-1: Vérification de la proximité entre les deux extrémités d'un lien d'accès
+        3-AccessLink-2: Vérification de la cohérence entre la distance fournie sur le lien d'accès et la distance géographique entre les deux extrémités du lien d'accès
+        3-AccessLink-3: Vérification de la vitesse de parcours entre les deux extrémités d'un lien d'accès
+        3-AccessPoint-1: Vérification de la géolocalisation de tous les accès
+        3-AccessPoint-2: Vérification que deux accès de nom différents ne sont pas trop proches
+        3-AccessPoint-3: Vérification de la proximité entre les accès et leur arrêt de rattachement
+        3-ConnectionLink-1: Vérification de la proximité entre les deux arrêts d'une correspondance
+        3-ConnectionLink-2: Vérification de la cohérence entre la distance fournie sur la correspondance et la distance géographique entre les deux arrêts de la correspondance
+        3-ConnectionLink-3: Vérification de la vitesse de parcours entre les deux arrêts d'une correspondance
+        3-Facility-1: Vérification de la géolocalisation de tous les accès
+        3-Facility-2: Vérification de la proximité entre les équipements et leur arrêt de rattachement
+        3-JourneyPattern-1: Vérification de double définition de missions
+        3-JourneyPattern-2: 
+        3-JourneyPattern-3: 
+        3-Line-1: Vérification de la non homonymie des lignes
+        3-Line-2: Vérification de la présence de séquences d'arrêts sur la ligne
+        3-Route-1: Vérification de la succession des arrêts de la séquence
+        3-Route-2: Vérification de la séquence inverse
+        3-Route-3: Vérification de la distance entre deux arrêts successifs de la séquence
+        3-Route-4: Vérification de double définition de séquences
+        3-Route-5: Vérification de séquences sans séquence opposée
+        3-Route-6: Vérification de la présence d'arrêts dans la séquence
+        3-Route-7: Vérification de la présence de missions
+        3-Route-8: Vérification de l'utilisation des arrêts par les missions
+        3-Route-9: Vérification de l’existence d’une mission passant par tous les arrêts de la séquence
+        3-StopArea-1: Vérification de la géolocalisation de tous les arrêts hors ITL
+        3-StopArea-2: Vérification que 2 arrêts de noms différents en dehors d'un même regroupement d'arrêts ne sont pas trop proches
+        3-StopArea-3: Vérification de l'unicité des arrêts
+        3-StopArea-4: Vérification de la géolocalisation des arrêts
+        3-StopArea-5: Vérification de la position relative des arrêts et de leur parent
+        3-VehicleJourney-1: Vérification de la chronologie des horaires de passage à un arrêt
+        3-VehicleJourney-2: Vérification de la vitesse de transfert entre deux arrêts
+        3-VehicleJourney-3: Vérification de la cohérence des courses successives desservant deux mêmes arrêts
+        3-VehicleJourney-4: Vérification de l'affectation des courses à un calendrier
+        4-AccessLink-1: Vérification de contraintes sur les attributs des liens d'accès
+        4-AccessPoint-1: Vérification de contraintes sur les attributs des accès
+        4-Company-1: Vérification de contraintes sur les attributs des transporteurs
+        4-ConnectionLink-1: Vérification de contraintes sur les attributs des correspondances
+        4-ConnectionLink-2: Vérification des type d'arrêts en correspondance
+        4-GroupOfLine-1: Vérification de contraintes sur les attributs des groupes de lignes
+        4-JourneyPattern-1: Vérification de contraintes sur les attributs des missions
+        4-Line-1: Vérification de contraintes sur les attributs des lignes
+        4-Line-2: Vérification des modes de transport des lignes
+        4-Line-3: Vérification des groupes de lignes d'une ligne
+        4-Line-4: Vérification des séquences d'arrêts d'une ligne
+        4-Network-1: Vérification de contraintes sur les attributs des réseaux
+        4-Route-1: Vérification de contraintes sur les attributs des séquences d'arrêt
+        4-StopArea-1: Vérification de contraintes sur les attributs des arrêts
+        4-StopArea-2: Vérification de l'existance d'un arrêt commercial pour les arrêts physiques
+        4-StopArea-3: Vérification de la cohérence entre les noms de communes et leur code INSEE
+        4-Timetable-1: Vérification de contraintes sur les attributs des calendiers
+        4-VehicleJourney-1: Vérification de contraintes sur les attributs des courses
+        4-VehicleJourney-2: Vérification des modes de transport des courses
+        detail: Detail
+        first_violations: First violations
+        object: Error object
+        objects: Objects in violations
+        resource: Resources of the error object
+        rule_code: Code
+        rule_level: Level
+        rule_number: Step
+        rule_target: Object
+        severity: Severity
+        status: Status
+        title: Test title
+        url: URL
+        violation_count: errors
+        violation_count_txt: Number of errors
+      vehicle_journey_import:
+        file: File
+      vehicle_translation:
+        count: Count
+        duration: Duration
+    errors:
+      models:
+        import_task:
+          attributes:
+            resources:
+              invalid_mime_type: File doesn't use the expected format (%{mime_type} sent)
+              maximum_file_size: File should smaller than %{maximum_file_size} (%{file_size} sent)
+        vehicle_translation:
+          missing_start_time: Departure time or arrival time is required.
+          uncompiliant_vehicle: Vehicle creation by copy requires that the selected vehicle counts at leat a stop and has departure and arrival times at each stops
+          unreadable_time: Expected time format is hh:mm
     models:
       compliance_check: 
       compliance_check_result:
         one: Validation
         other: Validation
         zero: Validation
+      csv_validation:
+        one: CSV validation
+        other: validations
+        zero: validation
+      export:
+        one: export
+        other: exports
+        zero: export
+      export_task:
+        one: export
+        other: exports
+        zero: export
       file_validation:
+        one: Validation
+        other: Validation
+        zero: Validation
+      gtfs_export:
+        one: GTFS export
+        other: exports
+        zero: export
+      gtfs_import:
+        one: GTFS import
+        other: imports
+        zero: import
+      gtfs_validation:
+        one: GTFS validation
+        other: validations
+        zero: validation
+      import_task:
+        one: import
+        other: imports
+        zero: import
+      neptune_export:
+        one: Neptune export
+        other: exports
+        zero: export
+      neptune_import:
+        one: Neptune import
+        other: imports
+        zero: import
+      neptune_validation:
+        one: Neptune validation
+        other: validations
+        zero: validation
+      netex_export:
+        one: NeTEx export
+        other: exports
+        zero: export
+      netex_import:
+        one: NeTEx import
+        other: imports
+        zero: import
+      netex_validation:
+        one: NeTEx validation
+        other: validations
+        zero: validation
+      subscription: 
+      validation:
+        one: validation
+        other: validations
+        zero: validation
+      validation_result:
         one: Validation
         other: Validation
         zero: Validation
@@ -368,6 +639,323 @@ en:
         occasional_traveller_duration: Occasional passenger
         stairs_availability: Escalator
         undefined: not yet set
+      footnote:
+        code: number
+        label: line text
+      group_of_line:
+        comment: Comments
+        creation_time: Created on
+        creator_id: Created by
+        line_count: Number of lines
+        name: Name
+        object_version: Version
+        objectid: Neptune identifier
+        registration_number: Registration number
+      import:
+        created_at: Created on
+        ignore_end_chars: ignore last chars
+        ignore_last_word: ignore last word
+        max_distance_for_commercial: Max distance for commercial stop
+        max_distance_for_connection_link: Max distance for connection link
+        no_save: No save
+        object_id_prefix: Neptune Id prefix
+        references_type: Data to be imported
+        resources: File to import
+        rule_parameter_set_id: Rule parameter set for compliance check
+        status: Status
+      journey_frequency:
+        exact_time: Exact?
+        first_departure_time: First departure
+        last_departure_time: Last departure
+        scheduled_headway_interval: Interval
+        timeband: Time bands
+      journey_pattern:
+        comment: Comments
+        creation_time: Created on
+        creator_id: Created by
+        name: Name
+        object_version: Version
+        objectid: Neptune identifier
+        published_name: Published name
+        registration_number: Registration number
+        route: Route
+        stop_point_ids: Route's stop selection
+      line:
+        accessible: Accessible
+        color: Line color
+        comment: Comments
+        company: Company
+        creation_time: Created on
+        creator_id: Created by
+        default_fs_msg: These vehicle journeys are considered as regular
+        flexible_service: On demond transportation
+        footnotes: Footnotes
+        group_of_line: Group of lines
+        mobility_restricted_suitability: PRM accessibility
+        name: Name
+        network: Network
+        not_accessible: Not accessible
+        number: Number
+        number_of_fs_vj: Number of on demond vehicle journeys
+        number_of_mrs_vj: Number of accessible vehicle journeys
+        number_of_non_fs_vj: Number of non on demond vehicle journeys
+        number_of_non_mrs_vj: Number of non accessible vehicle journeys
+        number_of_null_fs_vj: Number of unspecified on demond vehicle journeys
+        number_of_null_mrs_vj: Number of unspecified accessible vehicle journeys
+        number_of_vj: Total number of vehicle journeys
+        object_version: Version
+        objectid: Neptune identifier
+        on_demaond_fs: On demond service
+        published_name: Published name
+        registration_number: Registration number
+        regular_fs: Regular service
+        stable_id: External permanent idenifier"
+        text_color: Text color
+        transport_mode: Transport mode
+        unspecified_fs: Not specified
+        unspecified_mrs: Not specified
+        url: Web page
+      network:
+        comment: Comments
+        creation_time: Created on
+        creator_id: 'Created by '
+        description: Description
+        name: Name
+        object_version: Version
+        objectid: Neptune identifier
+        registration_number: Registration number
+        source_identifier: Source identifier
+        source_name: Source name
+        source_type_name: Source type
+        version_date: Date of this network's version
+      organisation:
+        data_format: Data format
+        data_format_restrictions_by_default: Data format constraint by default
+        geoportail_key: IGN Geoportail Key
+        name: Name
+      referential:
+        access_points: Access Points
+        boarding_positions: boarding positions
+        commercial_stops: commercial stops
+        companies: Companies
+        compliance_checks: Validations
+        connection_links: Connection links
+        data_format: Favorite format for export
+        data_format_restrictions: Data format constraint
+        end_validity_period: to
+        exports: Exports
+        group_of_lines: Group of lines
+        imports: Imports
+        itls: routing contraints
+        lines: Lines
+        lower_corner: Bottom,Left corner for default bounding box
+        name: Name
+        networks: Networks
+        no_validity_period: undefined
+        prefix: Neptune Object Id prefix
+        projection_type: Optional spatial reference system code (SRID)
+        quays: quays
+        resources: Neptune Import File
+        route_sections: 
+        rule_parameter_sets: Rule parameters sets
+        slug: Code
+        start_validity_period: from
+        stop_areas: Stop Areas
+        stop_places: stop places
+        time_tables: Time tables
+        time_zone: time zone
+        timebands: Time bands
+        upper_corner: Top,Right corner for default bounding box
+        validity_period: Validity period
+        vehicle_journeys: Vehicle journeys
+      route:
+        comment: Comments
+        creation_time: Created on
+        creator_id: Created by
+        direction_code: Direction
+        journey_patterns: Journey patterns
+        line: Line
+        name: Name
+        no_journey_pattern: No journey pattern
+        number: Number
+        object_version: Version
+        objectid: Neptune identifier
+        opposite_route: Reversed route
+        published_name: Published name
+        vehicle_journeys: Vehicle journeys
+        wayback:
+          negative: backward
+          positive: forward
+        wayback_code: Wayback
+      route_section:
+        arrival: Arrival point
+        departure: Departure point
+        distance: Distance
+        points: Via
+      rule_parameter_set:
+        allowed_transport: Allowed
+        attribute: attribute
+        check_allowed_transport_modes: Check transport modes
+        check_connection_link_on_physical: check if connection links connect only physical stops
+        check_line_routes: check if each line have 1 route or 2 routes coupled
+        check_lines_in_groups: check if each line belongs scrictly to one group of line
+        check_stop_parent: check if all physical stop areas are owned by a commercial stop point
+        facility_stop_area_distance_max: Maximum distance between a stop area and a facility
+        inter_access_link_distance_max: Access link maximum distance
+        inter_access_point_distance_min: Minimum distance between 2 access having different name for a commun stop area
+        inter_connection_link_distance_max: Maximum distance between stop area departure and stop area arrival in a connection link
+        inter_stop_area_distance_max: Maximum distance between 2 stop areas
+        inter_stop_area_distance_min: Maximum distance between 2 stop areas
+        inter_stop_duration_max: Maximum duration for a stopping time
+        inter_stop_duration_variation_max: Maximum duration gap between 2 vehicle journeys and between 2 following stops
+        max_size: maximal  size or value
+        min_size: minimal size or value
+        name: Name
+        parent_stop_area_distance_max: Maximum distance between a stop area and its own parent
+        speed_max: Maximum speed
+        speed_min: Minimum speed
+        stop_areas_area: Geographic stop area envelop
+        string_type: allowed characters
+        unique: uniqness
+        walk_default_speed_max: Maximum walk speed for a regular traveller
+        walk_frequent_traveller_speed_max: Maximum walk speed for a frequent traveller
+        walk_mobility_restricted_traveller_speed_max: Maximum walk speed for a mobility restricted traveller
+        walk_occasional_traveller_speed_max: Maximum walk speed for an occasional traveller
+      stop_area:
+        children_ids: Children
+        city_name: City
+        comment: Comments
+        coordinates: Coordinates (lat,lng) WGS84
+        country_code: INSEE code
+        creation_time: Created on
+        creator_id: 
+        creatorid: Created by
+        fare_code: Fare code
+        latitude: Latitude
+        lift_availability: Lift
+        long_lat_type: Projection type
+        longitude: Longitude
+        mobility_restricted_suitability: Mobility reduced passenger suitable
+        name: Name
+        nearest_topic_name: Nearest point of interest
+        object_version: Version
+        objectid: Neptune identifier
+        parent: Parent
+        projection: Projection type
+        projection_x: x-position
+        projection_xy: position (x,y) %{projection}
+        projection_y: y-position
+        published_name: 
+        registration_number: Registration number
+        routing_line_ids: Attached lines
+        routing_stop_ids: Attached stops
+        stairs_availability: Escalator
+        stop_area_type: Area type
+        street_name: Street name
+        time_zone: Time zone
+        url: Web page
+        zip_code: Zip code
+      stop_point:
+        lines: lines
+      time_table:
+        calendar_details: 
+        calendars: Calendar view
+        comment: Name
+        creation_time: Created on
+        creator_id: 'Created by '
+        date: 'On'
+        dates: Peculiar dates
+        day_types: Period day types
+        excluded_dates: Excluded dates
+        friday: Friday
+        monday: Monday
+        none: none
+        object_version: Version
+        objectid: Neptune identifier
+        period_end: to
+        period_start: From
+        periods: Application periods
+        saturday: Saturday
+        sunday: Sunday
+        tag_list: 
+        tag_search: Tags
+        thursday: Thursday
+        tuesday: Tuesday
+        version: Short name
+        wednesday: Wednesday
+      timeband:
+        end_time: End time
+        name: Title
+        start_time: Start time
+      user:
+        name: Full name
+      validation_task:
+        created_at: Created on
+        ignore_end_chars: ignore last chars
+        ignore_last_word: ignore last word
+        max_distance_for_commercial: Max distance for commercial stop
+        max_distance_for_connection_link: Max distance for connection link
+        no_save: No save
+        object_id_prefix: Neptune Id prefix
+        references_type: subset
+        resources: File to validate
+        rule_parameter_set_id: Rule parameter set for compliance check
+        status: Status
+      vehicle_journey:
+        accessible: Accessible
+        comment: Comments
+        company: Company
+        creation_time: Created on
+        creator_id: Created by
+        facility: Facility
+        flexible_service: On demond transportation
+        footnote_ids: Footnotes
+        journey_frequency_ids: Timeband
+        journey_pattern: Journey Pattern
+        line: Line
+        mobility_restricted_suitability: PRM accessibility
+        not_accessible: Not accessible
+        number: Number
+        object_version: Version
+        objectid: Neptune identifier
+        on_demand_fs: On demand service
+        published_journey_identifier: Published Identifier
+        published_journey_name: Published Name
+        regular_fs: Regular service
+        route: Route
+        status_value: Status Value
+        time_slot: Time Slot
+        time_table_ids: Calendar list
+        time_tables: Calendars
+        transport_mode_name: Transport Mode
+        unspecified_fs: Not specified
+        unspecified_mrs: Not specified
+        vehicle_journey_at_stop_ids: Time list
+        vehicle_type_identifier: 
+        vehicletypeidentifier: Vehicle Type Identifier
+    copy: Copy of %{name}
+    errors:
+      models:
+        journey_frequency:
+          end_must_be_before_timeband: the end date must be less than or equal to the time bands
+          end_must_be_different_from_first: the end date must be different from first date
+          scheduled_headway_interval_greater_than_zero: interval must be greater than 0
+          start_must_be_after_timeband: the date of departure must be greater or equal to the time bands
+        time_table_date:
+          attributes:
+            date:
+              taken: dupplicate date for this timetable
+        time_table_period:
+          start_must_be_before_end: end date must be after start date
+        timeband:
+          start_must_be_before_end: end date must be after start date
+        trident:
+          invalid_object_id: invalid syntax, expected as [A-Za-z0-9_]:%{type}:[A-Za-z0-9_-]
+          invalid_object_id_type: invalid type, must be %{type}
+        vehicle_journey:
+          invalid_times: Invalid times
+        vehicle_journey_at_stop:
+          arrival_must_be_before_departure: arrival time must be before departure time
     models:
       access_link:
         one: access link
@@ -386,6 +974,94 @@ en:
         one: connection link
         other: connection links
         zero: connection link
+      csv_import:
+        one: CSV import
+        other: imports
+        zero: import
+      csv_validation:
+        one: CSV validation
+        other: validations
+        zero: validation
+      footnote: footnote
+      group_of_line:
+        one: group of line
+        other: groups of lines
+        zero: group of line
+      gtfs_import:
+        one: GTFS import
+        other: imports
+        zero: import
+      gtfs_validation:
+        one: GTFS validation
+        other: validations
+        zero: validation
+      import:
+        one: import
+        other: imports
+        zero: import
+      journey_pattern:
+        one: journey pattern
+        other: journey patterns
+        zero: journey pattern
+      line:
+        one: line
+        other: lines
+        zero: line
+      neptune_import:
+        one: Neptune import
+        other: imports
+        zero: import
+      neptune_validation:
+        one: Neptune validation
+        other: validations
+        zero: validation
+      netex_import:
+        one: NeTEx import
+        other: imports
+        zero: import
+      netex_validation:
+        one: NeTEx validation
+        other: validations
+        zero: validation
+      network:
+        one: network
+        other: networks
+        zero: network
+      referential:
+        one: Data space
+        other: Data spaces
+        zero: Data space
+      route:
+        one: route
+        other: routes
+        zero: route
+      route_section: Section course
+      rule_parameter_set: Parameter Set for Conformity Rules
+      stop_area:
+        one: stop area
+        other: stop areas
+        zero: stop area
+      stop_point:
+        one: stop point on route
+        other: stop points on route
+        zero: stop point on route
+      time_table:
+        one: timetable
+        other: timetables
+        zero: timetable
+      timeband:
+        one: Time band
+        other: Time bands
+        zero: Time band
+      user: user
+      validation_task:
+        one: validation
+        other: validations
+        zero: validation
+      vehicle_journey:
+        one: vehicle journey
+        other: vehicle journeys
+        zero: vehicle journey
   api_keys:
     actions:
       destroy: Remove this api key
@@ -405,6 +1081,11 @@ en:
       itl: Restriction Constraint
       quay: Quay
       stop_place: Stop Place
+  attributes:
+    author: 
+    created_at: 
+    updated_at: 
+  back: 
   breadcrumbs:
     referentials: Home
     users: Users
@@ -545,15 +1226,35 @@ en:
     show:
       durations: 'Durations (hh mm ss):'
       title: Connection link %{connection_link}
+  delete_periods: 
   devise:
     confirmations:
       new:
         title: Resend confirmation instructions
+    invitations:
+      edit:
+        header: Set your password
+        submit_button: Set my password
+      invitation_removed: Your invitation was removed.
+      invitation_token_invalid: The invitation token provided is not valid!
+      new:
+        header: Send invitation
+        submit_button: Send an invitation
+      no_invitations_remaining: No invitations remaining
+      send_instructions: An invitation email has been sent to %{email}.
+      updated: Your password was set successfully. You are now signed in.
     links:
       new_confirmation: Confirm my account
       new_password: Forget your password ?
       sign_in: Sign in
       sign_up: Sign up
+    mailer:
+      invitation_instructions:
+        accept: Accept invitation
+        hello: Hello %{email}
+        ignore: If you don't want to accept the invitation, please ignore this email.<br />Your account won't be created until you access the link above and set your password.
+        someone_invited_you: Someone has invited you to %{url}, you can accept it through the link below.
+        subject: Invitation instructions
     passwords:
       edit:
         commit: Update password
@@ -582,6 +1283,89 @@ en:
         introduction_item2: and also several base map backgrounds (Google, OSM, IGN).
         title: Sign in
         welcome: Welcome to Chouette
+  directions:
+    label:
+      backward: backward
+      clock_wise: clockwise
+      counter_clock_wise: counterclockwise
+      east: east
+      north: north
+      north_east: north east
+      north_west: north west
+      south: south
+      south_east: south east
+      south_west: south west
+      straight_forward: straight forward
+      west: west
+  edit_periods: 
+  enumerize:
+    data_format:
+      gtfs: GTFS
+      hub: HUB 1.3
+      kml: KML
+      neptune: Neptune profile
+      netex: NeTEx profile
+      sig: SIG
+    data_format_detail:
+      gtfs: General Transit Feed Specification
+      hub: Specific Transdev Format
+      kml: line, route, ... drawings on Keyhole Markup Language format
+      neptune: 
+      netex: Experimental
+    for_alighting:
+      forbidden: No drop off available
+      is_flexible: Booking requested for drop off
+      normal: Regularly scheduled drop off
+      request_stop: Drop off if requested
+    for_boarding:
+      forbidden: No pickup available
+      is_flexible: Booking requested for pickup
+      normal: Regularly scheduled pickup
+      request_stop: Pickup if requested
+    references_type:
+      company: Companies
+      group_of_line: Group of lines
+      line: Lines
+      network: Networks
+      stop_area: Stops and connections (stops.txt and transfers.txt)
+  export_tasks:
+    actions:
+      new: New export
+    new:
+      all: All
+      fields_gtfs_export:
+        warning: Filter on stop areas export only GTFS stops and transfers files, these may contain extra attributes
+      flash: Export task on queue, refresh page to see progression
+      title: New export
+  exports:
+    actions:
+      destroy: Destroy
+      destroy_confirm: Are you sure you want destroy this export?
+      new: New export
+    index:
+      title: Exports
+      warning: 
+    new:
+      all: All
+      flash: Export task on queue, refresh page to see progression
+      title: New export
+    severities:
+      error: Error
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Unchecked
+      warning: Warning
+    show:
+      exported_file: Exported file
+      report: Report
+    statuses:
+      aborted: Failed
+      canceled: Canceled
+      scheduled: Processing ...
+      started: Started
+      terminated: Completed
+  'false': 'No'
   file_validation_log_messages:
     import: Import Report
     messages:
@@ -595,7 +1379,25 @@ en:
       ok: Ok
       uncheck: Not tested
       warning: Warning
+  footnotes:
+    actions:
+      add_footnote: add footnote
+    index:
+      title: Footnotes
   formtastic:
+    cancel: Cancel
+    clone: Clone
+    create: Create %{model}
+    duplicate: Duplicate
+    export: Launch export
+    'false': 'No'
+    import: Launch import
+    placeholders:
+      time_table:
+        tag_search: 'ex: Public hollidays,School holidays'
+    required: required
+    reset: Reset %{model}
+    submit: Apply %{model}
     titles:
       access_link:
         objectid: "[prefix]:AccessLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
@@ -610,6 +1412,21 @@ en:
       connection_link:
         link_distance: 
         objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+      export_task:
+        dates:
+          not_nul: HUB Export interrupted. Start date and end date must be provided.
+        end_date: reduce import to vehicle journeys running until this date
+        ignore_end_chars: ignore some chars at the end of stop names in homonymous detection
+        ignore_last_word: ignore last word on stop name in homonymous detection (inappliable when just one word occurs)
+        max_distance_for_commercial: Maximal distance to merge homonymous stops in commercial stop in meter
+        max_distance_for_connection_link: Maximal distance to link stops by connection link stop in meter
+        object_id_prefix: when prefix has this value, it will be removed to build GTFS id
+        start_date: reduce import to vehicle journeys running from this date
+        time_zone: according to TZ  encoding (see http://en.wikipedia.org/wiki/Tz_database)
+      group_of_line:
+        name: 
+        objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        registration_number: Positif integer.
       gtfs:
         company:
           name: 
@@ -618,6 +1435,40 @@ en:
         connection_link:
           link_distance: 
           objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        group_of_line:
+          name: 
+          objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: Positif integer.
+        journey_pattern:
+          name: 
+          objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: Positif integer.
+        line:
+          name: 
+          number: 
+          objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: only alphanumerical or underscore characters
+        network:
+          name: 
+          objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: only alphanumerical or underscore characters
+        route:
+          objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        stop_area:
+          city_name: 
+          comment: 
+          coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
+          name: 
+          nearest_topic_name: 
+          objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          projection_xy: x,y in secondary referential, dot for decimal separator
+          registration_number: only alphanumerical or underscore characters
+          zip_code: 
+        time_table:
+          comment: 
+          objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        vehicle_journey:
+          objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
       hub:
         company:
           name: maximum 75 characters
@@ -626,6 +1477,55 @@ en:
         connection_link:
           link_distance: At most 10000.0 meters.
           objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        group_of_line:
+          name: maximum 75 characters
+          objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 6."
+          registration_number: Positif integer, unique key, of no more than 8 digits.
+        journey_pattern:
+          name: Maximum length = 75.
+          objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 30."
+          registration_number: Positif integer, unique key, of no more than 8 digits.
+        line:
+          name: maximum 75 characters
+          number: Only alphanumerical or underscore characters. Maximum length = 6.
+          objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 14."
+          registration_number: Positif integer, unique key, of no more than 8 digits.
+        network:
+          name: maximum 75 characters
+          objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 3."
+          registration_number: Positif integer, unique key, of no more than 8 digits.
+        route:
+          objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 8."
+        stop_area:
+          city_name: Mandatory for physical stops. Maximum length = 75.
+          comment: Maximum length = 255.
+          coordinates: Coordinates are mandatory.
+          name: Maximum length = 255.
+          nearest_topic_name: Maximum length = 255 for logical stops and 60 for physical stops.
+          objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 12."
+          projection_xy: x,y in secondary referential, dot for decimal separator
+          registration_number: Positif integer, unique key, of no more than 8 digits. Mandatory for physical stops.
+          zip_code: Positif integer 5 digits. Mandatory for physical stops.
+        time_table:
+          comment: Maximum length = 75.
+          objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 6."
+        vehicle_journey:
+          objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character. Maximum length of the unique key = 8."
+      import_task:
+        ignore_end_chars: ignore some chars at the end of stop names in homonymous detection
+        ignore_last_word: ignore last word on stop name in homonymous detection (inappliable when just one word occurs)
+        max_distance_for_commercial: Maximal distance to merge homonymous stops in commercial stop in meter
+        max_distance_for_connection_link: Maximal distance to link stops by connection link stop in meter
+        references_type: Filter on stop areas import only GTFS stops and transfers files, these may contain extra attributes
+      journey_pattern:
+        name: 
+        objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        registration_number: Positif integer.
+      line:
+        name: 
+        number: 
+        objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        registration_number: only alphanumerical or underscore characters
       neptune:
         company:
           name: 
@@ -634,6 +1534,40 @@ en:
         connection_link:
           link_distance: 
           objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        group_of_line:
+          name: 
+          objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: Positif integer.
+        journey_pattern:
+          name: 
+          objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: Positif integer.
+        line:
+          name: 
+          number: 
+          objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: only alphanumerical or underscore characters
+        network:
+          name: 
+          objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: only alphanumerical or underscore characters
+        route:
+          objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        stop_area:
+          city_name: 
+          comment: 
+          coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
+          name: 
+          nearest_topic_name: 
+          objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          projection_xy: x,y in secondary referential, dot for decimal separator
+          registration_number: only alphanumerical or underscore characters
+          zip_code: 
+        time_table:
+          comment: 
+          objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        vehicle_journey:
+          objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
       netex:
         company:
           name: 
@@ -642,18 +1576,514 @@ en:
         connection_link:
           link_distance: 
           objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        group_of_line:
+          name: 
+          objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: Positif integer.
+        journey_pattern:
+          name: 
+          objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: Positif integer.
+        line:
+          name: 
+          number: 
+          objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: only alphanumerical or underscore characters
+        network:
+          name: 
+          objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          registration_number: only alphanumerical or underscore characters
+        route:
+          objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        stop_area:
+          city_name: 
+          comment: 
+          coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
+          name: 
+          nearest_topic_name: 
+          objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+          projection_xy: x,y in secondary referential, dot for decimal separator
+          registration_number: only alphanumerical or underscore characters
+          zip_code: 
+        time_table:
+          comment: 
+          objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        vehicle_journey:
+          objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+      network:
+        name: 
+        objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        registration_number: only alphanumerical or underscore characters
+      referential:
+        lower_corner: latitude,longitude in WGS84 referential, dot for decimal separator
+        prefix: only alphanumerical or underscore characters
+        slug: only lowercase alphanumerical or underscore characters, first character must be a letter
+        upper_corner: latitude,longitude in WGS84 referential, dot for decimal separator
+      route:
+        objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+      stop_area:
+        city_name: 
+        comment: 
+        coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
+        name: 
+        nearest_topic_name: 
+        objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+        projection_xy: x,y in secondary referential, dot for decimal separator
+        registration_number: only alphanumerical or underscore characters
+        zip_code: 
+      time_table:
+        comment: 
+        objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+      validation:
+        ignore_end_chars: ignore some chars at the end of stop names in homonymous detection
+        ignore_last_word: ignore last word on stop name in homonymous detection (inappliable when just one word occurs)
+        max_distance_for_commercial: Maximal distance to merge homonymous stops in commercial stop in meter
+        max_distance_for_connection_link: Maximal distance to link stops by connection link stop in meter
+      validation_task:
+        ignore_end_chars: ignore some chars at the end of stop names in homonymous detection
+        ignore_last_word: ignore last word on stop name in homonymous detection (inappliable when just one word occurs)
+        max_distance_for_commercial: Maximal distance to merge homonymous stops in commercial stop in meter
+        max_distance_for_connection_link: Maximal distance to link stops by connection link stop in meter
+      vehicle_journey:
+        objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+    'true': 'Yes'
+    update: Update %{model}
+    validate: Launch validation
+  group_of_lines:
+    actions:
+      destroy: Remove this group of lines
+      destroy_confirm: Are you sure you want destroy this group of lines?
+      edit: Edit this group of lines
+      new: Add a new group of lines
+    edit:
+      title: Update group of lines %{group_of_line}
+    form:
+      lines: Associated lines
+    index:
+      name: Search by name
+      title: Group of Lines
+    new:
+      title: Add a new group of lines
+    show:
+      lines: Lines list
+      title: Group of lines %{group_of_line}
+  hub:
+    invalid: is invalid
+    routes:
+      max_by_line: HUB format allows a maximum of 2 routes for a line
+      wayback_code_exclusive: Waybak already used for another route
+  iev:
+    exception:
+      default: Can not access IEV Service
+      dupplicate_or_missing_data: Missing data or duplicate
+      dupplicate_parameters: Parameters provided in double
+      internal_error: Internal Error
+      invalid_parameters: Incorrect action settings
+      invalid_request: Invalid request
+      missing_parameters: Missing action parameters
+      scheduled_job: Prohibited Method on an unfinished job
+      unknown_action: Action or unknown type
+      unknown_file: Unknown file
+      unknown_job: Unknown job number
+      unknown_referential: Unknown repository
+      unreadable_parameters: Unreadable parameters ( wrong format)
+    failure:
+      internal_error: Internal Error
+      invalid_data: Invalid data
+      invalid_parameters: Invalid parameters
+      no_data_found: No data to be processed in the entire treatment
+      no_data_proceeded: No data processed in the overall treatment
+  import_tasks:
+    actions:
+      new: New import
+    new:
+      all: All
+      flash: Import task on queue, refresh page to see progression
+      title: New import
+  imports:
+    actions:
+      destroy: Destroy
+      destroy_confirm: Are you sure you want destroy this import?
+      new: New import
+    compliance_check_task: Validate Report
+    index:
+      title: Imports
+      warning: 
+    severities:
+      error: Error
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Unchecked
+      warning: Warning
+    show:
+      compliance_check: Validation report
+      compliance_check_of: 'Validation of import: '
+      import_of_validation: Import of the validation
+      imported_file: Original file
+      report: Report
+      rule_parameter_set: Rule parameter set
+  job_status:
+    title:
+      processed: Launched operation , click to display its progress.
+  journey_frequencies:
+    form:
+      add_line: Add a timeband
+    time_band: Time band
+  journey_patterns:
+    actions:
+      destroy: Remove this journey pattern
+      destroy_confirm: A"re you sure you want destroy this journey pattern ?"
+      edit: Edit this journey pattern
+      edit_route_sections: Edit Shape
+      new: Add a new journey_pattern
+    edit:
+      title: Update journey pattern %{journey_pattern}
+    form:
+      warning: Be careful, selection is also applied to the %{count} vehicle journeys associated to this journey pattern
+    index:
+      title: Journey Patterns
+    journey_pattern:
+      from_to: From '%{departure}' to '%{arrival}'
+      stop_count: "%{count}/%{route_count} stops"
+      vehicle_journey_at_stops: Vehicle journey at stops
+      vehicle_journeys_count: 'Vehicle journeys: %{count}'
+    new:
+      title: Add a new journey pattern
+    show:
+      stop_points: Stop point on journey pattern list
+      title: Journey Pattern %{journey_pattern}
+  layouts:
+    back_to_dashboard: Back to Dashboard
+    flash_messages:
+      alert: Alert
+      error: Error
+      notice: Info
+      success: Success
+    footer:
+      contact:
+        forum: Forum
+        mail: Contact us
+        newsletter: Newsletter
+        title: Contact
+      product:
+        licence: Licence
+        source_code: Source code
+        title: Product
+        user_group: User group
+      support:
+        good_practices: Good pratices
+        help: Help
+        technical_support: Technical support
+        title: Support
+    help: Help
+    history_tag:
+      created_at: Created at
+      no_save: No backup
+      title: Metadatas
+      updated_at: Updated at
+      user_name: User
+    home: Home
+    navbar:
+      referential_datas: Datas
+      return_to_dashboard: Return to Dashboard
+      return_to_referentials: Return to data spaces
+      select_referential: Select data space
+      select_referential_datas: Select datas
+    user:
+      profile: My Profile
+      sign_out: Sign out
+  lines:
+    actions:
+      destroy: Remove this line
+      destroy_confirm: Are you sure you want destroy this line?
+      destroy_selection_confirm: Are you sure you want destroy those lines?
+      edit: Edit this line
+      export__hub_all: Export HUB lines
+      export__kml_all: Export KML lines
+      export_hub: Export HUB line
+      export_hub_all: 
+      export_kml: Export KML line
+      export_kml_all: 
+      import: Import lines
+      new: Add a new line
+    edit:
+      title: Update line %{line}
+    form:
+      group_of_lines: Associated groups of lines
+      no_group_of_line: No group of line
+      several_group_of_lines: "%{count} groups of lines"
+    index:
+      advanced_search: Advanced Search
+      all_companies: All companies
+      all_group_of_lines: All group of lines
+      all_networks: All networks
+      color: Color
+      delete_selected: Delete lines
+      deselect_all: Deselect all
+      export_selected: Export lines
+      multi_selection: Multiple selection
+      multi_selection_disable: Disable multiple selection
+      multi_selection_enable: Enable multiple selection
+      name_or_number: Search by name or number
+      no_companies: No companies
+      no_group_of_lines: No group of lines
+      no_networks: No networks
+      select_all: Select all
+      title: Lines
+      unset: undefined
+    new:
+      title: Add a new line
+    show:
+      group_of_lines: Groups of lines
+      itineraries: Line's route list
+      title: Line %{line}
+  maps:
+    google_hybrid: Google hybrid
+    google_physical: Google physical
+    google_satellite: Google orthophotos
+    google_streets: Google streets
+    ign_cadastre: IGN parcels
+    ign_map: IGN scans
+    ign_ortho: IGN orthophotos
+  networks:
+    actions:
+      destroy: Remove this network
+      destroy_confirm: Are you sure you want destroy this network?
+      edit: Edit this network
+      new: Add a new network
+    edit:
+      title: Update network %{network}
+    index:
+      name: Search by name
+      title: Networks
+    new:
+      title: Add a new network
+    show:
+      title: Network
   no_result_text: No Results
   or: or
+  organisations:
+    actions:
+      edit: Edit your organisation
+    edit:
+      key_not_registered: No key registered
+      key_registered: Key registered
+      title: Update your organisation
+    show:
+      rule_parameter_sets: Rule parameter sets
+      users: Users
+  progress_bar:
+    level: Levels
+    step: Steps
+  referentials:
+    actions:
+      destroy: Destroy this data space
+      destroy_confirm: Do you confirm to destroy this data space ?
+      edit: Edit this data space
+      new: Add a data space
+    counts:
+      count: count
+      objects: Data space elements
+    edit:
+      title: Edit the data space
+    errors:
+      pg_excluded: can't begins with pg_
+      public_excluded: public is a reserved value
+      user_excluded: "%{user} is a reserved value"
+    new:
+      submit: Create a data space
+      title: Create a new data space
+    show:
+      api_keys: Authentification keys for an API REST access
+      clean_up: Clean up
+      lines: lines
+      networks: networks
+      time_tables: time tables
+      title: Data space
+      vehicle_journeys: vehicle journeys
+    validity_out:
+      validity_out_soon_time_tables: Timetables closed in %{count} days
+      validity_out_time_tables: Closed timetables
+  route_sections:
+    actions:
+      destroy: Delete this section
+      destroy_confirm: Are you sure you want to delete this route section?
+      edit: Edit this section
+    edit:
+      title: Edit this section
+    form:
+      no_processing: Geometry processing
+      no_processor: No treatment
+      standard_processor: Standard
+      submit: Submit
+    index:
+      actions:
+        destroy: Delete
+        destroy_confirm: Are you sure you want to delete this route section?
+        edit: Edit
+        show: Show
+      all_lines: All lines
+      title: Sections course
+    new:
+      title: Add a new section
+    show:
+      title: Show this section
+    unable_to_contact_server: Unable to contact OSRM server, please try again later.
+  route_sections_selectors:
+    edit:
+      form:
+        title: Full course
+      no_candidate: No known path
+      no_selection: No selection
+      route_section:
+        edit: Edit this section
+        new: Add alternative
+      selection:
+        title: Selected section
+      submit: Change the route
+      title: Changing the course of the mission %{journey_pattern}
+  routes:
+    actions:
+      add_stop_point: Add stop point
+      destroy: Remove this route
+      destroy_confirm: Are you sure you want destroy this route?
+      edit: Edit this route
+      edit_boarding_alighting: Stop alighting and boarding
+      export_hub: Export HUB route
+      export_hub_all: Export HUB routes
+      export_kml: Export KML route
+      export_kml_all: Export KML routes
+      new: Add a new route
+      new_stop_point: Create new stop
+    edit:
+      title: Update route %{route}
+    edit_boarding_alighting:
+      for_alighting: Alighting
+      for_boarding: Boarding
+      stop_area_name: Stop area name
+      title: Stop alighting and boarding properties
+    index:
+      selection: Selection
+      selection_all: All
+      title: Routes
+    new:
+      title: Add a new route
+    route:
+      no_journey_pattern: No Journey pattern
+      no_opposite: No opposite route
+      opposite: Opposite route
+      wayback:
+        negative: backward
+        positive: forward
+    show:
+      journey_patterns: Route journey patterns list
+      no_opposite_route: No reversed route associated
+      stop_points: Stop point on route list
+      title: Route %{route}
+      undefined: Undefined
+  rule_parameter_sets:
+    actions:
+      destroy: Remove this rule parameter set
+      destroy_confirm: Are you sure you want destroy this rule parameter set ?
+      edit: Edit this parameter set
+      index: Rule parameter sets
+      new: Add a new parameter set
+    destroy:
+      last_rps_protected: Delete refused. Last rule parameter set in current referential can't be destroyed.
+    edit:
+      title: Update parameter set %{rule_parameter_set}
+    form:
+      add_mode_parameter_set: Add mode specific parameter set
+    index:
+      title: Parameter sets
+    labels:
+      alpha_char: character only
+      attribute: attribute
+      columns_restrictions: Check model objects atributes
+      free_char: free
+      lower_char: lowercase only
+      num_char: number only
+      upper_char: uppercase only
+    new:
+      title: Add a new parameter set
+    show:
+      facility_stop_area_distance_max: a stop area and a facility
+      inter_access_link_distance_max: an access point and a linked stop area
+      inter_access_point_distance_min: 2 access with different names on a same stop area
+      inter_connection_link_distance_max: stop areas in a connection link
+      inter_stop_area_distance_min: 2 stop areas having different parent
+      inter_stop_duration_max: Maximum duration between the moment when a vehicle is arriving at a stop and the moment when the vehicle is leaving
+      max_distance: 'Maximum distance between '
+      min_distance: 'Minimum distance between '
+      modes_allowed: " (only for allowed ones)"
+      parent_stop_area_distance_max: a stop area and its own parent
+      rule_parameter_by_mode: Parameters by mode
+      title: Parameter Set %{rule_parameter_set}
+      walk_default_speed_max: a regular one
+      walk_frequent_traveller_speed_max: a frequent one
+      walk_mobility_restricted_traveller_speed_max: a mobility restricted one
+      walk_occasional_traveller_speed_max: an occasional one
+      walk_speed: Maximum walk speed for travellers
   search_hint: Type in a search term
   searching_term: Searching...
   select_all: Select all
+  shared:
+    ie_report:
+      search: Search
+      tab:
+        file: Files
+        line: Lines
+    ie_report_file:
+      table:
+        error: Error
+        ignored: Ignored
+        name: Filename
+        ok: Success
+        state: State
+      title_default: "%{job} result for %{extension} file"
+    ie_report_line:
+      read_lines: Read lines
+      saved_lines: Saved lines
+      state:
+        default:
+          invalid: Unsaved lines
+          valid: Saved lines
+        validation:
+          invalid: Invalid lines
+          valid: Valid lines
+      table:
+        line:
+          access_points: Access Points
+          connection_links: Connection links
+          details: Details
+          journey_patterns: Journey Patterns
+          lines: Lines
+          not_saved: Not saved
+          routes: Routes
+          save_error: Save error
+          saved: Saved
+          state: State
+          stop_areas: Stop Areas
+          time_tables: Timetables
+          vehicle_journeys: Vehicle Journeys
+      unsaved_lines: Unsaved lines
   simple_form:
+    error_notification:
+      default_message: 'Please review the problems below:'
     hints:
       user:
         edit:
           current_password: We need your current password to confirm your changes
           password: Leave it blank if you don't want to change it
+    include_blanks:
+      defaults:
+        for_alighting: Undefined
+        for_boarding: Undefined
     labels:
+      stop_point:
+        for_alighting: Drop off
+        for_boarding: Pickup
       user:
         current_password: Current password
         email: Email
@@ -663,6 +2093,7 @@ en:
         password: Password
         password_confirmation: Password confirmation
         remember_me: Remember me
+    'no': 'No'
     placeholders:
       user:
         current_password: Current password
@@ -672,7 +2103,751 @@ en:
           name: Organisation name
         password: Password
         password_confirmation: Password confirmation
+    required:
+      mark: "*"
+      text: required
+    'yes': 'Yes'
+  source_types:
+    label:
+      individual_subject_of_travel_itinerary: individual subject of travel itinerary
+      other_information: other information
+      passenger_transport_coordinating_authority: passenger transport coordinating authority
+      public_and_private_utilities: public and private utilities
+      public_transport: public transport
+      road_authorities: road authorities
+      transit_operator: transit operator
+      travel_agency: travel_agency
+      travel_information_service_provider: travel information service provider
+    name: Source type
+  stop_area_copies:
+    errors:
+      copy_aborted: 'Errors prohibited this copy from completing: '
+      exception: internal error
+    new:
+      success: Clone succedeed
+      title:
+        child: Clone as child
+        parent: Clone as parent
+  stop_areas:
+    access_links:
+      access_link_legend_1: grays arrows for undefined links, green for defined ones
+      access_link_legend_2: clic on arrows to create/edit a link
+      detail_access_links: Specific links
+      generic_access_links: Glogal links
+      title: Access links for %{stop_area}'s access
+    actions:
+      add_children: Create or modify the relation parent -> children
+      add_routing_lines: Manage constraint's lines
+      add_routing_stops: Manage constraint's stops
+      clone_as_child: Clone as child
+      clone_as_parent: Clone as parent
+      default_geometry: Compute missing geometries
+      default_geometry_confirm:
+        one: There is a missing geometry. Would you like to continue?
+        other: There are %{count} missing geometries. Would you like to continue?
+        zero: No missing geometry, you can undo the action.
+      destroy: Remove this stop
+      destroy_confirm: Are you sure you want destroy this stop and all of his children ?
+      edit: Edit this stop
+      export_hub_commercial: Export HUB commercial stop points
+      export_hub_physical: Export HUB physical
+      export_hub_place: Export HUB places
+      export_kml_commercial: Export KML commercial stop points
+      export_kml_physical: Export KML physical
+      export_kml_place: Export KML places
+      manage_access_links: Manage Access Links
+      manage_access_points: Manage Access Points
+      new: Add a new stop
+      select_parent: Create or modify the relation child -> parent
+    add_children:
+      title: Manage children of stop area %{stop_area}
+    add_lines:
+      title: Manage lines of routing constraint %{stop_area}
+    add_routing_lines:
+      title: 
+    add_routing_stops:
+      title: 
+    add_stops:
+      title: Manage stop areas of routing constraint %{stop_area}
+    default_geometry_success: "%{count} modified stop areas"
+    edit:
+      title: Update stop %{stop_area}
+    form:
+      address: 246 Boulevard Saint-Germain, 75007 Paris
+      geolocalize: 'Pinpoint '
+    genealogical:
+      genealogical: Links between stop area
+      genealogical_routing: Routing constraint's links
+    index:
+      advanced_search: Advanced Search
+      area_type: Area Type
+      name: Search by name
+      selection: Filter on
+      selection_all: All
+      title: Stop areas
+      zip_code: Zip Code
+    new:
+      title: Add a new stop
+    select_parent:
+      title: Manage parent of stop area %{stop_area}
+    show:
+      access_managment: Access Points and Links managment
+      access_points: Access Points
+      geographic_data: Geographic data
+      itl_managment: Routing constraint's links managment
+      no_geographic_data: None
+      not_editable: Le type d'arrêt est non modifiable
+      stop_managment: Parent-child relations
+      title: Stop %{stop_area} - %{stop_area_type}
+    stop_area:
+      accessibility: Accessibility
+      address: Address
+      general: General
+      lines: Lines
+      localisation: Localisation
+      no_object: Nothing
+      no_position: No Position
+  stop_points:
+    actions:
+      destroy: Remove this stop on route
+      destroy_confirm: Are you sure you want destroy this stop on route ?
+      edit: Edit this stop on route
+      index: Stops on route list
+      new: Add a new stop on route
+      show: Show
+      sort: Manage stops on route
+    index:
+      move: Move
+      no_stop_point: No stop point on route
+      reorder_button: Save reordering
+      subtitle: Stops on route ordered
+      title: Stops on route %{route}
+    new:
+      select_area: Select a stop area
+      title: Add a new stop route
+    reorder_failure: Fail in reordering
+    reorder_success: Stop list saved
+    stop_point:
+      address: Address
+      lines: Lines
+      no_object: Nothing
+      no_position: No position
+  subscriptions:
+    actions:
+      new: Create an account
+    failure: Invalide subscription
+    new:
+      title: Create your account
+    success: Subscription saved
+  time:
+    formats:
+      hour: "%Hh%M"
+      minute: "%M min"
+  time_table_combinations:
+    combine_form:
+      time_tables: Time table to combine with
+    failure: operation failed on timetable
+    operations:
+      disjunction: disjoin
+      intersection: intersect
+      union: merge
+    success: operation applied on timetable
+  time_tables:
+    actions:
+      add_date: Add a peculiar date
+      add_excluded_date: Add an excluded date
+      add_period: Add a period
+      combine: Combine with another timetable
+      destroy: Remove this timetable
+      destroy_confirm: Are you sure you want destroy this timetable ?
+      destroy_date_confirm: Are you sure you want destroy this date ?
+      destroy_period_confirm: Are you sure you want destroy this period ?
+      duplicate: Duplicate this timetable
+      edit: Edit this timetable
+      new: Add a new timetable
+    duplicate_success: duplication succeded
+    edit:
+      title: Update timetable %{time_table}
+    index:
+      advanced_search: Advanced Search
+      comment: Search by name
+      end_date: 
+      from: 'From : '
+      selection: Selection
+      selection_all: All
+      start_date: 
+      tag_search: 'Tags : hollidays,public holliday'
+      title: Timetables
+      to: " to : "
+    new:
+      title: Add a new timetable
+    show:
+      add_date: Add a date
+      add_period: Add a period
+      combine: Apply
+      combine_form: Combinations
+      dates: Application dates
+      from: from
+      periods: Application periods
+      title: Timetable %{time_table}
+      to: to
+    show_time_table:
+      excluded_date: Excluded date
+      legend: 'Legend : '
+      overlap_date: Overlap date
+      resume: From %{start_date} to %{end_date}
+      resume_empty: Empty timetable
+      selected_date: Date directly included
+      selected_period: Date included in period
+    time_table:
+      bounding: from %{start} to %{end}
+      dates_count: 'dates: %{count}'
+      empty: empty
+      periods_count: 'periods: %{count}'
+      periods_dates_count: 'dates: %{dates_count}, periods: %{periods_count}'
+  timebands:
+    actions:
+      destroy: Delete a time band
+      destroy_confirm: Thank you to confirm the deletion of these time band.
+      edit: Edit a time band
+      new: Add a time band
+    edit:
+      title: Edit this time band %{timeband}
+    index:
+      title: Time bands
+    new:
+      title: Add a time band
+    show:
+      title: Time band %{timeband}
   titles:
     clean_up:
       expected_date: value included in clean up
+  today: 
+  transport_modes:
+    label:
+      air: Air
+      bicycle: Bicycle
+      bus: Bus
+      coach: Coach
+      ferry: Ferry
+      local_train: Local train
+      long_distance_train: Long distance train
+      metro: Metro
+      private_vehicle: Private vehicle
+      rapid_transit: Rapid transit
+      shuttle: Shuttle
+      taxi: Taxi
+      train: Train
+      tramway: Tramway
+      trolleybus: Trolleybus
+      unknown: unknown
+      val: VAL
+      walk: Walk
+      waterborne: Waterborne
+    name: Transport mode
+  'true': 'Yes'
+  unknown: Unknown
   unselect_all: Unselect all
+  users:
+    actions:
+      destroy: Remove this user
+      destroy_confirm: Are you sure you want destroy this user?
+      edit: Edit this user
+      new: Add a new user
+    edit:
+      title: Update user %{user}
+    index:
+      title: Users
+    new:
+      title: Add a new user
+    show:
+      title: User %{user}
+  validation_result:
+    details:
+      detail_1_neptune_xml_1: "%{source_label} : %{error_value}"
+      detail_1_neptune_xml_2: "%{source_label} : %{error_value}"
+      detail_2_neptune_accesslink_1: La liaison d'accès %{source_objectid} référence %{error_value} qui n'existe pas
+      detail_2_neptune_accesslink_2: Sur la liaison d'accès %{source_objectid}, les références startOfLink = %{error_value} et endOfLink = %{reference_value} sont de même type
+      detail_2_neptune_accesspoint_1: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{error_value}) inexistant
+      detail_2_neptune_accesspoint_2: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{target_0_objectid}) de type invalide (ITL)
+      detail_2_neptune_accesspoint_3: L'accès %{source_objectid} n'a pas de lien d'accès
+      detail_2_neptune_accesspoint_4: L'accès %{source_objectid} de type In a des liens d'accès sortants
+      detail_2_neptune_accesspoint_5: L'accès %{source_objectid} de type Out a des liens d'accès entrants
+      detail_2_neptune_accesspoint_6: L'accès %{source_objectid} de type InOut n'a que des liens d'accès entrants ou sortants
+      detail_2_neptune_accesspoint_7: L'accès %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_areacentroid_1: La position géographique <AreaCentroid> %{source_objectid} référence un arrêt (containedIn = %{error_value}) inexistant
+      detail_2_neptune_areacentroid_2: La position géographique <AreaCentroid> %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_common_1: L'élément %{source_objectid} a des attributs qui diffèrent entre les différents fichiers qui le définissent
+      detail_2_neptune_common_2: L'élément %{source_objectid} partage l'attribut RegistrationNumber = %{error_value} avec un autre objet de même type
+      detail_2_neptune_connectionlink_1: La correspondance %{source_objectid} référence 2 arrêts inexistants
+      detail_2_neptune_facility_1: L'équipement %{source_objectid} est situé sur un arrêt inexistant (containedId = %{error_value})
+      detail_2_neptune_facility_2: L'équipement %{source_objectid} référence un arrêt (stopAreaId = %{error_value}) inexistant
+      detail_2_neptune_facility_3: L'équipement %{source_objectid} référence une ligne (lineId = %{error_value} inexistante
+      detail_2_neptune_facility_4: L'équipement %{source_objectid} référence une correspondance (connectionLinkId = %{error_value} inexistante
+      detail_2_neptune_facility_5: L'équipement %{source_objectid} référence un point d'arrêt (stopPointId = %{error_value} inexistant
+      detail_2_neptune_facility_6: L'équipement %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_groupofline_1: La ligne %{source_objectid} est absente de la liste des lignes du du groupe de lignes %{target_0_objectid}
+      detail_2_neptune_itl_1: Le fils (contains = %{target_0_objectid}) de type %{error_value} ne peut pas être contenu dans l'arrêt %{source_objectid} de type %{reference_value}
+      detail_2_neptune_itl_2: L'arrêt de type ITL %{source_objectid} n'est pas utilisé
+      detail_2_neptune_itl_3: L'arrêt areaId = %{error_value} référencé par l'ITL %{source_objectid} n'existe pas
+      detail_2_neptune_itl_4: L'arrêt areaId = %{target_0_objectid} référencé par l'ITL %{source_objectid} devrait être de type ITL et non de type %{error_value}
+      detail_2_neptune_itl_5: La référence lineIdShortCut = %{error_value} de l'ITL %{source_objectid} n'est pas cohérente avec la ligne %{target_0_objectid}
+      detail_2_neptune_journeypattern_1: La mission %{source_objectid} référence une séquence d'arrêts (routeId = %{error_value}) inexistante
+      detail_2_neptune_journeypattern_2: La mission %{source_objectid} référence un point d'arrêt (stopPointId = %{error_value}) inexistant
+      detail_2_neptune_journeypattern_3: La mission %{source_objectid} référence une ligne (lineIdShortcut = %{error_value}) inexistante
+      detail_2_neptune_line_1: La ligne %{source_objectid} référence un réseau (ptNetworkIdShortcut = %{error_value} inexistant
+      detail_2_neptune_line_2: 'La ligne %{source_objectid} référence un point d''arrêt <StopPoint> (lineEnd = %{error_value}) inexistant '
+      detail_2_neptune_line_3: La ligne %{source_objectid} référence un point d'arrêt (lineEnd = %{error_value}) qui n'est pas terminus d'une séquence d'arrêts
+      detail_2_neptune_line_4: La ligne %{source_objectid} référence une séquence d'arrêt (routeId = %{error_value}) inexistante
+      detail_2_neptune_line_5: La séquence d'arrêts (routeId = %{target_0_objectid}) n'est pas référencée par la ligne %{source_objectid}
+      detail_2_neptune_network_1: La ligne %{source_objectid} est absente de la liste des lignes du réseau %{target_0_objectid}
+      detail_2_neptune_ptlink_1: Le tronçon %{source_objectid} reférence un %{reference_value} = %{error_value} inexistant
+      detail_2_neptune_route_1: La séquence d'arrêts %{source_objectid} référence une mission (journeyPatternId = %{error_value}) inexistante
+      detail_2_neptune_route_10: La séquence retour (waybackRouteId = %{target_0_objectid}) ne référence pas la séquence d'arrêts %{source_objectid} comme retour
+      detail_2_neptune_route_11: Le sens (%{reference_value}) de la séquence d'arrêt %{source_objectid} n'est pas compatible avec celui (%{error_value}) de la séquence opposée %{target_0_objectid}
+      detail_2_neptune_route_12: Le départ dans la zone %{reference_value}) de la séquence d'arrêts %{source_objectid} n'est pas dans la même zone que l'arrivée (zone %{error_value} de la séquence retour %{target_0_objectid}
+      detail_2_neptune_route_2: La séquence d'arrêts %{source_objectid} référence un tronçon (ptLinkId = %{error_value}) inexistant
+      detail_2_neptune_route_3: La séquence retour (waybackRouteId = %{error_value}) de la séquence d'arrêts %{source_objectid} n'existe pas
+      detail_2_neptune_route_4: Le tronçon (ptLinkId = %{error_value}) référencé par la séquence d'arrêt %{source_objectid} est partagé avec %{target_0_objectid}
+      detail_2_neptune_route_5: 'Le tronçon %{source_objectid} partage un %{reference_value} : %{error_value} avec un autre tronçon'
+      detail_2_neptune_route_6_1: La séquence d'arrêts %{source_objectid} n'est pas une séquence linéaire, le chainage des tronçons forme un anneau
+      detail_2_neptune_route_6_2: La séquence d'arrêts %{source_objectid} n'est pas une séquence linéaire, le chainage des tronçons est rompu au tronçon %{target_0_objectid}
+      detail_2_neptune_route_7: La séquence d'arrêts %{source_objectid} ne référence pas la mission %{target_0_objectid} alors que cette mission référence la séquence d'arrêt
+      detail_2_neptune_route_8: La mission journeyPatternId = %{target_0_objectid} de la séquence d'arrêts %{source_objectid} utilise des points d'arrêts hors séquence
+      detail_2_neptune_route_9: Le point d'arrêt (stopPointId = %{target_0_objectid}) de la séquence d'arrêts %{source_objectid} n'est utilisé dans aucune mission
+      detail_2_neptune_stoparea_1: Le fils (contains = %{error_value}) de l'arrêt %{source_objectid} n'est pas de type StopArea ni StopPoint
+      detail_2_neptune_stoparea_2: L'arrêt %{source_objectid} de type %{reference_value} ne peut contenir que des arrêts de type StopPlace ou CommercialStopPoint, or un des arrêts contenus (contains = %{target_0_objectid}) est de type %{error_value}
+      detail_2_neptune_stoparea_3: L'arrêt %{source_objectid} de type %{reference_value} ne peut contenir que des arrêts de type BoardingPosition ou Quay, or un des arrêts contenus (contains = %{target_0_objectid}) est de type %{error_value}
+      detail_2_neptune_stoparea_4: L'arrêt %{source_objectid} de type %{reference_value} ne peut contenir que des points d'arrêt de séquence, or un des arrêts contenus (contains = %{target_0_objectid}) est un StopArea arrêt de type %{error_value}
+      detail_2_neptune_stoparea_5: L'arrêt %{source_objectid} référence une position géographique (centroidOfArea = %{error_value}) inexistante
+      detail_2_neptune_stoparea_6: L'arrêt %{source_objectid} référence une position géographique (centroidOfArea = %{target_0_objectid}) qui ne le référence pas en retour (containedIn = %{error_value})
+      detail_2_neptune_stoppoint_1: Le point d'arrêt %{source_objectid} référence une ligne (lineIdShortcut = %{error_value}) inexistante
+      detail_2_neptune_stoppoint_2: Le point d'arrêt %{source_objectid} référence un réseau (ptNetworkIdShortcut = %{error_value}) inexistant
+      detail_2_neptune_stoppoint_3: Le point d'arrêt %{source_objectid} référence un arrêt (containedIn = %{error_value}) inexistant
+      detail_2_neptune_stoppoint_4: Le point d'arrêt %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_timetable_1: Le calendrier (<Timetable>) %{source_objectid} ne référence aucune course existante
+      detail_2_neptune_timetable_2: La course %{source_objectid} n'est référencée dans aucun calendrier (<Timetable>)
+      detail_2_neptune_vehiclejourney_1: La course %{source_objectid} référence une séquence d'arrêts (routeId = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_2: La course %{source_objectid} référence une mission (journeyPatternId = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_3: La course %{source_objectid} référence une ligne (lineIdShortcut = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_4: La course %{source_objectid} référence un opérateur (operatorId = %{error_value}) inexistant
+      detail_2_neptune_vehiclejourney_5: La course %{source_objectid} référence une fréquence horaire (timeSlotId = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_6: La course %{source_objectid} référence une mission %{error_value} incompatible de la séquence d'arrêts %{reference_value}
+      detail_2_neptune_vehiclejourney_7: La mission %{source_objectid} n'est référencée par aucune course
+      detail_2_neptune_vehiclejourneyatstop_1: La course %{source_objectid} fournit un horaire sur un point d'arrêt (stopPointId = %{error_value}) inexistant
+      detail_2_neptune_vehiclejourneyatstop_2: 'Un horaire de la course %{source_objectid} référence une autre course : vehicleJourneyId = %{error_value}'
+      detail_2_neptune_vehiclejourneyatstop_3: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts selon l'ordre de la séquence d'arrêts %{error_value}
+      detail_2_neptune_vehiclejourneyatstop_4: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts de sa mission %{error_value}
+      detail_3_accesslink_1: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la distance entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) est trop grande : distance %{error_value} > %{reference_value}'
+      detail_3_accesslink_2: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la distance entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) : %{error_value} est supérieure à la longueur du lien : %{reference_value}'
+      detail_3_accesslink_3_1: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse par défaut %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesslink_3_2: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse pour un voyageur occasionnel %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesslink_3_3: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse pour un voyageur habitué %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesslink_3_4: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse pour un voyageur à mobilité réduite %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesspoint_1: L'accès %{source_label} (%{source_objectid}) n'est pas géolocalisé
+      detail_3_accesspoint_2: 'L''accès %{source_label} (%{source_objectid}) est localisé trop près de l''accès %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value}'
+      detail_3_accesspoint_3: 'L''accès %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value}'
+      detail_3_connectionlink_1: 'Sur la correspondance %{source_label} (%{source_objectid}), la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est trop grande : distance %{error_value} > %{reference_value}'
+      detail_3_connectionlink_2: 'Sur la correspondance %{source_label} (%{source_objectid}), la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) : %{error_value} est supérieure à la longueur du lien : %{reference_value}'
+      detail_3_connectionlink_3_1: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse par défaut %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_connectionlink_3_2: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse pour un voyageur occasionnel %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_connectionlink_3_3: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse pour un voyageur habitué %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_connectionlink_3_4: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse pour un voyageur à mobilité réduite %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_facility_1: L'équipement %{source_label} (%{source_objectid}) n'est pas géolocalisé
+      detail_3_facility_2: 'L''équipement %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{areaName} (%{areaId}) : distance %{error_value} > %{reference_value}'
+      detail_3_journeypattern_1: La mission %{source_label} (%{source_objectid}) utilise les mêmes arrêts que la mission %{target_0_label} (%{target_0_objectid}) - nombre d'arrêts = %{error_value}
+      detail_3_line_1: La ligne %{source_label} (%{source_objectid}) a une ligne homonyme sur le même réseau %{target_0_label} (%{target_0_objectid})
+      detail_3_line_2: La ligne %{source_label} (%{source_objectid}) n'a pas de séquence d'arrêts
+      detail_3_route_1: Sur la séquence d'arrêt %{source_label} (%{source_objectid}), l'arrêt %{target_0_label} (%{target_0_objectid}) est desservi 2 fois consécutivement
+      detail_3_route_2: 'Les terminus de la séquence d''arrêt %{source_label} (%{source_objectid}) ne sont pas cohérent avec ceux de sa séquence opposée : l''une part de %{target_0_label} (%{target_0_objectid}) et l''autre arrive à %{target_1_label} (%{target_1_objectid})'
+      detail_3_route_3_1: 'Sur la séquence d''arrêt %{source_label} (%{source_objectid}), entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}), distance %{error_value} < %{reference_value} '
+      detail_3_route_3_2: 'Sur la séquence d''arrêt %{source_label} (%{source_objectid}), entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}), distance %{error_value} > %{reference_value} '
+      detail_3_route_4: La séquence d'arrêt %{source_label} (%{source_objectid}) utilise la même liste ordonnée d'arrêts que la séquence d'arrêts %{target_0_label} (%{target_0_objectid})
+      detail_3_route_5: La séquence d'arrêt %{source_label} (%{source_objectid}) peut admettre la séquence %{target_0_label} (%{target_0_objectid}) comme séquence opposée
+      detail_3_route_6: La séquence d'arrêt %{source_label} (%{source_objectid}) doit avoir un minimum de 2 arrêts
+      detail_3_route_7: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission
+      detail_3_route_8: La séquence d'arrêt %{source_label} (%{source_objectid}) a %{error_value} arrêts non utilisés par des missions
+      detail_3_route_9: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission desservant l'ensemble de ses arrêts
+      detail_3_stoparea_1: L'arrêt %{source_label} (%{source_objectid}) n'est pas géolocalisé
+      detail_3_stoparea_2: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop près de l''arrêt %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value}'
+      detail_3_stoparea_3: Les arrêts %{source_label} (%{source_objectid} et %{target_0_objectid}) sont desservis par les mêmes lignes
+      detail_3_stoparea_4: L'arrêt %{source_label} (%{source_objectid}) est en dehors du périmètre de contrôle
+      detail_3_stoparea_5: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value}'
+      detail_3_vehiclejourney_1: 'Arrêt %{target_0_label} (%{target_0_objectid}) : durée d''arrêt mesurée %{error_value} > %{reference_value}'
+      detail_3_vehiclejourney_2_1: La course %{source_label} (%{source_objectid}) a des horaires décroissants entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_2_2: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} < %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_2_3: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} > %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_3: La course %{source_label} (%{source_objectid}) a une variation de progression entre les arrêts %{target_1_label} (%{target_1_objectid}) et %{target_2_label} (%{target_2_objectid}) %{error_value} > %{reference_value} avec la course %{target_0_label} (%{target_0_objectid})
+      detail_3_vehiclejourney_4: La course %{source_label} (%{source_objectid}) n'a pas de calendrier d'application
+      detail_4_accesslink_1_max_size: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_accesslink_1_min_size: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_accesslink_1_pattern: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_accesslink_1_unique: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) a une valeur partagée avec le lien d'accès %{target_0_label} (%{target_0_objectid})
+      detail_4_accesspoint_1_max_size: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_accesspoint_1_min_size: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_accesspoint_1_pattern: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_accesspoint_1_unique: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) a une valeur partagée avec le point d'accès %{target_0_label} (%{target_0_objectid})
+      detail_4_company_1_max_size: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_company_1_min_size: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_company_1_pattern: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_company_1_unique: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) a une valeur partagée avec le transporteur %{target_0_label} (%{target_0_objectid})
+      detail_4_connectionlink_1_max_size: L'attribut %{reference_value} de la correspondance %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_connectionlink_1_min_size: L'attribut %{reference_value} de la correspondance  %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_connectionlink_1_pattern: L'attribut %{reference_value} de la correspondance %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_connectionlink_1_unique: L'attribut %{reference_value} de la correspondance %{source_label} (%{source_objectid}) a une valeur partagée avec la correspondance %{target_0_label} (%{target_0_objectid})
+      detail_4_connectionlink_2: Sur la correspondance %{source_label} (%{source_objectid}) au moins l'un des arrêts %{startName} (%{startId}) et %{endName} (%{endId}) n'est pas un arrêt physique
+      detail_4_groupofline_1_max_size: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_groupofline_1_min_size: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_groupofline_1_pattern: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_groupofline_1_unique: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) a une valeur partagée avec le groupe de lignes %{target_0_label} (%{target_0_objectid})
+      detail_4_journeypattern_1_max_size: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_journeypattern_1_min_size: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_journeypattern_1_pattern: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_journeypattern_1_unique: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) a une valeur partagée avec la mission %{target_0_label} (%{target_0_objectid})
+      detail_4_line_1_max_size: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_line_1_min_size: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_line_1_pattern: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_line_1_unique: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) a une valeur partagée avec la ligne %{target_0_label} (%{target_0_objectid})
+      detail_4_line_2: La ligne %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
+      detail_4_line_3_1: La ligne %{source_label} (%{source_objectid}) n'a pas de groupe de lignes
+      detail_4_line_3_2: La ligne %{source_label} (%{source_objectid}) a plusieurs groupes de lignes
+      detail_4_line_4_1: La ligne %{source_label} (%{source_objectid}) n'a pas de séquence d'arrêts
+      detail_4_line_4_2: La ligne %{source_label} (%{source_objectid}) a trop de séquences d'arrêts non associées (%{error_value})
+      detail_4_network_1_max_size: L'attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_network_1_min_size: 'L''attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) n''est pas renseigné ou trop petit (%{error_value}) '
+      detail_4_network_1_pattern: L'attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_network_1_unique: L'attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) a une valeur partagée avec le réseau %{target_0_label} (%{target_0_objectid})
+      detail_4_route_1_max_size: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_route_1_min_size: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_route_1_pattern: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_route_1_unique: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) a une valeur partagée avec la séquence d'arrêts %{target_0_label} (%{target_0_objectid})
+      detail_4_stoparea_1_max_size: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_stoparea_1_min_size: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_stoparea_1_pattern: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_stoparea_1_unique: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) a une valeur partagée avec l'arrêt %{target_0_label} (%{target_0_objectid})
+      detail_4_stoparea_2: L'arrêt physique %{source_label} (%{source_objectid}) n'a pas de parent
+      detail_4_timetable_1_max_size: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_timetable_1_min_size: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_timetable_1_pattern: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_timetable_1_unique: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) a une valeur partagée avec le calendrier %{target_0_label} (%{target_0_objectid})
+      detail_4_vehiclejourney_1_max_size: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_vehiclejourney_1_min_size: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_vehiclejourney_1_pattern: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_vehiclejourney_1_unique: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) a une valeur partagée avec la course %{target_0_label} (%{target_0_objectid})
+      detail_4_vehiclejourney_2: La course %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
+    severities:
+      error: Required
+      error_txt: Required
+      warning: Optional
+      warning_txt: Optional
+    statuses:
+      na: Unavailable
+      nok: Error
+      ok: Success
+  validation_results:
+    file:
+      detailed_errors_file_prefix: detail_of_errors.csv
+      summary_errors_file_prefix: summary_of_tests.csv
+      zip_name_prefix: validation_results
+    index:
+      column: Col
+      line: Li
+  validation_tasks:
+    actions:
+      destroy: Destroy
+      destroy_confirm: Are you sure you want destroy this validation?
+      new: New validation
+    compliance_check_task: Validate Report
+    index:
+      title: Validations
+      warning: 
+    new:
+      all: All
+      fields_gtfs_validation:
+        warning: Filter on stop areas validation only GTFS stops and transfers files, these may contain extra attributes
+      flash: Validation task on queue, refresh page to see progression
+      title: New validation
+    severities:
+      error: Error
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Unchecked
+      warning: Warning
+    show:
+      completed: "[ Completed ]"
+      failed: "[ Failed ]"
+      graph:
+        files:
+          error: Errors
+          ignored: Ignored
+          ok: Success
+          title_default: Validation result for %{extension} file
+          title_zip: Validation results for files in zip
+        lines:
+          access_points_stats: Access Points
+          connection_links_stats: Connection Links
+          journey_patterns_stats: Journey Patterns
+          lines_stats: Lines
+          objects_label: Objects count
+          routes_stats: Routes
+          stop_areas_stats: Stop Areas
+          time_tables_stats: Timetables
+          title: Validated objects
+          vehicle_journeys_stats: Vehicle Journeys
+      not_yet_started: On queue
+      pending: "[ In the treatment queue ]"
+      processing: "[ In progress... ]"
+      report: Report
+      table:
+        line:
+          access_points: 
+          connection_links: 
+          journey_patterns: 
+          name: 
+          not_saved: 
+          routes: 
+          save: 
+          save_error: 
+          saved: 
+          stop_areas: 
+          time_tables: 
+          vehicle_journeys: 
+      validated_file: Validated file
+    statuses:
+      aborted: Failed
+      canceled: Canceled
+      created: Pending ...
+      scheduled: Processing ...
+      terminated: Completed
+  validations:
+    actions:
+      destroy: Destroy
+      destroy_confirm: Are you sure you want destroy this validation?
+      new: New validation
+    compliance_check_task: Validate Report
+    index:
+      title: Validations
+      warning: 
+    new:
+      all: All
+      fields_gtfs_validation:
+        warning: Filter on stop areas validation only GTFS stops and transfers files, these may contain extra attributes
+      flash: Validation task on queue, refresh page to see progression
+      title: New validation
+    severities:
+      error: Error
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Unchecked
+      warning: Warning
+    show:
+      completed: "[ Completed ]"
+      details: 
+      export: Download test report
+      export_csv: CSV format
+      failed: "[ Failed ]"
+      graph:
+        files:
+          error: Errors
+          ignored: Ignored
+          ok: Success
+          title_default: Validation result for %{extension} file
+          title_zip: Validation results for files in zip
+        lines:
+          access_points_stats: Access Points
+          connection_links_stats: Connection Links
+          journey_patterns_stats: Journey Patterns
+          lines_stats: Lines
+          objects_label: Objects count
+          routes_stats: Routes
+          stop_areas_stats: Stop Areas
+          time_tables_stats: Timetables
+          title: Validated objects
+          vehicle_journeys_stats: Vehicle Journeys
+      parameters: 
+      pending: "[ In the treatment queue ]"
+      processing: "[ In progress... ]"
+      report: Report
+      summary: Rapport de conformité à la norme NEPTUNE
+      table:
+        line:
+          access_points: 
+          connection_links: 
+          journey_patterns: 
+          name: 
+          not_saved: 
+          routes: 
+          save: 
+          save_error: 
+          saved: 
+          stop_areas: 
+          time_tables: 
+          vehicle_journeys: 
+      title: Neptune Validation
+      validated_file: Validated file
+    statuses:
+      aborted: Failed
+      canceled: Canceled
+      created: Pending ...
+      scheduled: Processing ...
+      terminated: Completed
+  vehicle_journey_exports:
+    label:
+      b_false: 'No'
+      b_true: 'Yes'
+      first_departure_times: first departures
+      flexible_service: on demand (Y(es)|N(o)|empty for unknown)
+      footnotes_ids: footnotes
+      friday: Fr
+      ftn_columns: ref;number;line text
+      ftn_filename: notes
+      last_departure_times: last departures
+      mobility: wheel_chairs (Y(es)|N(o)|empty for unknown)
+      monday: Mo
+      number: number
+      published_journey_name: published name
+      saturday: Sa
+      scheduled_headway_intervals: frequency intervals
+      stop_id: stop id
+      stop_name: stop name
+      sunday: Su
+      thursday: Th
+      time_table_ids: timetables
+      tt_columns: code;name;tags;start;end;day types;periods;peculiar days;excluded days
+      tt_filename: time_tables
+      tuesday: Tu
+      vehicle_journey_id: vj id (empty for new vj)
+      vj_filename: vehicle_journeys_
+      vjf_filename: vehicle_journey_frequencies_
+      wednesday: We
+    new:
+      basename: vehicle_journeys
+      title: Export existing vehicle journey at stops
+  vehicle_journey_frequencies:
+    actions:
+      index: Vehicle journey frequency
+      show: Show frequency vehicle journey
+    vehicle_journeys_matrix:
+      line_routes: Line's routes
+  vehicle_journey_frequency:
+    require_at_least_one_frequency: You must specify at least one timeslot
+  vehicle_journey_imports:
+    errors:
+      exception: Invalid file, you must provide valid csv, xls or xlsx file
+      import_aborted: 'Errors prohibited this import from completing: '
+      invalid_vehicle_journey: 'Error column %{column}, vehicle journey is invalid : %{message}'
+      invalid_vehicle_journey_at_stop: 'Error column %{column} line %{line} : vehicle journey at stop invalid %{time}'
+      not_same_stop_points: 'Error column 1 : Not same stop points than in route %{route}'
+      one_stop_point_used: 'Error column %{column} : only one stop scheduled'
+    new:
+      export_vehicle_journeys: Export existing vehicle journey at stops
+      success: Import is a success
+      title: Import vehicle journey at stops
+      tooltip:
+        file: Select a CSV or Excel file
+    success:
+      created_jp_count: "%{count} journey patterns created"
+      created_vj_count: "%{count} vehicle journeys created"
+      deleted_vj_count: "%{count} vehicle journeys deleted"
+      updated_vj_count: "%{count} vehicle journeys updated"
+  vehicle_journeys:
+    actions:
+      destroy: Remove this vehicle journey
+      destroy_confirm: Are you sure you want destroy this vehicle journey?
+      edit: Edit this timed vehicle journey
+      edit_frequency: Edit this frequency vehicle journey
+      index: Vehicle time's board
+      new: Add a new timed vehicle journey
+      new_frequency: Add a new frequency vehicle journey
+      show: Show timed vehicle journeys
+    edit:
+      title: Update vehicle journey %{name} leaving from %{stop} at %{time}
+      title_stopless: Update vehicle journey %{name}
+    form:
+      arrival: Arrival
+      departure: Departure
+      set: Set
+      slide: Shift
+      slide_arrival: arrival time at first stop
+      slide_departure: departure time at first stop
+      slide_title: Shift all vehicle passing times
+      stop_title: Stop
+      submit_frequency: Create frequency vehicle journey
+      submit_frequency_edit: Edit frequency vehicle journey
+      submit_timed: Create vehicle journey
+      submit_timed_edit: Edit vehicle journey
+      time_tables: Associated calendars to vehicle journey
+      to: at
+      to_arrivals: Copy departures to arrivals
+      to_departures: Copy arrivals to departures
+    index:
+      advanced_search: Advanced Search
+      select_journey_patterns: Select journey pattern
+      select_time_tables: Enter a timetable
+      selection: Filter on
+      selection_all: All
+      time_range: Departure time threshold
+      title: Vehicle journeys on route %{route}
+      vehicle_journeys: Departure's times
+    new:
+      title: Add a new vehicle journey
+      title_frequency: Add a new frequency vehicle journey
+    show:
+      arrival: Arrival
+      bounding: From %{start} to %{end}
+      departure: Departure
+      journey_frequencies: Timeband
+      stop_title: Stop
+      time_tables: Calendars list
+      title: Vehicle Journey %{vehicle journey}
+      translation_form: Vehicle journey translations
+    sidebar:
+      timeless: Timeless vehicle journeys
+    time_filter:
+      time_range_filter: Filter
+    timeless:
+      title: Timeless vehicle journeys
+      vehicle_journeys: Vehicle journeys with times at stop
+      vehicles_list: Vehicle journeys list
+    vehicle_journey:
+      title: Vehicle journey leaving from %{stop} at %{time}
+      title_stopless: Vehicle journey %{name}
+    vehicle_journey_frequency:
+      title: Vehicle journey frequency leaving from %{stop} at %{time}
+      title_frequency: Vehicle journey frequency with %{interval}min leaving from %{stop} at %{time_first} to %{time_last}
+      title_stopless: Vehicle journey frequency %{name}
+    vehicle_journeys_matrix:
+      line_routes: Line's routes
+  vehicle_translations:
+    failure: Fail when creating vehicle journeys by translation
+    success: "%{count} vehicle journeys created by translation"
+    translate_form:
+      first_stop_arrival_time: Arrival time at first stop '%{stop_name}'
+      first_stop_departure_time: Departure time at first stop '%{stop_name}'
+      multiple_cloning_form: Repeat cloning based on a time interval
+      set: Set
+      to: at (hh:mm)
+  waybacks:
+    label:
+      backward: backward
+      straight_forward: straight forward
+  will_paginate:
+    next_label: Next &#8594;
+    page_entries_info:
+      list: Paginated list
+      multi_page: "%{model} %{from} - %{to} of %{count} "
+      multi_page_html: "%{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> of <b>%{count}</b> "
+      search: 'Results :'
+      single_page:
+        one: 1 %{model} shown
+        other: "%{count} %{model} shown"
+        zero: No item found
+      single_page_html:
+        one: "<b>1</b> %{model} shown"
+        other: "<b>%{count}</b> %{model} shown"
+        zero: No item found
+    page_gap: "&hellip;"
+    previous_label: "&#8592; Previous"
+  yesterday: 
