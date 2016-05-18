@@ -1406,11 +1406,11 @@ en:
         objectid: "[prefix]:AccessPoint:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         projection_xy: x,y in secondary referential, dot for decimal separator
       company:
-        name: 
+        name: Name
         objectid: "[prefix]:Company:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         registration_number: 'only alphanumerical or underscore characters '
       connection_link:
-        link_distance: 
+        link_distance: Link distance
         objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
       export_task:
         dates:
@@ -1424,7 +1424,7 @@ en:
         start_date: reduce import to vehicle journeys running from this date
         time_zone: according to TZ  encoding (see http://en.wikipedia.org/wiki/Tz_database)
       group_of_line:
-        name: 
+        name: Name
         objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         registration_number: Positif integer.
       gtfs:

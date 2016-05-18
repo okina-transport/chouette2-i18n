@@ -26,7 +26,7 @@ fr:
       title: Modifier l'accès %{access_point}
     index:
       name_or_country_code: Nom
-      title: 
+      title: Points d'accès
     new:
       title: Ajouter un accès
     show:
@@ -232,7 +232,7 @@ fr:
         4-Route-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
         4-StopArea-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
         4-StopArea-2: Appartenance des arrêts physiques à un arrêt commercial
-        4-StopArea-3: 
+        4-StopArea-3: Cohérence entre les noms de communes and leur code INSEE
         4-Timetable-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
         4-VehicleJourney-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
         4-VehicleJourney-2: Le mode de transport doit être dans une liste pré-définie
@@ -253,7 +253,7 @@ fr:
         violation_count_txt: Nombre d'erreurs
       compliance_check_task:
         name: Nom de la validation
-        object_id_prefix: 
+        object_id_prefix: Neptune Id prefix
         reference_ids: Identifiants du sous ensemble
         references_type: Sous ensemble
         rule_parameter_set_id: Jeu de paramètres pour validation
@@ -275,18 +275,18 @@ fr:
         start_date_greater_than: La date de début doit être postérieure ou égale à %{tt_st_date}.
         status: Status
       file_validation:
-        created_at: 
-        file_name: 
-        projection_reference: 
-        reference_ids: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
-        status: 
+        created_at: Exécuté le
+        file_name: Donnée testé
+        projection_reference: Système de référence spatial
+        reference_ids: Données associées
+        references_type: Type de données associées
+        resources: Fichier à valider
+        rule_parameter_set_id: Règle du jeu de paramètres
+        status: Statut
       file_validation_log_message:
-        created_at: 
-        full_message: 
-        position: 
+        created_at: Date
+        full_message: Message
+        position: N.
       import_task:
         ignore_end_chars: ignorer les n derniers caractères
         ignore_last_word: ignorer le dernier mot
@@ -445,7 +445,7 @@ fr:
         4-Route-1: Vérification de contraintes sur les attributs des séquences d'arrêt
         4-StopArea-1: Vérification de contraintes sur les attributs des arrêts
         4-StopArea-2: Vérification de l'existance d'un arrêt commercial pour les arrêts physiques
-        4-StopArea-3: 
+        4-StopArea-3: Vérification de la cohérence entre les noms de communes et leur code INSEE
         4-Timetable-1: Vérification de contraintes sur les attributs des calendiers
         4-VehicleJourney-1: Vérification de contraintes sur les attributs des courses
         4-VehicleJourney-2: Vérification des modes de transport des courses
@@ -501,7 +501,9 @@ fr:
         one: export
         other: exports
         zero: export
-      file_validation: 
+      file_validation:
+        one: Validation
+        other: Validation
       gtfs_export:
         one: export GTFS
         other: exports
@@ -559,7 +561,7 @@ fr:
         comment: Commentaire
         creation_time: Créé le
         creator_id: Créé par
-        creatorid: 
+        creatorid: Créé le
         default_duration: moyenne
         frequent_traveller_duration: pour un habitué
         lift_availability: Ascenseur
@@ -581,7 +583,7 @@ fr:
         country_code: Code INSEE
         creation_time: Créé le
         creator_id: Créé par
-        creatorid: 
+        creatorid: Créé par
         latitude: Latitude
         lift_availability: Ascenseur
         long_lat_type: Projection
@@ -829,7 +831,7 @@ fr:
         country_code: Code INSEE
         creation_time: Créé le
         creator_id: Créé par
-        creatorid: 
+        creatorid: Créé par
         fare_code: Zone tarifaire
         latitude: Latitude
         lift_availability: Ascenseur
@@ -932,7 +934,7 @@ fr:
         unspecified_mrs: Non spécifié
         vehicle_journey_at_stop_ids: Liste des horaires
         vehicle_type_identifier: Type d'identifiant du véhicule
-        vehicletypeidentifier: 
+        vehicletypeidentifier: Identifiant de type de véhicule
     copy: Copie de %{name}
     errors:
       models:
@@ -1164,7 +1166,7 @@ fr:
     import: Import
     index:
       title: Validation
-      warning: 
+      warning: Avertissement
     ok_count:
       one: un test réussi
       other: "%{count} tests réussis"
@@ -1322,7 +1324,7 @@ fr:
       gtfs: General Transit Feed Specification défini par Google
       hub: Format spécifique Transdev
       kml: Tracés de lignes, séquences d'arrêts, ...  en 'Keyhole Markup Language'
-      neptune: 
+      neptune: Neptune
       netex: Expérimental
     for_alighting:
       forbidden: Descente interdite
@@ -1356,7 +1358,7 @@ fr:
       new: Nouvel export
     index:
       title: Exports
-      warning: 
+      warning: Avertissement
     new:
       all: Toutes
       flash: La demande d'export est mise en file d'attente, veuillez rafraichir régulièrement la page pour en suivre la progression
@@ -1379,12 +1381,12 @@ fr:
       terminated: Achevé
   'false': non
   file_validation_log_messages:
-    import: 
+    import: Import Report
     messages:
-      ONE: 
+      ONE: 'Category 1 : Syntaxe'
       TooMuchDetails: "( %{0} erreurs / warnings supplémentaires )"
       undefined: "%{key} non défini"
-    rule_parameter_set: 
+    rule_parameter_set: Règle du jeu de paramètres
     severities:
       error: Erreur
       fatal: Fatal
@@ -1418,11 +1420,11 @@ fr:
         objectid: "[prefixe]:AccessPoint:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
       company:
-        name: 
+        name: Nom
         objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
       connection_link:
-        link_distance: 
+        link_distance: Link distance
         objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       export_task:
         dates:
@@ -1436,48 +1438,48 @@ fr:
         start_date: limite l'export aux courses circulant à partir de cette date
         time_zone: selon le codage TZ  (http://fr.wikipedia.org/wiki/Tz_database)
       group_of_line:
-        name: 
+        name: Nom
         objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         registration_number: Entier positif.
       gtfs:
         company:
-          name: 
+          name: Nom
           objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         connection_link:
           link_distance: 
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
-          name: 
+          name: Nom
           objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         journey_pattern:
-          name: 
+          name: Nom
           objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         line:
-          name: 
-          number: 
+          name: Nom
+          number: Nombre
           objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         network:
-          name: 
+          name: Nom
           objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         route:
           objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         stop_area:
-          city_name: 
-          comment: 
+          city_name: Ville
+          comment: Commentaire
           coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
-          name: 
+          name: Nom
           nearest_topic_name: 
           objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
-          zip_code: 
+          zip_code: Code postal
         time_table:
-          comment: 
+          comment: Commentaire
           objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         vehicle_journey:
           objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
@@ -1530,100 +1532,100 @@ fr:
         max_distance_for_connection_link: Distance maximale entre deux arrêts pour créer les correspondances (en mètre)
         references_type: Le filtre sur arrêts importe uniquement les fichiers GTFS stops et transfers gtfs, ceux-ci pouvant contenir des attributs supplémentaires
       journey_pattern:
-        name: 
+        name: Nom
         objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         registration_number: Entier positif.
       line:
-        name: 
-        number: 
+        name: Nom
+        number: Nombre
         objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
       neptune:
         company:
-          name: 
+          name: Nom
           objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         connection_link:
           link_distance: 
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
-          name: 
+          name: Nom
           objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         journey_pattern:
-          name: 
+          name: Nom
           objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         line:
-          name: 
-          number: 
+          name: Nom
+          number: Nombre
           objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         network:
-          name: 
+          name: Nom
           objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         route:
           objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         stop_area:
-          city_name: 
-          comment: 
+          city_name: Ville
+          comment: Commentaire
           coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
-          name: 
+          name: Nom
           nearest_topic_name: 
           objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
-          zip_code: 
+          zip_code: Code postal
         time_table:
-          comment: 
+          comment: Commentaire
           objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         vehicle_journey:
           objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       netex:
         company:
-          name: 
+          name: Nom
           objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         connection_link:
           link_distance: 
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
-          name: 
+          name: Nom
           objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         journey_pattern:
-          name: 
+          name: Nom
           objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         line:
-          name: 
-          number: 
+          name: Nom
+          number: Nombre
           objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         network:
-          name: 
+          name: Nom
           objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         route:
           objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         stop_area:
-          city_name: 
-          comment: 
+          city_name: Ville
+          comment: Commentaire
           coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
-          name: 
+          name: Nom
           nearest_topic_name: 
           objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
-          zip_code: 
+          zip_code: Code postal
         time_table:
-          comment: 
+          comment: Commentaire
           objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         vehicle_journey:
           objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       network:
-        name: 
+        name: Nom
         objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
       referential:
@@ -1634,17 +1636,17 @@ fr:
       route:
         objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       stop_area:
-        city_name: 
-        comment: 
+        city_name: Ville
+        comment: Commentaire
         coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
-        name: 
+        name: Nom
         nearest_topic_name: 
         objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
         registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
-        zip_code: 
+        zip_code: Code postal
       time_table:
-        comment: 
+        comment: Commentaire
         objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       validation:
         ignore_end_chars: Ignorer les n derniers caractères du nom de l'arrêt pour détecter l'homonymie
@@ -1720,7 +1722,7 @@ fr:
     compliance_check_task: Validation
     index:
       title: Imports
-      warning: 
+      warning: Avertissement
     severities:
       error: Erreur
       fatal: Fatal
@@ -2572,7 +2574,7 @@ fr:
     compliance_check_task: Validation
     index:
       title: Validations
-      warning: 
+      warning: Avertissement
     new:
       all: Tout
       fields_gtfs_validation:
@@ -2640,7 +2642,7 @@ fr:
     compliance_check_task: Validation
     index:
       title: Validations
-      warning: 
+      warning: Avertissement
     new:
       all: Tout
       fields_gtfs_validation:
