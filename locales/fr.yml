@@ -519,7 +519,7 @@ fr:
         other: imports
         zero: import
       neptune_export:
-        one: export neptune
+        one: export Neptune
         other: exports
         zero: export
       neptune_import:
@@ -1377,7 +1377,7 @@ fr:
       scheduled: En cours...
       started: En file d'attente...
       terminated: Achevé
-  'false': Non
+  'false': non
   file_validation_log_messages:
     import: 
     messages:
@@ -1437,7 +1437,7 @@ fr:
         time_zone: selon le codage TZ  (http://fr.wikipedia.org/wiki/Tz_database)
       group_of_line:
         name: 
-        objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         registration_number: Entier positif.
       gtfs:
         company:
@@ -1449,11 +1449,11 @@ fr:
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
           name: 
-          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         journey_pattern:
           name: 
-          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         line:
           name: 
@@ -1462,8 +1462,8 @@ fr:
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         network:
           name: 
-          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
-          registration_number: 'caractères autorisés : alphanumériques et ''souligné'''
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         route:
           objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         stop_area:
@@ -1478,9 +1478,9 @@ fr:
           zip_code: 
         time_table:
           comment: 
-          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         vehicle_journey:
-          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       hub:
         company:
           name: maximum 75 caractères
@@ -1491,11 +1491,11 @@ fr:
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
           name: maximum 75 caractères
-          objectid: "[prefixe]:GroupOfLine:[clé_unique] caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 6."
+          objectid: "[prefixe]:GroupOfLine:[clé_unique] caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 6."
           registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
         journey_pattern:
           name: Longueur maximale = 75.
-          objectid: "[prefixe]:JourneyPattern:[clé_unique] caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 30."
+          objectid: "[prefixe]:JourneyPattern:[clé_unique] caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 30."
           registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
         line:
           name: maximum 75 caractères
@@ -1504,7 +1504,7 @@ fr:
           registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
         network:
           name: maximum 75 caractères
-          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 3."
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 3."
           registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
         route:
           objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 8."
@@ -1520,9 +1520,9 @@ fr:
           zip_code: Entier positif de 8 chiffres. Obligatoire pour les arrêts physiques.
         time_table:
           comment: Longueur maximale = 75.
-          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 6."
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 6."
         vehicle_journey:
-          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 8."
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 8."
       import_task:
         ignore_end_chars: Ignorer les n derniers caractères du nom de l'arrêt pour détecter l'homonymie
         ignore_last_word: Ignorer le dernier mot pour détecter l'homonymie des noms d'arrêt (inapplicable quand le nom ne comporte qu'un mot)
@@ -1531,7 +1531,7 @@ fr:
         references_type: Le filtre sur arrêts importe uniquement les fichiers GTFS stops et transfers gtfs, ceux-ci pouvant contenir des attributs supplémentaires
       journey_pattern:
         name: 
-        objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         registration_number: Entier positif.
       line:
         name: 
@@ -1548,11 +1548,11 @@ fr:
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
           name: 
-          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         journey_pattern:
           name: 
-          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         line:
           name: 
@@ -1561,8 +1561,8 @@ fr:
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         network:
           name: 
-          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
-          registration_number: 'caractères autorisés : alphanumériques et ''souligné'''
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         route:
           objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         stop_area:
@@ -1577,9 +1577,9 @@ fr:
           zip_code: 
         time_table:
           comment: 
-          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         vehicle_journey:
-          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       netex:
         company:
           name: 
@@ -1590,11 +1590,11 @@ fr:
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
           name: 
-          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         journey_pattern:
           name: 
-          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: Entier positif.
         line:
           name: 
@@ -1603,8 +1603,8 @@ fr:
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         network:
           name: 
-          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
-          registration_number: 'caractères autorisés : alphanumériques et ''souligné'''
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         route:
           objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         stop_area:
@@ -1619,13 +1619,13 @@ fr:
           zip_code: 
         time_table:
           comment: 
-          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         vehicle_journey:
-          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       network:
         name: 
-        objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
-        registration_number: 'caractères autorisés : alphanumériques et ''souligné'''
+        objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
       referential:
         lower_corner: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
         prefix: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
@@ -1645,7 +1645,7 @@ fr:
         zip_code: 
       time_table:
         comment: 
-        objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       validation:
         ignore_end_chars: Ignorer les n derniers caractères du nom de l'arrêt pour détecter l'homonymie
         ignore_last_word: Ignorer le dernier mot pour détecter l'homonymie des noms d'arrêt (inapplicable quand le nom ne comporte qu'un mot)
@@ -1657,7 +1657,7 @@ fr:
         max_distance_for_commercial: Distance maximale entre deux arrêts homonymes pour créer les zones d'arrêt (en mètre)
         max_distance_for_connection_link: Distance maximale entre deux arrêts pour créer les correspondances (en mètre)
       vehicle_journey:
-        objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
     'true': Oui
     update: Modifier %{model}
     validate: Lancer la validation
@@ -2357,7 +2357,7 @@ fr:
       walk: Marche à pied
       waterborne: Bac
     name: Mode de transport
-  'true': Oui
+  'true': oui
   unknown: Non précisé
   unselect_all: Tout décocher
   users:
