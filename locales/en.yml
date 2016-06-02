@@ -568,7 +568,7 @@ en:
         mobility_restricted_traveller_duration: Mobility reduced passenger
         name: Name
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         occasional_traveller_duration: Occasional passenger
         stairs_availability: Escalator
         stop_area: Stop Area
@@ -589,7 +589,7 @@ en:
         mobility_restricted_suitability: Mobility reduced passenger suitable
         name: Name
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         openning_time: Opening time
         projection: Projection type
         projection_x: x-position
@@ -610,7 +610,7 @@ en:
         fax: Fax number
         name: Name
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         operating_department_name: Department
         organizational_unit: Unit
         phone: Phone number
@@ -635,7 +635,7 @@ en:
         mobility_restricted_traveller_duration: Mobility reduced passenger
         name: Name
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         occasional_traveller_duration: Occasional passenger
         stairs_availability: Escalator
         undefined: not yet set
@@ -649,7 +649,7 @@ en:
         line_count: Number of lines
         name: Name
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         registration_number: Registration number
       import:
         created_at: Created on
@@ -675,7 +675,7 @@ en:
         creator_id: Created by
         name: Name
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         published_name: Published name
         registration_number: Registration number
         route: Route
@@ -704,7 +704,7 @@ en:
         number_of_null_mrs_vj: Number of unspecified accessible vehicle journeys
         number_of_vj: Total number of vehicle journeys
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         on_demaond_fs: On demond service
         published_name: Published name
         registration_number: Registration number
@@ -722,7 +722,7 @@ en:
         description: Description
         name: Name
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         registration_number: Registration number
         source_identifier: Source identifier
         source_name: Source name
@@ -779,7 +779,7 @@ en:
         no_journey_pattern: No journey pattern
         number: Number
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         opposite_route: Reversed route
         published_name: Published name
         vehicle_journeys: Vehicle journeys
@@ -839,7 +839,7 @@ en:
         name: Name
         nearest_topic_name: Nearest point of interest
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         parent: Parent
         projection: Projection type
         projection_x: x-position
@@ -871,7 +871,7 @@ en:
         monday: Monday
         none: none
         object_version: Version
-        objectid: Neptune identifier
+        objectid: Identifier
         period_end: to
         period_start: From
         periods: Application periods
@@ -1733,7 +1733,7 @@ en:
   journey_patterns:
     actions:
       destroy: Remove this journey pattern
-      destroy_confirm: A"re you sure you want destroy this journey pattern ?"
+      destroy_confirm: Are you sure you want destroy this journey pattern ?
       edit: Edit this journey pattern
       edit_route_sections: Edit Shape
       new: Add a new journey_pattern
@@ -1755,6 +1755,7 @@ en:
       title: Journey Pattern %{journey_pattern}
   layouts:
     back_to_dashboard: Back to Dashboard
+    day: Day
     flash_messages:
       alert: Alert
       error: Error
@@ -1784,6 +1785,8 @@ en:
       updated_at: Updated at
       user_name: User
     home: Home
+    hour: Hour
+    minute: Minute
     navbar:
       referential_datas: Datas
       return_to_dashboard: Return to Dashboard

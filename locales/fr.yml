@@ -570,7 +570,7 @@ fr:
         mobility_restricted_traveller_duration: pour un voyageur à mobilité réduite
         name: Nom
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         occasional_traveller_duration: pour un voyageur occasionnel
         stairs_availability: Escalator
         stop_area: Arrêt
@@ -591,7 +591,7 @@ fr:
         mobility_restricted_suitability: Accès pour voyageur à mobilité réduite
         name: Nom
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         openning_time: Horaire d'ouverture
         projection: Projection
         projection_x: Position X
@@ -612,7 +612,7 @@ fr:
         fax: Numéro de fax
         name: Nom
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         operating_department_name: Nom du département dans la société
         organizational_unit: Nom d'unité dans la société
         phone: Numéro de téléphone
@@ -637,7 +637,7 @@ fr:
         mobility_restricted_traveller_duration: pour un voyageur à mobilité réduite
         name: Nom
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         occasional_traveller_duration: pour un voyageur occasionnel
         stairs_availability: Escalator
         undefined: non défini
@@ -651,7 +651,7 @@ fr:
         line_count: Nombre de lignes
         name: Nom
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         registration_number: Numéro d'enregistrement
       import:
         created_at: Créé le
@@ -677,7 +677,7 @@ fr:
         creator_id: Créé par
         name: Nom
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         published_name: Nom public
         registration_number: Numéro d'enregistrement
         route: Séquence d'arrêts
@@ -706,7 +706,7 @@ fr:
         number_of_null_mrs_vj: Nombre de courses sans spécification d'accessibilité
         number_of_vj: Nombre total de courses
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         on_demaond_fs: Service à la demande
         published_name: Nom public
         registration_number: Numéro d'enregistrement
@@ -781,7 +781,7 @@ fr:
         no_journey_pattern: Pas de mission
         number: Indice
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         opposite_route: Séquence d'arrêts associée en sens opposé
         published_name: Nom public
         vehicle_journeys: Courses
@@ -841,7 +841,7 @@ fr:
         name: Nom
         nearest_topic_name: Point d'intérêt le plus proche
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         parent: Parent
         projection: Projection
         projection_x: Position X
@@ -873,7 +873,7 @@ fr:
         monday: Lundi
         none: aucun
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         period_end: au
         period_start: Du
         periods: Périodes d'application
@@ -919,7 +919,7 @@ fr:
         not_accessible: Non accessible
         number: Numéro
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         on_demand_fs: Service à la demande
         published_journey_identifier: Identifiant public
         published_journey_name: Nom public
@@ -1473,7 +1473,7 @@ fr:
           comment: Commentaire
           coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
           name: Nom
-          nearest_topic_name: 
+          nearest_topic_name: Point d'intérêt le plus proche
           objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
@@ -1572,7 +1572,7 @@ fr:
           comment: Commentaire
           coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
           name: Nom
-          nearest_topic_name: 
+          nearest_topic_name: Point d'intérêt le plus proche
           objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
@@ -1614,7 +1614,7 @@ fr:
           comment: Commentaire
           coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
           name: Nom
-          nearest_topic_name: 
+          nearest_topic_name: Point d'intérêt le plus proche
           objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
@@ -1640,7 +1640,7 @@ fr:
         comment: Commentaire
         coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
         name: Nom
-        nearest_topic_name: 
+        nearest_topic_name: Point d'intérêt le plus proche
         objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
         registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
@@ -1749,7 +1749,7 @@ fr:
       destroy: Supprimer cette mission
       destroy_confirm: Etes vous sûr de vouloir détruire cette mission ?
       edit: Modifier cette mission
-      edit_route_sections: 
+      edit_route_sections: Modifier le tracé
       new: Ajouter une mission
     edit:
       title: Modifier la mission %{journey_pattern}
@@ -1769,6 +1769,7 @@ fr:
       title: Mission %{journey_pattern}
   layouts:
     back_to_dashboard: Retour au Tableau de Bord
+    day: Jour
     flash_messages:
       alert: Alerte
       error: Erreur
@@ -1798,6 +1799,8 @@ fr:
       updated_at: Mise à jour le
       user_name: Auteur
     home: Accueil
+    hour: Heure
+    minute: Minute
     navbar:
       referential_datas: Données
       return_to_dashboard: Retour au Tableau de Bord
