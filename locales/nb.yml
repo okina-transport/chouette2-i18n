@@ -2768,11 +2768,17 @@ nb:
       destroy_confirm: 
       edit: 
       new: 
+      role_edit: 
     edit:
       title: 
     index:
       title: 
     new:
+      title: 
+    role:
+      admin: 
+      read: 
+      read_write: 
       title: 
     show:
       title: 

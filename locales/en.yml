@@ -2893,12 +2893,18 @@ en:
       destroy_confirm: Are you sure you want destroy this user?
       edit: Edit this user
       new: Add a new user
+      role_edit: 
     edit:
       title: Update user %{user}
     index:
       title: Users
     new:
       title: Add a new user
+    role:
+      admin: Administrator
+      read: Read only
+      read_write: Read and write
+      title: 
     show:
       title: User %{user}
   validation_result:

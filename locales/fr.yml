@@ -2934,12 +2934,18 @@ fr:
       destroy_confirm: Etes vous sûr de supprimer cet utilisateur ?
       edit: Modifier cet utilisateur
       new: Ajouter un utilisateur
+      role_edit: Modifier le rôle de l'utilisateur
     edit:
       title: Modifier l'utilisateur %{user}
     index:
       title: Utilisateurs
     new:
       title: Ajouter un utilisateur
+    role:
+      admin: Administrateur
+      read: Lecture seule
+      read_write: Lecture et écriture
+      title: Gestion du rôle utilisateur
     show:
       title: Utilisateur %{user}
   validation_result:
