@@ -940,6 +940,13 @@ en:
     copy: Copy of %{name}
     errors:
       models:
+        concerns:
+          objectid:
+            invalid_objectid:
+              gtfs: invalid syntax. All characters are allowed except space.
+              hub: invalid syntax. All characters are allowed except space.
+              neptune: invalid syntax. Only alphanumerics characters, dashes and underscores are allowed.
+              netex: invalid syntax. Only alphanumerics characters, dashes and underscores are allowed.
         journey_frequency:
           end_must_be_before_timeband: the end date must be less than or equal to the time bands
           end_must_be_different_from_first: the end date must be different from first date
