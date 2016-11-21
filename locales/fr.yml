@@ -725,7 +725,7 @@ fr:
         description: Description
         name: Nom
         object_version: Version
-        objectid: Identifiant Neptune
+        objectid: Identifiant Métier
         registration_number: Numéro d'enregistrement
         source_identifier: Identifiant du système origine
         source_name: Nom du système origine
