@@ -1,202 +1,1309 @@
 fr:
+  access_links:
+    actions:
+      destroy: Supprimer ce lien
+      destroy_confirm: Etes vous sûr de supprimer ce lien ?
+      edit: Modifier ce lien
+      new: Ajouter un lien
+    edit:
+      title_access_point_to_stop_area: Modifier un lien depuis l'accès %{access_point} vers l'arrêt %{stop_area}
+      title_stop_area_to_access_point: Modifier un lien depuis l'arrêt %{stop_area} vers l'accès %{access_point}
+    new:
+      title_access_point_to_stop_area: Créer un lien depuis l'accès %{access_point} vers l'arrêt %{stop_area}
+      title_stop_area_to_access_point: Créer un lien depuis l'arrêt %{stop_area} vers l'accès %{access_point}
+    show:
+      durations: 'Durées (hh mm ss) :'
+      title: lien d'accès %{access_link}
+  access_points:
+    access_point:
+      no_position: Pas de position
+    actions:
+      destroy: Supprimer cet accès
+      destroy_confirm: Etes vous sûr de supprimer cet accès ?
+      edit: Modifier cet accès
+      new: Ajouter un accès
+    edit:
+      title: Modifier l'accès %{access_point}
+    index:
+      name_or_country_code: Nom
+      title: Points d'accès
+    new:
+      title: Ajouter un accès
+    show:
+      access_link_legend_1: Les flêches grises représentent des liens non définis
+      access_link_legend_2: cliquer sur les flêches pour créer/éditer un lien
+      detail_access_links: Liens Arrêts - Accès détaillés
+      generic_access_links: Liens Arrêts - Accès globaux
+      geographic_data: Données géographiques
+      no_geographic_data: Aucune
+      title: Accès %{access_point}
+  access_types:
+    label:
+      in: Entrée
+      in_out: Entrée/Sortie
+      out: Sortie
+  actions:
+    add: Ajouter
+    destroy: Supprimer
+    edit: Modifier
+    search: Chercher
+  activemodel:
+    attributes:
+      clean_up:
+        expected_date: 'Date limite : '
+        keep_companies: conserver les transporteurs
+        keep_group_of_lines: conserver les groupes de lignes
+        keep_lines: conserver les lignes
+        keep_networks: conserver les réseaux
+        keep_stops: conserver les arrêts
+      compliance_check:
+        created_at: Exécuté le
+        file_name: Jeu de données
+        reference_ids: Données incluses
+        references_type: Type de données incluses
+        resources: Fichier à valider
+        rule_parameter_set_id: Jeu de paramètres
+        status: Status
+      compliance_check_log_message:
+        created_at: Date
+        full_message: Message
+        position: N.
+      compliance_check_result:
+        1-GTFS-CSV-1: Validité de l'archive et des fichiers
+        1-GTFS-CSV-2: Validité des règles de syntaxe CSV en UTF-8 sur la première ligne
+        1-GTFS-CSV-3: Présence d'une ligne d'en-tête
+        1-GTFS-CSV-4: Définition de l'en-tête
+        1-GTFS-CSV-5: Syntaxe CSV en UTF-8 sur les lignes de données
+        1-GTFS-CSV-6: Absence de balises HTML
+        1-GTFS-CSV-7: Absence d'espaces superflus
+        1-GTFS-Calendar-1: Présence d'au moins un jour d'application
+        1-GTFS-Calendar-2: Période end_date > start_date
+        1-GTFS-Common-1: Présence des fichiers obligatoires
+        1-GTFS-Common-10: Présence de agency_id dans agency.txt et routes.txt
+        1-GTFS-Common-11: Existence de colonnes inconnues
+        1-GTFS-Common-12: Contrôle des données obligatoires
+        1-GTFS-Common-13: Champ agency_id renseigné si plusieurs agences
+        1-GTFS-Common-14: Existence d'une valeur de agency_id
+        1-GTFS-Common-15: Présence combinée arrival/departure_time et min_transfer_time si type_transfer=2
+        1-GTFS-Common-16: Typage des données
+        1-GTFS-Common-2: Présence de calendar ou calendar_dates
+        1-GTFS-Common-3: Contrôle des fichiers optionnels
+        1-GTFS-Common-4: Présence de fichiers non traités
+        1-GTFS-Common-5: Présence d'un contenu dans les fichiers obligatoires
+        1-GTFS-Common-6: Présence d'un contenu dans les fichiers calendar ou calendar_dates
+        1-GTFS-Common-7: Présence d'un contenu dans les fichiers optionnels
+        1-GTFS-Common-8: Unicité des identifiants
+        1-GTFS-Common-9: Colonnes obligatoires
+        1-GTFS-Route-1: Présence d'au moins une des 2 colonnes route_short_name ou route_long_name
+        1-GTFS-Route-2: Donnée renseignée pour route_short_name ou sinon route_long_name
+        1-NEPTUNE-XML-1: Conformité à la syntaxe XML suivant les recommandations du W3C.
+        1-NEPTUNE-XML-2: Conformité au schéma défini par la XSD du profil TRIDENT/NEPTUNE.
+        2-GTFS-Common-1: Références externes
+        2-GTFS-Common-2: Utilisation des références d'objet
+        2-GTFS-Common-3: Unicité de couples de valeurs
+        2-GTFS-Common-4: Non redondance de valeurs
+        2-GTFS-Route-1: Différence entre route_short_name et route_long_name
+        2-GTFS-Route-2: Non inclusion de route_short_name dans route_long_name
+        2-GTFS-Route-3: Contraste des couleurs
+        2-GTFS-Route-4: Absence d'une route inversant les valeurs route_short_name et route_long_name d'une autre
+        2-GTFS-Stop-1: Type du parent_station
+        2-GTFS-Stop-2: Colonne location_type non vide
+        2-GTFS-Stop-3: stop_name et stop_desc non confondus
+        2-GTFS-Stop-4: Absence de station dans des stations
+        2-NEPTUNE-AccessLink-1: Référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+        2-NEPTUNE-AccessLink-2: Référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+        2-NEPTUNE-AccessPoint-1: Référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-2: Référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-3: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-4: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> de type 'in'.
+        2-NEPTUNE-AccessPoint-5: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> sur les accès de type 'out'.
+        2-NEPTUNE-AccessPoint-6: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>  sur les accès de type 'inout'.
+        2-NEPTUNE-AccessPoint-7: Modèle de projection de référence utilisé.
+        2-NEPTUNE-AreaCentroid-1: Référence à des arrêts <StopArea> dans la classe d’objets <AreaCentroid>.
+        2-NEPTUNE-AreaCentroid-2: Modèle de projection de référence utilisé.
+        2-NEPTUNE-Common-1: Unicité des éléments objectId des différents objets d'un lot de fichiers Neptune.
+        2-NEPTUNE-Common-2: Unicité des éléments regitrationNumber des différents objets d'un lot de fichiers Neptune.
+        2-NEPTUNE-ConnectionLink-1: Référence aux arrêts <StopArea> définissant des tronçons de correspondance <ConnectionLink>.
+        2-NEPTUNE-Facility-1: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-2: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-3: Existence de la ligne <Line> référencée par l'équipement <Facility>.
+        2-NEPTUNE-Facility-4: Existence de la correspondance <ConnectionLink> référencée par l'équipement <Facility>.
+        2-NEPTUNE-Facility-5: Existence de l'arrêt <StopPoint> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-6: Modèle de projection de référence utilisé.
+        2-NEPTUNE-GroupOfLine-1: Référence à des lignes <Line> dans groupe de lignes <GroupOfLine>.
+        2-NEPTUNE-ITL-1: Référence à des arrêts <StopArea> dans les arrêts <StopArea> de type ITL.
+        2-NEPTUNE-ITL-2: Référence à des arrêts <StopArea> de type ITL dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-3: Référence à des arrêts <StopArea> dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-4: Type de référence à des arrêts <StopArea> type ITL dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-5: Référence à la ligne <Line> dans la classe d’objets <ITL>.
+        2-NEPTUNE-JourneyPattern-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la mission <JourneyPattern>.
+        2-NEPTUNE-JourneyPattern-2: Existence des arrêts <StopPoint> référencés par la mission <JourneyPattern>.
+        2-NEPTUNE-JourneyPattern-3: Existence de la ligne <Line> référencée par la mission <JourneyPattern>.
+        2-NEPTUNE-Line-1: Référence au réseau dans l'objet ligne <Line>.
+        2-NEPTUNE-Line-2: Référence à un arrêt <StopArea> comme terminus de ligne <Line>.
+        2-NEPTUNE-Line-3: Référence à un arrêt <StopArea> de type BoardingPosition, Quay ou CommercialStopPoint comme terminus de ligne <Line>.
+        2-NEPTUNE-Line-4: Référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+        2-NEPTUNE-Line-5: Référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+        2-NEPTUNE-Line-6: Présence d'au moins une valeur parmi <name>,<number> ou <publishedName> dans l'objet ligne <Line>.
+        2-NEPTUNE-Network-1: Référence à des lignes <Line> dans version du réseau <PTNetwork>.
+        2-NEPTUNE-Network-2: Valeur autorisée pour le type de source <SourceType> dans version du réseau <PTNetwork>.
+        2-NEPTUNE-PtLink-1: Existence des  arrêts <StopPoint> référencés par les  tronçons commerciaux <PTLink>.
+        2-NEPTUNE-Route-1: Existence des missions <JourneyPattern> référencées par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-10: Référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-11: Sens de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-12: Cohérence des terminus de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-2: Existence des tronçons commerciaux <PtLink> référencés par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-3: Existence de la séquence opposée <ChouetteRoute> référencée par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-4: Référence à un tronçon commercial <PtLink> dans une séquence d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-5: Tous les points d'arrêts sur parcours sont rattachés à une séquence d'arrêts <ChouetteRoute> au départ d'un tronçon commercial <PtLink> et/ou à l'arrivée d'un autre tronçon commercial <PtLink> de la même séquence d'arrêts.
+        2-NEPTUNE-Route-6: Ordre des points d'arrêts sur parcours <StopPoint> dans le chainage des tronçons <PtLink> d'une séquence d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-7: Référence mutuelle des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-8: Cohérence des références aux points d'arrêt des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-9: Utilité des points d'arrêts sur parcours des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-StopArea-1: Référence à des arrêts <StopArea> et/ou à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea>.
+        2-NEPTUNE-StopArea-2: Référence à des arrêts <StopArea> dans les arrêts <StopArea> de type StopPlace.
+        2-NEPTUNE-StopArea-3: Référence à des arrêts <StopArea> dans les arrêts <StopArea> de type CommercialStopPoint.
+        2-NEPTUNE-StopArea-4: Référence à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea> de type BoardingPosition ou Quay.
+        2-NEPTUNE-StopArea-5: Référence à une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+        2-NEPTUNE-StopArea-6: Référence réciproque d'une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+        2-NEPTUNE-StopPoint-1: Existence de la ligne <Line> référencée par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-2: Existence du réseau <PTNetwork> référence par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-3: Existence de l'arrêt   <StopArea> référencé par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-4: Modèle de projection de référence utilisé.
+        2-NEPTUNE-Timetable-1: Utilité des calendriers.
+        2-NEPTUNE-Timetable-2: Affectation des courses à un calendrier.
+        2-NEPTUNE-Timetable-3: Date fin de période > date début de période.
+        2-NEPTUNE-VehicleJourney-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-2: Existence de la mission <JourneyPattern> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-3: Existence de la ligne <Line> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-4: Existence de l'opérateur <Company> référencé par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-5: Existence de la tranche horaire <TimeSlot> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-6: Cohérence entre la course, la mission et la séquence d'arrêts.
+        2-NEPTUNE-VehicleJourney-7: Utilité des missions
+        2-NEPTUNE-VehicleJourney-8: Vérification de la mission par défaut
+        2-NEPTUNE-VehicleJourneyAtStop-1: Existence de l'arrêt <StopPoint> référencé par l'horaire <VehicleJourneyAtStop>.
+        2-NEPTUNE-VehicleJourneyAtStop-2: Existence de la course <VehicleJourney> référenceé par l'horaire <VehicleJourneyAtStop>.
+        2-NEPTUNE-VehicleJourneyAtStop-3: Adéquation des horaires de la course à la séquence d'arrêts.
+        2-NEPTUNE-VehicleJourneyAtStop-4: Adéquation des horaires de la course à la mission.
+        3-AccessLink-1: Les deux extrémités d'un lien d'accès doivent être proches
+        3-AccessLink-2: Cohérence entre la distance fournie par le lien d'accès et la distance à vol d’oiseau entre ses 2 extrémités
+        3-AccessLink-3: La vitesse de parcours entre les 2 extrémités d'un lien d'accès ne doit pas être trop grande
+        3-AccessPoint-1: Tous les accès doivent être géolocalisés
+        3-AccessPoint-2: 2 accès de noms différents doivent être assez espacés
+        3-AccessPoint-3: Les accès doivent être proches de leur arrêt de rattachement
+        3-ConnectionLink-1: Les 2 arrêts d'une correspondance doivent être proches
+        3-ConnectionLink-2: Cohérence entre la distance fournie par la correspondance et la distance à vol d’oiseau entre les deux arrêts de la correspondance
+        3-ConnectionLink-3: La vitesse de parcours entre les deux arrêts d'une correspondance ne doit pas être trop grande
+        3-Facility-1: Tous les équipements doivent être géoréférencés
+        3-Facility-2: Les équipements dovent être proches de leur arrêt de rattachement
+        3-JourneyPattern-1: Détection de double définition de missions
+        3-Line-1: 2 lignes ne doivent pas avoir le même nom
+        3-Line-2: Toutes les lignes doivent posséder des séquences d’arrêt
+        3-Route-1: Deux arrêts d’un même arrêt commercial ne peuvent pas se succéder dans une séquence d’arrêts
+        3-Route-2: Vérification de la séquence inverse
+        3-Route-3: La distance entre deux arrêts successifs de la séquence doit être dans une fourchette paramétrable
+        3-Route-4: Détection de double définition de séquences
+        3-Route-5: Appariement de séquences sans séquence opposée
+        3-Route-6: Une séquence d’arrêts doit contenir au moins 2 arrêts
+        3-Route-7: Une séquence d’arrêts doit contenir au moins 1 mission
+        3-Route-8: Utilisation des arrêts par les missions
+        3-Route-9: Existence d’une mission passant par tous les arrêts de la séquence
+        3-StopArea-1: Tous les arrêts (sauf les ITL) doivent être géolocalisés
+        3-StopArea-2: 2 arrêts de noms différents et de parents différents doivent être assez espacés
+        3-StopArea-3: Unicité des arrêts de mêm type
+        3-StopArea-4: Géolocalisation des arrêts dans un polygone de contrôle
+        3-StopArea-5: Un arrêt doit être assez proche de son arrêt parent
+        3-VehicleJourney-1: La durée d’attente à un arrêt ne doit pas être trop grande
+        3-VehicleJourney-2: La vitesse entre deux arrêts doit être dans une fourchette paramétrable
+        3-VehicleJourney-3: Les vitesses entre 2 arrêts doivent être similaires pour toutes les courses d’une même mission
+        3-VehicleJourney-4: Une course doit avoir au moins un calendrier d’application
+        4-AccessLink-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-AccessPoint-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-Company-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-ConnectionLink-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-ConnectionLink-2: Connexion des correspondances
+        4-GroupOfLine-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-JourneyPattern-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-Line-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-Line-2: Le mode de transport doit être dans une liste pré-définie
+        4-Line-3: Unicité de la relation Line->Groupe of Line
+        4-Line-4: Unicité du couple A/R des séquences d'arrêts
+        4-Network-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-Route-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-StopArea-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-StopArea-2: Appartenance des arrêts physiques à un arrêt commercial
+        4-StopArea-3: Cohérence entre les noms de communes and leur code INSEE
+        4-Timetable-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-VehicleJourney-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
+        4-VehicleJourney-2: Le mode de transport doit être dans une liste pré-définie
+        detail: Détail
+        first_violations: Premières violations
+        object: Objet en erreur
+        objects: Objets en erreur
+        resource: Ressource de l'objet en erreur
+        rule_code: Code
+        rule_level: Niveau
+        rule_number: Etape
+        rule_target: Objet
+        severity: Sévérité
+        status: Statut
+        title: Titre du test
+        url: URL
+        violation_count: erreurs
+        violation_count_txt: Nombre d'erreurs
+      compliance_check_task:
+        name: Nom de la validation
+        object_id_prefix: Neptune Id prefix
+        reference_ids: Identifiants du sous ensemble
+        references_type: Sous ensemble
+        rule_parameter_set_id: Jeu de paramètres pour validation
+      export_task:
+        created_at: Créé le
+        end_date: Date de fin
+        end_date_greater_than_start_date: La date de fin doit être postérieure à la date de début.
+        end_date_less_than: La date de fin doit être antérieure ou égale à %{tt_ed_date}.
+        extensions: Extensions
+        ignore_end_chars: ignorer les n derniers caractères
+        ignore_last_word: ignorer le dernier mot
+        max_distance_for_commercial: Distance max pour créer les zones
+        max_distance_for_connection_link: Distance max pour créer les correspondances
+        name: Nom de l'export
+        object_id_prefix: Préfixe d'identifiants
+        reference_ids: Données incluses
+        references_type: Type de données incluses
+        start_date: Date de début
+        start_date_greater_than: La date de début doit être postérieure ou égale à %{tt_st_date}.
+        status: Status
+      file_validation:
+        created_at: Exécuté le
+        file_name: Donnée testé
+        projection_reference: Système de référence spatial
+        reference_ids: Données associées
+        references_type: Type de données associées
+        resources: Fichier à valider
+        rule_parameter_set_id: Règle du jeu de paramètres
+        status: Statut
+      file_validation_log_message:
+        created_at: Date
+        full_message: Message
+        position: N.
+      import_task:
+        ignore_end_chars: ignorer les n derniers caractères
+        ignore_last_word: ignorer le dernier mot
+        max_distance_for_commercial: Distance max pour créer les zones
+        max_distance_for_connection_link: Distance max pour créer les correspondances
+        name: Nom de l'import
+        no_save: Pas de sauvegarde
+        object_id_prefix: Préfixe d'identifiants
+        references_type: Données à importer
+        resources: Fichier à importer
+        rule_parameter_set_id: Jeu de paramètres pour validation
+      stop_area_copy:
+        area_type: Type d'arrêt
+      subscription:
+        current_password: Mot de passe actuel
+        email: Adresse mail
+        organisation_name: Organisation
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        user_name: Nom complet
+      time_table_combination:
+        combined_id: Id Calendrier
+        operation: opération
+      validation:
+        created_at: Créé le
+        ignore_end_chars: ignorer les n derniers caractères
+        ignore_last_word: ignorer le dernier mot
+        max_distance_for_commercial: Distance max pour créer les zones
+        max_distance_for_connection_link: Distance max pour créer les correspondances
+        no_save: Pas de sauvegarde
+        object_id_prefix: Préfixe d'identifiants
+        references_type: Sous ensemble
+        resources: Fichier à valider
+        rule_parameter_set_id: Jeu de paramètres pour validation
+        status: Status
+      validation_result:
+        1-NEPTUNE-XML-1: Conformité à la syntaxe XML suivant les recommandations du W3C.
+        1-NEPTUNE-XML-2: Conformité au schéma défini par la XSD du profil TRIDENT/NEPTUNE.
+        2-NEPTUNE-AccessLink-1: Correcte référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+        2-NEPTUNE-AccessLink-2: Correcte référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+        2-NEPTUNE-AccessPoint-1: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-2: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-3: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>.
+        2-NEPTUNE-AccessPoint-4: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> de type 'in'.
+        2-NEPTUNE-AccessPoint-5: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> sur les accès de type 'out'.
+        2-NEPTUNE-AccessPoint-6: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>  sur les accès de type 'inout'.
+        2-NEPTUNE-AccessPoint-7: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-AreaCentroid-1: Correcte référence à des arrêts <StopArea> dans la classe d’objets <AreaCentroid>.
+        2-NEPTUNE-AreaCentroid-2: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-Common-1: Unicité des éléments objectId des différents objets d'un lot de fichiers Neptune.
+        2-NEPTUNE-Common-2: Unicité des éléments regitrationNumber des différents objets d'un lot de fichiers Neptune.
+        2-NEPTUNE-ConnectionLink-1: Correcte référence aux arrêts <StopArea> définissant des tronçons de correspondance <ConnectionLink>.
+        2-NEPTUNE-Facility-1: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-2: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-3: Existence de la ligne <Line> référencée par l'équipement <Facility>.
+        2-NEPTUNE-Facility-4: Existence de la correspondance <ConnectionLink> référencée par l'équipement <Facility>.
+        2-NEPTUNE-Facility-5: Existence de l'arrêt <StopPoint> référencé par l'équipement <Facility>.
+        2-NEPTUNE-Facility-6: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-GroupOfLine-1: Correcte référence à des lignes <Line> dans groupe de lignes <GroupOfLine>.
+        2-NEPTUNE-ITL-1: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type ITL.
+        2-NEPTUNE-ITL-2: Correcte référence à des arrêts <StopArea> de type ITL dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-3: Correcte référence à des arrêts <StopArea> dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-4: Vérification du type de référence à des arrêts <StopArea> type ITL dans la classe d’objets <ITL>.
+        2-NEPTUNE-ITL-5: Bonne référence à la ligne <Line> dans la classe d’objets <ITL>.
+        2-NEPTUNE-JourneyPattern-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la mission <JourneyPattern>.
+        2-NEPTUNE-JourneyPattern-2: Existence des arrêts <StopPoint> référencés par la mission <JourneyPattern>.
+        2-NEPTUNE-JourneyPattern-3: Existence de la ligne <Line> référencée par la mission <JourneyPattern>.
+        2-NEPTUNE-Line-1: Correcte référence au réseau dans l'objet ligne <Line>.
+        2-NEPTUNE-Line-2: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+        2-NEPTUNE-Line-3: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+        2-NEPTUNE-Line-4: Correcte référence  aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+        2-NEPTUNE-Line-5: Correcte référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+        2-NEPTUNE-Network-1: Correcte référence à des lignes <Line> dans version du réseau <PTNetwork>.
+        2-NEPTUNE-PtLink-1: Existence des  arrêts <StopPoint> référencés par les  tronçons commerciaux <PTLink>.
+        2-NEPTUNE-Route-1: Existence des missions <JourneyPattern> référencées par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-10: référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-11: Cohérence des sens de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-12: Cohérence des terminus de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+        2-NEPTUNE-Route-2: Existence des tronçons commerciaux <PtLink> référencés par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-3: Existence de la séquence opposée <ChouetteRoute> référencée par la séquence d'arrêt <ChouetteRoute>.
+        2-NEPTUNE-Route-4: Correcte référence à un tronçon commercial <PtLink> dans une séquence d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-5: Vérification que tous les points d'arrêts sur parcours sont rattachés à une séquence d'arrêts <ChouetteRoute> au départ d'un tronçon commercial <PtLink> et/ou à l'arrivée d'un autre tronçon commercial <PtLink> de la même séquence d'arrêts.
+        2-NEPTUNE-Route-6: Vérification du correct ordonnancement des points d'arrêts sur parcours <StopPoint> dans le chainage des tronçons <PtLink> d'une séquence d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-7: référence mutuelle des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-8: Cohérence des références aux points d'arrêt des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-Route-9: Utilité des points d'arrêts sur parcours des séquences d'arrêts <ChouetteRoute>.
+        2-NEPTUNE-StopArea-1: Correcte référence à des arrêts <StopArea> et/ou à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea>.
+        2-NEPTUNE-StopArea-2: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type StopPlace.
+        2-NEPTUNE-StopArea-3: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type CommercialStopPoint.
+        2-NEPTUNE-StopArea-4: Correcte référence à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea> de type BoardingPosition ou Quay.
+        2-NEPTUNE-StopArea-5: Correcte référence à une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+        2-NEPTUNE-StopArea-6: référenceréciproque d'une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+        2-NEPTUNE-StopPoint-1: Existence de la ligne <Line> référencée par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-2: Existence du réseau <PTNetwork> référence par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-3: Existence de l'arrêt   <StopArea> référencé par l'arrêt <StopPoint>.
+        2-NEPTUNE-StopPoint-4: Vérification du modèle de projection de référence utilisé.
+        2-NEPTUNE-Timetable-1: Utilité des calendriers.
+        2-NEPTUNE-Timetable-2: Utilité des calendriers.
+        2-NEPTUNE-VehicleJourney-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-2: Existence de la mission <JourneyPattern> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-3: Existence de la ligne <Line> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-4: Existence de l'opérateur <Company> référencé par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-5: Existence de la tranche horaire <TimeSlot> référencée par la course <VehicleJourney>.
+        2-NEPTUNE-VehicleJourney-6: Cohérence entre la course, la mission et la séquence d'arrêts.
+        2-NEPTUNE-VehicleJourney-7: Utilité des missions
+        2-NEPTUNE-VehicleJourneyAtStop-1: Existence de l'arrêt <StopPoint> référencé par l'horaire <VehicleJourneyAtStop>.
+        2-NEPTUNE-VehicleJourneyAtStop-2: Existence de la course <VehicleJourney> référenceé par l'horaire <VehicleJourneyAtStop>.
+        2-NEPTUNE-VehicleJourneyAtStop-3: adéquation des horaires de la course à la séquence d'arrêts.
+        2-NEPTUNE-VehicleJourneyAtStop-4: adéquation des horaires de la course à la mission.
+        3-AccessLink-1: Vérification de la proximité entre les deux extrémités d'un lien d'accès
+        3-AccessLink-2: Vérification de la cohérence entre la distance fournie sur le lien d'accès et la distance géographique entre les deux extrémités du lien d'accès
+        3-AccessLink-3: Vérification de la vitesse de parcours entre les deux extrémités d'un lien d'accès
+        3-AccessPoint-1: Vérification de la géolocalisation de tous les accès
+        3-AccessPoint-2: Vérification que deux accès de nom différents ne sont pas trop proches
+        3-AccessPoint-3: Vérification de la proximité entre les accès et leur arrêt de rattachement
+        3-ConnectionLink-1: Vérification de la proximité entre les deux arrêts d'une correspondance
+        3-ConnectionLink-2: Vérification de la cohérence entre la distance fournie sur la correspondance et la distance géographique entre les deux arrêts de la correspondance
+        3-ConnectionLink-3: Vérification de la vitesse de parcours entre les deux arrêts d'une correspondance
+        3-Facility-1: Vérification de la géolocalisation de tous les accès
+        3-Facility-2: Vérification de la proximité entre les équipements et leur arrêt de rattachement
+        3-JourneyPattern-1: Vérification de l'utilisation des arrêts par les missions
+        3-JourneyPattern-2: Vérification de l’existence d’une mission passant par tous les arrêts de la séquence
+        3-JourneyPattern-3: Vérification de double définition de missions
+        3-Line-1: Vérification de la non homonymie des lignes
+        3-Line-2: Vérification de la présence de séquences d'arrêts sur la ligne
+        3-Route-1: Vérification de la succession des arrêts de la séquence
+        3-Route-2: Vérification de la séquence inverse
+        3-Route-3: Vérification de la distance entre deux arrêts successifs de la séquence
+        3-Route-4: Vérification de double définition de séquences
+        3-Route-5: Vérification de séquences sans séquence opposée
+        3-Route-6: Vérification de la présence d'arrêts dans la séquence
+        3-Route-7: Vérification de la présence de missions
+        3-Route-8: Vérification de l'utilisation des arrêts par les missions
+        3-Route-9: Vérification de l’existence d’une mission passant par tous les arrêts de la séquence
+        3-StopArea-1: Vérification de la géolocalisation de tous les arrêts hors ITL
+        3-StopArea-2: Vérification que 2 arrêts de noms différents en dehors d'un même regroupement d'arrêts ne sont pas trop proches
+        3-StopArea-3: Vérification de l'unicité des arrêts
+        3-StopArea-4: Vérification de la géolocalisation des arrêts
+        3-StopArea-5: Vérification de la position relative des arrêts et de leur parent
+        3-VehicleJourney-1: Vérification de la chronologie des horaires de passage à un arrêt
+        3-VehicleJourney-2: Vérification de la vitesse de transfert entre deux arrêts
+        3-VehicleJourney-3: Vérification de la cohérence des courses successives desservant deux mêmes arrêts
+        3-VehicleJourney-4: Vérification de l'affectation des courses à un calendrier
+        4-AccessLink-1: Vérification de contraintes sur les attributs des liens d'accès
+        4-AccessPoint-1: Vérification de contraintes sur les attributs des accès
+        4-Company-1: Vérification de contraintes sur les attributs des transporteurs
+        4-ConnectionLink-1: Vérification de contraintes sur les attributs des correspondances
+        4-ConnectionLink-2: Vérification des type d'arrêts en correspondance
+        4-GroupOfLine-1: Vérification de contraintes sur les attributs des groupes de lignes
+        4-JourneyPattern-1: Vérification de contraintes sur les attributs des missions
+        4-Line-1: Vérification de contraintes sur les attributs des lignes
+        4-Line-2: Vérification des modes de transport des lignes
+        4-Line-3: Vérification des groupes de lignes d'une ligne
+        4-Line-4: Vérification des séquences d'arrêts d'une ligne
+        4-Network-1: Vérification de contraintes sur les attributs des réseaux
+        4-Route-1: Vérification de contraintes sur les attributs des séquences d'arrêt
+        4-StopArea-1: Vérification de contraintes sur les attributs des arrêts
+        4-StopArea-2: Vérification de l'existance d'un arrêt commercial pour les arrêts physiques
+        4-StopArea-3: Vérification de la cohérence entre les noms de communes et leur code INSEE
+        4-Timetable-1: Vérification de contraintes sur les attributs des calendiers
+        4-VehicleJourney-1: Vérification de contraintes sur les attributs des courses
+        4-VehicleJourney-2: Vérification des modes de transport des courses
+        detail: Détail
+        first_violations: Premières  violations
+        object: Objet en erreur
+        objects: Objets en erreur
+        resource: Ressource de l'objet en erreur
+        rule_code: Code
+        rule_level: Niveau
+        rule_number: Etape
+        rule_target: Objet
+        severity: Sévérité
+        status: Statut
+        title: Titre du test
+        url: URL
+        violation_count: erreurs
+        violation_count_txt: Nombre d'erreurs
+      vehicle_journey_import:
+        file: Fichier
+      vehicle_translation:
+        count: Quantité de courses à ajouter
+        duration: Durée de l'intervalle (en minutes)
+    errors:
+      models:
+        import_task:
+          attributes:
+            resources:
+              invalid_mime_type: Le fichier n'utilise pas le format attendu (%{mime_type} soumis)
+              maximum_file_size: Le fichier ne peut dépasser %{maximum_file_size} (%{file_size} soumis)
+        vehicle_translation:
+          missing_start_time: L'horaire de départ ou celui d'arrivée est requis
+          uncompiliant_vehicle: Pour cloner une course, celle-ci doit compter au moins un arrêt et avoir des horaires départ arrivée sur tous ses arrêts
+          unreadable_time: Le format d'horaire attendu est hh:mm
+    models:
+      compliance_check:
+        one: Validation
+        other: Validations
+        zero: Validation
+      compliance_check_result:
+        one: Validation
+        other: Validations
+        zero: Validation
+      csv_validation:
+        one: validation CSV
+        other: validations
+        zero: validation
+      export:
+        one: export
+        other: exports
+        zero: export
+      export_task:
+        one: export
+        other: exports
+        zero: export
+      file_validation:
+        one: Validation
+        other: Validation
+      gtfs_export:
+        one: export GTFS
+        other: exports
+        zero: export
+      gtfs_import:
+        one: import GTFS
+        other: imports
+        zero: import
+      gtfs_validation:
+        one: validation GTFS
+        other: validations
+        zero: validation
+      import_task:
+        one: import
+        other: imports
+        zero: import
+      neptune_export:
+        one: export Neptune
+        other: exports
+        zero: export
+      neptune_import:
+        one: import Neptune
+        other: imports
+        zero: import
+      neptune_validation:
+        one: validation Neptune
+        other: validations
+        zero: validation
+      netex_export:
+        one: export NeTEx
+        other: exports
+        zero: export
+      netex_import:
+        one: import NeTEx
+        other: imports
+        zero: import
+      netex_validation:
+        one: validation NeTEx
+        other: validations
+        zero: validation
+      regtopp_import: 
+      subscription: compte
+      validation:
+        one: validation
+        other: validations
+        zero: validation
+      validation_result:
+        one: Validation
+        other: Validations
+        zero: Validation
+  activerecord:
+    attributes:
+      access_link:
+        access_link_type: Type
+        access_point: Accès
+        comment: Commentaire
+        creation_time: Créé le
+        creator_id: Créé par
+        creatorid: Créé le
+        default_duration: moyenne
+        frequent_traveller_duration: pour un habitué
+        lift_availability: Ascenseur
+        link_distance: Distance (m)
+        mobility_restricted_suitability: Accès pour voyageur à mobilité réduite
+        mobility_restricted_traveller_duration: pour un voyageur à mobilité réduite
+        name: Nom
+        object_version: Version
+        objectid: Identifiant Métier
+        occasional_traveller_duration: pour un voyageur occasionnel
+        stairs_availability: Escalator
+        stop_area: Arrêt
+      access_point:
+        access_point_type: Type d'accès
+        city_name: Commune
+        closing_time: Horaire de fermeture
+        comment: Commentaire
+        coordinates: Coordonnées (lat,lng)
+        country_code: Code INSEE
+        creation_time: Créé le
+        creator_id: Créé par
+        creatorid: Créé par
+        latitude: Latitude
+        lift_availability: Ascenseur
+        long_lat_type: Projection
+        longitude: Longitude
+        mobility_restricted_suitability: Accès pour voyageur à mobilité réduite
+        name: Nom
+        object_version: Version
+        objectid: Identifiant Métier
+        openning_time: Horaire d'ouverture
+        projection: Projection
+        projection_x: Position X
+        projection_xy: Position (x,y)
+        projection_y: Position Y
+        stairs_availability: Escalator
+        stop_area: Zone d'arrêts
+        street_name: Nom de la rue
+        zip_code: Code postal
+      api_key:
+        name: Nom
+        token: Token
+      company:
+        code: Code
+        creation_time: Créé le
+        creator_id: Créé par
+        email: Email
+        fax: Numéro de fax
+        name: Nom
+        object_version: Version
+        objectid: Identifiant Métier
+        operating_department_name: Nom du département dans la société
+        organizational_unit: Nom d'unité dans la société
+        phone: Numéro de téléphone
+        registration_number: Numéro d'enregistrement
+        short_name: Nom court
+        time_zone: Fuseau horaire
+        url: Page web associée
+      connection_link:
+        arrival: Arrêt d'arrivée
+        arrival_id: Arrêt d'arrivée
+        comment: Commentaire
+        connection_link_type: Type
+        creation_time: Créé le
+        creator_id: Créé par
+        default_duration: moyenne
+        departure: Arrêt de départ
+        departure_id: Arrêt de départ
+        frequent_traveller_duration: pour un habitué
+        lift_availability: Ascenseur
+        link_distance: Distance (m)
+        mobility_restricted_suitability: Accès pour voyageur à mobilité réduite
+        mobility_restricted_traveller_duration: pour un voyageur à mobilité réduite
+        name: Nom
+        object_version: Version
+        objectid: Identifiant Métier
+        occasional_traveller_duration: pour un voyageur occasionnel
+        stairs_availability: Escalator
+        undefined: non défini
+      footnote:
+        code: numéro
+        label: ligne de texte
+      group_of_line:
+        comment: Commentaire
+        creation_time: Créé le
+        creator_id: Créé par
+        line_count: Nombre de lignes
+        name: Nom
+        object_version: Version
+        objectid: Identifiant Métier
+        registration_number: Numéro d'enregistrement
+      import:
+        created_at: Créé le
+        ignore_end_chars: ignorer les n derniers caractères
+        ignore_last_word: ignorer le dernier mot
+        max_distance_for_commercial: Distance max pour créer les zones
+        max_distance_for_connection_link: Distance max pour créer les correspondances
+        no_save: Pas de sauvegarde
+        object_id_prefix: Préfixe d'identifiants
+        references_type: Données à importer
+        resources: Fichier à importer
+        rule_parameter_set_id: Jeu de paramètres pour validation
+        status: Status
+      journey_frequency:
+        exact_time: Exact ?
+        first_departure_time: Premier départ
+        last_departure_time: Dernier départ
+        scheduled_headway_interval: Intervalle
+        timeband: Créneau horaire
+      journey_pattern:
+        comment: Commentaire
+        creation_time: Créé le
+        creator_id: Créé par
+        name: Nom
+        object_version: Version
+        objectid: Identifiant Métier
+        published_name: Nom public
+        registration_number: Numéro d'enregistrement
+        route: Séquence d'arrêts
+        stop_point_ids: Sélection des arrêts desservis
+      line:
+        accessible: Accessible
+        color: Couleur du tracé
+        comment: Commentaire
+        company: Transporteur
+        creation_time: Créé le
+        creator_id: Créé par
+        default_fs_msg: Ces courses sont considérées régulières
+        flexible_service: Transport à la demande
+        footnotes: Notes de bas de page
+        group_of_line: Groupe de lignes
+        mobility_restricted_suitability: Accessibilité PMR
+        name: Nom
+        network: Réseau
+        not_accessible: Non accessible
+        number: Indice
+        number_of_fs_vj: Nombre de courses à la demande
+        number_of_mrs_vj: Nombre de courses accessibles
+        number_of_non_fs_vj: Nombre de courses régulières
+        number_of_non_mrs_vj: Nombre de courses non accessibles
+        number_of_null_fs_vj: Nombre de courses sans spécification de type de service
+        number_of_null_mrs_vj: Nombre de courses sans spécification d'accessibilité
+        number_of_vj: Nombre total de courses
+        object_version: Version
+        objectid: Identifiant Métier
+        on_demaond_fs: Service à la demande
+        published_name: Nom public
+        registration_number: Numéro d'enregistrement
+        regular_fs: Service régulier
+        stable_id: Identifiant externe pérenne
+        text_color: Couleur du texte
+        transport_mode: Mode de transport
+        unspecified_fs: Non spécifié
+        unspecified_mrs: Non spécifié
+        url: Page web associée
+      network:
+        comment: Commentaire
+        creation_time: Créé le
+        creator_id: Créé par
+        description: Description
+        name: Nom
+        object_version: Version
+        objectid: Identifiant Métier
+        registration_number: Numéro d'enregistrement
+        source_identifier: Identifiant du système origine
+        source_name: Nom du système origine
+        source_type_name: Type de système origine
+        version_date: Date de version
+      organisation:
+        data_format: Format de données
+        data_format_restrictions_by_default: Appliquer les contraintes format des données par defaut
+        geoportail_key: Clé de l'API du Geoportail IGN
+        name: Nom
+      referential:
+        access_points: points d'accès
+        boarding_positions: points d'embarquement
+        commercial_stops: arrêts commerciaux
+        companies: Transporteurs
+        compliance_checks: Validations
+        connection_links: Correspondances
+        data_format: Format d'export privilégié
+        data_format_restrictions: Format d'export privilégié
+        end_validity_period: au
+        exports: Exports
+        group_of_lines: Groupes de lignes
+        imports: Imports
+        itls: ITL
+        lines: Lignes
+        lower_corner: Point bas/gauche de l'emprise par défaut
+        name: Nom
+        networks: Réseaux
+        no_validity_period: non définie
+        prefix: Préfixe des identifiants Neptune
+        projection_type: Système de référence spatiale (SRID) optionnel
+        quays: quais
+        resources: Import Neptune
+        route_sections: Sections de parcours
+        rule_parameter_sets: Jeux de paramètres
+        slug: Code
+        start_validity_period: du
+        stop_areas: Arrêts
+        stop_places: pôles d'échange
+        time_tables: Calendriers
+        time_zone: Fuseau horaire
+        timebands: Créneaux horaires
+        upper_corner: Point haut/droite de l'emprise par défaut
+        validity_period: Période de validité
+        vehicle_journeys: Courses
+      route:
+        comment: Commentaire
+        creation_time: Créé le
+        creator_id: Créé par
+        direction_code: Direction
+        journey_patterns: Missions
+        line: Ligne
+        name: Nom
+        no_journey_pattern: Pas de mission
+        number: Indice
+        object_version: Version
+        objectid: Identifiant Métier
+        opposite_route: Séquence d'arrêts associée en sens opposé
+        published_name: Nom public
+        vehicle_journeys: Courses
+        wayback:
+          negative: Retour
+          positive: Aller
+        wayback_code: Sens
+      route_section:
+        arrival: Arrêt d'arrivée
+        departure: Arrêt de départ
+        distance: Distance
+        points: Via
+      rule_parameter_set:
+        allowed_transport: Autorisé
+        attribute: attribut
+        check_allowed_transport_modes: Contrôler les modes de transport des lignes et des courses
+        check_connection_link_on_physical: Contrôler que les correspondances ne relient que des arrêts physiques
+        check_line_routes: Contrôler que chaque ligne a une séquence d'arrêt ou un couple A/R de séquences d'arrêts
+        check_lines_in_groups: Contrôler que chaque ligne appartient à un et un seul groupe de lignes
+        check_stop_parent: Contrôler que chaque arrêt physique est rattaché à un arrêt commercial
+        facility_stop_area_distance_max: Distance maximum entre un arrêt et un équipement
+        inter_access_link_distance_max: Distance maximum d'un liaison accès - arrêt
+        inter_access_point_distance_min: Distance minimum entre 2 accès de noms différents pour un même arrêt
+        inter_connection_link_distance_max: Distance maximum entre les arrêts en correspondance
+        inter_stop_area_distance_max: Distance maximum entre 2 arrêts
+        inter_stop_area_distance_min: Distance minimum entre 2 arrêts
+        inter_stop_duration_max: Durée maximum entre les horaires d'arrivée et de départ à un arrêt
+        inter_stop_duration_variation_max: Ecart maximum de durée entre 2 arrêts successifs pour les différentes courses
+        max_size: taille ou valeur maximale
+        min_size: taille ou valeur minimale
+        name: Nom
+        parent_stop_area_distance_max: Distance maximum entre un arrêt et son parent
+        speed_max: Vitesse maximum
+        speed_min: Vitesse minimum
+        stop_areas_area: Délimitation géographique des arrêts
+        string_type: caractères autorisés
+        unique: unicité
+        walk_default_speed_max: Vitesse de marche maximum pour un voyageur ordinaire
+        walk_frequent_traveller_speed_max: Vitesse de marche maximum pour un voyageur habituel
+        walk_mobility_restricted_traveller_speed_max: Vitesse de marche maximum pour un voyageur à mobilité réduite
+        walk_occasional_traveller_speed_max: Vitesse de marche maximum pour un voyageur occasionnel
+      stop_area:
+        children_ids: Fils
+        city_name: Commune
+        comment: Commentaire
+        coordinates: Coordonnées (lat,lng) WGS84
+        country_code: Code INSEE
+        creation_time: Créé le
+        creator_id: Créé par
+        creatorid: Créé par
+        fare_code: Zone tarifaire
+        latitude: Latitude
+        lift_availability: Ascenseur
+        long_lat_type: Projection
+        longitude: Longitude
+        mobility_restricted_suitability: Accès pour voyageur à mobilité réduite
+        name: Nom
+        nearest_topic_name: Point d'intérêt le plus proche
+        object_version: Version
+        objectid: Identifiant Métier
+        parent: Parent
+        projection: Projection
+        projection_x: Position X
+        projection_xy: Position (x,y) %{projection}
+        projection_y: Position Y
+        published_name: Nom public
+        registration_number: Numéro d'enregistrement
+        routing_line_ids: Lignes affectées par l'ITL
+        routing_stop_ids: Arrêts concernés par l'ITL
+        stairs_availability: Escalator
+        stop_area_type: Type d'arrêt
+        street_name: Nom de la rue
+        time_zone: Fuseau horaire
+        url: Page web associée
+        zip_code: Code postal
+      stop_point:
+        lines: Lignes
+      time_table:
+        calendar_details: Données du calendrier
+        calendars: Calendrier
+        comment: Nom
+        creation_time: Créé le
+        creator_id: Créé par
+        date: Le
+        dates: Dates particulières
+        day_types: Jours d'application des périodes
+        excluded_dates: Dates exclues
+        friday: Vendredi
+        monday: Lundi
+        none: aucun
+        object_version: Version
+        objectid: Identifiant Métier
+        period_end: au
+        period_start: Du
+        periods: Périodes d'application
+        saturday: Samedi
+        sunday: Dimanche
+        tag_list: Etiquettes
+        tag_search: Etiquettes
+        thursday: Jeudi
+        tuesday: Mardi
+        version: Abréviation
+        wednesday: Mercredi
+      timeband:
+        end_time: Heure de fin
+        name: Titre
+        start_time: Heure de début
+      user:
+        name: Nom complet
+      validation_task:
+        created_at: Créé le
+        ignore_end_chars: ignorer les n derniers caractères
+        ignore_last_word: ignorer le dernier mot
+        max_distance_for_commercial: Distance max pour créer les zones
+        max_distance_for_connection_link: Distance max pour créer les correspondances
+        no_save: Pas de sauvegarde
+        object_id_prefix: Préfixe d'identifiants
+        references_type: Sous ensemble
+        resources: Fichier à valider
+        rule_parameter_set_id: Jeu de paramètres pour validation
+        status: Status
+      vehicle_journey:
+        accessible: Accessible
+        comment: Commentaires
+        company: Transporteur
+        creation_time: Créé le
+        creator_id: Créé par
+        facility: Equipement
+        flexible_service: Transport à la demande
+        footnote_ids: Notes de bas de page
+        journey_frequency_ids: Créneau horaire
+        journey_pattern: Mission
+        line: Ligne
+        mobility_restricted_suitability: Accessibilité PMR
+        not_accessible: Non accessible
+        number: Numéro
+        object_version: Version
+        objectid: Identifiant Métier
+        on_demand_fs: Service à la demande
+        published_journey_identifier: Identifiant public
+        published_journey_name: Nom public
+        regular_fs: Service régulier
+        route: Séquence d'arrêt
+        status_value: Etat de trafic
+        time_slot: Fréquence
+        time_table_ids: Liste des calendriers
+        time_tables: Calendriers
+        transport_mode_name: Mode de transport
+        unspecified_fs: Non spécifié
+        unspecified_mrs: Non spécifié
+        vehicle_journey_at_stop_ids: Liste des horaires
+        vehicle_type_identifier: Type d'identifiant du véhicule
+        vehicletypeidentifier: Identifiant de type de véhicule
+    copy: Copie de %{name}
+    errors:
+      models:
+        concerns:
+          objectid:
+            invalid_objectid:
+              gtfs: syntaxe invalide. Sont autorisés tous les caractères sauf les espaces.
+              hub: syntaxe invalide. Sont autorisés tous les caractères sauf les espaces.
+              neptune: syntaxe invalide. Sont autorisés les caractères alphanumériques, les traits d'unions et les underscores.
+              netex: syntaxe invalide. Sont autorisés les caractères alphanumériques, les traits d'unions et les underscores.
+        journey_frequency:
+          end_must_be_before_timeband: la date de fin doit être inférieur ou égal à la plage horaire
+          end_must_be_different_from_first: la date de fin doit être différent de la date de départ
+          scheduled_headway_interval_greater_than_zero: l'intervalle doit être supérieur à 0
+          start_must_be_after_timeband: la date de départ doit être supérieure ou égal à la plage horaire
+        time_table_date:
+          attributes:
+            date:
+              taken: date déjà saisie pour ce calendrier
+        time_table_period:
+          start_must_be_before_end: la date de fin doit être postérieure à la date de début
+        timeband:
+          start_must_be_before_end: la date de fin doit être postérieure à la date de début
+        trident:
+          invalid_object_id: syntaxe invalide, [A-Za-z0-9_]:%{type}:[A-Za-z0-9_-] attendu
+          invalid_object_id_type: type invalide, %{type} attendu
+        vehicle_journey:
+          invalid_times: Horaires invalides
+        vehicle_journey_at_stop:
+          arrival_must_be_before_departure: l'heure d'arrivée doit être antérieure à l'heure de départ
+    models:
+      access_link:
+        one: lien d'accès
+        other: liens d'accès
+        zero: lien d'accès
+      access_point:
+        one: accès
+        other: accès
+        zero: accès
+      api_key: Clé d'accès API
+      company:
+        one: transporteur
+        other: transporteurs
+        zero: transporteur
+      connection_link:
+        one: correspondance
+        other: correspondances
+        zero: correspondance
+      csv_import:
+        one: import CSV
+        other: imports
+        zero: import
+      csv_validation:
+        one: validation CSV
+        other: validations
+        zero: validation
+      footnote: note en bas de page
+      group_of_line:
+        one: groupe de lignes
+        other: groupes de lignes
+        zero: groupe de lignes
+      gtfs_import:
+        one: import GTFS
+        other: imports
+        zero: import
+      gtfs_validation:
+        one: validation GTFS
+        other: validations
+        zero: validation
+      import:
+        one: import
+        other: imports
+        zero: import
+      journey_pattern:
+        one: mission
+        other: missions
+        zero: mission
+      line:
+        one: ligne
+        other: lignes
+        zero: ligne
+      neptune_import:
+        one: import Neptune
+        other: imports
+        zero: import
+      neptune_validation:
+        one: validation Neptune
+        other: validations
+        zero: validation
+      netex_import:
+        one: import NeTEx
+        other: imports
+        zero: import
+      netex_validation:
+        one: validation NeTEx
+        other: validations
+        zero: validation
+      network:
+        one: réseau
+        other: réseaux
+        zero: réseau
+      referantial: 
+      referential:
+        one: Espace de Données
+        other: Espaces de Données
+        zero: Espace de Données
+      route:
+        one: séquence d'arrêts
+        other: séquences d'arrêts
+        zero: séquence d'arrêts
+      route_section: Section du parcours
+      rule_parameter_set: Jeu de paramètres pour le contrôle de qualité des données
+      stop_area:
+        one: arrêt
+        other: arrêts
+        zero: arrêt
+      stop_point:
+        one: arrêt sur séquence d'arrêts
+        other: arrêts sur séquence d'arrêts
+        zero: arrêt sur séquence d'arrêts
+      time_table:
+        one: calendrier
+        other: calendriers
+        zero: calendrier
+      timeband:
+        one: créneau horaire
+        other: créneaux horaires
+        zero: créneau horaire
+      user: utilisateur
+      validation_task:
+        one: validation
+        other: validations
+        zero: validation
+      vehicle_journey:
+        one: course
+        other: courses
+        zero: course
+  api_keys:
+    actions:
+      destroy: Supprimer la clé d'accès API
+      destroy_confirm: Etes vous sûr de vouloir détruire la clé d'accès API ?
+      edit: Modifier la clé d'accès API
+      new: Ajouter une clé d'accès API
+    edit:
+      title: Modifier la clé d'accès API
+    new:
+      title: Ajouter une clé d'accès API
+    show:
+      title: Clé d'accès API
+  area_types:
+    label:
+      boarding_position: Point d'embarquement
+      commercial_stop_point: Arrêt commercial
+      itl: ITL
+      quay: Quai
+      stop_place: Pôle d'échange
+  attributes:
+    author: Modifié par
+    created_at: Créé le
+    updated_at: Modifié le
+  back: Revenir
+  breadcrumbs:
+    referentials: Accueil
+    users: Utilisateurs
+    vehicle_journey_frequencies: Créneaux horaires
+    vehicle_journeys: Horaires
+  cancel: Annuler
+  clean_ups:
+    actions:
+      clean_up: Purger
+      confirm: "La purge détruit les calendriers se finissant au plus tard à la date indiquée \npuis en cascade les objets qui n'ont pas ou plus de calendrier\nConfirmer cette action SVP"
+    failure: 'Echec de la purge : %{error_message}'
+    success_c: "%{count} transporteur(s) supprimé(s)"
+    success_g: "%{count} groupe(s) de lignes supprimé(s)"
+    success_jp: "%{count} mission(s) supprimée(s)"
+    success_l: "%{count} ligne(s) supprimée(s)"
+    success_n: "%{count} réseau(x) supprimé(s)"
+    success_r: "%{count} séquence(s) d'arrêt supprimée(s)"
+    success_sa: "%{count} arrêt(s) supprimé(s)"
+    success_tm: "%{count} calendrier(s) supprimé(s)"
+    success_vj: "%{count} course(s) supprimée(s)"
+  companies:
+    actions:
+      destroy: Supprimer ce transporteur
+      destroy_confirm: Etes vous sûr de supprimer ce transporteur ?
+      edit: Modifier ce transporteur
+      new: Ajouter un transporteur
+    edit:
+      title: Modifier le transporteur %{company}
+    index:
+      name: Recherche par nom
+      title: Transporteurs
+    new:
+      title: Ajouter un transporteur
+    show:
+      title: Transporteur %{company}
   compliance_check_results:
     details:
-      1-GTFS-CSV-1: Validité de l'archive et des fichiers
-      1-GTFS-CSV-2: Validité des règles de syntaxe CSV en UTF-8 sur la première ligne
-      1-GTFS-CSV-3: Présence d'une ligne d'en-tête
-      1-GTFS-CSV-4: Définition de l'en-tête
-      1-GTFS-CSV-5: Syntaxe CSV en UTF-8 sur les lignes de données
-      1-GTFS-CSV-6: Absence de balises HTML
-      1-GTFS-CSV-7: Absence d'espaces superflus
-      1-GTFS-Calendar-1: Présence d'au moins un jour d'application
-      1-GTFS-Calendar-2: Période end_date > start_date
-      1-GTFS-Common-1: Présence des fichiers obligatoires
-      1-GTFS-Common-10: Présence de agency_id dans agency.txt et routes.txt
-      1-GTFS-Common-11: Existence de colonnes inconnues
-      1-GTFS-Common-12: Contrôle des données obligatoires
-      1-GTFS-Common-13: Champ agency_id renseigné si plusieurs agences
-      1-GTFS-Common-14: Existence d'une valeur de agency_id
-      1-GTFS-Common-15: Présence combinée arrival/departure_time et min_transfer-time si type_transfer=2
-      1-GTFS-Common-16: Typage des données
-      1-GTFS-Common-2: Présence de calendar ou calendar_dates
-      1-GTFS-Common-3: Contrôle des fichiers optionnels
-      1-GTFS-Common-4: Présence de fichiers non traités
-      1-GTFS-Common-5: Présence d'un contenu dans les fichiers obligatoires
-      1-GTFS-Common-6: Présence d'un contenu dans les fichiers de calendrier
-      1-GTFS-Common-7: Présence d'un contenu dans les fichiers optionnels
-      1-GTFS-Common-8: Unicité des identifiants
-      1-GTFS-Common-9: Colonnes obligatoires
-      1-GTFS-Route-1: Présence d'au moins une des 2 colonnes route_short_name ou route_long_name
-      1-GTFS-Route-2: Donnée renseignée pour route_short_name ou sinon route_long_name
-      1-NEPTUNE-XML-1: Syntaxe XML W3C
-      1-NEPTUNE-XML-2: Schéma défini par la XSD du profil TRIDENT/NEPTUNE
-      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineAndCommonFiles: 
-      1-NETEXPROFILE-DuplicateIdentificatorsAcrossLineFiles: 
-      1-NETEXPROFILE-InvalidIdStructure: 
-      1-NETEXPROFILE-MissingReferenceVersionAttribute: 
-      1-NETEXPROFILE-MissingVersionAttribute: 
-      1-NETEXPROFILE-UnapprovedCodespaceDefined: 
-      1-NETEXPROFILE-UnknownProfile: 
-      1-NETEXPROFILE-UnresolvedReferenceToCommonElements: 
-      1-NETEXPROFILE-UseOfUnapprovedCodespace: 
-      2-DATABASE-AccessPoint-1: Contrôle de la valeur d’un arrêt associé lors de la sauvegarde d’un point d’accès en base
-      2-DATABASE-ConnectionLink-1: Contrôle de la valeur des extrémités d’une correspondance lors de sa sauvegarde en base
-      2-DATABASE-JourneyPattern-1: Contrôle de la valeur de la route associée lors de la sauvegarde d’une mission commerciale en base
-      2-DATABASE-Line-1: Contrôle de la valeur du réseau associé lors de la sauvegarde d’une ligne en base
-      2-DATABASE-Line-2: Contrôle de la valeur du transporteur associé lors de la sauvegarde d’une ligne en base
-      2-DATABASE-Route-1: Contrôle de la valeur de la ligne associée lors de la sauvegarde d’une route en base
-      2-DATABASE-StopArea-1: Contrôle de la valeur du parent associé lors de la sauvegarde d’un arrêt en base
-      2-DATABASE-StopArea-2: Contrôle de la valeur du type associé lors de la sauvegarde d’un arrêt en base
-      2-DATABASE-StopPoint-1: Contrôle de la valeur de la route associée lors de la sauvegarde d’un point d’arrêt planifié en base
-      2-DATABASE-StopPoint-2: Contrôle de la valeur de la position associée lors de la sauvegarde d’un point d’arrêt planifié en base
-      2-DATABASE-StopPoint-3: Contrôle de la valeur de l’arrêt associé lors de la sauvegarde d’un point d’arrêt planifié en base
-      2-DATABASE-VehicleJourney-1: Contrôle de la valeur de la mission associée lors de la sauvegarde d’une course en base
-      2-DATABASE-VehicleJourney-2: Contrôle de la valeur du transporteur associé lors de la sauvegarde d’une course en base
-      2-GTFS-Common-1: Références externes
-      2-GTFS-Common-2: Utilisation des références d'objet
-      2-GTFS-Common-3: Unicité de couples de valeurs
-      2-GTFS-Common-4: Non redondance de valeurs
-      2-GTFS-Route-1: Différence entre route_short_name et route_long_name
-      2-GTFS-Route-2: Non inclusion de route_short_name dans route_long_name
-      2-GTFS-Route-3: Contraste des couleurs
-      2-GTFS-Route-4: Absence d'une route inversant les valeurs route_short_name et route_long_name d'une autre
-      2-GTFS-Stop-1: Type du parent_station
-      2-GTFS-Stop-2: Colonne location_type non vide
-      2-GTFS-Stop-3: stop_name et stop_desc non confondus
-      2-GTFS-Stop-4: Absence de station dans des stations
-      2-NEPTUNE-AccessLink-1: Référence aux arrêts (<StopArea>) et accès (<AccessPoint>) définissant des liens d'accès (<AccessLink>).
-      2-NEPTUNE-AccessLink-2: Référence aux arrêts (<StopArea>) et accès (<AccessPoint>) définissant des liens d'accès (<AccessLink>).
-      2-NEPTUNE-AccessPoint-1: Référence à un arrêt (<StopArea>) dans les accès (<AccessPoint>)
-      2-NEPTUNE-AccessPoint-2: Référence à un arrêt (<StopArea>) dans les accès (<AccessPoint>)
-      2-NEPTUNE-AccessPoint-3: Existence de liens d'accès (<AccessLink>) sur les accès (<AccessPoint>)
-      2-NEPTUNE-AccessPoint-4: 'Existence de liens d''accès (<AccessLink>) sur les accès (<AccessPoint>) de type ''in'' '
-      2-NEPTUNE-AccessPoint-5: 'Existence de liens d''accès (<AccessLink>) sur les accès (<AccessPoint>) sur les accès de type ''out'' '
-      2-NEPTUNE-AccessPoint-6: 'Existence de liens d''accès (<AccessLink>) sur les accès (<AccessPoint>) sur les accès de type ''inout'' '
-      2-NEPTUNE-AccessPoint-7: Modèle de projection de référence utilisé
-      2-NEPTUNE-AreaCentroid-1: Référence à des arrêts (<StopArea>) dans la classe d'objets <AreaCentroid>
-      2-NEPTUNE-AreaCentroid-2: Modèle de projection de référence utilisé
-      2-NEPTUNE-Common-1: Unicité des éléments objectId des différents objets d'un lot de fichiers Neptune
-      2-NEPTUNE-Common-2: Unicité des éléments regitrationNumber des différents objets d'un lot de fichiers Neptune
-      2-NEPTUNE-ConnectionLink-1: Référence aux arrêts (<StopArea>) définissant des tronçons de correspondance (<ConnectionLink>)
+      1-GTFS-CSV-1: Contrôle de la lecture du fichier
+      1-GTFS-CSV-2: Contrôle de la syntaxe d'une ligne
+      1-GTFS-CSV-3: Contrôle de la syntaxe des entêtes
+      1-GTFS-CSV-4: Contrôle de la non présence de doublons dans les entêtes
+      1-GTFS-CSV-5: Contrôle de la syntaxe CSV GTFS du fichier
+      1-GTFS-CSV-6: Contrôle de la non présence de balise HTML
+      1-GTFS-CSV-7: Contrôle de la non présence d'espace en début ou fin de colonne
+      1-GTFS-Calendar-1: 'Contrôle de la présence d''au moins un jour d''application '
+      1-GTFS-Calendar-2: Contrôle de la chronologie des dates de début et fin de période
+      1-GTFS-Common-1: Contrôle de la présence des fichiers obligatoires
+      1-GTFS-Common-10: 'Contrôle de la présence des colonnes qui devraient être obligatoires '
+      1-GTFS-Common-11: Contrôle de la présence de colonnes non traités
+      1-GTFS-Common-12: Contrôle de la présence des données obligatoires
+      1-GTFS-Common-13: Contrôle de la présence de la colonne agency_id si plusieurs agences sont définies
+      1-GTFS-Common-14: Contrôle de la présence de la colonne agency_id même si une seule agence est définie
+      1-GTFS-Common-15: Contrôle de la présence d'une donnée sur valeur d'une autre
+      1-GTFS-Common-16: Contrôle du type des données
+      1-GTFS-Common-2: Contrôle de la présence des fichiers calendar ou calendar_dates
+      1-GTFS-Common-3: Contrôle de la présence des fichiers optionnels
+      1-GTFS-Common-4: Contrôle de la présence des fichiers non traités
+      1-GTFS-Common-5: Contrôle de la présence de données dans les fichiers obligatoires
+      1-GTFS-Common-6: Contrôle de la présence de données dans les fichiers calendar ou calendar_dates
+      1-GTFS-Common-7: Contrôle de la présence de données dans les fichiers optionnels
+      1-GTFS-Common-8: Contrôle de l'unicité des identifiants
+      1-GTFS-Common-9: Contrôle de la présence des colonnes obligatoires
+      1-GTFS-Route-1: Contrôle de la présence des colonnes obligatoires conditionnelles
+      1-GTFS-Route-2: Contrôle de la présence de données dans route_long_name ou route_short_name
+      1-NEPTUNE-XML-1: Conformité à la syntaxe XML suivant les recommandations du W3C.
+      1-NEPTUNE-XML-2: Conformité au schéma défini par la XSD du profil TRIDENT/NEPTUNE.
+      2-GTFS-Common-1: Contrôle de la présence des objets référencés
+      2-GTFS-Common-2: Contrôle de l'utilité des objets
+      2-GTFS-Common-3: Contrôle de l'unicité d'un couple de données
+      2-GTFS-Common-4: Contrôle de la non redondance de valeurs
+      2-GTFS-Route-1: Contrôle de la différence entre route_short_name et route_long_name
+      2-GTFS-Route-2: Contrôle de la non inclusion de route_short_name dans route_long_name
+      2-GTFS-Route-3: Contrôle du contraste des couleurs
+      2-GTFS-Route-4: Contrôle de la non présence d'une route inversant les valeurs route_short_name et route_long_name d'une autre
+      2-GTFS-Stop-1: Contrôle du type du parent_station
+      2-GTFS-Stop-2: Contrôle de l'utilité de la colonne location_type
+      2-GTFS-Stop-3: Contrôle de l'unicité de désignation (stop_name,stop_desc)
+      2-GTFS-Stop-4: Contrôle de la non présence de station dans des stations
+      2-NEPTUNE-AccessLink-1: Correcte référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+      2-NEPTUNE-AccessLink-2: Correcte référence aux arrêts <StopArea> et accès <AccessPoint> définissant des liens d'accès <AccessLink>.
+      2-NEPTUNE-AccessPoint-1: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+      2-NEPTUNE-AccessPoint-2: Correcte référence à un arrêt <StopArea> dans les accès <AccessPoint>.
+      2-NEPTUNE-AccessPoint-3: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>.
+      2-NEPTUNE-AccessPoint-4: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> de type 'in'.
+      2-NEPTUNE-AccessPoint-5: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint> sur les accès de type 'out'.
+      2-NEPTUNE-AccessPoint-6: Existence de liens d'accès <AccessLink> sur les accès <AccessPoint>  sur les accès de type 'inout'.
+      2-NEPTUNE-AccessPoint-7: Vérification du modèle de projection de référence utilisé.
+      2-NEPTUNE-AreaCentroid-1: Correcte référence à des arrêts <StopArea> dans la classe d’objets <AreaCentroid>.
+      2-NEPTUNE-AreaCentroid-2: Vérification du modèle de projection de référence utilisé.
+      2-NEPTUNE-Common-1: Unicité des éléments objectId des différents objets d'un lot de fichiers Neptune.
+      2-NEPTUNE-Common-2: Unicité des éléments regitrationNumber des différents objets d'un lot de fichiers Neptune.
+      2-NEPTUNE-ConnectionLink-1: Correcte référence aux arrêts <StopArea> définissant des tronçons de correspondance <ConnectionLink>.
       2-NEPTUNE-Facility-1: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
       2-NEPTUNE-Facility-2: Existence de l'arrêt <StopArea> référencé par l'équipement <Facility>.
       2-NEPTUNE-Facility-3: Existence de la ligne <Line> référencée par l'équipement <Facility>.
       2-NEPTUNE-Facility-4: Existence de la correspondance <ConnectionLink> référencée par l'équipement <Facility>.
       2-NEPTUNE-Facility-5: Existence de l'arrêt <StopPoint> référencé par l'équipement <Facility>.
       2-NEPTUNE-Facility-6: Vérification du modèle de projection de référence utilisé.
-      2-NEPTUNE-GroupOfLine-1: Référence à des LIGNEs/Neptune (<Line>) dans GROUPE DE LIGNES («GroupOfLine>)
-      2-NEPTUNE-ITL-1: Référence à des arrêts (<StopArea>) dans les arrêts (<StopArea>) de type ITL
-      2-NEPTUNE-ITL-2: Référence à des arrêts (<StopArea>) de type ITL dans la classe d'objets <ITL>
-      2-NEPTUNE-ITL-3: Référence à des arrêts (<StopArea>) dans la classe d'objets <ITL>
-      2-NEPTUNE-ITL-4: Type de référence à des arrêts (<StopArea> type ITL) dans la classe d'objets <ITL>
-      2-NEPTUNE-ITL-5: Référence à la ligne (<Line>) dans la classe d’objets <ITL>
-      2-NEPTUNE-JourneyPattern-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la mission <JourneyPattern>,
-      2-NEPTUNE-JourneyPattern-2: Existence des arrêts <StopPoint> référencés par la mission <JourneyPattern>,
-      2-NEPTUNE-JourneyPattern-3: Existence de la ligne <Line> référencée par la mission <JourneyPattern>,
-      2-NEPTUNE-Line-1: Référence au réseau dans l'objet ligne (<Line>)
-      2-NEPTUNE-Line-2: Référence à un arrêt (<StopArea>) comme terminus de ligne (<Line>)
-      2-NEPTUNE-Line-3: Référence à un arrêt de type BoardingPosition, Quay ou CommercialStopPoint (<StopArea>) comme terminus de ligne (<Line>)
-      2-NEPTUNE-Line-4: Référence aux séquences d'arrêts (<ChouetteRoute>) dans l'objet ligne (<Line>)
-      2-NEPTUNE-Line-5: Référence aux séquences d'arrêts (<ChouetteRoute>) dans l'objet ligne (<Line>)
-      2-NEPTUNE-Line-6: Référence aux séquences d'arrêts (<ChouetteRoute>) dans l'objet ligne (<Line>)
-      2-NEPTUNE-Network-1: Référence à des LIGNEs/Neptune (<Line>) dans VERSION DU RÉSEAU (<PTNetwork>)
-      2-NEPTUNE-Network-2: Valeur de SourceType parmi celles retenues par la norme Neptune
-      2-NEPTUNE-PtLink-1: Existence des arrêts <StopPoint> référencés par les tronçons commerciaux <PTLink>
-      2-NEPTUNE-Route-1: Existence des missions <JourneyPattern> référencées par la séquence d'arrêt <ChouetteRoute>
-      2-NEPTUNE-Route-10: Référence d'une séquence d'arrêts (<ChouetteRoute>) à une séquence d'arrêts opposée
-      2-NEPTUNE-Route-11: Sens de la référence d'une séquence d'arrêts (<ChouetteRoute>) à une séquence d'arrêts opposée
-      2-NEPTUNE-Route-12: Cohérence des terminus de la référence d'une séquence d'arrêts (<ChouetteRoute>) à une séquence d'arrêts opposée
-      2-NEPTUNE-Route-2: Existence des tronçons commerciaux (<PtLink>) référencés par la séquence d'arrêt <ChouetteRoute>
-      2-NEPTUNE-Route-3: Existence des tronçons commerciaux (<PtLink>) référencés par la séquence d'arrêt <ChouetteRoute>
-      2-NEPTUNE-Route-4: Référence à un tronçon commercial (<PtLink>) dans une séquence d'arrêts (<ChouetteRoute>)
-      2-NEPTUNE-Route-5: Tous les points d'arrêts sur parcours sont rattachés à une séquence d'arrêts (<ChouetteRoute>) au départ d'un tronçon commercial (<PtLink>) et/ou à l'arrivée d'un autre tronçon commercial (<PtLink>) de la même séquence d'arrêts
-      2-NEPTUNE-Route-6: Ordre des points d'arrêts sur parcours (<StopPoint>) dans le chainage des tronçons (<PtLink>) d'une séquence d'arrêts (<ChouetteRoute>)
-      2-NEPTUNE-Route-7: Référence mutuelle des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
-      2-NEPTUNE-Route-8: Cohérence des références aux points d'arrêt des missions (<JourneyPattern>) et des séquences d'arrêts (<ChouetteRoute>)
-      2-NEPTUNE-Route-9: Utilité des points d'arrêts sur parcours des séquences d'arrêts (<ChouetteRoute>)
-      2-NEPTUNE-StopArea-1: Correcte référence à des arrêts (<StopArea>) et/ou à des points d'arrêt sur parcours (<StopPoint>) dans les arrêts (<StopArea>)
-      2-NEPTUNE-StopArea-2: Correcte référence à des arrêts (<StopArea>) dans les arrêts (<StopArea>) de type StopPlace
-      2-NEPTUNE-StopArea-3: Correcte référence à des arrêts (<StopArea>) dans les arrêts (<StopArea>) de type CommercialStopPoint
-      2-NEPTUNE-StopArea-4: Correcte référence à des points d'arrêt sur parcours (<StopPoint>) dans les arrêts (<StopArea>) de type BoardingPosition ou Quay
-      2-NEPTUNE-StopArea-5: Correcte référence à une position géographique (<AreaCentroid>) dans les arrêts (<StopArea>) de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay
-      2-NEPTUNE-StopArea-6: Référence réciproque d'une position géographique (<AreaCentroid>) dans les arrêts (<StopArea>) de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay
-      2-NEPTUNE-StopPoint-1: Existence de la ligne <Line> référencée par l'arrêt <StopPoint>
-      2-NEPTUNE-StopPoint-2: Existence du réseau <PTNetwork> référence par l'arrêt <StopPoint>
-      2-NEPTUNE-StopPoint-3: Existence de l'arrêt <StopArea> référencé par l'arrêt <StopPoint>
-      2-NEPTUNE-StopPoint-4: Modèle de projection de référence utilisé
-      2-NEPTUNE-Timetable-1: Utilité des calendriers
-      2-NEPTUNE-Timetable-2: Affectation des courses à un calendrier
-      2-NEPTUNE-Timetable-3: Dates fin de période > date début de période
-      2-NEPTUNE-VehicleJourney-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la course <VehicleJourney>
-      2-NEPTUNE-VehicleJourney-2: Existence de la mission <JourneyPattern> référencée par la course <VehicleJourney>
-      2-NEPTUNE-VehicleJourney-3: Existence de la ligne <Line> référencée par la course <VehicleJourney>
-      2-NEPTUNE-VehicleJourney-4: Existence de l'opérateur <Company> référencé par la course <VehicleJourney>
-      2-NEPTUNE-VehicleJourney-5: Existence de la tranche horaire <TimeSlot> référencée par la course <VehicleJourney>
-      2-NEPTUNE-VehicleJourney-6: Cohérence entre la course, la mission et la séquence d'arrêts
+      2-NEPTUNE-GroupOfLine-1: Correcte référence à des lignes <Line> dans groupe de lignes <GroupOfLine>.
+      2-NEPTUNE-ITL-1: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type ITL.
+      2-NEPTUNE-ITL-2: Correcte référence à des arrêts <StopArea> de type ITL dans la classe d’objets <ITL>.
+      2-NEPTUNE-ITL-3: Correcte référence à des arrêts <StopArea> dans la classe d’objets <ITL>.
+      2-NEPTUNE-ITL-4: Vérification du type de référence à des arrêts <StopArea> type ITL dans la classe d’objets <ITL>.
+      2-NEPTUNE-ITL-5: Bonne référence à la ligne <Line> dans la classe d’objets <ITL>.
+      2-NEPTUNE-JourneyPattern-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la mission <JourneyPattern>.
+      2-NEPTUNE-JourneyPattern-2: Existence des arrêts <StopPoint> référencés par la mission <JourneyPattern>.
+      2-NEPTUNE-JourneyPattern-3: Existence de la ligne <Line> référencée par la mission <JourneyPattern>.
+      2-NEPTUNE-Line-1: Correcte référence au réseau dans l'objet ligne <Line>.
+      2-NEPTUNE-Line-2: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+      2-NEPTUNE-Line-3: Correcte référence à un point d'arrêt sur parcours <StopPoint> comme terminus de ligne <Line>.
+      2-NEPTUNE-Line-4: Correcte référence  aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+      2-NEPTUNE-Line-5: Correcte référence aux séquences d'arrêts <ChouetteRoute> dans l'objet ligne <Line>.
+      2-NEPTUNE-Line-6: Présence d'au moins une valeur parmi <name>,<number> ou <publishedName> dans l'objet ligne <Line>.
+      2-NEPTUNE-Network-1: Correcte référence à des lignes <Line> dans version du réseau <PTNetwork>.
+      2-NEPTUNE-Network-2: Valeur autorisée pour le type de source <SourceType> dans version du réseau <PTNetwork>.
+      2-NEPTUNE-PtLink-1: Existence des  arrêts <StopPoint> référencés par les  tronçons commerciaux <PTLink>.
+      2-NEPTUNE-Route-1: Existence des missions <JourneyPattern> référencées par la séquence d'arrêt <ChouetteRoute>.
+      2-NEPTUNE-Route-10: référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+      2-NEPTUNE-Route-11: Cohérence des sens de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+      2-NEPTUNE-Route-12: Cohérence des terminus de la référence d'une séquence d'arrêts <ChouetteRoute> à une séquence d'arrêts opposée.
+      2-NEPTUNE-Route-2: Existence des tronçons commerciaux <PtLink> référencés par la séquence d'arrêt <ChouetteRoute>.
+      2-NEPTUNE-Route-3: Existence de la séquence opposée <ChouetteRoute> référencée par la séquence d'arrêt <ChouetteRoute>.
+      2-NEPTUNE-Route-4: Correcte référence à un tronçon commercial <PtLink> dans une séquence d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-5: Vérification que tous les points d'arrêts sur parcours sont rattachés à une séquence d'arrêts <ChouetteRoute> au départ d'un tronçon commercial <PtLink> et/ou à l'arrivée d'un autre tronçon commercial <PtLink> de la même séquence d'arrêts.
+      2-NEPTUNE-Route-6: Vérification du correct ordonnancement des points d'arrêts sur parcours <StopPoint> dans le chainage des tronçons <PtLink> d'une séquence d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-7: référence mutuelle des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-8: Cohérence des références aux points d'arrêt des missions <JourneyPattern> et des séquences d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-Route-9: Utilité des points d'arrêts sur parcours des séquences d'arrêts <ChouetteRoute>.
+      2-NEPTUNE-StopArea-1: Correcte référence à des arrêts <StopArea> et/ou à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea>.
+      2-NEPTUNE-StopArea-2: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type StopPlace.
+      2-NEPTUNE-StopArea-3: Correcte référence à des arrêts <StopArea> dans les arrêts <StopArea> de type CommercialStopPoint.
+      2-NEPTUNE-StopArea-4: Correcte référence à des points d'arrêt sur parcours <StopPoint> dans les arrêts <StopArea> de type BoardingPosition ou Quay.
+      2-NEPTUNE-StopArea-5: Correcte référence à une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+      2-NEPTUNE-StopArea-6: référenceréciproque d'une position géographique <AreaCentroid> dans les arrêts <StopArea> de tout type StopPlace, CommercialStopPoint, BoardingPosition et Quay.
+      2-NEPTUNE-StopPoint-1: Existence de la ligne <Line> référencée par l'arrêt <StopPoint>.
+      2-NEPTUNE-StopPoint-2: Existence du réseau <PTNetwork> référence par l'arrêt <StopPoint>.
+      2-NEPTUNE-StopPoint-3: Existence de l'arrêt   <StopArea> référencé par l'arrêt <StopPoint>.
+      2-NEPTUNE-StopPoint-4: Vérification du modèle de projection de référence utilisé.
+      2-NEPTUNE-Timetable-1: Utilité des calendriers.
+      2-NEPTUNE-Timetable-2: Utilité des calendriers.
+      2-NEPTUNE-Timetable-3: Validité des dates de début et de fin des périodes des calendriers
+      2-NEPTUNE-VehicleJourney-1: Existence de la séquence d'arrêt <ChouetteRoute> référencée par la course <VehicleJourney>.
+      2-NEPTUNE-VehicleJourney-2: Existence de la mission <JourneyPattern> référencée par la course <VehicleJourney>.
+      2-NEPTUNE-VehicleJourney-3: Existence de la ligne <Line> référencée par la course <VehicleJourney>.
+      2-NEPTUNE-VehicleJourney-4: Existence de l'opérateur <Company> référencé par la course <VehicleJourney>.
+      2-NEPTUNE-VehicleJourney-5: Existence de la tranche horaire <TimeSlot> référencée par la course <VehicleJourney>.
+      2-NEPTUNE-VehicleJourney-6: Cohérence entre la course, la mission et la séquence d'arrêts.
       2-NEPTUNE-VehicleJourney-7: Utilité des missions
-      2-NEPTUNE-VehicleJourney-8: Vérification de la mission par défaut
-      2-NEPTUNE-VehicleJourneyAtStop-1: Existence de l'arrêt <StopPoint> référencé par l'horaire <VehicleJourneyAtStop>
-      2-NEPTUNE-VehicleJourneyAtStop-2: Existence de la course <VehicleJourney> référenceé par l'horaire <VehicleJourneyAtStop>
-      2-NEPTUNE-VehicleJourneyAtStop-3: Adéquation des horaires de la course à la séquence d'arrêts
-      2-NEPTUNE-VehicleJourneyAtStop-4: Adéquation des horaires de la course à la mission
-      3-AccessLink-1: Les deux extrémités d'un lien d'accès doivent être proches
-      3-AccessLink-2: Cohérence entre la distance fournie par le lien d'accès et la distance à vol d’oiseau entre ses 2 extrémités
-      3-AccessLink-3: La vitesse de parcours entre les 2 extrémités d'un lien d'accès ne doit pas être trop grande
-      3-AccessPoint-1: Tous les accès doivent être géolocalisés
-      3-AccessPoint-2: 2 accès de noms différents doivent être assez espacés
-      3-AccessPoint-3: Les accès doivent être proches de leur arrêt de rattachement
-      3-ConnectionLink-1: Les 2 arrêts d'une correspondance doivent être proches
-      3-ConnectionLink-2: Cohérence entre la distance fournie par la correspondance et la distance à vol d’oiseau entre les deux arrêts de la correspondance
-      3-ConnectionLink-3: La vitesse de parcours entre les deux arrêts d'une correspondance ne doit pas être trop grande
-      3-Facility-1: Tous les équipements doivent être géoréférencés
-      3-Facility-2: Les équipements doivent être proches de leur arrêt de rattachement
-      3-JourneyPattern-1: Détection de double définition de missions
-      3-JourneyPattern-2: La liste des segments du tracé la mission doit être complète
+      2-NEPTUNE-VehicleJourney-8: Mission implicite
+      2-NEPTUNE-VehicleJourneyAtStop-1: Existence de l'arrêt <StopPoint> référencé par l'horaire <VehicleJourneyAtStop>.
+      2-NEPTUNE-VehicleJourneyAtStop-2: Existence de la course <VehicleJourney> référenceé par l'horaire <VehicleJourneyAtStop>.
+      2-NEPTUNE-VehicleJourneyAtStop-3: adéquation des horaires de la course à la séquence d'arrêts.
+      2-NEPTUNE-VehicleJourneyAtStop-4: adéquation des horaires de la course à la mission.
+      3-AccessLink-1: Vérification de la proximité entre les deux extrémités d'un lien d'accès
+      3-AccessLink-2: Vérification de la cohérence entre la distance fournie sur le lien d'accès et la distance géographique entre les deux extrémités du lien d'accès
+      3-AccessLink-3: Vérification de la vitesse de parcours entre les deux extrémités d'un lien d'accès
+      3-AccessPoint-1: Vérification de la géolocalisation de tous les accès
+      3-AccessPoint-2: Vérification que deux accès de nom différents ne sont pas trop proches
+      3-AccessPoint-3: Vérification de la proximité entre les accès et leur arrêt de rattachement
+      3-ConnectionLink-1: Vérification de la proximité entre les deux arrêts d'une correspondance
+      3-ConnectionLink-2: Vérification de la cohérence entre la distance fournie sur la correspondance et la distance géographique entre les deux arrêts de la correspondance
+      3-ConnectionLink-3: Vérification de la vitesse de parcours entre les deux arrêts d'une correspondance
+      3-Facility-1: Vérification de la géolocalisation de tous les accès
+      3-Facility-2: Vérification de la proximité entre les équipements et leur arrêt de rattachement
+      3-JourneyPattern-1: Vérification de l'utilisation des arrêts par les missions
+      3-JourneyPattern-2: Vérification de l’existence d’une mission passant par tous les arrêts de la séquence
       3-JourneyPattern-3: Vérification de double définition de missions
-      3-Line-1: 2 lignes ne doivent pas avoir le même nom
-      3-Line-2: Toutes les lignes doivent posséder des séquences d’arrêt
-      3-Route-1: Deux arrêts d’un même arrêt commercial ne peuvent pas se succéder dans une séquence d’arrêts
+      3-Line-1: Vérification de la non homonymie des lignes
+      3-Line-2: Vérification de la présence de séquences d'arrêts sur la ligne
+      3-Route-1: Vérification de la succession des arrêts de la séquence
       3-Route-2: Vérification de la séquence inverse
-      3-Route-3: La distance entre deux arrêts successifs de la séquence doit être dans une fourchette paramétrable
-      3-Route-4: Détection de double définition de séquences
-      3-Route-5: Appariement de séquences sans séquence opposée
-      3-Route-6: Une séquence d’arrêts doit contenir au moins 2 arrêts
-      3-Route-7: Une séquence d’arrêts doit contenir au moins 1 mission
-      3-Route-8: Utilisation des arrêts par les missions
-      3-Route-9: Existence d’une mission passant par tous les arrêts de la séquence
-      3-RouteSection-1: Les extrémités d’une section doivent être proches de la position des arrêts associés
-      3-StopArea-1: Tous les arrêts (sauf les ITL) doivent être géolocalisés
-      3-StopArea-2: 2 arrêts de noms différents et de parents différents doivent être assez espacés
-      3-StopArea-3: Unicité des arrêts de même type
-      3-StopArea-4: Géolocalisation des arrêts dans un polygone de contrôle
-      3-StopArea-5: Un arrêt doit être assez proche de son arrêt parent
-      3-VehicleJourney-1: La durée d’attente à un arrêt ne doit pas être trop grande
-      3-VehicleJourney-2: La vitesse entre deux arrêts doit être dans une fourchette paramétrable
-      3-VehicleJourney-3: Les vitesses entre 2 arrêts doivent être similaires pour toutes les courses d’une même mission
-      3-VehicleJourney-4: Une course doit avoir au moins un calendrier d’application
-      3-VehicleJourney-5: La chronologie des horaires sur un arrêt et entre deux arrêts doit être croissante
-      3-VehicleJourney-6: Une course à fréquence ne doit pas avoir deux périodes qui se chevauchent
-      3-VehicleJourney-7: Les créneaux horaires d'une course à fréquence associés à un créneau horaire doivent être inclus dans ce créneau horaire
-      3-VehicleJourney-8: Une course horaire et une course à fréquence associées à la même mission ne doivent pas se chevaucher.
+      3-Route-3: Vérification de la distance entre deux arrêts successifs de la séquence
+      3-Route-4: Vérification de double définition de séquences
+      3-Route-5: Vérification de séquences sans séquence opposée
+      3-Route-6: Vérification de la présence d'arrêts dans la séquence
+      3-Route-7: Vérification de la présence de missions
+      3-Route-8: Vérification de l'utilisation des arrêts par les missions
+      3-Route-9: Vérification de l’existence d’une mission passant par tous les arrêts de la séquence
+      3-StopArea-1: Vérification de la géolocalisation de tous les arrêts hors ITL
+      3-StopArea-2: Vérification que 2 arrêts de noms différents en dehors d'un même regroupement d'arrêts ne sont pas trop proches
+      3-StopArea-3: Vérification de l'unicité des arrêts
+      3-StopArea-4: Vérification de la géolocalisation des arrêts
+      3-StopArea-5: Vérification de la position relative des arrêts et de leur parent
+      3-VehicleJourney-1: Vérification de la chronologie des horaires de passage à un arrêt
+      3-VehicleJourney-2: Vérification de la vitesse de transfert entre deux arrêts
+      3-VehicleJourney-3: Vérification de la cohérence des courses successives desservant deux mêmes arrêts
+      3-VehicleJourney-4: Vérification de l'affectation des courses à un calendrier
+      3-VehicleJourney-5: Les horaires d'une course doivent respecter un ordre chronologique
       4-AccessLink-1: Vérification de contraintes sur les attributs des liens d'accès
       4-AccessPoint-1: Vérification de contraintes sur les attributs des accès
-      4-Company-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-ConnectionLink-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-ConnectionLink-2: Connexion des correspondances
-      4-GroupOfLine-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-JourneyPattern-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-Line-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-Line-2: Le mode de transport doit être dans une liste pré-définie
-      4-Line-3: Unicité de la relation Line->Groupe of Line
-      4-Line-4: Unicité du couple A/R des séquences d'arrêts
-      4-Network-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-Route-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-StopArea-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-StopArea-2: Appartenance des arrêts physiques à un arrêt commercial
+      4-Company-1: Vérification de contraintes sur les attributs des transporteurs
+      4-ConnectionLink-1: Vérification de contraintes sur les attributs des correspondances
+      4-ConnectionLink-2: Vérification des type d'arrêts en correspondance
+      4-GroupOfLine-1: Vérification de contraintes sur les attributs des groupes de lignes
+      4-JourneyPattern-1: Vérification de contraintes sur les attributs des missions
+      4-Line-1: Vérification de contraintes sur les attributs des lignes
+      4-Line-2: Vérification des modes de transport des lignes
+      4-Line-3: Vérification des groupes de lignes d'une ligne
+      4-Line-4: Vérification des séquences d'arrêts d'une ligne
+      4-Network-1: Vérification de contraintes sur les attributs des réseaux
+      4-Route-1: Vérification de contraintes sur les attributs des séquences d'arrêt
+      4-StopArea-1: Vérification de contraintes sur les attributs des arrêts
+      4-StopArea-2: Vérification de l'existance d'un arrêt commercial pour les arrêts physiques
       4-StopArea-3: Vérification de la cohérence entre les noms de communes et leur code INSEE
-      4-Timetable-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-VehicleJourney-1: Contraintes de taille, de type et d'unicité sur les attributs de l'objet
-      4-VehicleJourney-2: Le mode de transport doit être dans une liste pré-définie
+      4-Timetable-1: Vérification de contraintes sur les attributs des calendiers
+      4-VehicleJourney-1: Vérification de contraintes sur les attributs des courses
+      4-VehicleJourney-2: Vérification des modes de transport des courses
       detail_1_gtfs_calendar_1: aucun jour d'application n'est activé
       detail_1_gtfs_calendar_2: la date de fin du calendrier est antérieur ou égale à la date de début
       detail_1_gtfs_common_1: le fichier %{filename} est obligatoire
@@ -228,15 +1335,6 @@ fr:
       detail_1_gtfs_route_2: les valeurs des champs route_long_name et route_short_name ne sont pas renseignées
       detail_1_neptune_xml_1: "%{source_label} : %{error_value}"
       detail_1_neptune_xml_2: "%{source_label} : %{error_value}"
-      detail_1_netexprofile_duplicateidentificatorsacrosslineandcommonfiles: 
-      detail_1_netexprofile_duplicateidentificatorsacrosslinefiles: 
-      detail_1_netexprofile_invalididstructure: 
-      detail_1_netexprofile_missingreferenceversionattribute: 
-      detail_1_netexprofile_missingversionattribute: 
-      detail_1_netexprofile_unapprovedcodespacedefined: 
-      detail_1_netexprofile_unknownprofile: 
-      detail_1_netexprofile_unresolvedreferencetocommonelements: 
-      detail_1_netexprofile_useofunapprovedcodespace: 
       detail_1_regtopp_concistency_1: 
       detail_1_regtopp_concistency_2: 
       detail_1_regtopp_field_value_1: 
@@ -250,20 +1348,6 @@ fr:
       detail_1_regtopp_file_tda: 
       detail_1_regtopp_file_tix: 
       detail_1_regtopp_file_tms: 
-      detail_2_database_accesspoint_1: L'accès  %{source_objectid} importé  n'appartient pas au même arrêt que celui déjà en base
-      detail_2_database_connectionlink_1_1: La correspondance %{source_objectid} importée n'a pas le même arrêt de départ que celle déjà en base
-      detail_2_database_connectionlink_1_2: La correspondance %{source_objectid} importée n'a pas le même arrêt d'arrivée que celle déjà en base
-      detail_2_database_journeypattern_1: La mission %{source_objectid} importée n'appartient pas à la même séquence d'arrêts que celle déjà en base
-      detail_2_database_line_1: La ligne %{source_objectid} importée ne référence pas le même réseau que celle déjà en base
-      detail_2_database_line_2: La ligne %{source_objectid} importée ne référence pas le même transporteur que celle déjà en base
-      detail_2_database_route_1: La séquence d'arrêts %{source_objectid} importée n'appartient pas à la même ligne que celle déjà en base
-      detail_2_database_stoparea_1: L'arrêt %{source_objectid} importé n'appartient pas au même parent que celui déjà en base
-      detail_2_database_stoparea_2: L'arrêt %{source_objectid} importé n'est pas du même type que celui déjà en base
-      detail_2_database_stoppoint_1: Le point d'arrêt %{source_objectid} importé n'appartient pas à la même séquence d'arrêts que celui déjà en base
-      detail_2_database_stoppoint_2: Le point d'arrêt %{source_objectid} importé n'est pas à la même position dans la séquence d'arrêts que celui déjà en base
-      detail_2_database_stoppoint_3: L'arrêt %{source_objectid} importé est différent de celui de la séquence d'arrêts déjà en base
-      detail_2_database_vehiclejourney_1: La course %{source_objectid} importée n'appartient pas à la même mission que celle déjà en base
-      detail_2_database_vehiclejourney_2: La course %{source_objectid} importée ne référence pas le même transporteur que celle déjà en base
       detail_2_gtfs_common_1: 'Identifiant %{reference_value} inconnu : %{error_value}'
       detail_2_gtfs_common_2: 'Identifiant %{reference_value} non référencé : %{error_value}'
       detail_2_gtfs_common_3: 'Le couple de champs (%{reference_value}) est en doublon (%{error_value}): '
@@ -422,7 +1506,6 @@ fr:
       detail_3_route_7: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission
       detail_3_route_8: La séquence d'arrêt %{source_label} (%{source_objectid}) a %{error_value} arrêts non utilisés par des missions
       detail_3_route_9: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission desservant l'ensemble de ses arrêts
-      detail_3_routesection_1: la section de tracé %{source_label} (%{source_objectid}) est trop éloignée de ses arrêts
       detail_3_stoparea_1: L'arrêt %{source_label} (%{source_objectid}) n'est pas géolocalisé
       detail_3_stoparea_2: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop près de l''arrêt %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value} (mètres)'
       detail_3_stoparea_3: Les arrêts %{source_label} (%{source_objectid} et %{target_0_objectid}) sont desservis par les mêmes lignes
@@ -437,9 +1520,6 @@ fr:
       detail_3_vehiclejourney_4: La course %{source_label} (%{source_objectid}) n'a pas de calendrier d'application
       detail_3_vehiclejourney_5_1: L'horaire de départ doit être supérieur à l'horaire d'arrivée pour l'arrêt %{target_0_label} (%{target_0_objectid})
       detail_3_vehiclejourney_5_2: La course %{source_label} (%{source_objectid}) a des horaires ne respectant pas la chronologie entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
-      detail_3_vehiclejourney_6: La course %{source_label} (%{source_objectid}) est sur des plages de fréquences qui se chevauchent
-      detail_3_vehiclejourney_7: La course %{source_label} (%{source_objectid}) est sur des plages de fréquences qui ne correspondent pas à ses créneaux horaires
-      detail_3_vehiclejourney_8: La course %{source_label} (%{source_objectid}) à horaire fixe circule dans l'un des crénaux horaires des courses à fréquence de la mission
       detail_4_accesslink_1_max_size: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) est trop grand (%{error_value})
       detail_4_accesslink_1_min_size: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
       detail_4_accesslink_1_pattern: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
@@ -496,6 +1576,15 @@ fr:
       detail_4_vehiclejourney_1_pattern: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
       detail_4_vehiclejourney_1_unique: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) a une valeur partagée avec la course %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: La course %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
+    errors: Erreurs
+    file:
+      detailed_errors_file_prefix: details_des_erreurs.csv
+      summary_errors_file_prefix: sommaire_des_tests.csv
+      zip_name_prefix: resultats_de_validation
+    in_progress: Validation en cours...
+    index:
+      column: Col
+      line: Li
     severities:
       error: Erreur
       error_txt: Erreur
@@ -509,6 +1598,113 @@ fr:
       success_txt: Succès
       warning: Avertissement
       warning_txt: Avertissement
+    statuses:
+      nok: Erreur
+      ok: Succès
+      uncheck: Absent
+  compliance_check_tasks:
+    actions:
+      new: Ajouter une validation
+    new:
+      all: Toutes
+      flash: La demande de validation est mise en file d'attente, veuillez rafraichir régulièrement la page pour en suivre la progression
+      submit: Lancer la validation
+      title: Démarrer une nouvelle validation
+  compliance_checks:
+    actions:
+      destroy: Supprimer cette validation
+      destroy_confirm: Voulez-vous supprimer ce résultat de validation ?
+      download: Télécharger
+      edit: Editer cette validation
+      report: Test de conformité
+      rule_parameter_set: Jeu de paramètres
+    edit:
+      title: Editer la validation
+    error_count:
+      one: une erreur
+      other: "%{count} erreurs"
+      zero: aucune erreur
+    fatal_count:
+      one: une erreur fatale
+      other: "%{count} erreurs fatales"
+      zero: aucune erreur fatale
+    import: Import
+    index:
+      title: Validation
+      warning: Avertissement
+    ok_count:
+      one: un test réussi
+      other: "%{count} tests réussis"
+      zero: aucun test réussi
+    report:
+      action_report: Rapport d'action
+      validation_success: La validation est passée avec succès.
+    rule_parameter_set: Jeu de paramètres
+    show:
+      completed: "[ Terminé ]"
+      details: Détails
+      export: Télécharger les résultats
+      export_csv: Format CSV
+      failed: "[ Echoué ]"
+      parameters: Paramètres des tests
+      pending: "[ En file d'attente ]"
+      processing: "[ En progression... ]"
+      summary: Rapport de conformité
+      title: Validation
+    statuses:
+      aborted: Echoué
+      canceled: Annulé
+      completed: Achevé
+      failed: Echoué
+      pending: En attente ...
+      processing: En cours ...
+      scheduled: En cours...
+      started: En file d'attente...
+      terminated: Achevé
+    uncheck_count:
+      one: un inapplicable
+      other: "%{count} inapplicables"
+      zero: aucun inapplicable
+    warning_count:
+      one: un warning
+      other: "%{count} warnings"
+      zero: aucun warning
+  connection_link_types:
+    label:
+      mixed: Mixte
+      overground: Aérien
+      undefined: Non précisé
+      underground: Souterrain
+  connection_links:
+    actions:
+      destroy: Supprimer cette correspondance
+      destroy_confirm: Etes vous sûr de supprimer cette correspondance ?
+      edit: Modifier cette correspondance
+      new: Ajouter une correspondance
+      select_areas: Modifier les départs/arrivées
+    connection_link:
+      from: De
+      to: vers
+    edit:
+      title: Modifier la correspondance %{connection_link}
+    index:
+      arrival: Arrêt d'arrivée
+      departure: Arrêt de départ
+      name: Recherche par nom
+      selection: Sélection
+      selection_all: Tous
+      title: Correspondances
+    new:
+      title: Ajouter une correspondance
+    select_areas:
+      title: Sélection des arrêts de départ et d'arrivée de %{connection_link}
+    select_arrival:
+      title: Sélection de l'arrêt d'arrivée de %{connection_link}
+    select_departure:
+      title: Sélection de l'arrêt de départ de %{connection_link}
+    show:
+      durations: 'Durées (hh mm ss) :'
+      title: Correspondance %{connection_link}
   count_errors:
     one: 1 erreur
     other: "%{count} erreurs"
@@ -517,6 +1713,453 @@ fr:
     one: 1 avertissement
     other: "%{count} avertissements"
     zero: 0 avertissement
+  delete_periods: Supprimer Périodes
+  devise:
+    confirmations:
+      new:
+        title: Renvoyer le mail de confirmation
+    invitations:
+      edit:
+        header: Entrer votre mot de passe
+        submit_button: Valider mon mot de passe
+      invitation_removed: Votre invitation a été supprimée.
+      invitation_token_invalid: L'invitation fournie n'est pas valide!
+      new:
+        header: Envoyer une invitation
+        submit_button: Envoyer une invitation
+      no_invitations_remaining: Pas d'invitations restantes.
+      send_instructions: Un email d'invitation a été envoyé à %{email}.
+      updated: Votre mot de passe a été enregistré avec succés. Vous êtes maintenant connecté.
+    links:
+      new_confirmation: Confirmer mon compte
+      new_password: Mot de passe oublié ?
+      sign_in: Se connecter
+      sign_up: S'inscrire
+    mailer:
+      invitation_instructions:
+        accept: Accepter l'invitation
+        hello: Bonjour %{email}
+        ignore: Si vous ne souhaitez pas accepter cette invitation, ignorez ce message.<br />Votre compte ne sera pas créé tant que vous n'accédez pas au lien ci-dessus et que vous ne définissez un mot de passe.
+        someone_invited_you: 'Ce message est une invitation pour accéder à %{url}, vous pouvez l''accepter en cliquant sur le lien suivant :'
+        subject: Invitation sur l'application Chouette
+    passwords:
+      edit:
+        commit: Changer de mot de passe
+        new_password: Nouveau mot de passe
+        new_password_confirmation: Confirmation du nouveau mot de passe
+        title: Changer de mot de passe
+      new:
+        commit: Envoyer les instructions pour un nouveau mot de passe
+        title: Mot de passe oublié
+    registrations:
+      edit:
+        actions:
+          destroy: Supprimer votre profil
+          destroy_confirm: Etes vous sûr de vouloir supprimer *définitivement* votre profil ?
+        commit: Modifier
+        title: Votre Profil
+      new:
+        commit: S'inscrire
+        title: Inscrivez vous
+    sessions:
+      new:
+        commit: Se connecter
+        introduction1: Chouette est un logiciel Open Source de saisie, de visualisation et d'échange d'offre de transport public planifiée, conçu pour être l'implémentation de référence pour valider la conformité de données à la norme Neptune (NFP 99 506)
+        introduction2: Déployé en mode Saas, ce logiciel est ouvert et peut gérer
+        introduction_item1: plusieurs formats (Neptune, GTFS, CSV, prochainement Netex)
+        introduction_item2: plusieurs fonds cartographiques, notamment IGN, OSM et Google.
+        title: Se connecter
+        welcome: Bienvenue sur Chouette
+  directions:
+    label:
+      backward: retour
+      clock_wise: sens horaire
+      counter_clock_wise: sens anti horaire
+      east: est
+      north: nord
+      north_east: nord est
+      north_west: nord ouest
+      south: sud
+      south_east: sud est
+      south_west: sud ouest
+      straight_forward: aller
+      west: ouest
+  edit_periods: Editer Périodes
+  enumerize:
+    data_format:
+      gtfs: GTFS
+      hub: HUB 1.3
+      kml: KML
+      neptune: Profil Neptune
+      netex: Profil NeTEx
+      regtopp: RegTopp
+      sig: SIG
+    data_format_detail:
+      gtfs: General Transit Feed Specification défini par Google
+      hub: Format spécifique Transdev
+      kml: Tracés de lignes, séquences d'arrêts, ...  en 'Keyhole Markup Language'
+      neptune: Neptune
+      netex: Expérimental
+    for_alighting:
+      forbidden: Descente interdite
+      is_flexible: Descente sur réservation
+      normal: Descente autorisée
+      request_stop: Descente sur demande au conducteur
+    for_boarding:
+      forbidden: Montée interdite
+      is_flexible: Montée sur réservation
+      normal: Montée autorisée
+      request_stop: Montée sur demande au conducteur
+    references_type:
+      company: Transporteurs
+      group_of_line: Groupe de lignes
+      line: Lignes
+      network: Réseaux
+      stop_area: Arrêts et correspondances (stops.txt et transfers.txt)
+  export_tasks:
+    actions:
+      new: Nouvel export
+    new:
+      all: Tous
+      fields_gtfs_export:
+        warning: Le filtre sur arrêts exporte uniquement les fichiers GTFS stops et transfers gtfs, ceux-ci pouvant contenir des attributs supplémentaires
+      flash: La demande d'export est mise en file d'attente, veuillez rafraichir régulièrement la page pour en suivre la progression
+      title: Nouvel export
+  exports:
+    actions:
+      destroy: Supprimer cet export
+      destroy_confirm: Etes vous sûr de supprimer cet export ?
+      new: Nouvel export
+    index:
+      title: Exports
+      warning: Avertissement
+    new:
+      all: Toutes
+      flash: La demande d'export est mise en file d'attente, veuillez rafraichir régulièrement la page pour en suivre la progression
+      title: Nouvel export
+    severities:
+      error: Erreur
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Non disponible
+      warning: Alerte
+    show:
+      exported_file: Fichier exporté
+      report: Rapport
+    statuses:
+      aborted: Echoué
+      canceled: Annulé
+      scheduled: En cours...
+      started: En file d'attente...
+      terminated: Achevé
+  'false': non
+  file_validation_log_messages:
+    import: Import Report
+    messages:
+      ONE: 'Category 1 : Syntaxe'
+      TooMuchDetails: "( %{0} erreurs / warnings supplémentaires )"
+      undefined: "%{key} non défini"
+    rule_parameter_set: Règle du jeu de paramètres
+    severities:
+      error: Erreur
+      fatal: Fatal
+      ok: Ok
+      uncheck: Non testé
+      warning: Alerte
+  footnotes:
+    actions:
+      add_footnote: ajouter une note en bas de page
+    index:
+      title: Notes en bas de page
+  formtastic:
+    cancel: Annuler
+    clone: Cloner
+    create: Créer %{model}
+    duplicate: Dupliquer
+    export: Lancer l'export
+    'false': Non
+    import: Lancer l'import
+    placeholders:
+      time_table:
+        tag_search: 'ex: Jours fériés,Vacances scolaires'
+    required: requis
+    reset: Réinitialiser %{model}
+    submit: Valider %{model}
+    titles:
+      access_link:
+        objectid: "[prefixe]:AccessLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      access_point:
+        coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
+        objectid: "[prefixe]:AccessPoint:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
+      company:
+        name: Nom
+        objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+      connection_link:
+        link_distance: Link distance
+        objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      export_task:
+        dates:
+          not_nul: Export HUB interrompu. Les dates de début et de fin doivent êtres renseignées.
+        end_date: limite l'export aux courses circulant jusqu'à cette date
+        ignore_end_chars: Ignorer les n derniers caractères du nom de l'arrêt pour détecter l'homonymie
+        ignore_last_word: Ignorer le dernier mot pour détecter l'homonymie des noms d'arrêt (inapplicable quand le nom ne comporte qu'un mot)
+        max_distance_for_commercial: Distance maximale entre deux arrêts homonymes pour créer les zones d'arrêt (en mètre)
+        max_distance_for_connection_link: Distance maximale entre deux arrêts pour créer les correspondances (en mètre)
+        object_id_prefix: lorsque le préfixe d'identifiant Netpune prend cette valeur, il n'est pas utilisé pour composer l'identifiant GTFS
+        start_date: limite l'export aux courses circulant à partir de cette date
+        time_zone: selon le codage TZ  (http://fr.wikipedia.org/wiki/Tz_database)
+      group_of_line:
+        name: Nom
+        objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        registration_number: Entier positif.
+      gtfs:
+        company:
+          name: Nom
+          objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        connection_link:
+          link_distance: 
+          objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        group_of_line:
+          name: Nom
+          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: Entier positif.
+        journey_pattern:
+          name: Nom
+          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: Entier positif.
+        line:
+          name: Nom
+          number: Nombre
+          objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        network:
+          name: Nom
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        route:
+          objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        stop_area:
+          city_name: Ville
+          comment: Commentaire
+          coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
+          name: Nom
+          nearest_topic_name: Point d'intérêt le plus proche
+          objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+          zip_code: Code postal
+        time_table:
+          comment: Commentaire
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        vehicle_journey:
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      hub:
+        company:
+          name: maximum 75 caractères
+          objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 3."
+          registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
+        connection_link:
+          link_distance: Au plus 10000.0 mètres.
+          objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        group_of_line:
+          name: maximum 75 caractères
+          objectid: "[prefixe]:GroupOfLine:[clé_unique] caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 6."
+          registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
+        journey_pattern:
+          name: Longueur maximale = 75.
+          objectid: "[prefixe]:JourneyPattern:[clé_unique] caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 30."
+          registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
+        line:
+          name: maximum 75 caractères
+          number: 'Caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)''. Longueur maximale = 6.'
+          objectid: "[prefixe]:Line:[clé_unique] caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 14."
+          registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
+        network:
+          name: maximum 75 caractères
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 3."
+          registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres.
+        route:
+          objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 8."
+        stop_area:
+          city_name: Obligatoire pour les arrêts physiques. Longueur maximale = 80.
+          comment: Longueur maximale = 255.
+          coordinates: Les coordonnées sont obligatoires.
+          name: Longueur maximale = 75.
+          nearest_topic_name: Longueur maximale = 255 pour les arrêts logiques et 60 pour les arrêts physiques.
+          objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 12."
+          projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
+          registration_number: Entier positif, clé unique, d'un maximum de 8 chiffres. Obligatoire pour les arrêts physiques.
+          zip_code: Entier positif de 8 chiffres. Obligatoire pour les arrêts physiques.
+        time_table:
+          comment: Longueur maximale = 75.
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 6."
+        vehicle_journey:
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'. Longueur maximale de la clé unique = 8."
+      import_task:
+        ignore_end_chars: Ignorer les n derniers caractères du nom de l'arrêt pour détecter l'homonymie
+        ignore_last_word: Ignorer le dernier mot pour détecter l'homonymie des noms d'arrêt (inapplicable quand le nom ne comporte qu'un mot)
+        max_distance_for_commercial: Distance maximale entre deux arrêts homonymes pour créer les zones d'arrêt (en mètre)
+        max_distance_for_connection_link: Distance maximale entre deux arrêts pour créer les correspondances (en mètre)
+        references_type: Le filtre sur arrêts importe uniquement les fichiers GTFS stops et transfers gtfs, ceux-ci pouvant contenir des attributs supplémentaires
+      journey_pattern:
+        name: Nom
+        objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        registration_number: Entier positif.
+      line:
+        name: Nom
+        number: Nombre
+        objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+      neptune:
+        company:
+          name: Nom
+          objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        connection_link:
+          link_distance: 
+          objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        group_of_line:
+          name: Nom
+          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: Entier positif.
+        journey_pattern:
+          name: Nom
+          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: Entier positif.
+        line:
+          name: Nom
+          number: Nombre
+          objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        network:
+          name: Nom
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        route:
+          objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        stop_area:
+          city_name: Ville
+          comment: Commentaire
+          coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
+          name: Nom
+          nearest_topic_name: Point d'intérêt le plus proche
+          objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+          zip_code: Code postal
+        time_table:
+          comment: Commentaire
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        vehicle_journey:
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      netex:
+        company:
+          name: Nom
+          objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        connection_link:
+          link_distance: 
+          objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        group_of_line:
+          name: Nom
+          objectid: "[prefixe]:GroupOfLine:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: Entier positif.
+        journey_pattern:
+          name: Nom
+          objectid: "[prefixe]:JourneyPattern:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: Entier positif.
+        line:
+          name: Nom
+          number: Nombre
+          objectid: "[prefixe]:Line:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        network:
+          name: Nom
+          objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        route:
+          objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        stop_area:
+          city_name: Ville
+          comment: Commentaire
+          coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
+          name: Nom
+          nearest_topic_name: Point d'intérêt le plus proche
+          objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+          projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
+          registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+          zip_code: Code postal
+        time_table:
+          comment: Commentaire
+          objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        vehicle_journey:
+          objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      network:
+        name: Nom
+        objectid: "[prefixe]:PTNetwork:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+      referential:
+        lower_corner: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
+        prefix: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        slug: 'caractères autorisés : alphanumériques minuscules et ''souligné (underscore ou tiret du 8)'' et doit commencer par une lettre'
+        upper_corner: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
+      route:
+        objectid: "[prefixe]:Route:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      stop_area:
+        city_name: Ville
+        comment: Commentaire
+        coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
+        name: Nom
+        nearest_topic_name: Point d'intérêt le plus proche
+        objectid: "[prefixe]:StopArea:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+        projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
+        registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
+        zip_code: Code postal
+      time_table:
+        comment: Commentaire
+        objectid: "[prefixe]:Timetable:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      validation:
+        ignore_end_chars: Ignorer les n derniers caractères du nom de l'arrêt pour détecter l'homonymie
+        ignore_last_word: Ignorer le dernier mot pour détecter l'homonymie des noms d'arrêt (inapplicable quand le nom ne comporte qu'un mot)
+        max_distance_for_commercial: Distance maximale entre deux arrêts homonymes pour créer les zones d'arrêt (en mètre)
+        max_distance_for_connection_link: Distance maximale entre deux arrêts pour créer les correspondances (en mètre)
+      validation_task:
+        ignore_end_chars: Ignorer les n derniers caractères du nom de l'arrêt pour détecter l'homonymie
+        ignore_last_word: Ignorer le dernier mot pour détecter l'homonymie des noms d'arrêt (inapplicable quand le nom ne comporte qu'un mot)
+        max_distance_for_commercial: Distance maximale entre deux arrêts homonymes pour créer les zones d'arrêt (en mètre)
+        max_distance_for_connection_link: Distance maximale entre deux arrêts pour créer les correspondances (en mètre)
+      vehicle_journey:
+        objectid: "[prefixe]:VehicleJourney:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+    'true': Oui
+    update: Modifier %{model}
+    validate: Lancer la validation
+  group_of_lines:
+    actions:
+      destroy: Supprimer ce groupe de lignes
+      destroy_confirm: Etes vous sûr de supprimer ce groupe de lignes ?
+      edit: Modifier ce groupe de lignes
+      new: Ajouter un groupe de lignes
+    edit:
+      title: Modifier le groupe de lignes %{group_of_line}
+    form:
+      lines: Lignes associées
+    index:
+      name: Recherche par nom
+      title: Groupes de lignes
+    new:
+      title: Ajouter un groupe de lignes
+    show:
+      lines: Liste des lignes
+      title: Groupe de lignes %{group_of_line}
+  hub:
+    invalid: est invalide
+    routes:
+      max_by_line: Le format HUB n'autorise que 2 séquences d'arrêts au plus pour une ligne
+      wayback_code_exclusive: Une autre séquence existe déjà dans le même sens (Aller ou Retour)
   iev:
     errors:
       duplicate_or_missing_data: Donnée manquante ou en double
@@ -533,6 +2176,241 @@ fr:
       unknown_job: Numéro de job inconnu
       unknown_referential: Référentiel inconnu
       unreadable_parameters: Paramètres non lisibles (format erroné)
+    exception:
+      default: Impossible d'accéder aux services IEV
+      dupplicate_or_missing_data: Donnée manquante ou en double
+      dupplicate_parameters: Paramètres fournis en double
+      internal_error: Erreur interne
+      invalid_parameters: Paramètres d'action incorrects
+      invalid_request: Requête invalide
+      missing_parameters: Paramètres d'action manquants
+      scheduled_job: Méthode interdite sur un job non terminé
+      unknown_action: Action ou type inconnu
+      unknown_file: Fichier inconnu
+      unknown_job: Numéro de job inconnu
+      unknown_referential: Référentiel inconnu
+      unreadable_parameters: Paramètres non lisibles (format erroné)
+    failure:
+      internal_error: Erreur interne
+      invalid_data: Données invalides
+      invalid_parameters: Paramètres invalides
+      no_data_found: Pas de données à traiter dans l'ensemble du traitement
+      no_data_proceeded: Pas de données traitée dans l'ensemble du traitement
+  import_tasks:
+    actions:
+      new: Nouvel import
+    new:
+      all: Tout
+      flash: La demande d'import est mise en file d'attente, veuillez rafraichir régulièrement la page pour en suivre la progression
+      title: Nouvel import
+  imports:
+    actions:
+      destroy: Supprimer cet import
+      destroy_confirm: Etes vous sûr de supprimer cet import ?
+      new: Nouvel import
+    compliance_check_task: Validation
+    index:
+      title: Imports
+      warning: Avertissement
+    severities:
+      error: Erreur
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Non testé
+      warning: Alerte
+    show:
+      compliance_check: Test de conformité
+      compliance_check_of: 'Validation de l''import : '
+      import_of_validation: L'import de la validation
+      imported_file: Fichier source
+      report: Rapport
+      rule_parameter_set: Jeu de paramètres
+  job_status:
+    title:
+      processed: Opération lancée, cliquez pour afficher son état d'avancement.
+  journey_frequencies:
+    form:
+      add_line: Ajouter un créneau
+    time_band: Créneaux horaires
+  journey_patterns:
+    actions:
+      destroy: Supprimer cette mission
+      destroy_confirm: Etes vous sûr de vouloir détruire cette mission ?
+      edit: Modifier cette mission
+      edit_route_sections: Modifier le tracé
+      new: Ajouter une mission
+    edit:
+      title: Modifier la mission %{journey_pattern}
+    form:
+      warning: Attention, la sélection s'applique aussi aux %{count} courses de la mission
+    index:
+      title: Missions
+    journey_pattern:
+      from_to: De '%{departure}' à '%{arrival}'
+      stop_count: "%{count}/%{route_count} arrêts"
+      vehicle_journey_at_stops: Horaires des courses
+      vehicle_journeys_count: 'Courses: %{count}'
+    new:
+      title: Ajouter une mission
+    show:
+      stop_points: Liste des arrêts de la mission
+      title: Mission %{journey_pattern}
+  layouts:
+    back_to_dashboard: Retour au Tableau de Bord
+    day: Jour
+    flash_messages:
+      alert: Alerte
+      error: Erreur
+      notice: Info
+      success: Succès
+    footer:
+      contact:
+        forum: Forum
+        mail: Contactez nous
+        newsletter: Lettre d'information
+        title: Contact
+      product:
+        licence: Licence
+        source_code: Code Source
+        title: Produit
+        user_group: Club utilisateur
+      support:
+        good_practices: Bonnes pratiques
+        help: Aide
+        technical_support: Support technique
+        title: Support
+    help: Aide
+    history_tag:
+      created_at: Créé le
+      no_save: Pas de sauvergarde
+      title: Métadonnées
+      updated_at: Mise à jour le
+      user_name: Auteur
+    home: Accueil
+    hour: Heure
+    minute: Minute
+    navbar:
+      referential_datas: Données
+      return_to_dashboard: Retour au Tableau de Bord
+      return_to_referentials: Retour à la liste des espaces de données
+      select_referential: Sélection de l'espace de données
+      select_referential_datas: Sélection des données
+    user:
+      profile: Mon Profil
+      sign_out: Déconnexion
+  lines:
+    actions:
+      destroy: Supprimer cette ligne
+      destroy_confirm: Etes vous sûr de supprimer cette ligne ?
+      destroy_selection_confirm: Etes vous sûr de supprimer cette sélection de lignes ?
+      edit: Modifier cette ligne
+      export__hub_all: 
+      export__kml_all: 
+      export_hub: Export HUB de la ligne
+      export_hub_all: Export HUB des lignes
+      export_kml: Export KML de la ligne
+      export_kml_all: Export KML des lignes
+      import: Importer des lignes
+      new: Ajouter une ligne
+    edit:
+      title: Modifier la ligne %{line}
+    form:
+      group_of_lines: Groupes de lignes associés
+      no_group_of_line: Aucun groupe de lignes
+      several_group_of_lines: "%{count} groupes of lignes"
+    index:
+      advanced_search: Recherche avancée
+      all_companies: Tous les transporteurs
+      all_group_of_lines: Tous les groupes de ligne
+      all_networks: Tous les réseaux
+      color: Couleur
+      delete_selected: Supprimer les lignes
+      deselect_all: Tout désélectionner
+      export_selected: Exporter les lignes
+      multi_selection: Sélection multiple
+      multi_selection_disable: Désactiver la sélection multiple
+      multi_selection_enable: Activer la sélection multiple
+      name_or_number: Recherche par nom ou indice
+      no_companies: Aucun transporteurs
+      no_group_of_lines: Aucun groupes de ligne
+      no_networks: Aucun réseaux
+      select_all: Tout sélectionner
+      title: Lignes
+      unset: non défini
+    new:
+      title: Ajouter une ligne
+    show:
+      group_of_lines: Groupes de lignes
+      itineraries: Liste des séquences d'arrêts de la ligne
+      title: Ligne %{line}
+  maps:
+    google_hybrid: Hybride Google
+    google_physical: Relief Google
+    google_satellite: Orthophoto Google
+    google_streets: Routier Google
+    ign_cadastre: Cadastre IGN
+    ign_map: Scans IGN
+    ign_ortho: Orthophoto IGN
+  networks:
+    actions:
+      destroy: Supprimer ce réseau
+      destroy_confirm: Etes vous sûr de supprimer ce réseau ?
+      edit: Modifier ce réseau
+      new: Ajouter un réseau
+    edit:
+      title: Modifier le réseau %{network}
+    index:
+      name: Recherche par nom
+      title: Réseaux
+    new:
+      title: Ajouter un réseau
+    show:
+      title: Réseau %{network}
+  no_result_text: Aucun résultat
+  or: ou
+  organisations:
+    actions:
+      edit: Modifier votre organisation
+    edit:
+      key_not_registered: Pas de clé
+      key_registered: Clé enregistrée
+      title: Modifier votre organisation
+    show:
+      rule_parameter_sets: Jeux de paramètres
+      users: Utilisateurs
+  progress_bar:
+    level: Etapes
+    step: Sous étapes
+  referentials:
+    actions:
+      destroy: Supprimer cet espace de données
+      destroy_confirm: Etes vous sûr de vouloir supprimer cet espace de données ?
+      edit: Modifier cet espace de données
+      new: Ajouter un espace de données
+    counts:
+      count: Qté
+      objects: Eléments
+    edit:
+      title: Modifier l'espace de données
+    errors:
+      pg_excluded: ne peut pas commencer par pg_ (valeurs réservées)
+      public_excluded: public est une valeur réservée
+      user_excluded: "%{user} est une valeur réservée"
+    new:
+      submit: Créer un espace de données
+      title: Créer un nouvel espace de données
+    show:
+      api_keys: Clés d'authentification pour un accès à l'API REST
+      clean_up: Purge des données obsolètes
+      lines: lignes
+      networks: réseaux
+      time_tables: calendriers
+      title: Espace de données
+      vehicle_journeys: courses
+    validity_out:
+      validity_out_soon_time_tables: Calendriers à échoir dans %{count} jours
+      validity_out_time_tables: Calendriers échus
   report:
     default_view:
       access_point: Accès
@@ -549,10 +2427,10 @@ fr:
       stop_area: Arrêt
       stop_areas: Arrêts
       tests: Tests
-      tests-1-2-error: Tests de validation requis par la conformité au format
-      tests-1-2-warning: Tests de validation recommandés par la conformité au format
-      tests-3-4-error: Tests complémentaires requis par le contrôle qualité
-      tests-3-4-warning: Tests complémentaires recommandés par le contrôle qualité
+      tests-1-2-error: Tests de validation requis de conformité au format
+      tests-1-2-warning: Tests de validation recommandés de conformité au format
+      tests-3-4-error: Tests complémentaires requis de contrôle qualité
+      tests-3-4-warning: Tests complémentaires recommandés de contrôle qualité
       timetable: Calendrier
       timetables: Calendriers
       transport_datas: Données de transport
@@ -614,3 +2492,956 @@ fr:
         one: Détails de la donnée de transport
         other: Détails des %{count} données de transport
         zero: Aucune donnée de transport
+  route_sections:
+    actions:
+      destroy: Supprimer cette section
+      destroy_confirm: Etes vous sûr de vouloir supprimer cette section de parcours ?
+      edit: Modifier cette section
+    edit:
+      title: Modifier une Section de parcours
+    form:
+      no_processing: Traitement de la géométrie
+      no_processor: Pas de traitement
+      standard_processor: Standard
+      submit: Valider
+    index:
+      actions:
+        destroy: Supprimer
+        destroy_confirm: Etes vous sûr de vouloir supprimer cette section de parcours ?
+        edit: Modifier
+        show: Voir
+      all_lines: Tous les lignes
+      title: Sections de parcours
+    new:
+      title: Ajouter une section
+    show:
+      title: Détails d'une Section de parcours
+    unable_to_contact_server: Le serveur OSRM n'est pas disponible pour le moment, merci de réessayer dans quelques instants.
+  route_sections_selectors:
+    edit:
+      form:
+        title: Parcours complet
+      no_candidate: Aucun parcours connu
+      no_selection: Aucune selection
+      route_section:
+        edit: Modifier cette section
+        new: Ajouter une alternative
+      selection:
+        title: Section sélectionnée
+      submit: Modifier le parcours
+      title: Modification du parcours de la mission %{journey_pattern}
+  routes:
+    actions:
+      add_stop_point: Ajouter un arrêt
+      destroy: Supprimer cette séquence d'arrêts
+      destroy_confirm: Etes vous sûr de supprimer cette séquence d'arrêts ?
+      edit: Modifier cette séquence d'arrêts
+      edit_boarding_alighting: Contraintes de montée - descente
+      export_hub: Export HUB de la séquence d'arrêts
+      export_hub_all: Export HUB des séquences d'arrêts
+      export_kml: Export KML de la séquence d'arrêts
+      export_kml_all: Export KML des séquences d'arrêts
+      new: Ajouter une séquence d'arrêts
+      new_stop_point: Créer un arrêt pour l'ajouter
+    edit:
+      title: Modifier la séquence d'arrêts %{route}
+    edit_boarding_alighting:
+      for_alighting: Descente
+      for_boarding: Montée
+      stop_area_name: Nom de l'arrêt
+      title: Contraintes de montée - descente aux arrêts
+    index:
+      selection: Sélection
+      selection_all: Tous
+      title: Séquences d'arrêts
+    new:
+      title: Ajouter une séquence d'arrêts
+    route:
+      no_journey_pattern: Pas de mission
+      no_opposite: Pas de séquence opposée
+      opposite: Séquence opposée
+      wayback:
+        negative: Retour
+        positive: Aller
+    show:
+      journey_patterns: Liste des missions
+      no_opposite_route: Aucune séquence d'arrêts associée en sens opposé
+      stop_points: Liste des arrêts de la séquence d'arrêts
+      title: Séquence d'arrêts %{route} de la ligne %{line}
+      undefined: Non défini
+  rule_parameter_sets:
+    actions:
+      destroy: Supprimer ce jeu de paramètres
+      destroy_confirm: Etes vous sûr de supprimer ce jeu de paramètres ?
+      edit: Modifier ce jeu de paramètres
+      index: Jeux de paramètres
+      new: Ajouter un jeu de paramètres
+    destroy:
+      last_rps_protected: Suppresion impossible. L'espace de données doit compter au minimum un jeu de paramètres.
+    edit:
+      title: Modifier le jeu de paramètres %{rule_parameter_set}
+    form:
+      add_mode_parameter_set: Ajouter les paramètres spécifiques à un mode
+    index:
+      title: Jeux de paramètres
+    labels:
+      alpha_char: alphabétique
+      attribute: attribut
+      columns_restrictions: Contôles sur les attributs des objets du modèle
+      free_char: libre
+      lower_char: minuscule
+      num_char: numérique
+      upper_char: majuscule
+    new:
+      title: Ajouter un jeu de paramètres
+    show:
+      facility_stop_area_distance_max: un arrêt et un équipement
+      inter_access_link_distance_max: liaison accès - arrêt
+      inter_access_point_distance_min: 2 accès de noms différents pour un même arrêt
+      inter_connection_link_distance_max: les arrêts en correspondance
+      inter_stop_area_distance_min: 2 arrêts n'ayant pas le même parent
+      inter_stop_duration_max: Durée maximum de stationnement à un arrêt
+      max_distance: 'Distance maximum entre : '
+      min_distance: 'Distance minimum entre : '
+      modes_allowed: " (uniquement pour les modes autorisés)"
+      parent_stop_area_distance_max: un arrêt et son parent
+      rule_parameter_by_mode: Jeu de paramètres pour un mode de transport
+      title: Jeu de paramètres %{rule_parameter_set}
+      walk_default_speed_max: ordinaire
+      walk_frequent_traveller_speed_max: habituel
+      walk_mobility_restricted_traveller_speed_max: à mobilité réduite
+      walk_occasional_traveller_speed_max: occasionnel
+      walk_speed: 'Vitesse de marche maximum d''un voyageur : '
+  search_hint: Entrez un texte à rechercher
+  searching_term: Recherche en cours...
+  select_all: Tout cocher
+  shared:
+    ie_report:
+      search: Recherche
+      tab:
+        file: Fichiers
+        line: Lignes
+    ie_report_file:
+      table:
+        error: Erreur
+        ignored: Ignoré
+        name: Nom du fichier
+        ok: Succès
+        state: État
+      title_default: Résultat d'%{job} du fichier %{extension}
+    ie_report_line:
+      read_lines: Lignes lues
+      saved_lines: Lignes sauvegardées
+      state:
+        default:
+          invalid: Lignes non sauvegardées
+          valid: Lignes sauvegardées
+        validation:
+          invalid: Lignes invalides
+          valid: Lignes valides
+      table:
+        line:
+          access_points: Accès
+          connection_links: Correspondances
+          details: Détails
+          journey_patterns: Missions
+          lines: Lignes
+          not_saved: Non Sauvé
+          routes: Séquences d'arrêts
+          save_error: Sauvegarde en erreur
+          saved: Sauvé
+          state: État
+          stop_areas: Arrèts
+          time_tables: Calendriers
+          vehicle_journeys: Courses
+      unsaved_lines: Lignes non-sauvegardées
+  simple_form:
+    error_notification:
+      default_message: 'S''il vous plaît examiner les problèmes ci-dessous:'
+    hints:
+      user:
+        edit:
+          current_password: Nous avons besoin de votre mot de passe pour confirmer les changements
+          password: Laissez le vide si vous ne voulez pas le changer
+    include_blanks:
+      defaults:
+        for_alighting: Non défini
+        for_boarding: Non défini
+    labels:
+      stop_point:
+        for_alighting: Descente
+        for_boarding: Montée
+      user:
+        current_password: Mot de passe actuel
+        email: Email
+        name: Nom complet
+        organisation:
+          name: Nom de l'organisation
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        remember_me: Se souvenir de moi
+    'no': Non
+    placeholders:
+      user:
+        current_password: Mot de passe actuel
+        email: Email
+        name: Nom complet
+        organisation:
+          name: Nom de l'organisation
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+    required:
+      mark: "*"
+      text: requis
+    'yes': Oui
+  source_types:
+    label:
+      individual_subject_of_travel_itinerary: Voyageur individuel
+      other_information: Autre source d'information
+      passenger_transport_coordinating_authority: Autorité organisatrice de transport public
+      public_and_private_utilities: Service public ou privé
+      public_transport: Transport public
+      road_authorities: Autorité routière
+      transit_operator: Exploitant de transport public
+      travel_agency: Agence de voyage
+      travel_information_service_provider: Opérateur de voyage (voyagiste/tour operator ...)
+    name: Type de source
+  stop_area_copies:
+    errors:
+      copy_aborted: 'Des erreurs ont empéchées le bon déroulement de la copie: '
+      exception: erreur interne
+    new:
+      success: Clonage réussi
+      title:
+        child: Cloner pour créer un fils
+        parent: Cloner pour créer un père
+  stop_areas:
+    access_links:
+      access_link_legend_1: Les flêches grises représentent des liens non définis
+      access_link_legend_2: cliquer sur les flêches pour créer/éditer un lien
+      detail_access_links: Liens détaillés
+      generic_access_links: Liens globaux
+      title: Liens Accès-Arrêts des accès de %{stop_area}
+    actions:
+      add_children: Créer ou modifier la relation parent -> enfants
+      add_routing_lines: Gérer les lignes de l'ITL
+      add_routing_stops: Gérer les arrêts de l'ITL
+      clone_as_child: Cloner pour créer un enfant
+      clone_as_parent: Cloner pour créer un père
+      default_geometry: Calculer les géométries manquantes
+      default_geometry_confirm:
+        one: Il y a une géométrie manquante. Souhaitez-vous continuer ?
+        other: Il y a %{count} géométries manquantes. Souhaitez-vous continuer ?
+        zero: Aucune géométrie manquante, vous pouvez annuler l'action.
+      destroy: Supprimer cet arrêt
+      destroy_confirm: Etes vous sûr de supprimer cet arrêt ainsi que tous ses fils?
+      edit: Modifier cet arrêt
+      export_hub_commercial: Export HUB des arrêts commerciaux
+      export_hub_physical: Export HUB des arrêts physiques
+      export_hub_place: Export HUB des pôles d'échange
+      export_kml_commercial: Export KML des arrêts commerciaux
+      export_kml_physical: Export KML des arrêts physiques
+      export_kml_place: Export KML des pôles d'échange
+      manage_access_links: Gérer les liens arrêt-accès
+      manage_access_points: Gérer les accès
+      new: Ajouter un arrêt
+      select_parent: Créer ou modifier la relation enfant -> parent
+    add_children:
+      title: Gérer les fils de l'arrêt %{stop_area}
+    add_lines:
+      title: 
+    add_routing_lines:
+      title: 'Gérer les lignes de l''ITL %{stop_area} '
+    add_routing_stops:
+      title: 'Gérer les arrêts de l''ITL %{stop_area} '
+    add_stops:
+      title: 
+    default_geometry_success: "%{count} arrêts modifiés"
+    edit:
+      title: Modifier l'arrêt %{stop_area}
+    form:
+      address: 246 Boulevard Saint-Germain, 75007 Paris
+      geolocalize: 'Géolocalisez '
+    genealogical:
+      genealogical: Lien entre arrêts
+      genealogical_routing: Liens de l'ITL
+    index:
+      advanced_search: Recherche avancée
+      area_type: Type d'arrêt
+      name: Recherche par nom
+      selection: Filtrer sur
+      selection_all: Tous
+      title: Arrêts
+      zip_code: Code Postal
+    new:
+      title: Ajouter un arrêt
+    select_parent:
+      title: Gérer le parent de l'arrêt %{stop_area}
+    show:
+      access_managment: Gestion des accès et liens associés
+      access_points: Points d'accès
+      geographic_data: Données géographiques
+      itl_managment: Gestion des liens de l'ITL
+      no_geographic_data: Aucune
+      not_editable: Le type d'arrêt est non modifiable
+      stop_managment: Relations parent-enfant
+      title: Arrêt %{stop_area} - %{stop_area_type}
+    stop_area:
+      accessibility: Accessibilité
+      address: Adresse
+      general: General
+      lines: Lignes
+      localisation: Localisation
+      no_object: Aucun(e)
+      no_position: Pas de position
+  stop_points:
+    actions:
+      destroy: Supprimer cet arrêt de la séquence
+      destroy_confirm: Etes vous sûr de retirer cet arrêt de la séquence ?
+      edit: Modifier cet arrêt de la séquence
+      index: Liste des arrêts de la séquence
+      new: Ajouter un arrêt à la séquence
+      show: Consulter
+      sort: Gérer les arrêts de la séquence
+    index:
+      move: Déplacer
+      no_stop_point: Aucun arrêt dans la séquence
+      reorder_button: Mettre à jour l'ordre
+      subtitle: Arrêts dans l'ordre de parcours
+      title: Liste ordonnée des arrêts de la séquence d'arrêts %{route}
+    new:
+      select_area: Sélectionner un arrêt
+      title: 
+    reorder_failure: Echec de la mise à jour
+    reorder_success: La list des arrêts a été mise à jour
+    stop_point:
+      address: Adresse
+      lines: Lignes
+      no_object: Aucun(e)
+      no_position: Pas de position
+  subscriptions:
+    actions:
+      new: Créer un compte
+    failure: Inscription invalide
+    new:
+      title: Créer votre compte
+    success: Inscription enregistrée
+  time:
+    formats:
+      hour: "%Hh%M"
+      minute: "%M min"
+  time_table_combinations:
+    combine_form:
+      time_tables: Calendrier à combiner
+    failure: opération échouée
+    operations:
+      disjunction: soustraire les dates
+      intersection: conserver les dates communes
+      union: ajouter les dates
+    success: opération appliquée sur le calendrier
+  time_tables:
+    actions:
+      add_date: Ajouter une date particulière
+      add_excluded_date: Ajouter une date exclue
+      add_period: Ajouter une période
+      combine: Combiner ce calendrier
+      destroy: Supprimer ce calendrier
+      destroy_confirm: Etes vous sûr de supprimer ce calendrier ?
+      destroy_date_confirm: Etes vous sûr de supprimer cette date ?
+      destroy_period_confirm: Etes vous sûr de supprimer cette période ?
+      duplicate: Dupliquer ce calendrier
+      edit: Modifier ce calendrier
+      new: Ajouter un calendrier
+    duplicate_success: duplication terminée
+    edit:
+      title: Modifier le calendrier %{time_table}
+    index:
+      advanced_search: Recherche avancée
+      comment: Recherche par nom
+      end_date: jj/mm/aaaa
+      from: 'De : '
+      selection: Sélection
+      selection_all: Tous
+      start_date: jj/mm/aaaa
+      tag_search: 'Tags : vacances,jour fériés'
+      title: calendriers
+      to: " à : "
+    new:
+      title: Ajouter un calendrier
+    show:
+      add_date: Ajouter une date
+      add_period: Ajouter une période
+      combine: Appliquer
+      combine_form: Combinaison de calendriers
+      dates: Dates d'application
+      from: du
+      periods: Périodes d'application
+      title: Calendrier %{time_table}
+      to: au
+    show_time_table:
+      excluded_date: Date exclue
+      legend: 'Légende : '
+      overlap_date: Date en doublon
+      resume: Validité comprise du %{start_date} au %{end_date}
+      resume_empty: Calendrier vide
+      selected_date: Date incluse directement
+      selected_period: Date incluse par période
+    time_table:
+      bounding: du %{start} au %{end}
+      dates_count: 'dates: %{count}'
+      empty: vide
+      periods_count: 'périodes: %{count}'
+      periods_dates_count: 'dates: %{dates_count}, périodes: %{periods_count}'
+  timebands:
+    actions:
+      destroy: Supprimer ce créneau horaire
+      destroy_confirm: Merci de confirmer la suppression de ce créneau horaire.
+      edit: Modifier ce créneau horaire
+      new: Ajouter un créneau horaire
+    edit:
+      title: Modifier le créneau horaire %{timeband}
+    index:
+      title: Créneaux horaires
+    new:
+      title: Ajouter un créneau horaire
+    show:
+      title: Créneau horaire %{timeband}
+  titles:
+    clean_up:
+      expected_date: valeur incluse dans la purge
+  today: Aujourd'hui
+  transport_modes:
+    label:
+      air: Air
+      bicycle: Vélo
+      bus: Bus
+      coach: Autocar
+      ferry: Ferry
+      local_train: TER
+      long_distance_train: Train Grande Ligne
+      metro: Métro
+      private_vehicle: Voiture particulière
+      rapid_transit: RER
+      shuttle: Navette
+      taxi: Taxi
+      train: Train
+      tramway: Tramway
+      trolleybus: Trolleybus
+      unknown: Inconnu
+      val: VAL
+      walk: Marche à pied
+      waterborne: Bac
+    name: Mode de transport
+  'true': oui
+  unknown: Non précisé
+  unselect_all: Tout décocher
+  users:
+    actions:
+      destroy: Supprimer cet utilisateur
+      destroy_confirm: Etes vous sûr de supprimer cet utilisateur ?
+      edit: Modifier cet utilisateur
+      new: Ajouter un utilisateur
+      role_edit: Modifier le rôle de l'utilisateur
+    edit:
+      title: Modifier l'utilisateur %{user}
+    index:
+      title: Utilisateurs
+    new:
+      title: Ajouter un utilisateur
+    role:
+      admin: Administrateur
+      read: Lecture seule
+      read_write: Lecture et écriture
+      title: Gestion du rôle utilisateur
+    show:
+      title: Utilisateur %{user}
+  validation_result:
+    details:
+      detail_1_neptune_xml_1: "%{source_label} : %{error_value}"
+      detail_1_neptune_xml_2: "%{source_label} : %{error_value}"
+      detail_1_regtopp_file_tix: 
+      detail_2_neptune_accesslink_1: La liaison d'accès %{source_objectid} référence %{error_value} qui n'existe pas
+      detail_2_neptune_accesslink_2: Sur la liaison d'accès %{source_objectid}, les références startOfLink = %{error_value} et endOfLink = %{reference_value} sont de même type
+      detail_2_neptune_accesspoint_1: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{error_value}) inexistant
+      detail_2_neptune_accesspoint_2: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{target_0_objectid}) de type invalide (ITL)
+      detail_2_neptune_accesspoint_3: L'accès %{source_objectid} n'a pas de lien d'accès
+      detail_2_neptune_accesspoint_4: L'accès %{source_objectid} de type In a des liens d'accès sortants
+      detail_2_neptune_accesspoint_5: L'accès %{source_objectid} de type Out a des liens d'accès entrants
+      detail_2_neptune_accesspoint_6: L'accès %{source_objectid} de type InOut n'a que des liens d'accès entrants ou sortants
+      detail_2_neptune_accesspoint_7: L'accès %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_areacentroid_1: La position géographique <AreaCentroid> %{source_objectid} référence un arrêt (containedIn = %{error_value}) inexistant
+      detail_2_neptune_areacentroid_2: La position géographique <AreaCentroid> %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_common_1: L'élément %{source_objectid} a des attributs qui diffèrent entre les différents fichiers qui le définissent
+      detail_2_neptune_common_2: L'élément %{source_objectid} partage l'attribut RegistrationNumber = %{error_value} avec un autre objet de même type
+      detail_2_neptune_connectionlink_1: La correspondance %{source_objectid} référence 2 arrêts inexistants
+      detail_2_neptune_facility_1: L'équipement %{source_objectid} est situé sur un arrêt inexistant (containedId = %{error_value})
+      detail_2_neptune_facility_2: L'équipement %{source_objectid} référence un arrêt (stopAreaId = %{error_value}) inexistant
+      detail_2_neptune_facility_3: L'équipement %{source_objectid} référence une ligne (lineId = %{error_value} inexistante
+      detail_2_neptune_facility_4: L'équipement %{source_objectid} référence une correspondance (connectionLinkId = %{error_value} inexistante
+      detail_2_neptune_facility_5: L'équipement %{source_objectid} référence un point d'arrêt (stopPointId = %{error_value} inexistant
+      detail_2_neptune_facility_6: L'équipement %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_groupofline_1: La ligne %{source_objectid} est absente de la liste des lignes du du groupe de lignes %{target_0_objectid}
+      detail_2_neptune_itl_1: Le fils (contains = %{target_0_objectid}) de type %{error_value} ne peut pas être contenu dans l'arrêt %{source_objectid} de type %{reference_value}
+      detail_2_neptune_itl_2: L'arrêt de type ITL %{source_objectid} n'est pas utilisé
+      detail_2_neptune_itl_3: L'arrêt areaId = %{error_value} référencé par l'ITL %{source_objectid} n'existe pas
+      detail_2_neptune_itl_4: L'arrêt areaId = %{target_0_objectid} référencé par l'ITL %{source_objectid} devrait être de type ITL et non de type %{error_value}
+      detail_2_neptune_itl_5: La référence lineIdShortCut = %{error_value} de l'ITL %{source_objectid} n'est pas cohérente avec la ligne %{target_0_objectid}
+      detail_2_neptune_journeypattern_1: La mission %{source_objectid} référence une séquence d'arrêts (routeId = %{error_value}) inexistante
+      detail_2_neptune_journeypattern_2: La mission %{source_objectid} référence un point d'arrêt (stopPointId = %{error_value}) inexistant
+      detail_2_neptune_journeypattern_3: La mission %{source_objectid} référence une ligne (lineIdShortcut = %{error_value}) inexistante
+      detail_2_neptune_line_1: La ligne %{source_objectid} référence un réseau (ptNetworkIdShortcut = %{error_value} inexistant
+      detail_2_neptune_line_2: 'La ligne %{source_objectid} référence un point d''arrêt <StopPoint> (lineEnd = %{error_value}) inexistant '
+      detail_2_neptune_line_3: La ligne %{source_objectid} référence un point d'arrêt (lineEnd = %{error_value}) qui n'est pas terminus d'une séquence d'arrêts
+      detail_2_neptune_line_4: La ligne %{source_objectid} référence une séquence d'arrêt (routeId = %{error_value}) inexistante
+      detail_2_neptune_line_5: La séquence d'arrêts (routeId = %{target_0_objectid}) n'est pas référencée par la ligne %{source_objectid}
+      detail_2_neptune_network_1: La ligne %{source_objectid} est absente de la liste des lignes du réseau %{target_0_objectid}
+      detail_2_neptune_ptlink_1: Le tronçon %{source_objectid} reférence un %{reference_value} = %{error_value} inexistant
+      detail_2_neptune_route_1: La séquence d'arrêts %{source_objectid} référence une mission (journeyPatternId = %{error_value}) inexistante
+      detail_2_neptune_route_10: La séquence retour (waybackRouteId = %{target_0_objectid}) ne référence pas la séquence d'arrêts %{source_objectid} comme retour
+      detail_2_neptune_route_11: Le sens (%{reference_value}) de la séquence d'arrêt %{source_objectid} n'est pas compatible avec celui (%{error_value}) de la séquence opposée %{target_0_objectid}
+      detail_2_neptune_route_12: Le départ dans la zone %{reference_value}) de la séquence d'arrêts %{source_objectid} n'est pas dans la même zone que l'arrivée (zone %{error_value} de la séquence retour %{target_0_objectid}
+      detail_2_neptune_route_2: La séquence d'arrêts %{source_objectid} référence un tronçon (ptLinkId = %{error_value}) inexistant
+      detail_2_neptune_route_3: La séquence retour (waybackRouteId = %{error_value}) de la séquence d'arrêts %{source_objectid} n'existe pas
+      detail_2_neptune_route_4: Le tronçon (ptLinkId = %{error_value}) référencé par la séquence d'arrêt %{source_objectid} est partagé avec %{target_0_objectid}
+      detail_2_neptune_route_5: 'Le tronçon %{source_objectid} partage un %{reference_value} : %{error_value} avec un autre tronçon'
+      detail_2_neptune_route_6_1: La séquence d'arrêts %{source_objectid} n'est pas une séquence linéaire, le chainage des tronçons forme un anneau
+      detail_2_neptune_route_6_2: La séquence d'arrêts %{source_objectid} n'est pas une séquence linéaire, le chainage des tronçons est rompu au tronçon %{target_0_objectid}
+      detail_2_neptune_route_7: La séquence d'arrêts %{source_objectid} ne référence pas la mission %{target_0_objectid} alors que cette mission référence la séquence d'arrêt
+      detail_2_neptune_route_8: La mission journeyPatternId = %{target_0_objectid} de la séquence d'arrêts %{source_objectid} utilise des points d'arrêts hors séquence
+      detail_2_neptune_route_9: Le point d'arrêt (stopPointId = %{target_0_objectid}) de la séquence d'arrêts %{source_objectid} n'est utilisé dans aucune mission
+      detail_2_neptune_stoparea_1: Le fils (contains = %{error_value}) de l'arrêt %{source_objectid} n'est pas de type StopArea ni StopPoint
+      detail_2_neptune_stoparea_2: L'arrêt %{source_objectid} de type %{reference_value} ne peut contenir que des arrêts de type StopPlace ou CommercialStopPoint, or un des arrêts contenus (contains = %{target_0_objectid}) est de type %{error_value}
+      detail_2_neptune_stoparea_3: L'arrêt %{source_objectid} de type %{reference_value} ne peut contenir que des arrêts de type BoardingPosition ou Quay, or un des arrêts contenus (contains = %{target_0_objectid}) est de type %{error_value}
+      detail_2_neptune_stoparea_4: L'arrêt %{source_objectid} de type %{reference_value} ne peut contenir que des points d'arrêt de séquence, or un des arrêts contenus (contains = %{target_0_objectid}) est un StopArea arrêt de type %{error_value}
+      detail_2_neptune_stoparea_5: L'arrêt %{source_objectid} référence une position géographique (centroidOfArea = %{error_value}) inexistante
+      detail_2_neptune_stoparea_6: L'arrêt %{source_objectid} référence une position géographique (centroidOfArea = %{target_0_objectid}) qui ne le référence pas en retour (containedIn = %{error_value})
+      detail_2_neptune_stoppoint_1: Le point d'arrêt %{source_objectid} référence une ligne (lineIdShortcut = %{error_value}) inexistante
+      detail_2_neptune_stoppoint_2: Le point d'arrêt %{source_objectid} référence un réseau (ptNetworkIdShortcut = %{error_value}) inexistant
+      detail_2_neptune_stoppoint_3: Le point d'arrêt %{source_objectid} référence un arrêt (containedIn = %{error_value}) inexistant
+      detail_2_neptune_stoppoint_4: Le point d'arrêt %{source_objectid} utilise un référentiel géographique (longLatType = %{error_value}) invalide
+      detail_2_neptune_timetable_1: Le calendrier (<Timetable>) %{source_objectid} ne référence aucune course existante
+      detail_2_neptune_timetable_2: La course %{source_objectid} n'est référencée dans aucun calendrier (<Timetable>)
+      detail_2_neptune_vehiclejourney_1: La course %{source_objectid} référence une séquence d'arrêts (routeId = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_2: La course %{source_objectid} référence une mission (journeyPatternId = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_3: La course %{source_objectid} référence une ligne (lineIdShortcut = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_4: La course %{source_objectid} référence un opérateur (operatorId = %{error_value}) inexistant
+      detail_2_neptune_vehiclejourney_5: La course %{source_objectid} référence une fréquence horaire (timeSlotId = %{error_value}) inexistante
+      detail_2_neptune_vehiclejourney_6: La course %{source_objectid} référence une mission %{error_value} incompatible de la séquence d'arrêts %{reference_value}
+      detail_2_neptune_vehiclejourney_7: La mission %{source_objectid} n'est référencée par aucune course
+      detail_2_neptune_vehiclejourneyatstop_1: La course %{source_objectid} fournit un horaire sur un point d'arrêt (stopPointId = %{error_value}) inexistant
+      detail_2_neptune_vehiclejourneyatstop_2: 'Un horaire de la course %{source_objectid} référence une autre course : vehicleJourneyId = %{error_value}'
+      detail_2_neptune_vehiclejourneyatstop_3: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts selon l'ordre de la séquence d'arrêts %{error_value}
+      detail_2_neptune_vehiclejourneyatstop_4: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts de sa mission %{error_value}
+      detail_3_accesslink_1: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la distance entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) est trop grande : distance %{error_value} > %{reference_value}'
+      detail_3_accesslink_2: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la distance entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) : %{error_value} est supérieure à la longueur du lien : %{reference_value}'
+      detail_3_accesslink_3_1: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse par défaut %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesslink_3_2: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse pour un voyageur occasionnel %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesslink_3_3: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse pour un voyageur habitué %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesslink_3_4: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse pour un voyageur à mobilité réduite %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_accesspoint_1: L'accès %{source_label} (%{source_objectid}) n'est pas géolocalisé
+      detail_3_accesspoint_2: 'L''accès %{source_label} (%{source_objectid}) est localisé trop près de l''accès %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value}'
+      detail_3_accesspoint_3: 'L''accès %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value}'
+      detail_3_connectionlink_1: 'Sur la correspondance %{source_label} (%{source_objectid}), la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) est trop grande : distance %{error_value} > %{reference_value}'
+      detail_3_connectionlink_2: 'Sur la correspondance %{source_label} (%{source_objectid}), la distance entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}) : %{error_value} est supérieure à la longueur du lien : %{reference_value}'
+      detail_3_connectionlink_3_1: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse par défaut %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_connectionlink_3_2: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse pour un voyageur occasionnel %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_connectionlink_3_3: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse pour un voyageur habitué %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_connectionlink_3_4: Sur la correspondance %{source_label} (%{source_objectid}), la vitesse pour un voyageur à mobilité réduite %{error_value} est supérieure à %{reference_value} km/h
+      detail_3_facility_1: L'équipement %{source_label} (%{source_objectid}) n'est pas géolocalisé
+      detail_3_facility_2: 'L''équipement %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{areaName} (%{areaId}) : distance %{error_value} > %{reference_value}'
+      detail_3_journeypattern_1: La mission %{source_label} (%{source_objectid}) utilise les mêmes arrêts que la mission %{target_0_label} (%{target_0_objectid}) - nombre d'arrêts = %{error_value}
+      detail_3_line_1: La ligne %{source_label} (%{source_objectid}) a une ligne homonyme sur le même réseau %{target_0_label} (%{target_0_objectid})
+      detail_3_line_2: La ligne %{source_label} (%{source_objectid}) n'a pas de séquence d'arrêts
+      detail_3_route_1: Sur la séquence d'arrêt %{source_label} (%{source_objectid}), l'arrêt %{target_0_label} (%{target_0_objectid}) est desservi 2 fois consécutivement
+      detail_3_route_2: 'Les terminus de la séquence d''arrêt %{source_label} (%{source_objectid}) ne sont pas cohérent avec ceux de sa séquence opposée : l''une part de %{target_0_label} (%{target_0_objectid}) et l''autre arrive à %{target_1_label} (%{target_1_objectid})'
+      detail_3_route_3_1: 'Sur la séquence d''arrêt %{source_label} (%{source_objectid}), entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}), distance %{error_value} < %{reference_value} '
+      detail_3_route_3_2: 'Sur la séquence d''arrêt %{source_label} (%{source_objectid}), entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid}), distance %{error_value} > %{reference_value} '
+      detail_3_route_4: La séquence d'arrêt %{source_label} (%{source_objectid}) utilise la même liste ordonnée d'arrêts que la séquence d'arrêts %{target_0_label} (%{target_0_objectid})
+      detail_3_route_5: La séquence d'arrêt %{source_label} (%{source_objectid}) peut admettre la séquence %{target_0_label} (%{target_0_objectid}) comme séquence opposée
+      detail_3_route_6: La séquence d'arrêt %{source_label} (%{source_objectid}) doit avoir un minimum de 2 arrêts
+      detail_3_route_7: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission
+      detail_3_route_8: La séquence d'arrêt %{source_label} (%{source_objectid}) a %{error_value} arrêts non utilisés par des missions
+      detail_3_route_9: La séquence d'arrêt %{source_label} (%{source_objectid}) n'a pas de mission desservant l'ensemble de ses arrêts
+      detail_3_stoparea_1: L'arrêt %{source_label} (%{source_objectid}) n'est pas géolocalisé
+      detail_3_stoparea_2: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop près de l''arrêt %{target_0_label} (%{target_0_objectid}) : distance %{error_value} < %{reference_value}'
+      detail_3_stoparea_3: Les arrêts %{source_label} (%{source_objectid} et %{target_0_objectid}) sont desservis par les mêmes lignes
+      detail_3_stoparea_4: L'arrêt %{source_label} (%{source_objectid}) est en dehors du périmètre de contrôle
+      detail_3_stoparea_5: 'L''arrêt %{source_label} (%{source_objectid}) est localisé trop loin de son parent %{target_0_label} (%{target_0_objectid}) : distance %{error_value} > %{reference_value}'
+      detail_3_vehiclejourney_1: 'Arrêt %{target_0_label} (%{target_0_objectid}) : durée d''arrêt mesurée %{error_value} > %{reference_value}'
+      detail_3_vehiclejourney_2_1: La course %{source_label} (%{source_objectid}) a des horaires décroissants entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_2_2: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} < %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_2_3: La course %{source_label} (%{source_objectid}) a une vitesse %{error_value} > %{reference_value} km/h entre les arrêts %{target_0_label} (%{target_0_objectid}) et %{target_1_label} (%{target_1_objectid})
+      detail_3_vehiclejourney_3: La course %{source_label} (%{source_objectid}) a une variation de progression entre les arrêts %{target_1_label} (%{target_1_objectid}) et %{target_2_label} (%{target_2_objectid}) %{error_value} > %{reference_value} avec la course %{target_0_label} (%{target_0_objectid})
+      detail_3_vehiclejourney_4: La course %{source_label} (%{source_objectid}) n'a pas de calendrier d'application
+      detail_4_accesslink_1_max_size: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_accesslink_1_min_size: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_accesslink_1_pattern: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_accesslink_1_unique: L'attribut %{reference_value} du lien d'accès %{source_label} (%{source_objectid}) a une valeur partagée avec le lien d'accès %{target_0_label} (%{target_0_objectid})
+      detail_4_accesspoint_1_max_size: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_accesspoint_1_min_size: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_accesspoint_1_pattern: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_accesspoint_1_unique: L'attribut %{reference_value} du point d'accès %{source_label} (%{source_objectid}) a une valeur partagée avec le point d'accès %{target_0_label} (%{target_0_objectid})
+      detail_4_company_1_max_size: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_company_1_min_size: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_company_1_pattern: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_company_1_unique: L'attribut %{reference_value} du transporteur %{source_label} (%{source_objectid}) a une valeur partagée avec le transporteur %{target_0_label} (%{target_0_objectid})
+      detail_4_connectionlink_1_max_size: L'attribut %{reference_value} de la correspondance %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_connectionlink_1_min_size: L'attribut %{reference_value} de la correspondance  %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_connectionlink_1_pattern: L'attribut %{reference_value} de la correspondance %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_connectionlink_1_unique: L'attribut %{reference_value} de la correspondance %{source_label} (%{source_objectid}) a une valeur partagée avec la correspondance %{target_0_label} (%{target_0_objectid})
+      detail_4_connectionlink_2: Sur la correspondance %{source_label} (%{source_objectid}) au moins l'un des arrêts %{startName} (%{startId}) et %{endName} (%{endId}) n'est pas un arrêt physique
+      detail_4_groupofline_1_max_size: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_groupofline_1_min_size: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_groupofline_1_pattern: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_groupofline_1_unique: L'attribut %{reference_value} du groupe de lignes %{source_label} (%{source_objectid}) a une valeur partagée avec le groupe de lignes %{target_0_label} (%{target_0_objectid})
+      detail_4_journeypattern_1_max_size: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_journeypattern_1_min_size: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_journeypattern_1_pattern: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_journeypattern_1_unique: L'attribut %{reference_value} de la mission %{source_label} (%{source_objectid}) a une valeur partagée avec la mission %{target_0_label} (%{target_0_objectid})
+      detail_4_line_1_max_size: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_line_1_min_size: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_line_1_pattern: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_line_1_unique: L'attribut %{reference_value} de la ligne %{source_label} (%{source_objectid}) a une valeur partagée avec la ligne %{target_0_label} (%{target_0_objectid})
+      detail_4_line_2: La ligne %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
+      detail_4_line_3_1: La ligne %{source_label} (%{source_objectid}) n'a pas de groupe de lignes
+      detail_4_line_3_2: La ligne %{source_label} (%{source_objectid}) a plusieurs groupes de lignes
+      detail_4_line_4_1: La ligne %{source_label} (%{source_objectid}) n'a pas de séquence d'arrêts
+      detail_4_line_4_2: La ligne %{source_label} (%{source_objectid}) a trop de séquences d'arrêts non associées (%{error_value})
+      detail_4_network_1_max_size: L'attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_network_1_min_size: 'L''attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) n''est pas renseigné ou trop petit (%{error_value}) '
+      detail_4_network_1_pattern: L'attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_network_1_unique: L'attribut %{reference_value} du réseau %{source_label} (%{source_objectid}) a une valeur partagée avec le réseau %{target_0_label} (%{target_0_objectid})
+      detail_4_route_1_max_size: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_route_1_min_size: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_route_1_pattern: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_route_1_unique: L'attribut %{reference_value} de la séquence d'arrêts %{source_label} (%{source_objectid}) a une valeur partagée avec la séquence d'arrêts %{target_0_label} (%{target_0_objectid})
+      detail_4_stoparea_1_max_size: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_stoparea_1_min_size: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_stoparea_1_pattern: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_stoparea_1_unique: L'attribut %{reference_value} de l'arrêt %{source_label} (%{source_objectid}) a une valeur partagée avec l'arrêt %{target_0_label} (%{target_0_objectid})
+      detail_4_stoparea_2: L'arrêt physique %{source_label} (%{source_objectid}) n'a pas de parent
+      detail_4_timetable_1_max_size: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_timetable_1_min_size: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_timetable_1_pattern: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_timetable_1_unique: L'attribut %{reference_value} du calendrier %{source_label} (%{source_objectid}) a une valeur partagée avec le calendrier %{target_0_label} (%{target_0_objectid})
+      detail_4_vehiclejourney_1_max_size: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) est trop grand (%{error_value})
+      detail_4_vehiclejourney_1_min_size: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas renseigné ou trop petit (%{error_value})
+      detail_4_vehiclejourney_1_pattern: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
+      detail_4_vehiclejourney_1_unique: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) a une valeur partagée avec la course %{target_0_label} (%{target_0_objectid})
+      detail_4_vehiclejourney_2: La course %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
+    severities:
+      error: Obligatoires
+      error_txt: Obligatoire
+      warning: Optionnels
+      warning_txt: Optionnel
+    statuses:
+      na: Absent
+      nok: Erreur
+      ok: Succès
+  validation_results:
+    file:
+      detailed_errors_file_prefix: details_des_erreurs.csv
+      summary_errors_file_prefix: sommaire_des_tests.csv
+      zip_name_prefix: resultats_de_validation
+    index:
+      column: Col
+      line: Li
+  validation_tasks:
+    actions:
+      destroy: Supprimer cette validation
+      destroy_confirm: Etes vous sûr de supprimer cette validation ?
+      new: Nouvelle validation
+    compliance_check_task: Validation
+    index:
+      title: Validations
+      warning: Avertissement
+    new:
+      all: Tout
+      fields_gtfs_validation:
+        warning: Le filtre sur arrêts valide uniquement les fichiers GTFS stops et transfers gtfs, ceux-ci pouvant contenir des attributs supplémentaires
+      flash: La demande de validation est mise en file d'attente, veuillez rafraichir régulièrement la page pour en suivre la progression
+      title: Nouvelle validation
+    severities:
+      error: Erreur
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Non testé
+      warning: Alerte
+    show:
+      completed: "[ Terminé ]"
+      failed: "[ Echoué ]"
+      graph:
+        files:
+          error: Erreurs
+          ignored: Ignorés
+          ok: Succès
+          title_default: Résultat de validation du fichier %{extension}
+          title_zip: Résultat de validation des fichiers du zip
+        lines:
+          access_points_stats: Accès
+          connection_links_stats: Correspondances
+          journey_patterns_stats: Missions
+          lines_stats: Lignes
+          objects_label: Quantité lue
+          routes_stats: Séquences d'arrêts
+          stop_areas_stats: Zones d'arrèt
+          time_tables_stats: Calendriers
+          title: Volume de données lues par type de donnée
+          vehicle_journeys_stats: Courses
+      not_yet_started: En file d'attente
+      pending: "[ En file d'attente ]"
+      processing: "[ En progression... ]"
+      report: Rapport
+      table:
+        line:
+          access_points: Accès
+          connection_links: Correspondances
+          journey_patterns: Missions
+          name: Nom
+          not_saved: Non Sauvé
+          routes: Séquences d'arrêts
+          save: Sauvegarde
+          save_error: Sauvegarde en erreur
+          saved: Sauvé
+          stop_areas: Zones d'arrèt
+          time_tables: Calendriers
+          vehicle_journeys: Courses
+      validated_file: Fichier validé
+    statuses:
+      aborted: Echoué
+      canceled: Annulé
+      created: En attente ...
+      scheduled: En cours ...
+      terminated: Achevé
+  validations:
+    actions:
+      destroy: Supprimer cette validation
+      destroy_confirm: Etes vous sûr de supprimer cette validation ?
+      new: Nouvelle validation
+    compliance_check_task: Validation
+    index:
+      title: Validations
+      warning: Avertissement
+    new:
+      all: Tout
+      fields_gtfs_validation:
+        warning: Le filtre sur arrêts valide uniquement les fichiers GTFS stops et transfers gtfs, ceux-ci pouvant contenir des attributs supplémentaires
+      flash: La demande de validation est mise en file d'attente, veuillez rafraichir régulièrement la page pour en suivre la progression
+      title: Nouvelle validation
+    severities:
+      error: Erreur
+      fatal: Fatal
+      info: Information
+      ok: Ok
+      uncheck: Non testé
+      warning: Alerte
+    show:
+      completed: "[ Terminé ]"
+      details: Détails
+      export: Télécharger les résultats
+      export_csv: Format CSV
+      failed: "[ Echoué ]"
+      graph:
+        files:
+          error: Erreurs
+          ignored: Ignorés
+          ok: Succès
+          title_default: Résultat de validation du fichier %{extension}
+          title_zip: Résultat de validation des fichiers du zip
+        lines:
+          access_points_stats: Accès
+          connection_links_stats: Correspondances
+          journey_patterns_stats: Missions
+          lines_stats: Lignes
+          objects_label: Quantité lue
+          routes_stats: Séquences d'arrêts
+          stop_areas_stats: Zones d'arrèt
+          time_tables_stats: Calendriers
+          title: Volume de données lues par type de donnée
+          vehicle_journeys_stats: Courses
+      parameters: Paramètres des tests
+      pending: "[ En file d'attente ]"
+      processing: "[ En progression... ]"
+      report: Rapport
+      summary: Rapport de conformité à la norme NEPTUNE
+      table:
+        line:
+          access_points: Accès
+          connection_links: Correspondances
+          journey_patterns: Missions
+          name: Nom
+          not_saved: Non Sauvé
+          routes: Séquences d'arrêts
+          save: Sauvegarde
+          save_error: Sauvegarde en erreur
+          saved: Sauvé
+          stop_areas: Zones d'arrèt
+          time_tables: Calendriers
+          vehicle_journeys: Courses
+      title: Validation Neptune
+      validated_file: Fichier validé
+    statuses:
+      aborted: Echoué
+      canceled: Annulé
+      created: En file d'attente...
+      scheduled: En cours...
+      terminated: Achevé
+  vehicle_journey_exports:
+    label:
+      b_false: Non
+      b_true: Oui
+      first_departure_times: premiers départs
+      flexible_service: TAD (O(ui)|N(on)|vide si inconnu)
+      footnotes_ids: notes de bas de page
+      friday: Ve
+      ftn_columns: clé;numéro;ligne de texte
+      ftn_filename: notes
+      last_departure_times: derniers départs
+      mobility: PMR (O(ui)|N(on)|vide si inconnu)
+      monday: Lu
+      number: numéro
+      published_journey_name: nom public
+      saturday: Sa
+      scheduled_headway_intervals: intervalles de frequence
+      stop_id: id arrêt
+      stop_name: nom arrêt
+      sunday: Di
+      thursday: Je
+      time_table_ids: calendriers
+      tt_columns: code;nom;étiquettes;début;fin;types de jour;périodes;jours particuliers;jours exclus
+      tt_filename: calendriers
+      tuesday: Ma
+      vehicle_journey_id: id course (vide si nouvelle)
+      vj_filename: courses_
+      vjf_filename: frequences_
+      wednesday: Me
+    new:
+      basename: courses
+      title: Exporter les horaires existants
+  vehicle_journey_frequencies:
+    actions:
+      index: Courses en fréquence
+      show: Voir les courses en fréquence
+    vehicle_journeys_matrix:
+      line_routes: Séquences d'arrêts de la ligne
+  vehicle_journey_frequency:
+    require_at_least_one_frequency: Vous devez spécifier au moins un créneau horaire
+  vehicle_journey_imports:
+    errors:
+      exception: Le fichier est invalide, vous devez fournir un fichier csv, xls ou xlsx valide
+      import_aborted: 'Des erreurs ont empéché le bon déroulement de l''import: '
+      invalid_vehicle_journey: 'Erreur colonne %{column}, la course est invalide : %{message}'
+      invalid_vehicle_journey_at_stop: 'Erreur colonne %{column} ligne %{line} : horaire à l''arrêt invalide %{time}'
+      not_same_stop_points: 'Erreur colonne 1 : Pas les mêmes points d''arrêt que sur l''itinéraire %{route}'
+      one_stop_point_used: 'Erreur colonne %{column} : un seul arrêt desservi'
+    new:
+      export_vehicle_journeys: Exporter les horaires existants
+      success: L'import des données est un succès
+      title: Import des horaires aux arrêts
+      tooltip:
+        file: Sélectionner un fichier CSV ou Excel
+    success:
+      created_jp_count: "%{count} mission(s) ajoutée(s)"
+      created_vj_count: "%{count} course(s) ajoutée(s)"
+      deleted_vj_count: "%{count} course(s) supprimée(s)"
+      updated_vj_count: "%{count} course(s) mise(s) à jour"
+  vehicle_journeys:
+    actions:
+      destroy: Supprimer cette course
+      destroy_confirm: Etes vous sûr de supprimer cette course ?
+      edit: Modifier cette course à horaire
+      edit_frequency: Modifier cette course en fréquence
+      index: Horaires des courses
+      new: Ajouter une course à horaire
+      new_frequency: Ajouter une course en fréquence
+      show: Voir les courses à horaire
+    edit:
+      title: Modifier la course partant de %{stop} à %{time}
+      title_stopless: Modifier la course %{name}
+    form:
+      arrival: Arrivée
+      departure: Départ
+      set: Fixer
+      slide: Décaler
+      slide_arrival: horaire d'arrivée au 1° arrêt à
+      slide_departure: horaire de départ au 1° arrêt à
+      slide_title: Décaler l'ensemble des horaires de course
+      stop_title: Arrêt
+      submit_frequency: Créer course en fréquence
+      submit_frequency_edit: Modifier course en fréquence
+      submit_timed: Créer course
+      submit_timed_edit: Modifier course
+      time_tables: Calendriers associés à la course
+      to: à
+      to_arrivals: Copie départs vers arrivées
+      to_departures: Copie arrivées vers départs
+    index:
+      advanced_search: Recherche avancée
+      select_journey_patterns: Sélectionner une mission
+      select_time_tables: Saisir un calendrier
+      selection: Filtrer sur
+      selection_all: Tous
+      time_range: Seuil horaire au départ
+      title: Horaires de la séquence d'arrêts %{route}
+      vehicle_journeys: Horaires de départ aux arrêts
+    new:
+      title: Ajouter une course à horaire
+      title_frequency: Ajouter une course en fréquence
+    show:
+      arrival: Arrivée
+      bounding: De %{start} à %{end}
+      departure: Départ
+      journey_frequencies: Créneau horaire
+      stop_title: Arrêt
+      time_tables: Liste des calendriers
+      title: Course au départ de %{stop} à %{time} sur la séquence %{route}
+      translation_form: Cloner la course
+    sidebar:
+      timeless: Courses sans horaire
+    time_filter:
+      time_range_filter: Filtrer
+    timeless:
+      title: Courses sans horaire
+      vehicle_journeys: Courses ayant des horaires
+      vehicles_list: Liste des courses
+    vehicle_journey:
+      title: Course partant de %{stop} à %{time}
+      title_stopless: Course %{name}
+    vehicle_journey_frequency:
+      title: Course en fréquence partant de %{stop} à %{time}
+      title_frequency: Course en fréquence de %{interval}min partant de %{stop} de %{time_first} à %{time_last}
+      title_stopless: Course en fréquence %{name}
+    vehicle_journeys_matrix:
+      line_routes: Séquences d'arrêts de la ligne
+  vehicle_translations:
+    failure: Echec de la création de courses par tanslation
+    success: "%{count} course(s) crée(s) par translation"
+    translate_form:
+      first_stop_arrival_time: Horaire d'arrivée au premier arrêt '%{stop_name}'
+      first_stop_departure_time: Horaire de départ au premier arrêt '%{stop_name}'
+      multiple_cloning_form: Répéter le clonage à intervalle régulier
+      set: Fixer
+      to: à (hh:mm)
+  waybacks:
+    label:
+      backward: retour
+      straight_forward: aller
+  will_paginate:
+    next_label: Suivant &#8594;
+    page_entries_info:
+      list: Liste paginée
+      multi_page: "%{model} %{from} - %{to} sur %{count} au total"
+      multi_page_html: "%{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> sur <b>%{count}</b> au total"
+      search: 'Résultats :'
+      single_page:
+        one: 1 %{model} affiché(e)
+        other: "%{count} %{model} affiché(e)s"
+        zero: Aucun élément trouvé
+      single_page_html:
+        one: "<b>1</b> %{model} affiché(e)"
+        other: "<b>%{count}</b> %{model} affiché(e)s"
+        zero: Aucun élément trouvé
+    page_gap: "&hellip;"
+    previous_label: "&#8592; Précédent"
+  yesterday: Hier
