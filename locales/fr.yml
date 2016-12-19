@@ -733,6 +733,7 @@ fr:
         version_date: Date de version
       organisation:
         data_format: Format de données
+        data_format_gtfs_extended: GTFS étendu
         data_format_restrictions_by_default: Appliquer les contraintes format des données par defaut
         geoportail_key: Clé de l'API du Geoportail IGN
         name: Nom

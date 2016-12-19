@@ -31,9 +31,9 @@ en:
       title: Add a new access point
     show:
       access_link_legend_1: grays arrows for undefined links, green for defined ones
-      access_link_legend_2: clic on arrows to create/edit a link
+      access_link_legend_2: click on arrows to create/edit a link
       detail_access_links: Specific access links
-      generic_access_links: Glogal access links
+      generic_access_links: Global access links
       geographic_data: 'Geographic data '
       no_geographic_data: None
       title: Access point %{access_point}
@@ -57,8 +57,8 @@ en:
         keep_networks: keep networks
         keep_stops: keep stop areas
       compliance_check:
-        created_at: 
-        file_name: 
+        created_at: Created at
+        file_name: File name
         reference_ids: 
         references_type: 
         resources: 
@@ -734,6 +734,7 @@ en:
         version_date: Date of this network's version
       organisation:
         data_format: Data format
+        data_format_gtfs_extended: GTFS extended
         data_format_restrictions_by_default: Data format constraint by default
         geoportail_key: IGN Geoportail Key
         name: Name
@@ -1871,7 +1872,7 @@ en:
     import: Launch import
     placeholders:
       time_table:
-        tag_search: 'ex: Public hollidays,School holidays'
+        tag_search: 'ex: Public holidays,School holidays'
     required: required
     reset: Reset %{model}
     submit: Apply %{model}
@@ -2152,7 +2153,7 @@ en:
   iev:
     errors:
       duplicate_or_missing_data: Missing data or duplicate
-      duplicate_parameters: Parameters provided in double
+      duplicate_parameters: Parameters duplicated
       internal_error: Internal error
       invalid_file_format: Invalid file format
       invalid_format: Invalid format
