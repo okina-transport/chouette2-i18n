@@ -734,7 +734,6 @@ en:
         version_date: Date of this network's version
       organisation:
         data_format: Data format
-        data_format_gtfs_extended: GTFS extended
         data_format_restrictions_by_default: Data format constraint by default
         geoportail_key: IGN Geoportail Key
         name: Name
@@ -757,7 +756,7 @@ en:
         name: Name
         networks: Networks
         no_validity_period: undefined
-        prefix: Neptune Object Id prefix
+        prefix: Object Id prefix
         projection_type: Optional spatial reference system code (SRID)
         quays: quays
         resources: Neptune Import File

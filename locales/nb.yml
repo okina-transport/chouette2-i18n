@@ -682,7 +682,6 @@ nb:
         version_date: 
       organisation:
         data_format: 
-        data_format_gtfs_extended: 
         data_format_restrictions_by_default: 
         geoportail_key: 
         name: 

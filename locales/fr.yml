@@ -733,7 +733,6 @@ fr:
         version_date: Date de version
       organisation:
         data_format: Format de données
-        data_format_gtfs_extended: GTFS étendu
         data_format_restrictions_by_default: Appliquer les contraintes format des données par defaut
         geoportail_key: Clé de l'API du Geoportail IGN
         name: Nom
@@ -756,7 +755,7 @@ fr:
         name: Nom
         networks: Réseaux
         no_validity_period: non définie
-        prefix: Préfixe des identifiants Neptune
+        prefix: Préfixe des identifiants métier
         projection_type: Système de référence spatiale (SRID) optionnel
         quays: quais
         resources: Import Neptune
