@@ -1781,6 +1781,8 @@ en:
       kml: KML
       neptune: Neptune profile
       netex: NeTEx profile
+      netex_experimental: NeTEx Experimental
+      netex_france: NeTEx France
       regtopp: RegTopp
       sig: SIG
     data_format_detail:
