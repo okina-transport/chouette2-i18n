@@ -700,12 +700,12 @@ en:
         network: Network
         not_accessible: Not accessible
         number: Number
-        number_of_fs_vj: Number of on demond vehicle journeys
-        number_of_mrs_vj: Number of accessible vehicle journeys
-        number_of_non_fs_vj: Number of non on demond vehicle journeys
-        number_of_non_mrs_vj: Number of non accessible vehicle journeys
-        number_of_null_fs_vj: Number of unspecified on demond vehicle journeys
-        number_of_null_mrs_vj: Number of unspecified accessible vehicle journeys
+        number_of_fs_vj: On demond vehicle journeys
+        number_of_mrs_vj: Accessible vehicle journeys
+        number_of_non_fs_vj: Non on demond vehicle journeys
+        number_of_non_mrs_vj: Non accessible vehicle journeys
+        number_of_null_fs_vj: Unspecified on demond vehicle journeys
+        number_of_null_mrs_vj: Unspecified accessible vehicle journeys
         number_of_vj: Total number of vehicle journeys
         object_version: Version
         objectid: Identifier
