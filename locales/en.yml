@@ -1753,12 +1753,12 @@ en:
     sessions:
       new:
         commit: Sign in
-        introduction1: Chouette is an open source Software for editing, viewing and exchanging public transport reference data, and is the reference implementation for validating conformance of data wrt Neptune (French standard NFP 99 506).
-        introduction2: 'The application is deployed in Saas mode and supports :'
-        introduction_item1: several data exchange formats (Neptune, GTFS, CSV ... Netex coming soon)
-        introduction_item2: and also several base map backgrounds (Google, OSM, IGN).
+        introduction1:
+        introduction2:
+        introduction_item1:
+        introduction_item2:
         title: Sign in
-        welcome: Welcome to Chouette
+        welcome: Nasjonal rutedatabase
   directions:
     label:
       backward: backward
