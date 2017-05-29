@@ -1753,10 +1753,10 @@ en:
     sessions:
       new:
         commit: Sign in
-        introduction1:
-        introduction2:
-        introduction_item1:
-        introduction_item2:
+        introduction1: 
+        introduction2: 
+        introduction_item1: 
+        introduction_item2: 
         title: Sign in
         welcome: Nasjonal rutedatabase
   directions:
