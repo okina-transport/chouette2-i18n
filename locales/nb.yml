@@ -16,32 +16,32 @@ nb:
       title: ACCESS LINK %{access_link}
   access_points:
     access_point:
-      no_position: 
+      no_position: Ingen posisjon
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
-      new: 
+      destroy: Slett dette ACCESS POINT
+      destroy_confirm: Er du sikker på at du vil slette dette ACCESS POINT?
+      edit: Endre ACCESS POINT
+      new: Legg til nytt ACCESS POINT
     edit:
-      title: 
+      title: Oppdatere ACCESS POINT %{access_point}
     index:
-      name_or_country_code: 
-      title: 
+      name_or_country_code: Navn
+      title: ACCESS POINTS
     new:
-      title: 
+      title: Legg til nytt ACCESS POINT
     show:
-      access_link_legend_1: 
-      access_link_legend_2: 
-      detail_access_links: 
-      generic_access_links: 
-      geographic_data: 
-      no_geographic_data: 
-      title: 
+      access_link_legend_1: grønne piler for udefinerte lenker, grønne for definerte
+      access_link_legend_2: klikk på piler for opprette eller endre lenke
+      detail_access_links: Spesifikke ACCESS LINKS
+      generic_access_links: Globale ACCESS LINKS
+      geographic_data: Geografiske data
+      no_geographic_data: Ingen
+      title: ACCESS POINT %{access_point}
   access_types:
     label:
-      in: 
-      in_out: 
-      out: 
+      in: Inngang
+      in_out: Begge veier
+      out: Utgang
   actions:
     add: Legg til ny
     destroy: Slett
@@ -57,8 +57,8 @@ nb:
         keep_networks: behold NETWORKS
         keep_stops: behold STOP AREA
       compliance_check:
-        created_at: 
-        file_name: 
+        created_at: 'Opprettet '
+        file_name: Filnavn
         reference_ids: 
         references_type: 
         resources: 
@@ -1657,6 +1657,8 @@ nb:
       kml: 
       neptune: 
       netex: 
+      netex_experimental: 
+      netex_france: 
       regtopp: 
       sig: 
     data_format_detail:
@@ -1687,8 +1689,8 @@ nb:
     new:
       all: Alle
       fields_gtfs_export:
-        warning: 
-      flash: 
+        warning: Filtrering på STOP AREAS eksporterer kun GTFS stops.txt og transfer.txt - disse kan inneholde ekstra attributter
+      flash: Eksportjobb på kø, oppdater side for å se progresjon
       title: Ny eksport
   exports:
     actions:
@@ -1700,14 +1702,14 @@ nb:
       warning: 
     new:
       all: Alle
-      flash: 
+      flash: Eksportjobb i kø, oppdater side for å se progresjon
       title: Ny eksport
     severities:
       error: Feil
       fatal: Fatal
       info: Informasjon
       ok: Ok
-      uncheck: 
+      uncheck: Ikke sjekket
       warning: Advarsel
     show:
       exported_file: Eksportert fil
@@ -1717,7 +1719,7 @@ nb:
       canceled: Avbrutt
       scheduled: Behandling pågår...
       started: Startet
-      terminated: 
+      terminated: Fullført
   'false': 
   file_validation_log_messages:
     import: 
@@ -1738,18 +1740,18 @@ nb:
     index:
       title: Fotnoter
   formtastic:
-    cancel: 
-    clone: 
-    create: 
-    duplicate: 
-    export: 
-    'false': 
-    import: 
+    cancel: Avbryt
+    clone: Dupliser
+    create: Opprett %{model}
+    duplicate: Dupliser
+    export: Start eksport
+    'false': Nei
+    import: Start import
     placeholders:
       time_table:
-        tag_search: 
-    required: 
-    reset: 
+        tag_search: eks helligdag, skoleferie
+    required: påkrevd
+    reset: Reset %{model}
     submit: 
     titles:
       access_link:
@@ -1999,9 +2001,9 @@ nb:
         max_distance_for_connection_link: 
       vehicle_journey:
         objectid: 
-    'true': 
-    update: 
-    validate: 
+    'true': Ja
+    update: Oppdater %{model}
+    validate: Start validering
   group_of_lines:
     actions:
       destroy: 
@@ -2027,27 +2029,27 @@ nb:
       wayback_code_exclusive: 
   iev:
     errors:
-      duplicate_or_missing_data: 
-      duplicate_parameters: 
-      internal_error: 
-      invalid_file_format: 
-      invalid_format: 
-      invalid_parameters: 
-      invalid_request: 
-      missing_parameters: 
-      scheduled_job: 
-      unknown_action: 
-      unknown_file: 
-      unknown_job: 
-      unknown_referential: 
-      unreadable_parameters: 
+      duplicate_or_missing_data: Manglende eller duplikate data
+      duplicate_parameters: Parametre duplisert
+      internal_error: Intern feil
+      invalid_file_format: Ugyldig filformat
+      invalid_format: Ugyldig format
+      invalid_parameters: Ugyldige action-parametre
+      invalid_request: Ugyldig forespørsel
+      missing_parameters: Manglende action-parametre
+      scheduled_job: Ugyldig kall på en ikke fullført jobb
+      unknown_action: Ukjent kommando
+      unknown_file: Ukjent fil
+      unknown_job: Ukjent jobb-nummer
+      unknown_referential: Ukjent dataspace
+      unreadable_parameters: Ugyldig parameter-format
     exception:
-      default: 
-      dupplicate_or_missing_data: 
-      dupplicate_parameters: 
-      internal_error: 
-      invalid_parameters: 
-      invalid_request: 
+      default: Kan ikke aksessere IEV Service (Java backend)
+      dupplicate_or_missing_data: Manglende eller duplikate data
+      dupplicate_parameters: Duplikate parametre
+      internal_error: Intern feil
+      invalid_parameters: Ugyldige parametre
+      invalid_request: Ugyldig forespørsel
       missing_parameters: 
       scheduled_job: 
       unknown_action: 
@@ -2264,7 +2266,6 @@ nb:
       pg_excluded: 
       public_excluded: 
       user_excluded: 
-      no_access: Dataområdet '%{referential}' er ikke tilgjengelig for denne brukeren.
     new:
       submit: Opprett et dataområde
       title: Opprett et nytt dataområde

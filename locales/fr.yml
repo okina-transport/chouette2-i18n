@@ -755,7 +755,7 @@ fr:
         name: Nom
         networks: Réseaux
         no_validity_period: non définie
-        prefix: Préfixe des identifiants Neptune
+        prefix: Préfixe des identifiants métier
         projection_type: Système de référence spatiale (SRID) optionnel
         quays: quais
         resources: Import Neptune
@@ -1792,6 +1792,8 @@ fr:
       kml: KML
       neptune: Profil Neptune
       netex: Profil NeTEx
+      netex_experimental: NeTEx Expérimental
+      netex_france: NeTEx France
       regtopp: RegTopp
       sig: SIG
     data_format_detail:
