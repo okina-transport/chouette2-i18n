@@ -2388,6 +2388,7 @@ en:
       pg_excluded: can't begins with pg_
       public_excluded: public is a reserved value
       user_excluded: "%{user} is a reserved value"
+      no_access: Data space '%{referential}' not found for current user.
     new:
       submit: Create a data space
       title: Create a new data space
