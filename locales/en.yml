@@ -31,9 +31,9 @@ en:
       title: Add a new access point
     show:
       access_link_legend_1: grays arrows for undefined links, green for defined ones
-      access_link_legend_2: clic on arrows to create/edit a link
+      access_link_legend_2: click on arrows to create/edit a link
       detail_access_links: Specific access links
-      generic_access_links: Glogal access links
+      generic_access_links: Global access links
       geographic_data: 'Geographic data '
       no_geographic_data: None
       title: Access point %{access_point}
@@ -57,8 +57,8 @@ en:
         keep_networks: keep networks
         keep_stops: keep stop areas
       compliance_check:
-        created_at: 
-        file_name: 
+        created_at: Created at
+        file_name: File name
         reference_ids: 
         references_type: 
         resources: 
@@ -700,12 +700,12 @@ en:
         network: Network
         not_accessible: Not accessible
         number: Number
-        number_of_fs_vj: On demond vehicle journeys
-        number_of_mrs_vj: Accessible vehicle journeys
-        number_of_non_fs_vj: Non on demond vehicle journeys
-        number_of_non_mrs_vj: Non accessible vehicle journeys
-        number_of_null_fs_vj: Unspecified on demond vehicle journeys
-        number_of_null_mrs_vj: Unspecified accessible vehicle journeys
+        number_of_fs_vj: Number of on demond vehicle journeys
+        number_of_mrs_vj: Number of accessible vehicle journeys
+        number_of_non_fs_vj: Number of non on demond vehicle journeys
+        number_of_non_mrs_vj: Number of non accessible vehicle journeys
+        number_of_null_fs_vj: Number of unspecified on demond vehicle journeys
+        number_of_null_mrs_vj: Number of unspecified accessible vehicle journeys
         number_of_vj: Total number of vehicle journeys
         object_version: Version
         objectid: Identifier
@@ -756,7 +756,7 @@ en:
         name: Name
         networks: Networks
         no_validity_period: undefined
-        prefix: Neptune Object Id prefix
+        prefix: Object Id prefix
         projection_type: Optional spatial reference system code (SRID)
         quays: quays
         resources: Neptune Import File
@@ -1781,6 +1781,8 @@ en:
       kml: KML
       neptune: Neptune profile
       netex: NeTEx profile
+      netex_experimental: NeTEx Experimental
+      netex_france: NeTEx France
       regtopp: RegTopp
       sig: SIG
     data_format_detail:
@@ -1871,7 +1873,7 @@ en:
     import: Launch import
     placeholders:
       time_table:
-        tag_search: 'ex: Public hollidays,School holidays'
+        tag_search: 'ex: Public holidays,School holidays'
     required: required
     reset: Reset %{model}
     submit: Apply %{model}
@@ -2152,7 +2154,7 @@ en:
   iev:
     errors:
       duplicate_or_missing_data: Missing data or duplicate
-      duplicate_parameters: Parameters provided in double
+      duplicate_parameters: Parameters duplicated
       internal_error: Internal error
       invalid_file_format: Invalid file format
       invalid_format: Invalid format
@@ -2386,7 +2388,6 @@ en:
       pg_excluded: can't begins with pg_
       public_excluded: public is a reserved value
       user_excluded: "%{user} is a reserved value"
-      no_access: Data space '%{referential}' not found for current user.
     new:
       submit: Create a data space
       title: Create a new data space
