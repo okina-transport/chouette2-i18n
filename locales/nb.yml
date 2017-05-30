@@ -1458,6 +1458,7 @@ nb:
       detail_4_vehiclejourney_1_pattern: 
       detail_4_vehiclejourney_1_unique: 
       detail_4_vehiclejourney_2: 
+      detail_rutebanken_3_stoppoint_1: 
     errors: Feil
     file:
       detailed_errors_file_prefix: 
@@ -2265,8 +2266,7 @@ nb:
     errors:
       pg_excluded: 
       public_excluded: 
-      user_excluded:
-      no_access: Dataområdet '%{referential}' er ikke tilgjengelig for denne brukeren.
+      user_excluded: 
     new:
       submit: Opprett et dataområde
       title: Opprett et nytt dataområde
