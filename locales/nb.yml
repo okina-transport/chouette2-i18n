@@ -2266,7 +2266,8 @@ nb:
     errors:
       pg_excluded: 
       public_excluded: 
-      user_excluded: 
+      user_excluded:
+      no_access: Dataområdet '%{referential}' er ikke tilgjengelig for denne brukeren.
     new:
       submit: Opprett et dataområde
       title: Opprett et nytt dataområde

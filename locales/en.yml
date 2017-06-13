@@ -700,12 +700,12 @@ en:
         network: Network
         not_accessible: Not accessible
         number: Number
-        number_of_fs_vj: Number of on demond vehicle journeys
-        number_of_mrs_vj: Number of accessible vehicle journeys
-        number_of_non_fs_vj: Number of non on demond vehicle journeys
-        number_of_non_mrs_vj: Number of non accessible vehicle journeys
-        number_of_null_fs_vj: Number of unspecified on demond vehicle journeys
-        number_of_null_mrs_vj: Number of unspecified accessible vehicle journeys
+        number_of_fs_vj: On demond vehicle journeys
+        number_of_mrs_vj: Accessible vehicle journeys
+        number_of_non_fs_vj: Non on demond vehicle journeys
+        number_of_non_mrs_vj: Non accessible vehicle journeys
+        number_of_null_fs_vj: Unspecified on demond vehicle journeys
+        number_of_null_mrs_vj: Unspecified accessible vehicle journeys
         number_of_vj: Total number of vehicle journeys
         object_version: Version
         objectid: Identifier
@@ -1754,12 +1754,12 @@ en:
     sessions:
       new:
         commit: Sign in
-        introduction1: Chouette is an open source Software for editing, viewing and exchanging public transport reference data, and is the reference implementation for validating conformance of data wrt Neptune (French standard NFP 99 506).
-        introduction2: 'The application is deployed in Saas mode and supports :'
-        introduction_item1: several data exchange formats (Neptune, GTFS, CSV ... Netex coming soon)
-        introduction_item2: and also several base map backgrounds (Google, OSM, IGN).
+        introduction1: ""
+        introduction2: ""
+        introduction_item1: ""
+        introduction_item2: ""
         title: Sign in
-        welcome: Welcome to Chouette
+        welcome: Nasjonal rutedatabase
   directions:
     label:
       backward: backward
@@ -2389,6 +2389,7 @@ en:
       pg_excluded: can't begins with pg_
       public_excluded: public is a reserved value
       user_excluded: "%{user} is a reserved value"
+      no_access: Data space '%{referential}' not found for current user.
     new:
       submit: Create a data space
       title: Create a new data space
