@@ -606,6 +606,9 @@ en:
       api_key:
         name: Name
         token: Token
+      codespace:
+        xmlns: Xmlns
+        xmlns_url: XmlnsUrl
       company:
         code: Code
         creation_time: Created on
@@ -741,6 +744,7 @@ en:
         access_points: Access Points
         boarding_positions: boarding positions
         commercial_stops: commercial stops
+        codespaces: Codespaces
         companies: Companies
         compliance_checks: Validations
         connection_links: Connection links
@@ -977,6 +981,10 @@ en:
         other: access points
         zero: access point
       api_key: Api Key
+      codespace:
+        one: codespace
+        other: codespaces
+        zero: codespace
       company:
         one: company
         other: companies
@@ -1121,6 +1129,21 @@ en:
     success_sa: "%{count} stop areas deleted"
     success_tm: "%{count} time tables deleted"
     success_vj: "%{count} vehicle journeys deleted"
+  codespaces:
+    actions:
+      destroy: Remove this codespace
+      destroy_confirm: Are you sure you want destroy this codespace?
+      edit: Edit this codespace
+      new: Add a new codespace
+    edit:
+      title: Update codespace %{codespace}
+    index:
+      name: Search by name
+      title: Codespaces
+    new:
+      title: Add a new codespace
+    show:
+      title: Codespace  %{codespace}
   companies:
     actions:
       destroy: Remove this company
@@ -1884,6 +1907,9 @@ en:
         coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
         objectid: "[prefix]:AccessPoint:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         projection_xy: x,y in secondary referential, dot for decimal separator
+      codepace:
+        xmlns: Xmlns
+        xmlns_url: XmlnsUrl
       company:
         name: Name
         objectid: "[prefix]:Company:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
@@ -2405,7 +2431,8 @@ en:
   report:
     default_view:
       access_point: 
-      access_points: 
+      access_points:
+      codespaces:
       companies: 
       company: 
       connection_link: 

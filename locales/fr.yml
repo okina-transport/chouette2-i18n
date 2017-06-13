@@ -605,6 +605,9 @@ fr:
       api_key:
         name: Nom
         token: Token
+      codespace:
+        xmlns: Xmlns
+        xmlns_url: XmlnsUrl
       company:
         code: Code
         creation_time: Créé le
@@ -740,6 +743,7 @@ fr:
         access_points: points d'accès
         boarding_positions: points d'embarquement
         commercial_stops: arrêts commerciaux
+        codespaces: Codespaces
         companies: Transporteurs
         compliance_checks: Validations
         connection_links: Correspondances
@@ -976,6 +980,10 @@ fr:
         other: accès
         zero: accès
       api_key: Clé d'accès API
+      codespace:
+        one: codespace
+        other: codespaces
+        zero: codespace
       company:
         one: transporteur
         other: transporteurs
@@ -1117,6 +1125,21 @@ fr:
     success_sa: "%{count} arrêt(s) supprimé(s)"
     success_tm: "%{count} calendrier(s) supprimé(s)"
     success_vj: "%{count} course(s) supprimée(s)"
+  codespaces:
+    actions:
+      destroy: Supprimer ce codespace
+      destroy_confirm: Etes vous sûr de supprimer ce codespace?
+      edit: Modifier ce codespace
+      new: Ajouter un codespace
+    edit:
+      title: Modifier le codespace %{codespace}
+    index:
+      name: Recherche par nom
+      title: Codespaces
+    new:
+      title: Ajouter un codespace
+    show:
+      title: Codespace  %{codespace}
   companies:
     actions:
       destroy: Supprimer ce transporteur
@@ -1895,6 +1918,9 @@ fr:
         coordinates: latitude,longitude dans le référentiel WGS84, le séparateur de décimales est 'point'
         objectid: "[prefixe]:AccessPoint:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         projection_xy: x,y dans le référentiel secondaire, le séparateur de décimales est 'point'
+      codepace:
+        xmlns: Xmlns
+        xmlns_url: XmlnsUrl
       company:
         name: Nom
         objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
@@ -2417,6 +2443,7 @@ fr:
     default_view:
       access_point: Accès
       access_points: Accès
+      codespaces: Codespaces
       companies: Transporteurs
       company: Transporteur
       connection_link: Correspondance
