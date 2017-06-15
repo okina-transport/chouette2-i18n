@@ -1138,7 +1138,7 @@ en:
     edit:
       title: Update codespace %{codespace}
     index:
-      name: Search by name
+      name: Search by Xmlns
       title: Codespaces
     new:
       title: Add a new codespace
@@ -2773,7 +2773,7 @@ en:
       geographic_data: Geographic data
       itl_managment: Routing constraint's links managment
       no_geographic_data: None
-      not_editable: Le type d'arrêt est non modifiable
+      not_editable: The stop type is not editable
       stop_managment: Parent-child relations
       title: Stop %{stop_area} - %{stop_area_type}
     stop_area:
