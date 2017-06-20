@@ -2755,6 +2755,24 @@ en:
       localisation: Localisation
       no_object: Nothing
       no_position: No Position
+  stop_place_modes:
+    label:
+      unknown: Unknown
+      onstreet_bus: OnstreetBus
+      onstreet_tram: OnstreetTram
+      airport: Airport
+      rail_station: RailStation
+      metro_station: MetroStation
+      bus_station: BusStation
+      coach_station: CoachStation
+      tram_station: TramStation
+      harbour_port: HarbourPort
+      ferry_port: FerryPort
+      ferry_stop: FerryStop
+      lift_station: LiftStation
+      vehicle_rail_interchange: VehicleRailInterchange
+      other: Other
+    name: Stop Area mode
   stop_points:
     actions:
       destroy: Remove this stop on route
@@ -2893,6 +2911,41 @@ en:
       walk: Walk
       waterborne: Waterborne
     name: Transport mode
+  transport_sub_modes:
+    label:
+      unknown: Unknown
+      airport_link_bus: Airport Link Bus
+      express_bus: Express Bus
+      local_bus: Local Bus
+      night_bus: Night Bus
+      rail_replacement_bus: Rail Replacement Bus
+      regional_bus: Regional Bus
+      school_bus: School Bus
+      shuttle_bus: Shuttle Bus
+      sightseeing_bus: Sightseeing Bus
+      local_tram: Local Tram
+      international: International
+      interregional_rail: Interregional Rail
+      local: Local
+      long_distance: Long Distance
+      night_rail: Night Rail
+      regional_rail: Regional Rail
+      tourist_railway: Tourist Railway
+      metro: Metro
+      domestic_flight: Domestic Flight
+      helicopter_service: Helicopter Service
+      international_flight: International Flight
+      high_speed_passenger_service: High Speed Passenger Service
+      high_speed_vehicle_service: High Speed Vehicle Service
+      international_car_ferry: International Car Ferry
+      international_passenger_ferry: International Passenger Ferry
+      local_car_ferry: Local Car Ferry
+      local_passenger_ferry: Local Passenger Ferry
+      national_car_ferry: National Car Ferry
+      sightseeing_service: Sightseeing Service
+      telecabin: Telecabin
+      funicular: Funicular
+    name: Transport sub mode
   'true': 'Yes'
   unknown: Unknown
   unselect_all: Unselect all
