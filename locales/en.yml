@@ -625,6 +625,7 @@ en:
         short_name: Short name
         time_zone: Time zone
         url: Web page
+        organisation_type: Organisation Type
       connection_link:
         arrival: End of link
         arrival_id: End of link
@@ -1159,6 +1160,10 @@ en:
       title: Add a new company
     show:
       title: Company  %{company}
+    operator: Operator
+    contact:
+      private: Private
+      public: Public
   compliance_check_results:
     details:
       1-GTFS-CSV-1: Contrôle de la lecture du fichier
@@ -2362,6 +2367,7 @@ en:
       group_of_lines: Groups of lines
       itineraries: Line's route list
       title: Line %{line}
+    operator: Operator
   maps:
     google_hybrid: Google hybrid
     google_physical: Google physical
