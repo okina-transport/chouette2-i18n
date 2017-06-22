@@ -2361,6 +2361,7 @@ fr:
       multi_selection_disable: Désactiver la sélection multiple
       multi_selection_enable: Activer la sélection multiple
       name_or_number: Recherche par nom ou indice
+      name_or_number_or_objectid: Recherche par nom ou indice ou identifiant métier
       no_companies: Aucun transporteurs
       no_group_of_lines: Aucun groupes de ligne
       no_networks: Aucun réseaux

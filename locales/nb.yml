@@ -2202,6 +2202,7 @@ nb:
       multi_selection_disable: Deaktiver flervalg
       multi_selection_enable: Aktiver flervalg
       name_or_number: Søk på navn eller nummer
+      name_or_number_or_objectid: Søk på navn eller nummer eller identifikator
       no_companies: Ingen COMPANIES
       no_group_of_lines: Ingen GROUP OF LINES
       no_networks: Ingen NETWORKs
