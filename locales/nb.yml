@@ -2608,7 +2608,10 @@ nb:
     index:
       advanced_search: 
       area_type: 
-      name: 
+      name:
+      name_or_object:
+      no_transport_modes:
+      no_transport_sub_modes:
       selection: 
       selection_all: 
       title: 

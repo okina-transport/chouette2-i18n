@@ -2767,6 +2767,9 @@ en:
       advanced_search: Advanced Search
       area_type: Area Type
       name: Search by name
+      name_or_object: Search by name or identifier
+      no_transport_modes: No transport modes
+      no_transport_sub_modes: No transport sub modes
       selection: Filter on
       selection_all: All
       title: Stop areas

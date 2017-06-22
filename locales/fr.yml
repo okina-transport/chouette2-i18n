@@ -2801,6 +2801,9 @@ fr:
       advanced_search: Recherche avancée
       area_type: Type d'arrêt
       name: Recherche par nom
+      name_or_object: Recherche par nom ou identifiant métier
+      no_transport_modes: Aucun mode de transport
+      no_transport_modes: Aucun mode de sub transport
       selection: Filtrer sur
       selection_all: Tous
       title: Arrêts
