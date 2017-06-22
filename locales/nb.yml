@@ -2205,6 +2205,7 @@ nb:
       name_or_number_or_objectid: Søk på navn eller nummer eller identifikator
       no_companies: Ingen COMPANIES
       no_group_of_lines: Ingen GROUP OF LINES
+      no_transport_modes: Ingen transport typer
       no_networks: Ingen NETWORKs
       select_all: Velg alle
       title: LINEs

@@ -2364,6 +2364,7 @@ fr:
       name_or_number_or_objectid: Recherche par nom ou indice ou identifiant métier
       no_companies: Aucun transporteurs
       no_group_of_lines: Aucun groupes de ligne
+      no_transport_modes: Aucun mode de transport
       no_networks: Aucun réseaux
       select_all: Tout sélectionner
       title: Lignes

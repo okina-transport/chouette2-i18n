@@ -2358,6 +2358,7 @@ en:
       name_or_number_or_objectid: Search by name or number or identifier
       no_companies: No companies
       no_group_of_lines: No group of lines
+      no_transport_modes: No transport modes
       no_networks: No networks
       select_all: Select all
       title: Lines
