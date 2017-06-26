@@ -2251,6 +2251,10 @@ nb:
     show:
       rule_parameter_sets: Regelsett
       users: Brukere
+  organisation_type:
+    label:
+      authority:
+      operator:
   progress_bar:
     level: Etasjer
     step: 

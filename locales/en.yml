@@ -2405,6 +2405,10 @@ en:
     show:
       rule_parameter_sets: Rule parameter sets
       users: Users
+  organisation_type:
+    label:
+      authority: Authority
+      operator: Operator
   progress_bar:
     level: Levels
     step: Steps
@@ -2928,7 +2932,7 @@ en:
   titles:
     clean_up:
       expected_date: value included in clean up
-  today: 
+  today:
   transport_modes:
     label:
       air: Air

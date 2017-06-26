@@ -2410,6 +2410,10 @@ fr:
     show:
       rule_parameter_sets: Jeux de paramètres
       users: Utilisateurs
+  organisation_type:
+    label:
+      authority: Autorité organisatrice
+      operator: Operator
   progress_bar:
     level: Etapes
     step: Sous étapes
