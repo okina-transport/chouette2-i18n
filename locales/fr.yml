@@ -645,6 +645,10 @@ fr:
         occasional_traveller_duration: pour un voyageur occasionnel
         stairs_availability: Escalator
         undefined: non défini
+      destination_display:
+        name: Nom
+        front_text:
+        side_text:
       footnote:
         code: numéro
         label: ligne de texte
@@ -1000,6 +1004,10 @@ fr:
         one: validation CSV
         other: validations
         zero: validation
+      destination_display:
+        one: destination display
+        other: destination displays
+        zero: destination display
       footnote: note en bas de page
       group_of_line:
         one: groupe de lignes
@@ -1738,6 +1746,21 @@ fr:
     other: "%{count} avertissements"
     zero: 0 avertissement
   delete_periods: Supprimer Périodes
+  destination_displays:
+    actions:
+      destroy: Remove this destination display
+      destroy_confirm: Are you sure you want destroy this destination display?
+      edit: Edit this destination display
+      new: Add a new destination display
+    edit:
+      title: Update destination display  %{destination_display}
+    index:
+      name: Search by name or front text
+      title: Destination displays
+    new:
+      title: Add a new destination display
+    show:
+      title: Destination Display %{destination_display}
   devise:
     confirmations:
       new:
@@ -1929,6 +1952,10 @@ fr:
       connection_link:
         link_distance: Link distance
         objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
+      destination_display:
+        name: Nom
+        front_text:
+        side_text:
       export_task:
         dates:
           not_nul: Export HUB interrompu. Les dates de début et de fin doivent êtres renseignées.
@@ -2858,6 +2885,7 @@ fr:
       lines: Lignes
       no_object: Aucun(e)
       no_position: Pas de position
+      unchanged: "(Inchangé)"
   subscriptions:
     actions:
       new: Créer un compte

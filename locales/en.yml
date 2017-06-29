@@ -647,6 +647,10 @@ en:
         occasional_traveller_duration: Occasional passenger
         stairs_availability: Escalator
         undefined: not yet set
+      destination_display:
+        name: Name
+        front_text: Front text
+        side_text: Side text
       footnote:
         code: number
         label: line text
@@ -1002,6 +1006,10 @@ en:
         one: CSV validation
         other: validations
         zero: validation
+      destination_display:
+        one: destination display
+        other: destination displays
+        zero: destination display
       footnote: footnote
       group_of_line:
         one: group of line
@@ -1731,7 +1739,22 @@ en:
     one: 1 warning
     other: "%{count} warnings"
     zero: 0 warning
-  delete_periods: 
+  delete_periods:
+  destination_displays:
+    actions:
+      destroy: Remove this destination display
+      destroy_confirm: Are you sure you want destroy this destination display?
+      edit: Edit this destination display
+      new: Add a new destination display
+    edit:
+      title: Update destination display  %{destination_display}
+    index:
+      name: Search by name or front text
+      title: Destination displays
+    new:
+      title: Add a new destination display
+    show:
+      title: Destination Display %{destination_display}
   devise:
     confirmations:
       new:
@@ -1923,6 +1946,10 @@ en:
       connection_link:
         link_distance: Link distance
         objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
+      destination_display:
+        name: Name
+        front_text: Front text
+        side_text: Side text
       export_task:
         dates:
           not_nul: HUB Export interrupted. Start date and end date must be provided.
@@ -2842,6 +2869,7 @@ en:
       lines: Lines
       no_object: Nothing
       no_position: No position
+      unchanged: "(Unchanged)"
   subscriptions:
     actions:
       new: Create an account
