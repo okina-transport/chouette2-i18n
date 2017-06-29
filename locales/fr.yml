@@ -2885,7 +2885,7 @@ fr:
       lines: Lignes
       no_object: Aucun(e)
       no_position: Pas de position
-      unchanged: '(Inchangé)'
+      unchanged:
   subscriptions:
     actions:
       new: Créer un compte
