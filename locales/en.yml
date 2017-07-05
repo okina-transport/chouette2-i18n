@@ -1749,6 +1749,7 @@ en:
     edit:
       title: Update destination display  %{destination_display}
     index:
+      move: Move
       name: Search by name or front text
       title: Destination displays
     new:
@@ -2844,6 +2845,7 @@ en:
       vehicle_rail_interchange: VehicleRailInterchange
       other: Other
     name: Stop Area mode
+  stop_points:
   stop_points:
     actions:
       destroy: Remove this stop on route
