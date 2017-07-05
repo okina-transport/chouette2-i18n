@@ -2846,7 +2846,6 @@ en:
       other: Other
     name: Stop Area mode
   stop_points:
-  stop_points:
     actions:
       destroy: Remove this stop on route
       destroy_confirm: Are you sure you want destroy this stop on route ?
