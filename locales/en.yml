@@ -946,6 +946,17 @@ en:
         vehicle_journey_at_stop_ids: Time list
         vehicle_type_identifier:
         vehicletypeidentifier: Vehicle Type Identifier
+      interchange:
+        name: Name
+        priority: Priority
+        planned: Planned
+        guaranteed: Guaranteed
+        advertised: Advertised
+        maximum_wait_time: Maximum wait time
+        from_point: Feeder ScheduledStopPoint
+        to_point: Consumer ScheduledStopPoint
+        from_vehicle_journey: Feeder ServiceJourney
+        to_vehicle_journey: Consumer ServiceJourney
     copy: Copy of %{name}
     errors:
       models:
@@ -2276,6 +2287,20 @@ en:
       imported_file: Original file
       report: Report
       rule_parameter_set: Rule parameter set
+  interchanges:
+    actions:
+      new: New interchange
+      edit: Edit interchange
+      destroy: Delete interchange
+    show:
+      title: Interchange %{interchange}
+    new:
+      title: New interchange
+    edit:
+      title: Update interchange %{interchange}
+    index:
+      title: Interchanges
+      name: Search by name or id
   job_status:
     title:
       processed: Launched operation , click to display its progress.
