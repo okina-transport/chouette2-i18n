@@ -57,17 +57,17 @@ en:
         keep_networks: keep networks
         keep_stops: keep stop areas
       compliance_check:
-        created_at: 
-        file_name: 
-        reference_ids: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
-        status: 
+        created_at:
+        file_name:
+        reference_ids:
+        references_type:
+        resources:
+        rule_parameter_set_id:
+        status:
       compliance_check_log_message:
-        created_at: 
-        full_message: 
-        position: 
+        created_at:
+        full_message:
+        position:
       compliance_check_result:
         1-GTFS-CSV-1: Valid .zip Archive and files
         1-GTFS-CSV-2: Valid UTF-8 CSV header line
@@ -256,7 +256,7 @@ en:
         object_id_prefix: Neptune Id prefix
         reference_ids: Subset ids
         references_type: Subset
-        rule_parameter_set_id: 
+        rule_parameter_set_id:
       export_task:
         created_at: Created on
         end_date: End date
@@ -408,8 +408,8 @@ en:
         3-Facility-1: Vérification de la géolocalisation de tous les accès
         3-Facility-2: Vérification de la proximité entre les équipements et leur arrêt de rattachement
         3-JourneyPattern-1: Vérification de double définition de missions
-        3-JourneyPattern-2: 
-        3-JourneyPattern-3: 
+        3-JourneyPattern-2:
+        3-JourneyPattern-3:
         3-Line-1: Vérification de la non homonymie des lignes
         3-Line-2: Vérification de la présence de séquences d'arrêts sur la ligne
         3-Route-1: Vérification de la succession des arrêts de la séquence
@@ -481,7 +481,7 @@ en:
           uncompiliant_vehicle: Vehicle creation by copy requires that the selected vehicle counts at leat a stop and has departure and arrival times at each stops
           unreadable_time: Expected time format is hh:mm
     models:
-      compliance_check: 
+      compliance_check:
       compliance_check_result:
         one: Validation
         other: Validation
@@ -546,7 +546,7 @@ en:
         one: RegTopp import
         other: imports
         zero: import
-      subscription: 
+      subscription:
       validation:
         one: validation
         other: validations
@@ -562,7 +562,7 @@ en:
         access_point: Access Point
         comment: Comment
         creation_time: Created on
-        creator_id: 
+        creator_id:
         creatorid: 'Created by '
         default_duration: Average
         frequent_traveller_duration: Regular passenger
@@ -584,7 +584,7 @@ en:
         coordinates: Coordinates (lat,lng)
         country_code: INSEE code
         creation_time: Created on
-        creator_id: 
+        creator_id:
         creatorid: Created by
         latitude: Latitude
         lift_availability: Lift
@@ -760,7 +760,7 @@ en:
         projection_type: Optional spatial reference system code (SRID)
         quays: quays
         resources: Neptune Import File
-        route_sections: 
+        route_sections:
         rule_parameter_sets: Rule parameters sets
         slug: Code
         start_validity_period: from
@@ -832,7 +832,7 @@ en:
         coordinates: Coordinates (lat,lng) WGS84
         country_code: INSEE code
         creation_time: Created on
-        creator_id: 
+        creator_id:
         creatorid: Created by
         fare_code: Fare code
         latitude: Latitude
@@ -849,7 +849,7 @@ en:
         projection_x: x-position
         projection_xy: position (x,y) %{projection}
         projection_y: y-position
-        published_name: 
+        published_name:
         registration_number: Registration number
         routing_line_ids: Attached lines
         routing_stop_ids: Attached stops
@@ -862,7 +862,7 @@ en:
       stop_point:
         lines: lines
       time_table:
-        calendar_details: 
+        calendar_details:
         calendars: Calendar view
         comment: Name
         creation_time: Created on
@@ -881,7 +881,7 @@ en:
         periods: Application periods
         saturday: Saturday
         sunday: Sunday
-        tag_list: 
+        tag_list:
         tag_search: Tags
         thursday: Thursday
         tuesday: Tuesday
@@ -935,8 +935,19 @@ en:
         unspecified_fs: Not specified
         unspecified_mrs: Not specified
         vehicle_journey_at_stop_ids: Time list
-        vehicle_type_identifier: 
+        vehicle_type_identifier:
         vehicletypeidentifier: Vehicle Type Identifier
+      interchange:
+        name: Name
+        priority: Priority
+        planned: Planned
+        guaranteed: Guaranteed
+        advertised: Advertised
+        maximum_wait_time: Maximum wait time
+        from_point: Feeder ScheduledStopPoint
+        to_point: Consumer ScheduledStopPoint
+        from_vehicle_journey: Feeder ServiceJourney
+        to_vehicle_journey: Consumer ServiceJourney
     copy: Copy of %{name}
     errors:
       models:
@@ -1038,11 +1049,11 @@ en:
         one: network
         other: networks
         zero: network
-      referantial: 
+      referantial:
       referential:
         one: Data space
         other: Data spaces
-        zero: 
+        zero:
       route:
         one: route
         other: routes
@@ -1094,10 +1105,10 @@ en:
       quay: Quay
       stop_place: Stop Place
   attributes:
-    author: 
-    created_at: 
-    updated_at: 
-  back: 
+    author:
+    created_at:
+    updated_at:
+  back:
   breadcrumbs:
     referentials: Home
     users: Users
@@ -1594,8 +1605,8 @@ en:
       error_txt: Error
       ignored: Ignored
       ignored_txt: Ignored
-      none: 
-      none_txt: 
+      none:
+      none_txt:
       ok: Ok
       ok_txt: Ok
       success: Success
@@ -1624,24 +1635,24 @@ en:
       rule_parameter_set: Rule parameter set
     edit:
       title: Edit the Validation
-    error_count: 
-    fatal_count: 
-    import: 
+    error_count:
+    fatal_count:
+    import:
     index:
       title: Validation
-      warning: 
-    ok_count: 
+      warning:
+    ok_count:
     report:
-      action_report: 
+      action_report:
       validation_success: Validation successfully passed.
-    rule_parameter_set: 
+    rule_parameter_set:
     show:
       completed: "[ Completed ]"
-      details: 
+      details:
       export: Download test report
       export_csv: CSV format
       failed: "[ Failed ]"
-      parameters: 
+      parameters:
       pending: "[ In the processing queue ]"
       processing: "[ In progress... ]"
       summary: Conformance report
@@ -1656,8 +1667,8 @@ en:
       scheduled: Processing ...
       started: Started
       terminated: Completed
-    uncheck_count: 
-    warning_count: 
+    uncheck_count:
+    warning_count:
   connection_link_types:
     label:
       mixed: Mixed
@@ -1702,7 +1713,7 @@ en:
     one: 1 warning
     other: "%{count} warnings"
     zero: 0 warning
-  delete_periods: 
+  delete_periods:
   devise:
     confirmations:
       new:
@@ -1773,7 +1784,7 @@ en:
       south_west: south west
       straight_forward: straight forward
       west: west
-  edit_periods: 
+  edit_periods:
   enumerize:
     data_format:
       gtfs: GTFS
@@ -1787,7 +1798,7 @@ en:
       gtfs: General Transit Feed Specification
       hub: Specific Transdev Format
       kml: line, route, ... drawings on Keyhole Markup Language format
-      neptune: 
+      neptune:
       netex: Experimental
     for_alighting:
       forbidden: No drop off available
@@ -1821,7 +1832,7 @@ en:
       new: New export
     index:
       title: Exports
-      warning: 
+      warning:
     new:
       all: All
       flash: Export task on queue, refresh page to see progression
@@ -1906,43 +1917,43 @@ en:
         registration_number: Positif integer.
       gtfs:
         company:
-          name: 
+          name:
           objectid: "[prefix]:Company:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: 'only alphanumerical or underscore characters '
         connection_link:
-          link_distance: 
+          link_distance:
           objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         group_of_line:
-          name: 
+          name:
           objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: Positif integer.
         journey_pattern:
-          name: 
+          name:
           objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: Positif integer.
         line:
-          name: 
-          number: 
+          name:
+          number:
           objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: only alphanumerical or underscore characters
         network:
-          name: 
+          name:
           objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: only alphanumerical or underscore characters
         route:
           objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         stop_area:
-          city_name: 
-          comment: 
+          city_name:
+          comment:
           coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
-          name: 
-          nearest_topic_name: 
+          name:
+          nearest_topic_name:
           objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           projection_xy: x,y in secondary referential, dot for decimal separator
           registration_number: only alphanumerical or underscore characters
-          zip_code: 
+          zip_code:
         time_table:
-          comment: 
+          comment:
           objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         vehicle_journey:
           objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
@@ -1995,100 +2006,100 @@ en:
         max_distance_for_connection_link: Maximal distance to link stops by connection link stop in meter
         references_type: Filter on stop areas import only GTFS stops and transfers files, these may contain extra attributes
       journey_pattern:
-        name: 
+        name:
         objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         registration_number: Positif integer.
       line:
-        name: 
-        number: 
+        name:
+        number:
         objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         registration_number: only alphanumerical or underscore characters
       neptune:
         company:
-          name: 
+          name:
           objectid: "[prefix]:Company:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: 'only alphanumerical or underscore characters '
         connection_link:
-          link_distance: 
+          link_distance:
           objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         group_of_line:
-          name: 
+          name:
           objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: Positif integer.
         journey_pattern:
-          name: 
+          name:
           objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: Positif integer.
         line:
-          name: 
-          number: 
+          name:
+          number:
           objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: only alphanumerical or underscore characters
         network:
-          name: 
+          name:
           objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: only alphanumerical or underscore characters
         route:
           objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         stop_area:
-          city_name: 
-          comment: 
+          city_name:
+          comment:
           coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
-          name: 
-          nearest_topic_name: 
+          name:
+          nearest_topic_name:
           objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           projection_xy: x,y in secondary referential, dot for decimal separator
           registration_number: only alphanumerical or underscore characters
-          zip_code: 
+          zip_code:
         time_table:
-          comment: 
+          comment:
           objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         vehicle_journey:
           objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
       netex:
         company:
-          name: 
+          name:
           objectid: "[prefix]:Company:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: 'only alphanumerical or underscore characters '
         connection_link:
-          link_distance: 
+          link_distance:
           objectid: "[prefix]:ConnectionLink:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         group_of_line:
-          name: 
+          name:
           objectid: "[prefix]:GroupOfLine:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: Positif integer.
         journey_pattern:
-          name: 
+          name:
           objectid: "[prefix]:JourneyPattern:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: Positif integer.
         line:
-          name: 
-          number: 
+          name:
+          number:
           objectid: "[prefix]:Line:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: only alphanumerical or underscore characters
         network:
-          name: 
+          name:
           objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           registration_number: only alphanumerical or underscore characters
         route:
           objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         stop_area:
-          city_name: 
-          comment: 
+          city_name:
+          comment:
           coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
-          name: 
-          nearest_topic_name: 
+          name:
+          nearest_topic_name:
           objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
           projection_xy: x,y in secondary referential, dot for decimal separator
           registration_number: only alphanumerical or underscore characters
-          zip_code: 
+          zip_code:
         time_table:
-          comment: 
+          comment:
           objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         vehicle_journey:
           objectid: "[prefix]:VehicleJourney:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
       network:
-        name: 
+        name:
         objectid: "[prefix]:PTNetwork:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         registration_number: only alphanumerical or underscore characters
       referential:
@@ -2099,17 +2110,17 @@ en:
       route:
         objectid: "[prefix]:Route:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
       stop_area:
-        city_name: 
-        comment: 
+        city_name:
+        comment:
         coordinates: latitude,longitude in WGS84 referential, dot for decimal separator
-        name: 
-        nearest_topic_name: 
+        name:
+        nearest_topic_name:
         objectid: "[prefix]:StopArea:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
         projection_xy: x,y in secondary referential, dot for decimal separator
         registration_number: only alphanumerical or underscore characters
-        zip_code: 
+        zip_code:
       time_table:
-        comment: 
+        comment:
         objectid: "[prefix]:Timetable:[unique_key] : prefix contains only alphanumerical or underscore characters, unique_key accepts also minus character"
       validation:
         ignore_end_chars: ignore some chars at the end of stop names in homonymous detection
@@ -2200,7 +2211,7 @@ en:
     compliance_check_task: Validate Report
     index:
       title: Imports
-      warning: 
+      warning:
     severities:
       error: Error
       fatal: Fatal
@@ -2215,6 +2226,20 @@ en:
       imported_file: Original file
       report: Report
       rule_parameter_set: Rule parameter set
+  interchanges:
+    actions:
+      new: New interchange
+      edit: Edit interchange
+      destroy: Delete interchange
+    show:
+      title: Interchange %{interchange}
+    new:
+      title: New interchange
+    edit:
+      title: Update interchange %{interchange}
+    index:
+      title: Interchanges
+      name: Search by name or id
   job_status:
     title:
       processed: Launched operation , click to display its progress.
@@ -2297,9 +2322,9 @@ en:
       export__hub_all: Export HUB lines
       export__kml_all: Export KML lines
       export_hub: Export HUB line
-      export_hub_all: 
+      export_hub_all:
       export_kml: Export KML line
-      export_kml_all: 
+      export_kml_all:
       import: Import lines
       new: Add a new line
     edit:
@@ -2402,32 +2427,32 @@ en:
       validity_out_time_tables: Closed timetables
   report:
     default_view:
-      access_point: 
-      access_points: 
-      companies: 
-      company: 
-      connection_link: 
-      connection_links: 
+      access_point:
+      access_points:
+      companies:
+      company:
+      connection_link:
+      connection_links:
       files: Files
-      line: 
-      lines: 
-      network: 
-      networks: 
-      stop_area: 
-      stop_areas: 
+      line:
+      lines:
+      network:
+      networks:
+      stop_area:
+      stop_areas:
       tests: Tests
-      tests-1-2-error: 
-      tests-1-2-warning: 
-      tests-3-4-error: 
-      tests-3-4-warning: 
-      timetable: 
-      timetables: 
+      tests-1-2-error:
+      tests-1-2-warning:
+      tests-3-4-error:
+      tests-3-4-warning:
+      timetable:
+      timetables:
       transport_datas: Transport datas
     download: Download
     download_by:
-      files: 
-      tests: 
-      transport_datas: 
+      files:
+      tests:
+      transport_datas:
     icons:
       error_txt: Error
       ignored_txt: Ignored
@@ -2436,21 +2461,21 @@ en:
       warning_txt: Warning
     search_form:
       label:
-        search: 
-        state: 
-      submit: 
+        search:
+        state:
+      submit:
     total_results:
-      files: 
+      files:
       synthesis:
-        access_point: 
-        company: 
-        connection_link: 
-        line: 
-        network: 
-        stop_area: 
-        timetable: 
-      tests: 
-      transport_datas: 
+        access_point:
+        company:
+        connection_link:
+        line:
+        network:
+        stop_area:
+        timetable:
+      tests:
+      transport_datas:
   route_sections:
     actions:
       destroy: Delete this section
@@ -2710,9 +2735,9 @@ en:
     add_lines:
       title: Manage lines of routing constraint %{stop_area}
     add_routing_lines:
-      title: 
+      title:
     add_routing_stops:
-      title: 
+      title:
     add_stops:
       title: Manage stop areas of routing constraint %{stop_area}
     default_geometry_success: "%{count} modified stop areas"
@@ -2817,11 +2842,11 @@ en:
     index:
       advanced_search: Advanced Search
       comment: Search by name
-      end_date: 
+      end_date:
       from: 'From : '
       selection: Selection
       selection_all: All
-      start_date: 
+      start_date:
       tag_search: 'Tags : hollidays,public holliday'
       title: Timetables
       to: " to : "
@@ -2868,7 +2893,7 @@ en:
   titles:
     clean_up:
       expected_date: value included in clean up
-  today: 
+  today:
   transport_modes:
     label:
       air: Air
@@ -2900,7 +2925,7 @@ en:
       destroy_confirm: Are you sure you want destroy this user?
       edit: Edit this user
       new: Add a new user
-      role_edit: 
+      role_edit:
     edit:
       title: Update user %{user}
     index:
@@ -2911,7 +2936,7 @@ en:
       admin: Administrator
       read: Read only
       read_write: Read and write
-      title: 
+      title:
     show:
       title: User %{user}
   validation_result:
@@ -3113,7 +3138,7 @@ en:
     compliance_check_task: Validate Report
     index:
       title: Validations
-      warning: 
+      warning:
     new:
       all: All
       fields_gtfs_validation:
@@ -3154,18 +3179,18 @@ en:
       report: Report
       table:
         line:
-          access_points: 
-          connection_links: 
-          journey_patterns: 
-          name: 
-          not_saved: 
-          routes: 
-          save: 
-          save_error: 
-          saved: 
-          stop_areas: 
-          time_tables: 
-          vehicle_journeys: 
+          access_points:
+          connection_links:
+          journey_patterns:
+          name:
+          not_saved:
+          routes:
+          save:
+          save_error:
+          saved:
+          stop_areas:
+          time_tables:
+          vehicle_journeys:
       validated_file: Validated file
     statuses:
       aborted: Failed
@@ -3181,7 +3206,7 @@ en:
     compliance_check_task: Validate Report
     index:
       title: Validations
-      warning: 
+      warning:
     new:
       all: All
       fields_gtfs_validation:
@@ -3197,7 +3222,7 @@ en:
       warning: Warning
     show:
       completed: "[ Completed ]"
-      details: 
+      details:
       export: Download test report
       export_csv: CSV format
       failed: "[ Failed ]"
@@ -3219,25 +3244,25 @@ en:
           time_tables_stats: Timetables
           title: Validated objects
           vehicle_journeys_stats: Vehicle Journeys
-      parameters: 
+      parameters:
       pending: "[ In the treatment queue ]"
       processing: "[ In progress... ]"
       report: Report
       summary: Rapport de conformité à la norme NEPTUNE
       table:
         line:
-          access_points: 
-          connection_links: 
-          journey_patterns: 
-          name: 
-          not_saved: 
-          routes: 
-          save: 
-          save_error: 
-          saved: 
-          stop_areas: 
-          time_tables: 
-          vehicle_journeys: 
+          access_points:
+          connection_links:
+          journey_patterns:
+          name:
+          not_saved:
+          routes:
+          save:
+          save_error:
+          saved:
+          stop_areas:
+          time_tables:
+          vehicle_journeys:
       title: Neptune Validation
       validated_file: Validated file
     statuses:
@@ -3403,4 +3428,4 @@ en:
         zero: No item found
     page_gap: "&hellip;"
     previous_label: "&#8592; Previous"
-  yesterday: 
+  yesterday:
