@@ -952,9 +952,13 @@ en:
         planned: Planned
         guaranteed: Guaranteed
         advertised: Advertised
+        stay_seated: Stay seated
         maximum_wait_time: Maximum wait time
+        minimum_transfer_time: Minimum transfer time
         from_point: Feeder ScheduledStopPoint
+        from_visit_number: Feeder ScheduledStopPoint visit number
         to_point: Consumer ScheduledStopPoint
+        to_visit_number: Consumer ScheduledStopPoint visit number
         from_vehicle_journey: Feeder ServiceJourney
         to_vehicle_journey: Consumer ServiceJourney
     copy: Copy of %{name}
