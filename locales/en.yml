@@ -2998,20 +2998,17 @@ en:
       bus: Bus
       coach: Coach
       ferry: Ferry
-      local_train: Local train
-      long_distance_train: Long distance train
+      rail: Rail
       metro: Metro
       private_vehicle: Private vehicle
-      rapid_transit: Rapid transit
-      shuttle: Shuttle
       taxi: Taxi
       train: Train
-      tramway: Tramway
-      trolleybus: Trolleybus
+      tram: Tram
+      trolley_bus: Trolleybus
       unknown: unknown
       val: VAL
       walk: Walk
-      waterborne: Waterborne
+      water: Water
     name: Transport mode
   transport_sub_modes:
     label:

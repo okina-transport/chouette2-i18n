@@ -544,7 +544,7 @@ fr:
         one: validation NeTEx
         other: validations
         zero: validation
-      regtopp_import: 
+      regtopp_import:
       subscription: compte
       validation:
         one: validation
@@ -1053,7 +1053,7 @@ fr:
         one: réseau
         other: réseaux
         zero: réseau
-      referantial: 
+      referantial:
       referential:
         one: Espace de Données
         other: Espaces de Données
@@ -1366,19 +1366,19 @@ fr:
       detail_1_gtfs_route_2: les valeurs des champs route_long_name et route_short_name ne sont pas renseignées
       detail_1_neptune_xml_1: "%{source_label} : %{error_value}"
       detail_1_neptune_xml_2: "%{source_label} : %{error_value}"
-      detail_1_regtopp_concistency_1: 
-      detail_1_regtopp_concistency_2: 
-      detail_1_regtopp_field_value_1: 
-      detail_1_regtopp_file_dko: 
-      detail_1_regtopp_file_dst: 
-      detail_1_regtopp_file_gav: 
-      detail_1_regtopp_file_hpl: 
-      detail_1_regtopp_file_lin: 
-      detail_1_regtopp_file_mrk: 
-      detail_1_regtopp_file_stp: 
-      detail_1_regtopp_file_tda: 
-      detail_1_regtopp_file_tix: 
-      detail_1_regtopp_file_tms: 
+      detail_1_regtopp_concistency_1:
+      detail_1_regtopp_concistency_2:
+      detail_1_regtopp_field_value_1:
+      detail_1_regtopp_file_dko:
+      detail_1_regtopp_file_dst:
+      detail_1_regtopp_file_gav:
+      detail_1_regtopp_file_hpl:
+      detail_1_regtopp_file_lin:
+      detail_1_regtopp_file_mrk:
+      detail_1_regtopp_file_stp:
+      detail_1_regtopp_file_tda:
+      detail_1_regtopp_file_tix:
+      detail_1_regtopp_file_tms:
       detail_2_gtfs_common_1: 'Identifiant %{reference_value} inconnu : %{error_value}'
       detail_2_gtfs_common_2: 'Identifiant %{reference_value} non référencé : %{error_value}'
       detail_2_gtfs_common_3: 'Le couple de champs (%{reference_value}) est en doublon (%{error_value}): '
@@ -1467,46 +1467,46 @@ fr:
       detail_2_neptune_vehiclejourneyatstop_2: 'Un horaire de la course %{source_objectid} référence une autre course : vehicleJourneyId = %{error_value}'
       detail_2_neptune_vehiclejourneyatstop_3: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts selon l'ordre de la séquence d'arrêts %{error_value}
       detail_2_neptune_vehiclejourneyatstop_4: La course %{source_objectid} ne fournit pas les horaires des points d'arrêts de sa mission %{error_value}
-      detail_2_regtopp_dko_1: 
-      detail_2_regtopp_dko_2: 
-      detail_2_regtopp_dko_3: 
-      detail_2_regtopp_dko_4: 
-      detail_2_regtopp_dst_1: 
-      detail_2_regtopp_dst_2: 
-      detail_2_regtopp_dst_3: 
-      detail_2_regtopp_dst_4: 
-      detail_2_regtopp_gav_1: 
-      detail_2_regtopp_gav_2: 
-      detail_2_regtopp_gav_3: 
-      detail_2_regtopp_gav_4: 
-      detail_2_regtopp_hpl_1: 
-      detail_2_regtopp_hpl_2: 
-      detail_2_regtopp_hpl_3: 
-      detail_2_regtopp_hpl_4: 
-      detail_2_regtopp_lin_1: 
-      detail_2_regtopp_lin_2: 
-      detail_2_regtopp_lin_3: 
-      detail_2_regtopp_lin_4: 
-      detail_2_regtopp_mrk_1: 
-      detail_2_regtopp_mrk_2: 
-      detail_2_regtopp_mrk_3: 
-      detail_2_regtopp_mrk_4: 
-      detail_2_regtopp_stp_1: 
-      detail_2_regtopp_stp_2: 
-      detail_2_regtopp_stp_3: 
-      detail_2_regtopp_stp_4: 
-      detail_2_regtopp_tda_1: 
-      detail_2_regtopp_tda_2: 
-      detail_2_regtopp_tda_3: 
-      detail_2_regtopp_tda_4: 
-      detail_2_regtopp_tix_1: 
-      detail_2_regtopp_tix_2: 
-      detail_2_regtopp_tix_3: 
-      detail_2_regtopp_tix_4: 
-      detail_2_regtopp_tms_1: 
-      detail_2_regtopp_tms_2: 
-      detail_2_regtopp_tms_3: 
-      detail_2_regtopp_tms_4: 
+      detail_2_regtopp_dko_1:
+      detail_2_regtopp_dko_2:
+      detail_2_regtopp_dko_3:
+      detail_2_regtopp_dko_4:
+      detail_2_regtopp_dst_1:
+      detail_2_regtopp_dst_2:
+      detail_2_regtopp_dst_3:
+      detail_2_regtopp_dst_4:
+      detail_2_regtopp_gav_1:
+      detail_2_regtopp_gav_2:
+      detail_2_regtopp_gav_3:
+      detail_2_regtopp_gav_4:
+      detail_2_regtopp_hpl_1:
+      detail_2_regtopp_hpl_2:
+      detail_2_regtopp_hpl_3:
+      detail_2_regtopp_hpl_4:
+      detail_2_regtopp_lin_1:
+      detail_2_regtopp_lin_2:
+      detail_2_regtopp_lin_3:
+      detail_2_regtopp_lin_4:
+      detail_2_regtopp_mrk_1:
+      detail_2_regtopp_mrk_2:
+      detail_2_regtopp_mrk_3:
+      detail_2_regtopp_mrk_4:
+      detail_2_regtopp_stp_1:
+      detail_2_regtopp_stp_2:
+      detail_2_regtopp_stp_3:
+      detail_2_regtopp_stp_4:
+      detail_2_regtopp_tda_1:
+      detail_2_regtopp_tda_2:
+      detail_2_regtopp_tda_3:
+      detail_2_regtopp_tda_4:
+      detail_2_regtopp_tix_1:
+      detail_2_regtopp_tix_2:
+      detail_2_regtopp_tix_3:
+      detail_2_regtopp_tix_4:
+      detail_2_regtopp_tms_1:
+      detail_2_regtopp_tms_2:
+      detail_2_regtopp_tms_3:
+      detail_2_regtopp_tms_4:
       detail_3_accesslink_1: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la distance entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) est trop grande : distance %{error_value} > %{reference_value} (mètres)'
       detail_3_accesslink_2: 'Sur le lien d''accès %{source_label} (%{source_objectid}), la longueur du lien : %{error_value} est supérieure à %{reference_value} (mètres) est inférieure à la distance à vol d''oiseau entre l''arrêt %{target_0_label} (%{target_0_objectid}) et l''accès %{target_1_label} (%{target_1_objectid}) (mètres)'
       detail_3_accesslink_3_1: Sur le lien d'accès %{source_label} (%{source_objectid}), la vitesse par défaut %{error_value} km/h est supérieure à %{reference_value} km/h
@@ -1607,7 +1607,7 @@ fr:
       detail_4_vehiclejourney_1_pattern: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
       detail_4_vehiclejourney_1_unique: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) a une valeur partagée avec la course %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: La course %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
-      detail_rutebanken_3_stoppoint_1: 
+      detail_rutebanken_3_stoppoint_1:
     errors: Erreurs
     file:
       detailed_errors_file_prefix: details_des_erreurs.csv
@@ -1978,7 +1978,7 @@ fr:
           objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         connection_link:
-          link_distance: 
+          link_distance:
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
           name: Nom
@@ -2077,7 +2077,7 @@ fr:
           objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         connection_link:
-          link_distance: 
+          link_distance:
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
           name: Nom
@@ -2119,7 +2119,7 @@ fr:
           objectid: "[prefixe]:Company:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
           registration_number: 'caractères autorisés : alphanumériques et ''souligné (underscore ou tiret du 8)'''
         connection_link:
-          link_distance: 
+          link_distance:
           objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
         group_of_line:
           name: Nom
@@ -2362,8 +2362,8 @@ fr:
       destroy_confirm: Etes vous sûr de supprimer cette ligne ?
       destroy_selection_confirm: Etes vous sûr de supprimer cette sélection de lignes ?
       edit: Modifier cette ligne
-      export__hub_all: 
-      export__kml_all: 
+      export__hub_all:
+      export__kml_all:
       export_hub: Export HUB de la ligne
       export_hub_all: Export HUB des lignes
       export_kml: Export KML de la ligne
@@ -2813,13 +2813,13 @@ fr:
     add_children:
       title: Gérer les fils de l'arrêt %{stop_area}
     add_lines:
-      title: 
+      title:
     add_routing_lines:
       title: 'Gérer les lignes de l''ITL %{stop_area} '
     add_routing_stops:
       title: 'Gérer les arrêts de l''ITL %{stop_area} '
     add_stops:
-      title: 
+      title:
     default_geometry_success: "%{count} arrêts modifiés"
     edit:
       title: Modifier l'arrêt %{stop_area}
@@ -2878,7 +2878,7 @@ fr:
       title: Liste ordonnée des arrêts de la séquence d'arrêts %{route}
     new:
       select_area: Sélectionner un arrêt
-      title: 
+      title:
     reorder_failure: Echec de la mise à jour
     reorder_success: La list des arrêts a été mise à jour
     stop_point:
@@ -2985,20 +2985,20 @@ fr:
       bus: Bus
       coach: Autocar
       ferry: Ferry
-      local_train: TER
-      long_distance_train: Train Grande Ligne
+      rail: Rail
+#      long_distance_train: Train Grande Ligne
       metro: Métro
       private_vehicle: Voiture particulière
       rapid_transit: RER
       shuttle: Navette
       taxi: Taxi
       train: Train
-      tramway: Tramway
-      trolleybus: Trolleybus
+      tram: Tram
+      trolley_bus: Trolleybus
       unknown: Inconnu
       val: VAL
       walk: Marche à pied
-      waterborne: Bac
+      water: Bac
     name: Mode de transport
   'true': oui
   unknown: Non précisé
@@ -3027,7 +3027,7 @@ fr:
     details:
       detail_1_neptune_xml_1: "%{source_label} : %{error_value}"
       detail_1_neptune_xml_2: "%{source_label} : %{error_value}"
-      detail_1_regtopp_file_tix: 
+      detail_1_regtopp_file_tix:
       detail_2_neptune_accesslink_1: La liaison d'accès %{source_objectid} référence %{error_value} qui n'existe pas
       detail_2_neptune_accesslink_2: Sur la liaison d'accès %{source_objectid}, les références startOfLink = %{error_value} et endOfLink = %{reference_value} sont de même type
       detail_2_neptune_accesspoint_1: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{error_value}) inexistant

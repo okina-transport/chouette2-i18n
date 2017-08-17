@@ -59,614 +59,614 @@ nb:
       compliance_check:
         created_at: 'Opprettet '
         file_name: Filnavn
-        reference_ids: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
-        status: 
+        reference_ids:
+        references_type:
+        resources:
+        rule_parameter_set_id:
+        status:
       compliance_check_log_message:
         created_at: Dato
-        full_message: 
-        position: 
+        full_message:
+        position:
       compliance_check_result:
-        1-GTFS-CSV-1: 
-        1-GTFS-CSV-2: 
-        1-GTFS-CSV-3: 
-        1-GTFS-CSV-4: 
-        1-GTFS-CSV-5: 
-        1-GTFS-CSV-6: 
-        1-GTFS-CSV-7: 
-        1-GTFS-Calendar-1: 
-        1-GTFS-Calendar-2: 
-        1-GTFS-Common-1: 
-        1-GTFS-Common-10: 
-        1-GTFS-Common-11: 
-        1-GTFS-Common-12: 
-        1-GTFS-Common-13: 
-        1-GTFS-Common-14: 
-        1-GTFS-Common-15: 
-        1-GTFS-Common-16: 
-        1-GTFS-Common-2: 
-        1-GTFS-Common-3: 
-        1-GTFS-Common-4: 
-        1-GTFS-Common-5: 
-        1-GTFS-Common-6: 
-        1-GTFS-Common-7: 
-        1-GTFS-Common-8: 
-        1-GTFS-Common-9: 
-        1-GTFS-Route-1: 
-        1-GTFS-Route-2: 
-        1-NEPTUNE-XML-1: 
-        1-NEPTUNE-XML-2: 
-        2-GTFS-Common-1: 
-        2-GTFS-Common-2: 
-        2-GTFS-Common-3: 
-        2-GTFS-Common-4: 
-        2-GTFS-Route-1: 
-        2-GTFS-Route-2: 
-        2-GTFS-Route-3: 
-        2-GTFS-Route-4: 
-        2-GTFS-Stop-1: 
-        2-GTFS-Stop-2: 
-        2-GTFS-Stop-3: 
-        2-GTFS-Stop-4: 
-        2-NEPTUNE-AccessLink-1: 
-        2-NEPTUNE-AccessLink-2: 
-        2-NEPTUNE-AccessPoint-1: 
-        2-NEPTUNE-AccessPoint-2: 
-        2-NEPTUNE-AccessPoint-3: 
-        2-NEPTUNE-AccessPoint-4: 
-        2-NEPTUNE-AccessPoint-5: 
-        2-NEPTUNE-AccessPoint-6: 
-        2-NEPTUNE-AccessPoint-7: 
-        2-NEPTUNE-AreaCentroid-1: 
-        2-NEPTUNE-AreaCentroid-2: 
-        2-NEPTUNE-Common-1: 
-        2-NEPTUNE-Common-2: 
-        2-NEPTUNE-ConnectionLink-1: 
-        2-NEPTUNE-Facility-1: 
-        2-NEPTUNE-Facility-2: 
-        2-NEPTUNE-Facility-3: 
-        2-NEPTUNE-Facility-4: 
-        2-NEPTUNE-Facility-5: 
-        2-NEPTUNE-Facility-6: 
-        2-NEPTUNE-GroupOfLine-1: 
-        2-NEPTUNE-ITL-1: 
-        2-NEPTUNE-ITL-2: 
-        2-NEPTUNE-ITL-3: 
-        2-NEPTUNE-ITL-4: 
-        2-NEPTUNE-ITL-5: 
-        2-NEPTUNE-JourneyPattern-1: 
-        2-NEPTUNE-JourneyPattern-2: 
-        2-NEPTUNE-JourneyPattern-3: 
-        2-NEPTUNE-Line-1: 
-        2-NEPTUNE-Line-2: 
-        2-NEPTUNE-Line-3: 
-        2-NEPTUNE-Line-4: 
-        2-NEPTUNE-Line-5: 
-        2-NEPTUNE-Line-6: 
-        2-NEPTUNE-Network-1: 
-        2-NEPTUNE-Network-2: 
-        2-NEPTUNE-PtLink-1: 
-        2-NEPTUNE-Route-1: 
-        2-NEPTUNE-Route-10: 
-        2-NEPTUNE-Route-11: 
-        2-NEPTUNE-Route-12: 
-        2-NEPTUNE-Route-2: 
-        2-NEPTUNE-Route-3: 
-        2-NEPTUNE-Route-4: 
-        2-NEPTUNE-Route-5: 
-        2-NEPTUNE-Route-6: 
-        2-NEPTUNE-Route-7: 
-        2-NEPTUNE-Route-8: 
-        2-NEPTUNE-Route-9: 
-        2-NEPTUNE-StopArea-1: 
-        2-NEPTUNE-StopArea-2: 
-        2-NEPTUNE-StopArea-3: 
-        2-NEPTUNE-StopArea-4: 
-        2-NEPTUNE-StopArea-5: 
-        2-NEPTUNE-StopArea-6: 
-        2-NEPTUNE-StopPoint-1: 
-        2-NEPTUNE-StopPoint-2: 
-        2-NEPTUNE-StopPoint-3: 
-        2-NEPTUNE-StopPoint-4: 
-        2-NEPTUNE-Timetable-1: 
-        2-NEPTUNE-Timetable-2: 
-        2-NEPTUNE-Timetable-3: 
-        2-NEPTUNE-VehicleJourney-1: 
-        2-NEPTUNE-VehicleJourney-2: 
-        2-NEPTUNE-VehicleJourney-3: 
-        2-NEPTUNE-VehicleJourney-4: 
-        2-NEPTUNE-VehicleJourney-5: 
-        2-NEPTUNE-VehicleJourney-6: 
-        2-NEPTUNE-VehicleJourney-7: 
-        2-NEPTUNE-VehicleJourney-8: 
-        2-NEPTUNE-VehicleJourneyAtStop-1: 
-        2-NEPTUNE-VehicleJourneyAtStop-2: 
-        2-NEPTUNE-VehicleJourneyAtStop-3: 
-        2-NEPTUNE-VehicleJourneyAtStop-4: 
-        3-AccessLink-1: 
-        3-AccessLink-2: 
-        3-AccessLink-3: 
-        3-AccessPoint-1: 
-        3-AccessPoint-2: 
-        3-AccessPoint-3: 
-        3-ConnectionLink-1: 
-        3-ConnectionLink-2: 
-        3-ConnectionLink-3: 
-        3-Facility-1: 
-        3-Facility-2: 
-        3-JourneyPattern-1: 
-        3-Line-1: 
-        3-Line-2: 
-        3-Route-1: 
-        3-Route-2: 
-        3-Route-3: 
-        3-Route-4: 
-        3-Route-5: 
-        3-Route-6: 
-        3-Route-7: 
-        3-Route-8: 
-        3-Route-9: 
-        3-StopArea-1: 
-        3-StopArea-2: 
-        3-StopArea-3: 
-        3-StopArea-4: 
-        3-StopArea-5: 
-        3-VehicleJourney-1: 
-        3-VehicleJourney-2: 
-        3-VehicleJourney-3: 
-        3-VehicleJourney-4: 
-        4-AccessLink-1: 
-        4-AccessPoint-1: 
-        4-Company-1: 
-        4-ConnectionLink-1: 
-        4-ConnectionLink-2: 
-        4-GroupOfLine-1: 
-        4-JourneyPattern-1: 
-        4-Line-1: 
-        4-Line-2: 
-        4-Line-3: 
-        4-Line-4: 
-        4-Network-1: 
-        4-Route-1: 
-        4-StopArea-1: 
-        4-StopArea-2: 
-        4-StopArea-3: 
-        4-Timetable-1: 
-        4-VehicleJourney-1: 
-        4-VehicleJourney-2: 
-        detail: 
-        first_violations: 
-        object: 
-        objects: 
-        resource: 
-        rule_code: 
-        rule_level: 
-        rule_number: 
-        rule_target: 
-        severity: 
-        status: 
-        title: 
-        url: 
-        violation_count: 
-        violation_count_txt: 
+        1-GTFS-CSV-1:
+        1-GTFS-CSV-2:
+        1-GTFS-CSV-3:
+        1-GTFS-CSV-4:
+        1-GTFS-CSV-5:
+        1-GTFS-CSV-6:
+        1-GTFS-CSV-7:
+        1-GTFS-Calendar-1:
+        1-GTFS-Calendar-2:
+        1-GTFS-Common-1:
+        1-GTFS-Common-10:
+        1-GTFS-Common-11:
+        1-GTFS-Common-12:
+        1-GTFS-Common-13:
+        1-GTFS-Common-14:
+        1-GTFS-Common-15:
+        1-GTFS-Common-16:
+        1-GTFS-Common-2:
+        1-GTFS-Common-3:
+        1-GTFS-Common-4:
+        1-GTFS-Common-5:
+        1-GTFS-Common-6:
+        1-GTFS-Common-7:
+        1-GTFS-Common-8:
+        1-GTFS-Common-9:
+        1-GTFS-Route-1:
+        1-GTFS-Route-2:
+        1-NEPTUNE-XML-1:
+        1-NEPTUNE-XML-2:
+        2-GTFS-Common-1:
+        2-GTFS-Common-2:
+        2-GTFS-Common-3:
+        2-GTFS-Common-4:
+        2-GTFS-Route-1:
+        2-GTFS-Route-2:
+        2-GTFS-Route-3:
+        2-GTFS-Route-4:
+        2-GTFS-Stop-1:
+        2-GTFS-Stop-2:
+        2-GTFS-Stop-3:
+        2-GTFS-Stop-4:
+        2-NEPTUNE-AccessLink-1:
+        2-NEPTUNE-AccessLink-2:
+        2-NEPTUNE-AccessPoint-1:
+        2-NEPTUNE-AccessPoint-2:
+        2-NEPTUNE-AccessPoint-3:
+        2-NEPTUNE-AccessPoint-4:
+        2-NEPTUNE-AccessPoint-5:
+        2-NEPTUNE-AccessPoint-6:
+        2-NEPTUNE-AccessPoint-7:
+        2-NEPTUNE-AreaCentroid-1:
+        2-NEPTUNE-AreaCentroid-2:
+        2-NEPTUNE-Common-1:
+        2-NEPTUNE-Common-2:
+        2-NEPTUNE-ConnectionLink-1:
+        2-NEPTUNE-Facility-1:
+        2-NEPTUNE-Facility-2:
+        2-NEPTUNE-Facility-3:
+        2-NEPTUNE-Facility-4:
+        2-NEPTUNE-Facility-5:
+        2-NEPTUNE-Facility-6:
+        2-NEPTUNE-GroupOfLine-1:
+        2-NEPTUNE-ITL-1:
+        2-NEPTUNE-ITL-2:
+        2-NEPTUNE-ITL-3:
+        2-NEPTUNE-ITL-4:
+        2-NEPTUNE-ITL-5:
+        2-NEPTUNE-JourneyPattern-1:
+        2-NEPTUNE-JourneyPattern-2:
+        2-NEPTUNE-JourneyPattern-3:
+        2-NEPTUNE-Line-1:
+        2-NEPTUNE-Line-2:
+        2-NEPTUNE-Line-3:
+        2-NEPTUNE-Line-4:
+        2-NEPTUNE-Line-5:
+        2-NEPTUNE-Line-6:
+        2-NEPTUNE-Network-1:
+        2-NEPTUNE-Network-2:
+        2-NEPTUNE-PtLink-1:
+        2-NEPTUNE-Route-1:
+        2-NEPTUNE-Route-10:
+        2-NEPTUNE-Route-11:
+        2-NEPTUNE-Route-12:
+        2-NEPTUNE-Route-2:
+        2-NEPTUNE-Route-3:
+        2-NEPTUNE-Route-4:
+        2-NEPTUNE-Route-5:
+        2-NEPTUNE-Route-6:
+        2-NEPTUNE-Route-7:
+        2-NEPTUNE-Route-8:
+        2-NEPTUNE-Route-9:
+        2-NEPTUNE-StopArea-1:
+        2-NEPTUNE-StopArea-2:
+        2-NEPTUNE-StopArea-3:
+        2-NEPTUNE-StopArea-4:
+        2-NEPTUNE-StopArea-5:
+        2-NEPTUNE-StopArea-6:
+        2-NEPTUNE-StopPoint-1:
+        2-NEPTUNE-StopPoint-2:
+        2-NEPTUNE-StopPoint-3:
+        2-NEPTUNE-StopPoint-4:
+        2-NEPTUNE-Timetable-1:
+        2-NEPTUNE-Timetable-2:
+        2-NEPTUNE-Timetable-3:
+        2-NEPTUNE-VehicleJourney-1:
+        2-NEPTUNE-VehicleJourney-2:
+        2-NEPTUNE-VehicleJourney-3:
+        2-NEPTUNE-VehicleJourney-4:
+        2-NEPTUNE-VehicleJourney-5:
+        2-NEPTUNE-VehicleJourney-6:
+        2-NEPTUNE-VehicleJourney-7:
+        2-NEPTUNE-VehicleJourney-8:
+        2-NEPTUNE-VehicleJourneyAtStop-1:
+        2-NEPTUNE-VehicleJourneyAtStop-2:
+        2-NEPTUNE-VehicleJourneyAtStop-3:
+        2-NEPTUNE-VehicleJourneyAtStop-4:
+        3-AccessLink-1:
+        3-AccessLink-2:
+        3-AccessLink-3:
+        3-AccessPoint-1:
+        3-AccessPoint-2:
+        3-AccessPoint-3:
+        3-ConnectionLink-1:
+        3-ConnectionLink-2:
+        3-ConnectionLink-3:
+        3-Facility-1:
+        3-Facility-2:
+        3-JourneyPattern-1:
+        3-Line-1:
+        3-Line-2:
+        3-Route-1:
+        3-Route-2:
+        3-Route-3:
+        3-Route-4:
+        3-Route-5:
+        3-Route-6:
+        3-Route-7:
+        3-Route-8:
+        3-Route-9:
+        3-StopArea-1:
+        3-StopArea-2:
+        3-StopArea-3:
+        3-StopArea-4:
+        3-StopArea-5:
+        3-VehicleJourney-1:
+        3-VehicleJourney-2:
+        3-VehicleJourney-3:
+        3-VehicleJourney-4:
+        4-AccessLink-1:
+        4-AccessPoint-1:
+        4-Company-1:
+        4-ConnectionLink-1:
+        4-ConnectionLink-2:
+        4-GroupOfLine-1:
+        4-JourneyPattern-1:
+        4-Line-1:
+        4-Line-2:
+        4-Line-3:
+        4-Line-4:
+        4-Network-1:
+        4-Route-1:
+        4-StopArea-1:
+        4-StopArea-2:
+        4-StopArea-3:
+        4-Timetable-1:
+        4-VehicleJourney-1:
+        4-VehicleJourney-2:
+        detail:
+        first_violations:
+        object:
+        objects:
+        resource:
+        rule_code:
+        rule_level:
+        rule_number:
+        rule_target:
+        severity:
+        status:
+        title:
+        url:
+        violation_count:
+        violation_count_txt:
       compliance_check_task:
-        name: 
-        object_id_prefix: 
-        reference_ids: 
-        references_type: 
-        rule_parameter_set_id: 
+        name:
+        object_id_prefix:
+        reference_ids:
+        references_type:
+        rule_parameter_set_id:
       export_task:
         created_at: Opprettet
-        end_date: 
-        end_date_greater_than_start_date: 
-        end_date_less_than: 
-        extensions: 
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
-        name: 
-        object_id_prefix: 
-        reference_ids: 
-        references_type: 
-        start_date: 
-        start_date_greater_than: 
-        status: 
+        end_date:
+        end_date_greater_than_start_date:
+        end_date_less_than:
+        extensions:
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
+        name:
+        object_id_prefix:
+        reference_ids:
+        references_type:
+        start_date:
+        start_date_greater_than:
+        status:
       file_validation:
         created_at: Utført
-        file_name: 
-        projection_reference: 
-        reference_ids: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
-        status: 
+        file_name:
+        projection_reference:
+        reference_ids:
+        references_type:
+        resources:
+        rule_parameter_set_id:
+        status:
       file_validation_log_message:
         created_at: Dato
-        full_message: 
-        position: 
+        full_message:
+        position:
       import_task:
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
-        name: 
-        no_save: 
-        object_id_prefix: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
+        name:
+        no_save:
+        object_id_prefix:
+        references_type:
+        resources:
+        rule_parameter_set_id:
       stop_area_copy:
-        area_type: 
+        area_type:
       subscription:
-        current_password: 
-        email: 
-        organisation_name: 
-        password: 
-        password_confirmation: 
-        user_name: 
+        current_password:
+        email:
+        organisation_name:
+        password:
+        password_confirmation:
+        user_name:
       time_table_combination:
-        combined_id: 
-        operation: 
+        combined_id:
+        operation:
       validation:
         created_at: Opprettet
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
-        no_save: 
-        object_id_prefix: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
-        status: 
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
+        no_save:
+        object_id_prefix:
+        references_type:
+        resources:
+        rule_parameter_set_id:
+        status:
       validation_result:
-        1-NEPTUNE-XML-1: 
-        1-NEPTUNE-XML-2: 
-        2-NEPTUNE-AccessLink-1: 
-        2-NEPTUNE-AccessLink-2: 
-        2-NEPTUNE-AccessPoint-1: 
-        2-NEPTUNE-AccessPoint-2: 
-        2-NEPTUNE-AccessPoint-3: 
-        2-NEPTUNE-AccessPoint-4: 
-        2-NEPTUNE-AccessPoint-5: 
-        2-NEPTUNE-AccessPoint-6: 
-        2-NEPTUNE-AccessPoint-7: 
-        2-NEPTUNE-AreaCentroid-1: 
-        2-NEPTUNE-AreaCentroid-2: 
-        2-NEPTUNE-Common-1: 
-        2-NEPTUNE-Common-2: 
-        2-NEPTUNE-ConnectionLink-1: 
-        2-NEPTUNE-Facility-1: 
-        2-NEPTUNE-Facility-2: 
-        2-NEPTUNE-Facility-3: 
-        2-NEPTUNE-Facility-4: 
-        2-NEPTUNE-Facility-5: 
-        2-NEPTUNE-Facility-6: 
-        2-NEPTUNE-GroupOfLine-1: 
-        2-NEPTUNE-ITL-1: 
-        2-NEPTUNE-ITL-2: 
-        2-NEPTUNE-ITL-3: 
-        2-NEPTUNE-ITL-4: 
-        2-NEPTUNE-ITL-5: 
-        2-NEPTUNE-JourneyPattern-1: 
-        2-NEPTUNE-JourneyPattern-2: 
-        2-NEPTUNE-JourneyPattern-3: 
-        2-NEPTUNE-Line-1: 
-        2-NEPTUNE-Line-2: 
-        2-NEPTUNE-Line-3: 
-        2-NEPTUNE-Line-4: 
-        2-NEPTUNE-Line-5: 
-        2-NEPTUNE-Network-1: 
-        2-NEPTUNE-PtLink-1: 
-        2-NEPTUNE-Route-1: 
-        2-NEPTUNE-Route-10: 
-        2-NEPTUNE-Route-11: 
-        2-NEPTUNE-Route-12: 
-        2-NEPTUNE-Route-2: 
-        2-NEPTUNE-Route-3: 
-        2-NEPTUNE-Route-4: 
-        2-NEPTUNE-Route-5: 
-        2-NEPTUNE-Route-6: 
-        2-NEPTUNE-Route-7: 
-        2-NEPTUNE-Route-8: 
-        2-NEPTUNE-Route-9: 
-        2-NEPTUNE-StopArea-1: 
-        2-NEPTUNE-StopArea-2: 
-        2-NEPTUNE-StopArea-3: 
-        2-NEPTUNE-StopArea-4: 
-        2-NEPTUNE-StopArea-5: 
-        2-NEPTUNE-StopArea-6: 
-        2-NEPTUNE-StopPoint-1: 
-        2-NEPTUNE-StopPoint-2: 
-        2-NEPTUNE-StopPoint-3: 
-        2-NEPTUNE-StopPoint-4: 
-        2-NEPTUNE-Timetable-1: 
-        2-NEPTUNE-Timetable-2: 
-        2-NEPTUNE-VehicleJourney-1: 
-        2-NEPTUNE-VehicleJourney-2: 
-        2-NEPTUNE-VehicleJourney-3: 
-        2-NEPTUNE-VehicleJourney-4: 
-        2-NEPTUNE-VehicleJourney-5: 
-        2-NEPTUNE-VehicleJourney-6: 
-        2-NEPTUNE-VehicleJourney-7: 
-        2-NEPTUNE-VehicleJourneyAtStop-1: 
-        2-NEPTUNE-VehicleJourneyAtStop-2: 
-        2-NEPTUNE-VehicleJourneyAtStop-3: 
-        2-NEPTUNE-VehicleJourneyAtStop-4: 
-        3-AccessLink-1: 
-        3-AccessLink-2: 
-        3-AccessLink-3: 
-        3-AccessPoint-1: 
-        3-AccessPoint-2: 
-        3-AccessPoint-3: 
-        3-ConnectionLink-1: 
-        3-ConnectionLink-2: 
-        3-ConnectionLink-3: 
-        3-Facility-1: 
-        3-Facility-2: 
-        3-JourneyPattern-1: 
-        3-JourneyPattern-2: 
-        3-JourneyPattern-3: 
-        3-Line-1: 
-        3-Line-2: 
-        3-Route-1: 
-        3-Route-2: 
-        3-Route-3: 
-        3-Route-4: 
-        3-Route-5: 
-        3-Route-6: 
-        3-Route-7: 
-        3-Route-8: 
-        3-Route-9: 
-        3-StopArea-1: 
-        3-StopArea-2: 
-        3-StopArea-3: 
-        3-StopArea-4: 
-        3-StopArea-5: 
-        3-VehicleJourney-1: 
-        3-VehicleJourney-2: 
-        3-VehicleJourney-3: 
-        3-VehicleJourney-4: 
-        4-AccessLink-1: 
-        4-AccessPoint-1: 
-        4-Company-1: 
-        4-ConnectionLink-1: 
-        4-ConnectionLink-2: 
-        4-GroupOfLine-1: 
-        4-JourneyPattern-1: 
-        4-Line-1: 
-        4-Line-2: 
-        4-Line-3: 
-        4-Line-4: 
-        4-Network-1: 
-        4-Route-1: 
-        4-StopArea-1: 
-        4-StopArea-2: 
-        4-StopArea-3: 
-        4-Timetable-1: 
-        4-VehicleJourney-1: 
-        4-VehicleJourney-2: 
-        detail: 
-        first_violations: 
-        object: 
-        objects: 
-        resource: 
-        rule_code: 
-        rule_level: 
-        rule_number: 
-        rule_target: 
-        severity: 
-        status: 
-        title: 
-        url: 
-        violation_count: 
-        violation_count_txt: 
+        1-NEPTUNE-XML-1:
+        1-NEPTUNE-XML-2:
+        2-NEPTUNE-AccessLink-1:
+        2-NEPTUNE-AccessLink-2:
+        2-NEPTUNE-AccessPoint-1:
+        2-NEPTUNE-AccessPoint-2:
+        2-NEPTUNE-AccessPoint-3:
+        2-NEPTUNE-AccessPoint-4:
+        2-NEPTUNE-AccessPoint-5:
+        2-NEPTUNE-AccessPoint-6:
+        2-NEPTUNE-AccessPoint-7:
+        2-NEPTUNE-AreaCentroid-1:
+        2-NEPTUNE-AreaCentroid-2:
+        2-NEPTUNE-Common-1:
+        2-NEPTUNE-Common-2:
+        2-NEPTUNE-ConnectionLink-1:
+        2-NEPTUNE-Facility-1:
+        2-NEPTUNE-Facility-2:
+        2-NEPTUNE-Facility-3:
+        2-NEPTUNE-Facility-4:
+        2-NEPTUNE-Facility-5:
+        2-NEPTUNE-Facility-6:
+        2-NEPTUNE-GroupOfLine-1:
+        2-NEPTUNE-ITL-1:
+        2-NEPTUNE-ITL-2:
+        2-NEPTUNE-ITL-3:
+        2-NEPTUNE-ITL-4:
+        2-NEPTUNE-ITL-5:
+        2-NEPTUNE-JourneyPattern-1:
+        2-NEPTUNE-JourneyPattern-2:
+        2-NEPTUNE-JourneyPattern-3:
+        2-NEPTUNE-Line-1:
+        2-NEPTUNE-Line-2:
+        2-NEPTUNE-Line-3:
+        2-NEPTUNE-Line-4:
+        2-NEPTUNE-Line-5:
+        2-NEPTUNE-Network-1:
+        2-NEPTUNE-PtLink-1:
+        2-NEPTUNE-Route-1:
+        2-NEPTUNE-Route-10:
+        2-NEPTUNE-Route-11:
+        2-NEPTUNE-Route-12:
+        2-NEPTUNE-Route-2:
+        2-NEPTUNE-Route-3:
+        2-NEPTUNE-Route-4:
+        2-NEPTUNE-Route-5:
+        2-NEPTUNE-Route-6:
+        2-NEPTUNE-Route-7:
+        2-NEPTUNE-Route-8:
+        2-NEPTUNE-Route-9:
+        2-NEPTUNE-StopArea-1:
+        2-NEPTUNE-StopArea-2:
+        2-NEPTUNE-StopArea-3:
+        2-NEPTUNE-StopArea-4:
+        2-NEPTUNE-StopArea-5:
+        2-NEPTUNE-StopArea-6:
+        2-NEPTUNE-StopPoint-1:
+        2-NEPTUNE-StopPoint-2:
+        2-NEPTUNE-StopPoint-3:
+        2-NEPTUNE-StopPoint-4:
+        2-NEPTUNE-Timetable-1:
+        2-NEPTUNE-Timetable-2:
+        2-NEPTUNE-VehicleJourney-1:
+        2-NEPTUNE-VehicleJourney-2:
+        2-NEPTUNE-VehicleJourney-3:
+        2-NEPTUNE-VehicleJourney-4:
+        2-NEPTUNE-VehicleJourney-5:
+        2-NEPTUNE-VehicleJourney-6:
+        2-NEPTUNE-VehicleJourney-7:
+        2-NEPTUNE-VehicleJourneyAtStop-1:
+        2-NEPTUNE-VehicleJourneyAtStop-2:
+        2-NEPTUNE-VehicleJourneyAtStop-3:
+        2-NEPTUNE-VehicleJourneyAtStop-4:
+        3-AccessLink-1:
+        3-AccessLink-2:
+        3-AccessLink-3:
+        3-AccessPoint-1:
+        3-AccessPoint-2:
+        3-AccessPoint-3:
+        3-ConnectionLink-1:
+        3-ConnectionLink-2:
+        3-ConnectionLink-3:
+        3-Facility-1:
+        3-Facility-2:
+        3-JourneyPattern-1:
+        3-JourneyPattern-2:
+        3-JourneyPattern-3:
+        3-Line-1:
+        3-Line-2:
+        3-Route-1:
+        3-Route-2:
+        3-Route-3:
+        3-Route-4:
+        3-Route-5:
+        3-Route-6:
+        3-Route-7:
+        3-Route-8:
+        3-Route-9:
+        3-StopArea-1:
+        3-StopArea-2:
+        3-StopArea-3:
+        3-StopArea-4:
+        3-StopArea-5:
+        3-VehicleJourney-1:
+        3-VehicleJourney-2:
+        3-VehicleJourney-3:
+        3-VehicleJourney-4:
+        4-AccessLink-1:
+        4-AccessPoint-1:
+        4-Company-1:
+        4-ConnectionLink-1:
+        4-ConnectionLink-2:
+        4-GroupOfLine-1:
+        4-JourneyPattern-1:
+        4-Line-1:
+        4-Line-2:
+        4-Line-3:
+        4-Line-4:
+        4-Network-1:
+        4-Route-1:
+        4-StopArea-1:
+        4-StopArea-2:
+        4-StopArea-3:
+        4-Timetable-1:
+        4-VehicleJourney-1:
+        4-VehicleJourney-2:
+        detail:
+        first_violations:
+        object:
+        objects:
+        resource:
+        rule_code:
+        rule_level:
+        rule_number:
+        rule_target:
+        severity:
+        status:
+        title:
+        url:
+        violation_count:
+        violation_count_txt:
       vehicle_journey_import:
-        file: 
+        file:
       vehicle_translation:
-        count: 
-        duration: 
+        count:
+        duration:
     errors:
       models:
         import_task:
           attributes:
             resources:
-              invalid_mime_type: 
-              maximum_file_size: 
+              invalid_mime_type:
+              maximum_file_size:
         vehicle_translation:
-          missing_start_time: 
-          uncompiliant_vehicle: 
-          unreadable_time: 
+          missing_start_time:
+          uncompiliant_vehicle:
+          unreadable_time:
     models:
-      compliance_check: 
-      compliance_check_result: 
-      csv_validation: 
+      compliance_check:
+      compliance_check_result:
+      csv_validation:
       export:
         one: eksport
         other: eksporter
-      export_task: 
-      file_validation: 
-      gtfs_export: 
-      gtfs_import: 
-      gtfs_validation: 
-      import_task: 
-      neptune_export: 
-      neptune_import: 
-      neptune_validation: 
-      netex_export: 
-      netex_import: 
-      netex_validation: 
-      regtopp_import: 
-      subscription: 
-      validation: 
-      validation_result: 
+      export_task:
+      file_validation:
+      gtfs_export:
+      gtfs_import:
+      gtfs_validation:
+      import_task:
+      neptune_export:
+      neptune_import:
+      neptune_validation:
+      netex_export:
+      netex_import:
+      netex_validation:
+      regtopp_import:
+      subscription:
+      validation:
+      validation_result:
   activerecord:
     attributes:
       access_link:
         access_link_type: Type
-        access_point: 
+        access_point:
         comment: kommentar
         creation_time: Opprettet
-        creator_id: 
+        creator_id:
         creatorid: opprettet av
         default_duration: Gjennomsnitt
         frequent_traveller_duration: Vanlig passasjer
         lift_availability: Heis
         link_distance: Avstand(m)
-        mobility_restricted_suitability: 
-        mobility_restricted_traveller_duration: 
-        name: 
-        object_version: 
-        objectid: 
-        occasional_traveller_duration: 
-        stairs_availability: 
-        stop_area: 
+        mobility_restricted_suitability:
+        mobility_restricted_traveller_duration:
+        name:
+        object_version:
+        objectid:
+        occasional_traveller_duration:
+        stairs_availability:
+        stop_area:
       access_point:
-        access_point_type: 
-        city_name: 
-        closing_time: 
-        comment: 
-        coordinates: 
-        country_code: 
-        creation_time: 
-        creator_id: 
-        creatorid: 
-        latitude: 
-        lift_availability: 
-        long_lat_type: 
-        longitude: 
-        mobility_restricted_suitability: 
-        name: 
-        object_version: 
-        objectid: 
-        openning_time: 
-        projection: 
-        projection_x: 
-        projection_xy: 
-        projection_y: 
-        stairs_availability: 
-        stop_area: 
-        street_name: 
-        zip_code: 
+        access_point_type:
+        city_name:
+        closing_time:
+        comment:
+        coordinates:
+        country_code:
+        creation_time:
+        creator_id:
+        creatorid:
+        latitude:
+        lift_availability:
+        long_lat_type:
+        longitude:
+        mobility_restricted_suitability:
+        name:
+        object_version:
+        objectid:
+        openning_time:
+        projection:
+        projection_x:
+        projection_xy:
+        projection_y:
+        stairs_availability:
+        stop_area:
+        street_name:
+        zip_code:
       api_key:
-        name: 
-        token: 
+        name:
+        token:
       company:
-        code: 
-        creation_time: 
-        creator_id: 
-        email: 
-        fax: 
-        name: 
-        object_version: 
-        objectid: 
-        operating_department_name: 
-        organizational_unit: 
-        phone: 
-        registration_number: 
-        short_name: 
+        code:
+        creation_time:
+        creator_id:
+        email:
+        fax:
+        name:
+        object_version:
+        objectid:
+        operating_department_name:
+        organizational_unit:
+        phone:
+        registration_number:
+        short_name:
         time_zone: Tidssone
-        url: 
+        url:
       connection_link:
-        arrival: 
-        arrival_id: 
-        comment: 
-        connection_link_type: 
-        creation_time: 
-        creator_id: 
-        default_duration: 
-        departure: 
-        departure_id: 
-        frequent_traveller_duration: 
-        lift_availability: 
-        link_distance: 
-        mobility_restricted_suitability: 
-        mobility_restricted_traveller_duration: 
-        name: 
-        object_version: 
-        objectid: 
-        occasional_traveller_duration: 
-        stairs_availability: 
-        undefined: 
+        arrival:
+        arrival_id:
+        comment:
+        connection_link_type:
+        creation_time:
+        creator_id:
+        default_duration:
+        departure:
+        departure_id:
+        frequent_traveller_duration:
+        lift_availability:
+        link_distance:
+        mobility_restricted_suitability:
+        mobility_restricted_traveller_duration:
+        name:
+        object_version:
+        objectid:
+        occasional_traveller_duration:
+        stairs_availability:
+        undefined:
       footnote:
-        code: 
-        label: 
+        code:
+        label:
       group_of_line:
-        comment: 
-        creation_time: 
-        creator_id: 
-        line_count: 
-        name: 
-        object_version: 
-        objectid: 
-        registration_number: 
+        comment:
+        creation_time:
+        creator_id:
+        line_count:
+        name:
+        object_version:
+        objectid:
+        registration_number:
       import:
         created_at: Opprettet
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
-        no_save: 
-        object_id_prefix: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
-        status: 
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
+        no_save:
+        object_id_prefix:
+        references_type:
+        resources:
+        rule_parameter_set_id:
+        status:
       journey_frequency:
-        exact_time: 
-        first_departure_time: 
-        last_departure_time: 
-        scheduled_headway_interval: 
-        timeband: 
+        exact_time:
+        first_departure_time:
+        last_departure_time:
+        scheduled_headway_interval:
+        timeband:
       journey_pattern:
-        comment: 
-        creation_time: 
-        creator_id: 
-        name: 
-        object_version: 
-        objectid: 
-        published_name: 
-        registration_number: 
-        route: 
-        stop_point_ids: 
+        comment:
+        creation_time:
+        creator_id:
+        name:
+        object_version:
+        objectid:
+        published_name:
+        registration_number:
+        route:
+        stop_point_ids:
       line:
-        accessible: 
-        color: 
-        comment: 
-        company: 
-        creation_time: 
-        creator_id: 
-        default_fs_msg: 
-        flexible_service: 
-        footnotes: 
-        group_of_line: 
-        mobility_restricted_suitability: 
-        name: 
+        accessible:
+        color:
+        comment:
+        company:
+        creation_time:
+        creator_id:
+        default_fs_msg:
+        flexible_service:
+        footnotes:
+        group_of_line:
+        mobility_restricted_suitability:
+        name:
         network: NETWORK
-        not_accessible: 
-        number: 
-        number_of_fs_vj: 
-        number_of_mrs_vj: 
-        number_of_non_fs_vj: 
-        number_of_non_mrs_vj: 
-        number_of_null_fs_vj: 
-        number_of_null_mrs_vj: 
-        number_of_vj: 
-        object_version: 
-        objectid: 
-        on_demaond_fs: 
-        published_name: 
-        registration_number: 
-        regular_fs: 
-        stable_id: 
-        text_color: 
-        transport_mode: 
-        unspecified_fs: 
-        unspecified_mrs: 
-        url: 
+        not_accessible:
+        number:
+        number_of_fs_vj:
+        number_of_mrs_vj:
+        number_of_non_fs_vj:
+        number_of_non_mrs_vj:
+        number_of_null_fs_vj:
+        number_of_null_mrs_vj:
+        number_of_vj:
+        object_version:
+        objectid:
+        on_demaond_fs:
+        published_name:
+        registration_number:
+        regular_fs:
+        stable_id:
+        text_color:
+        transport_mode:
+        unspecified_fs:
+        unspecified_mrs:
+        url:
       network:
         comment: Kommentarer
         creation_time: Opprettet
@@ -679,12 +679,12 @@ nb:
         source_identifier: Kildeidentifikator
         source_name: Kildenavn
         source_type_name: Kildetype
-        version_date: 
+        version_date:
       organisation:
-        data_format: 
-        data_format_restrictions_by_default: 
-        geoportail_key: 
-        name: 
+        data_format:
+        data_format_restrictions_by_default:
+        geoportail_key:
+        name:
       referential:
         access_points: ACCESS POINTS
         boarding_positions: BOARDING POSITIONS
@@ -692,7 +692,7 @@ nb:
         companies: COMPANY
         compliance_checks: Validering
         connection_links: CONNECTION LINKS
-        data_format: 
+        data_format:
         data_format_restrictions: Dataformatbegrensning
         end_validity_period: til
         exports: Eksport
@@ -700,269 +700,269 @@ nb:
         imports: Import
         itls: ROUTING CONSTRAINTS
         lines: LINES
-        lower_corner: 
+        lower_corner:
         name: Navn
         networks: NETWORKS
         no_validity_period: ikke definert
         prefix: Leverandør prefiks
         projection_type: Referansesystem (SRID)
         quays: QUAYS
-        resources: 
-        route_sections: 
-        rule_parameter_sets: 
-        slug: 
-        start_validity_period: 
+        resources:
+        route_sections:
+        rule_parameter_sets:
+        slug:
+        start_validity_period:
         stop_areas: STOP AREAS
         stop_places: STOP PLACES
         time_tables: TIME TABLES
         time_zone: Tidssone
-        timebands: 
-        upper_corner: 
+        timebands:
+        upper_corner:
         validity_period: Gyldighetsperiode
         vehicle_journeys: VEHICLE JOURNEYS
       route:
-        comment: 
-        creation_time: 
-        creator_id: 
-        direction_code: 
-        journey_patterns: 
-        line: 
-        name: 
-        no_journey_pattern: 
-        number: 
-        object_version: 
-        objectid: 
-        opposite_route: 
-        published_name: 
-        vehicle_journeys: 
+        comment:
+        creation_time:
+        creator_id:
+        direction_code:
+        journey_patterns:
+        line:
+        name:
+        no_journey_pattern:
+        number:
+        object_version:
+        objectid:
+        opposite_route:
+        published_name:
+        vehicle_journeys:
         wayback:
-          negative: 
-          positive: 
-        wayback_code: 
+          negative:
+          positive:
+        wayback_code:
       route_section:
-        arrival: 
-        departure: 
-        distance: 
-        points: 
+        arrival:
+        departure:
+        distance:
+        points:
       rule_parameter_set:
-        allowed_transport: 
-        attribute: 
-        check_allowed_transport_modes: 
-        check_connection_link_on_physical: 
-        check_line_routes: 
+        allowed_transport:
+        attribute:
+        check_allowed_transport_modes:
+        check_connection_link_on_physical:
+        check_line_routes:
         check_lines_in_groups: 'Sjekk av hvis hver LINE under hører spesifikt til en GROUP OF LINES '
-        check_stop_parent: 
-        facility_stop_area_distance_max: 
-        inter_access_link_distance_max: 
-        inter_access_point_distance_min: 
-        inter_connection_link_distance_max: 
-        inter_stop_area_distance_max: 
-        inter_stop_area_distance_min: 
-        inter_stop_duration_max: 
-        inter_stop_duration_variation_max: 
-        max_size: 
-        min_size: 
-        name: 
-        parent_stop_area_distance_max: 
-        speed_max: 
-        speed_min: 
-        stop_areas_area: 
-        string_type: 
-        unique: 
-        walk_default_speed_max: 
-        walk_frequent_traveller_speed_max: 
-        walk_mobility_restricted_traveller_speed_max: 
-        walk_occasional_traveller_speed_max: 
+        check_stop_parent:
+        facility_stop_area_distance_max:
+        inter_access_link_distance_max:
+        inter_access_point_distance_min:
+        inter_connection_link_distance_max:
+        inter_stop_area_distance_max:
+        inter_stop_area_distance_min:
+        inter_stop_duration_max:
+        inter_stop_duration_variation_max:
+        max_size:
+        min_size:
+        name:
+        parent_stop_area_distance_max:
+        speed_max:
+        speed_min:
+        stop_areas_area:
+        string_type:
+        unique:
+        walk_default_speed_max:
+        walk_frequent_traveller_speed_max:
+        walk_mobility_restricted_traveller_speed_max:
+        walk_occasional_traveller_speed_max:
       stop_area:
-        children_ids: 
-        city_name: 
-        comment: 
-        coordinates: 
-        country_code: 
-        creation_time: 
-        creator_id: 
-        creatorid: 
-        fare_code: 
-        latitude: 
-        lift_availability: 
-        long_lat_type: 
-        longitude: 
-        mobility_restricted_suitability: 
-        name: 
-        nearest_topic_name: 
-        object_version: 
-        objectid: 
-        parent: 
-        projection: 
-        projection_x: 
-        projection_xy: 
-        projection_y: 
-        published_name: 
-        registration_number: 
-        routing_line_ids: 
-        routing_stop_ids: 
-        stairs_availability: 
-        stop_area_type: 
-        street_name: 
+        children_ids:
+        city_name:
+        comment:
+        coordinates:
+        country_code:
+        creation_time:
+        creator_id:
+        creatorid:
+        fare_code:
+        latitude:
+        lift_availability:
+        long_lat_type:
+        longitude:
+        mobility_restricted_suitability:
+        name:
+        nearest_topic_name:
+        object_version:
+        objectid:
+        parent:
+        projection:
+        projection_x:
+        projection_xy:
+        projection_y:
+        published_name:
+        registration_number:
+        routing_line_ids:
+        routing_stop_ids:
+        stairs_availability:
+        stop_area_type:
+        street_name:
         time_zone: Tidssone
-        url: 
-        zip_code: 
+        url:
+        zip_code:
       stop_point:
-        lines: 
+        lines:
       time_table:
-        calendar_details: 
-        calendars: 
-        comment: 
-        creation_time: 
-        creator_id: 
-        date: 
-        dates: 
-        day_types: 
-        excluded_dates: 
-        friday: 
-        monday: 
-        none: 
-        object_version: 
-        objectid: 
-        period_end: 
-        period_start: 
-        periods: 
-        saturday: 
-        sunday: 
-        tag_list: 
-        tag_search: 
-        thursday: 
-        tuesday: 
-        version: 
-        wednesday: 
+        calendar_details:
+        calendars:
+        comment:
+        creation_time:
+        creator_id:
+        date:
+        dates:
+        day_types:
+        excluded_dates:
+        friday:
+        monday:
+        none:
+        object_version:
+        objectid:
+        period_end:
+        period_start:
+        periods:
+        saturday:
+        sunday:
+        tag_list:
+        tag_search:
+        thursday:
+        tuesday:
+        version:
+        wednesday:
       timeband:
-        end_time: 
-        name: 
-        start_time: 
+        end_time:
+        name:
+        start_time:
       user:
-        name: 
+        name:
       validation_task:
-        created_at: 
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
-        no_save: 
-        object_id_prefix: 
-        references_type: 
-        resources: 
-        rule_parameter_set_id: 
-        status: 
+        created_at:
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
+        no_save:
+        object_id_prefix:
+        references_type:
+        resources:
+        rule_parameter_set_id:
+        status:
       vehicle_journey:
-        accessible: 
-        comment: 
-        company: 
-        creation_time: 
-        creator_id: 
-        facility: 
-        flexible_service: 
-        footnote_ids: 
-        journey_frequency_ids: 
-        journey_pattern: 
-        line: 
-        mobility_restricted_suitability: 
-        not_accessible: 
-        number: 
-        object_version: 
-        objectid: 
-        on_demand_fs: 
-        published_journey_identifier: 
-        published_journey_name: 
-        regular_fs: 
-        route: 
-        status_value: 
-        time_slot: 
-        time_table_ids: 
-        time_tables: 
-        transport_mode_name: 
-        unspecified_fs: 
-        unspecified_mrs: 
-        vehicle_journey_at_stop_ids: 
-        vehicle_type_identifier: 
-        vehicletypeidentifier: 
-    copy: 
+        accessible:
+        comment:
+        company:
+        creation_time:
+        creator_id:
+        facility:
+        flexible_service:
+        footnote_ids:
+        journey_frequency_ids:
+        journey_pattern:
+        line:
+        mobility_restricted_suitability:
+        not_accessible:
+        number:
+        object_version:
+        objectid:
+        on_demand_fs:
+        published_journey_identifier:
+        published_journey_name:
+        regular_fs:
+        route:
+        status_value:
+        time_slot:
+        time_table_ids:
+        time_tables:
+        transport_mode_name:
+        unspecified_fs:
+        unspecified_mrs:
+        vehicle_journey_at_stop_ids:
+        vehicle_type_identifier:
+        vehicletypeidentifier:
+    copy:
     errors:
       models:
         concerns:
           objectid:
             invalid_objectid:
-              gtfs: 
-              hub: 
-              neptune: 
-              netex: 
+              gtfs:
+              hub:
+              neptune:
+              netex:
         journey_frequency:
-          end_must_be_before_timeband: 
-          end_must_be_different_from_first: 
-          scheduled_headway_interval_greater_than_zero: 
-          start_must_be_after_timeband: 
+          end_must_be_before_timeband:
+          end_must_be_different_from_first:
+          scheduled_headway_interval_greater_than_zero:
+          start_must_be_after_timeband:
         time_table_date:
           attributes:
             date:
-              taken: 
+              taken:
         time_table_period:
-          start_must_be_before_end: 
+          start_must_be_before_end:
         timeband:
-          start_must_be_before_end: 
+          start_must_be_before_end:
         trident:
-          invalid_object_id: 
-          invalid_object_id_type: 
+          invalid_object_id:
+          invalid_object_id_type:
         vehicle_journey:
-          invalid_times: 
+          invalid_times:
         vehicle_journey_at_stop:
-          arrival_must_be_before_departure: 
+          arrival_must_be_before_departure:
     models:
-      access_link: 
-      access_point: 
-      api_key: 
+      access_link:
+      access_point:
+      api_key:
       company:
         one: COMPANY
         other: COMPANIES
-      connection_link: 
-      csv_import: 
-      csv_validation: 
-      footnote: 
-      group_of_line: 
-      gtfs_import: 
-      gtfs_validation: 
-      import: 
-      journey_pattern: 
-      line: 
-      neptune_import: 
-      neptune_validation: 
-      netex_import: 
-      netex_validation: 
-      network: 
-      referantial: 
+      connection_link:
+      csv_import:
+      csv_validation:
+      footnote:
+      group_of_line:
+      gtfs_import:
+      gtfs_validation:
+      import:
+      journey_pattern:
+      line:
+      neptune_import:
+      neptune_validation:
+      netex_import:
+      netex_validation:
+      network:
+      referantial:
       referential:
         one: Dataområde
         other: Dataområder
-      route: 
-      route_section: 
-      rule_parameter_set: 
-      stop_area: 
-      stop_point: 
-      time_table: 
-      timeband: 
-      user: 
-      validation_task: 
-      vehicle_journey: 
+      route:
+      route_section:
+      rule_parameter_set:
+      stop_area:
+      stop_point:
+      time_table:
+      timeband:
+      user:
+      validation_task:
+      vehicle_journey:
   api_keys:
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
+      destroy:
+      destroy_confirm:
+      edit:
       new: Legg til en ny API nøkkel
     edit:
-      title: 
+      title:
     new:
-      title: 
+      title:
     show:
-      title: 
+      title:
   area_types:
     label:
       boarding_position: QUAY
@@ -978,27 +978,27 @@ nb:
   breadcrumbs:
     referentials: Hjem
     users: Bruker
-    vehicle_journey_frequencies: 
-    vehicle_journeys: 
+    vehicle_journey_frequencies:
+    vehicle_journeys:
   cancel: Forkast
   clean_ups:
     actions:
       clean_up: rydd opp
-      confirm: 
+      confirm:
     failure: 'Feil ved opprydning: %{error_message}'
     success_c:
       one: COMPANY slettet
       other: "%{count} COMPANIES slettet"
-    success_g: 
+    success_g:
     success_jp:
       one: Ett JOURNEY PATTERN slettet
       other: "%{count} JOURNEY PATTERNs slettet"
-    success_l: 
-    success_n: 
-    success_r: 
-    success_sa: 
-    success_tm: 
-    success_vj: 
+    success_l:
+    success_n:
+    success_r:
+    success_sa:
+    success_tm:
+    success_vj:
   companies:
     actions:
       destroy: Fjern COMPANY
@@ -1016,629 +1016,629 @@ nb:
       title: Opprett COMPANY %{company}
   compliance_check_results:
     details:
-      1-GTFS-CSV-1: 
-      1-GTFS-CSV-2: 
-      1-GTFS-CSV-3: 
-      1-GTFS-CSV-4: 
-      1-GTFS-CSV-5: 
-      1-GTFS-CSV-6: 
-      1-GTFS-CSV-7: 
-      1-GTFS-Calendar-1: 
-      1-GTFS-Calendar-2: 
-      1-GTFS-Common-1: 
-      1-GTFS-Common-10: 
-      1-GTFS-Common-11: 
-      1-GTFS-Common-12: 
-      1-GTFS-Common-13: 
-      1-GTFS-Common-14: 
-      1-GTFS-Common-15: 
-      1-GTFS-Common-16: 
-      1-GTFS-Common-2: 
-      1-GTFS-Common-3: 
-      1-GTFS-Common-4: 
-      1-GTFS-Common-5: 
-      1-GTFS-Common-6: 
-      1-GTFS-Common-7: 
-      1-GTFS-Common-8: 
-      1-GTFS-Common-9: 
-      1-GTFS-Route-1: 
-      1-GTFS-Route-2: 
-      1-NEPTUNE-XML-1: 
-      1-NEPTUNE-XML-2: 
-      2-GTFS-Common-1: 
-      2-GTFS-Common-2: 
-      2-GTFS-Common-3: 
-      2-GTFS-Common-4: 
-      2-GTFS-Route-1: 
-      2-GTFS-Route-2: 
-      2-GTFS-Route-3: 
-      2-GTFS-Route-4: 
-      2-GTFS-Stop-1: 
-      2-GTFS-Stop-2: 
-      2-GTFS-Stop-3: 
-      2-GTFS-Stop-4: 
-      2-NEPTUNE-AccessLink-1: 
-      2-NEPTUNE-AccessLink-2: 
-      2-NEPTUNE-AccessPoint-1: 
-      2-NEPTUNE-AccessPoint-2: 
-      2-NEPTUNE-AccessPoint-3: 
-      2-NEPTUNE-AccessPoint-4: 
-      2-NEPTUNE-AccessPoint-5: 
-      2-NEPTUNE-AccessPoint-6: 
-      2-NEPTUNE-AccessPoint-7: 
-      2-NEPTUNE-AreaCentroid-1: 
-      2-NEPTUNE-AreaCentroid-2: 
-      2-NEPTUNE-Common-1: 
-      2-NEPTUNE-Common-2: 
-      2-NEPTUNE-ConnectionLink-1: 
-      2-NEPTUNE-Facility-1: 
-      2-NEPTUNE-Facility-2: 
-      2-NEPTUNE-Facility-3: 
-      2-NEPTUNE-Facility-4: 
-      2-NEPTUNE-Facility-5: 
-      2-NEPTUNE-Facility-6: 
-      2-NEPTUNE-GroupOfLine-1: 
-      2-NEPTUNE-ITL-1: 
-      2-NEPTUNE-ITL-2: 
-      2-NEPTUNE-ITL-3: 
-      2-NEPTUNE-ITL-4: 
-      2-NEPTUNE-ITL-5: 
-      2-NEPTUNE-JourneyPattern-1: 
-      2-NEPTUNE-JourneyPattern-2: 
-      2-NEPTUNE-JourneyPattern-3: 
-      2-NEPTUNE-Line-1: 
-      2-NEPTUNE-Line-2: 
-      2-NEPTUNE-Line-3: 
-      2-NEPTUNE-Line-4: 
-      2-NEPTUNE-Line-5: 
-      2-NEPTUNE-Line-6: 
-      2-NEPTUNE-Network-1: 
-      2-NEPTUNE-Network-2: 
-      2-NEPTUNE-PtLink-1: 
-      2-NEPTUNE-Route-1: 
-      2-NEPTUNE-Route-10: 
-      2-NEPTUNE-Route-11: 
-      2-NEPTUNE-Route-12: 
-      2-NEPTUNE-Route-2: 
-      2-NEPTUNE-Route-3: 
-      2-NEPTUNE-Route-4: 
-      2-NEPTUNE-Route-5: 
-      2-NEPTUNE-Route-6: 
-      2-NEPTUNE-Route-7: 
-      2-NEPTUNE-Route-8: 
-      2-NEPTUNE-Route-9: 
-      2-NEPTUNE-StopArea-1: 
-      2-NEPTUNE-StopArea-2: 
-      2-NEPTUNE-StopArea-3: 
-      2-NEPTUNE-StopArea-4: 
-      2-NEPTUNE-StopArea-5: 
-      2-NEPTUNE-StopArea-6: 
-      2-NEPTUNE-StopPoint-1: 
-      2-NEPTUNE-StopPoint-2: 
-      2-NEPTUNE-StopPoint-3: 
-      2-NEPTUNE-StopPoint-4: 
-      2-NEPTUNE-Timetable-1: 
-      2-NEPTUNE-Timetable-2: 
-      2-NEPTUNE-Timetable-3: 
-      2-NEPTUNE-VehicleJourney-1: 
-      2-NEPTUNE-VehicleJourney-2: 
-      2-NEPTUNE-VehicleJourney-3: 
-      2-NEPTUNE-VehicleJourney-4: 
-      2-NEPTUNE-VehicleJourney-5: 
-      2-NEPTUNE-VehicleJourney-6: 
-      2-NEPTUNE-VehicleJourney-7: 
-      2-NEPTUNE-VehicleJourney-8: 
-      2-NEPTUNE-VehicleJourneyAtStop-1: 
-      2-NEPTUNE-VehicleJourneyAtStop-2: 
-      2-NEPTUNE-VehicleJourneyAtStop-3: 
-      2-NEPTUNE-VehicleJourneyAtStop-4: 
-      3-AccessLink-1: 
-      3-AccessLink-2: 
-      3-AccessLink-3: 
-      3-AccessPoint-1: 
-      3-AccessPoint-2: 
-      3-AccessPoint-3: 
-      3-ConnectionLink-1: 
-      3-ConnectionLink-2: 
-      3-ConnectionLink-3: 
-      3-Facility-1: 
-      3-Facility-2: 
-      3-JourneyPattern-1: 
-      3-JourneyPattern-2: 
-      3-JourneyPattern-3: 
-      3-Line-1: 
-      3-Line-2: 
-      3-Route-1: 
-      3-Route-2: 
-      3-Route-3: 
-      3-Route-4: 
-      3-Route-5: 
-      3-Route-6: 
-      3-Route-7: 
-      3-Route-8: 
-      3-Route-9: 
-      3-StopArea-1: 
-      3-StopArea-2: 
-      3-StopArea-3: 
-      3-StopArea-4: 
-      3-StopArea-5: 
-      3-VehicleJourney-1: 
-      3-VehicleJourney-2: 
-      3-VehicleJourney-3: 
-      3-VehicleJourney-4: 
-      3-VehicleJourney-5: 
-      4-AccessLink-1: 
-      4-AccessPoint-1: 
-      4-Company-1: 
-      4-ConnectionLink-1: 
-      4-ConnectionLink-2: 
-      4-GroupOfLine-1: 
-      4-JourneyPattern-1: 
-      4-Line-1: 
-      4-Line-2: 
-      4-Line-3: 
-      4-Line-4: 
-      4-Network-1: 
-      4-Route-1: 
-      4-StopArea-1: 
-      4-StopArea-2: 
-      4-StopArea-3: 
-      4-Timetable-1: 
-      4-VehicleJourney-1: 
-      4-VehicleJourney-2: 
-      detail_1_gtfs_calendar_1: 
-      detail_1_gtfs_calendar_2: 
-      detail_1_gtfs_common_1: 
-      detail_1_gtfs_common_10: 
-      detail_1_gtfs_common_11: 
-      detail_1_gtfs_common_12: 
-      detail_1_gtfs_common_13: 
-      detail_1_gtfs_common_14: 
-      detail_1_gtfs_common_15_1: 
-      detail_1_gtfs_common_15_2: 
-      detail_1_gtfs_common_15_3: 
-      detail_1_gtfs_common_16: 
-      detail_1_gtfs_common_2: 
-      detail_1_gtfs_common_3: 
-      detail_1_gtfs_common_4: 
-      detail_1_gtfs_common_5: 
-      detail_1_gtfs_common_6: 
-      detail_1_gtfs_common_7: 
-      detail_1_gtfs_common_8: 
-      detail_1_gtfs_common_9: 
-      detail_1_gtfs_csv_1: 
-      detail_1_gtfs_csv_2: 
-      detail_1_gtfs_csv_3: 
-      detail_1_gtfs_csv_4: 
-      detail_1_gtfs_csv_5: 
-      detail_1_gtfs_csv_6: 
-      detail_1_gtfs_csv_7: 
-      detail_1_gtfs_route_1: 
-      detail_1_gtfs_route_2: 
-      detail_1_neptune_xml_1: 
-      detail_1_neptune_xml_2: 
-      detail_1_regtopp_concistency_1: 
-      detail_1_regtopp_concistency_2: 
-      detail_1_regtopp_field_value_1: 
-      detail_1_regtopp_file_dko: 
-      detail_1_regtopp_file_dst: 
-      detail_1_regtopp_file_gav: 
-      detail_1_regtopp_file_hpl: 
-      detail_1_regtopp_file_lin: 
-      detail_1_regtopp_file_mrk: 
-      detail_1_regtopp_file_stp: 
-      detail_1_regtopp_file_tda: 
-      detail_1_regtopp_file_tix: 
-      detail_1_regtopp_file_tms: 
-      detail_2_gtfs_common_1: 
-      detail_2_gtfs_common_2: 
-      detail_2_gtfs_common_3: 
-      detail_2_gtfs_common_4: 
-      detail_2_gtfs_route_1: 
-      detail_2_gtfs_route_2: 
-      detail_2_gtfs_route_3: 
-      detail_2_gtfs_route_4: 
-      detail_2_gtfs_stop_1: 
-      detail_2_gtfs_stop_2: 
-      detail_2_gtfs_stop_3: 
-      detail_2_gtfs_stop_4: 
-      detail_2_neptune_accesslink_1: 
-      detail_2_neptune_accesslink_2: 
-      detail_2_neptune_accesspoint_1: 
-      detail_2_neptune_accesspoint_2: 
-      detail_2_neptune_accesspoint_3: 
-      detail_2_neptune_accesspoint_4: 
-      detail_2_neptune_accesspoint_5: 
-      detail_2_neptune_accesspoint_6: 
-      detail_2_neptune_accesspoint_7: 
-      detail_2_neptune_areacentroid_1: 
-      detail_2_neptune_areacentroid_2: 
-      detail_2_neptune_common_1: 
-      detail_2_neptune_common_2: 
-      detail_2_neptune_connectionlink_1: 
-      detail_2_neptune_facility_1: 
-      detail_2_neptune_facility_2: 
-      detail_2_neptune_facility_3: 
-      detail_2_neptune_facility_4: 
-      detail_2_neptune_facility_5: 
-      detail_2_neptune_facility_6: 
-      detail_2_neptune_groupofline_1: 
-      detail_2_neptune_itl_1: 
-      detail_2_neptune_itl_2: 
-      detail_2_neptune_itl_3: 
-      detail_2_neptune_itl_4: 
-      detail_2_neptune_itl_5: 
-      detail_2_neptune_journeypattern_1: 
-      detail_2_neptune_journeypattern_2: 
-      detail_2_neptune_journeypattern_3: 
-      detail_2_neptune_line_1: 
-      detail_2_neptune_line_2: 
-      detail_2_neptune_line_3: 
-      detail_2_neptune_line_4: 
-      detail_2_neptune_line_5: 
-      detail_2_neptune_line_6: 
-      detail_2_neptune_network_1: 
-      detail_2_neptune_network_2: 
-      detail_2_neptune_ptlink_1: 
-      detail_2_neptune_route_1: 
-      detail_2_neptune_route_10: 
-      detail_2_neptune_route_11: 
-      detail_2_neptune_route_12: 
-      detail_2_neptune_route_2: 
-      detail_2_neptune_route_3: 
-      detail_2_neptune_route_4: 
-      detail_2_neptune_route_5: 
-      detail_2_neptune_route_6_1: 
-      detail_2_neptune_route_6_2: 
-      detail_2_neptune_route_7: 
-      detail_2_neptune_route_8: 
-      detail_2_neptune_route_9: 
-      detail_2_neptune_stoparea_1: 
-      detail_2_neptune_stoparea_2: 
-      detail_2_neptune_stoparea_3: 
-      detail_2_neptune_stoparea_4: 
-      detail_2_neptune_stoparea_5: 
-      detail_2_neptune_stoparea_6: 
-      detail_2_neptune_stoppoint_1: 
-      detail_2_neptune_stoppoint_2: 
-      detail_2_neptune_stoppoint_3: 
-      detail_2_neptune_stoppoint_4: 
-      detail_2_neptune_timetable_1: 
-      detail_2_neptune_timetable_2: 
-      detail_2_neptune_timetable_3: 
-      detail_2_neptune_vehiclejourney_1: 
-      detail_2_neptune_vehiclejourney_2: 
-      detail_2_neptune_vehiclejourney_3: 
-      detail_2_neptune_vehiclejourney_4: 
-      detail_2_neptune_vehiclejourney_5: 
-      detail_2_neptune_vehiclejourney_6: 
-      detail_2_neptune_vehiclejourney_7: 
-      detail_2_neptune_vehiclejourney_8: 
-      detail_2_neptune_vehiclejourneyatstop_1: 
-      detail_2_neptune_vehiclejourneyatstop_2: 
-      detail_2_neptune_vehiclejourneyatstop_3: 
-      detail_2_neptune_vehiclejourneyatstop_4: 
-      detail_2_regtopp_dko_1: 
-      detail_2_regtopp_dko_2: 
-      detail_2_regtopp_dko_3: 
-      detail_2_regtopp_dko_4: 
-      detail_2_regtopp_dst_1: 
-      detail_2_regtopp_dst_2: 
-      detail_2_regtopp_dst_3: 
-      detail_2_regtopp_dst_4: 
-      detail_2_regtopp_gav_1: 
-      detail_2_regtopp_gav_2: 
-      detail_2_regtopp_gav_3: 
-      detail_2_regtopp_gav_4: 
-      detail_2_regtopp_hpl_1: 
-      detail_2_regtopp_hpl_2: 
-      detail_2_regtopp_hpl_3: 
-      detail_2_regtopp_hpl_4: 
-      detail_2_regtopp_lin_1: 
-      detail_2_regtopp_lin_2: 
-      detail_2_regtopp_lin_3: 
-      detail_2_regtopp_lin_4: 
-      detail_2_regtopp_mrk_1: 
-      detail_2_regtopp_mrk_2: 
-      detail_2_regtopp_mrk_3: 
-      detail_2_regtopp_mrk_4: 
-      detail_2_regtopp_stp_1: 
-      detail_2_regtopp_stp_2: 
-      detail_2_regtopp_stp_3: 
-      detail_2_regtopp_stp_4: 
-      detail_2_regtopp_tda_1: 
-      detail_2_regtopp_tda_2: 
-      detail_2_regtopp_tda_3: 
-      detail_2_regtopp_tda_4: 
-      detail_2_regtopp_tix_1: 
-      detail_2_regtopp_tix_2: 
-      detail_2_regtopp_tix_3: 
-      detail_2_regtopp_tix_4: 
-      detail_2_regtopp_tms_1: 
-      detail_2_regtopp_tms_2: 
-      detail_2_regtopp_tms_3: 
-      detail_2_regtopp_tms_4: 
-      detail_3_accesslink_1: 
-      detail_3_accesslink_2: 
-      detail_3_accesslink_3_1: 
-      detail_3_accesslink_3_2: 
-      detail_3_accesslink_3_3: 
-      detail_3_accesslink_3_4: 
-      detail_3_accesspoint_1: 
-      detail_3_accesspoint_2: 
-      detail_3_accesspoint_3: 
-      detail_3_connectionlink_1: 
-      detail_3_connectionlink_2: 
-      detail_3_connectionlink_3_1: 
-      detail_3_connectionlink_3_2: 
-      detail_3_connectionlink_3_3: 
-      detail_3_connectionlink_3_4: 
-      detail_3_facility_1: 
-      detail_3_facility_2: 
-      detail_3_journeypattern_1: 
-      detail_3_line_1: 
-      detail_3_line_2: 
-      detail_3_route_1: 
-      detail_3_route_2: 
-      detail_3_route_3_1: 
-      detail_3_route_3_2: 
-      detail_3_route_4: 
-      detail_3_route_5: 
-      detail_3_route_6: 
-      detail_3_route_7: 
-      detail_3_route_8: 
-      detail_3_route_9: 
-      detail_3_stoparea_1: 
-      detail_3_stoparea_2: 
-      detail_3_stoparea_3: 
-      detail_3_stoparea_4: 
-      detail_3_stoparea_5: 
-      detail_3_vehiclejourney_1: 
-      detail_3_vehiclejourney_2_1: 
-      detail_3_vehiclejourney_2_2: 
-      detail_3_vehiclejourney_2_3: 
-      detail_3_vehiclejourney_3: 
-      detail_3_vehiclejourney_3_1: 
-      detail_3_vehiclejourney_4: 
-      detail_3_vehiclejourney_5_1: 
-      detail_3_vehiclejourney_5_2: 
-      detail_4_accesslink_1_max_size: 
-      detail_4_accesslink_1_min_size: 
-      detail_4_accesslink_1_pattern: 
-      detail_4_accesslink_1_unique: 
-      detail_4_accesspoint_1_max_size: 
-      detail_4_accesspoint_1_min_size: 
-      detail_4_accesspoint_1_pattern: 
-      detail_4_accesspoint_1_unique: 
-      detail_4_company_1_max_size: 
-      detail_4_company_1_min_size: 
-      detail_4_company_1_pattern: 
-      detail_4_company_1_unique: 
-      detail_4_connectionlink_1_max_size: 
-      detail_4_connectionlink_1_min_size: 
-      detail_4_connectionlink_1_pattern: 
-      detail_4_connectionlink_1_unique: 
-      detail_4_connectionlink_2: 
-      detail_4_groupofline_1_max_size: 
-      detail_4_groupofline_1_min_size: 
-      detail_4_groupofline_1_pattern: 
-      detail_4_groupofline_1_unique: 
-      detail_4_journeypattern_1_max_size: 
-      detail_4_journeypattern_1_min_size: 
-      detail_4_journeypattern_1_pattern: 
-      detail_4_journeypattern_1_unique: 
-      detail_4_line_1_max_size: 
-      detail_4_line_1_min_size: 
-      detail_4_line_1_pattern: 
-      detail_4_line_1_unique: 
-      detail_4_line_2: 
-      detail_4_line_3_1: 
-      detail_4_line_3_2: 
-      detail_4_line_4_1: 
-      detail_4_line_4_2: 
-      detail_4_network_1_max_size: 
-      detail_4_network_1_min_size: 
-      detail_4_network_1_pattern: 
-      detail_4_network_1_unique: 
-      detail_4_route_1_max_size: 
-      detail_4_route_1_min_size: 
-      detail_4_route_1_pattern: 
-      detail_4_route_1_unique: 
-      detail_4_stoparea_1_max_size: 
-      detail_4_stoparea_1_min_size: 
-      detail_4_stoparea_1_pattern: 
-      detail_4_stoparea_1_unique: 
-      detail_4_stoparea_2: 
-      detail_4_timetable_1_max_size: 
-      detail_4_timetable_1_min_size: 
-      detail_4_timetable_1_pattern: 
-      detail_4_timetable_1_unique: 
-      detail_4_vehiclejourney_1_max_size: 
-      detail_4_vehiclejourney_1_min_size: 
-      detail_4_vehiclejourney_1_pattern: 
-      detail_4_vehiclejourney_1_unique: 
-      detail_4_vehiclejourney_2: 
-      detail_rutebanken_3_stoppoint_1: 
+      1-GTFS-CSV-1:
+      1-GTFS-CSV-2:
+      1-GTFS-CSV-3:
+      1-GTFS-CSV-4:
+      1-GTFS-CSV-5:
+      1-GTFS-CSV-6:
+      1-GTFS-CSV-7:
+      1-GTFS-Calendar-1:
+      1-GTFS-Calendar-2:
+      1-GTFS-Common-1:
+      1-GTFS-Common-10:
+      1-GTFS-Common-11:
+      1-GTFS-Common-12:
+      1-GTFS-Common-13:
+      1-GTFS-Common-14:
+      1-GTFS-Common-15:
+      1-GTFS-Common-16:
+      1-GTFS-Common-2:
+      1-GTFS-Common-3:
+      1-GTFS-Common-4:
+      1-GTFS-Common-5:
+      1-GTFS-Common-6:
+      1-GTFS-Common-7:
+      1-GTFS-Common-8:
+      1-GTFS-Common-9:
+      1-GTFS-Route-1:
+      1-GTFS-Route-2:
+      1-NEPTUNE-XML-1:
+      1-NEPTUNE-XML-2:
+      2-GTFS-Common-1:
+      2-GTFS-Common-2:
+      2-GTFS-Common-3:
+      2-GTFS-Common-4:
+      2-GTFS-Route-1:
+      2-GTFS-Route-2:
+      2-GTFS-Route-3:
+      2-GTFS-Route-4:
+      2-GTFS-Stop-1:
+      2-GTFS-Stop-2:
+      2-GTFS-Stop-3:
+      2-GTFS-Stop-4:
+      2-NEPTUNE-AccessLink-1:
+      2-NEPTUNE-AccessLink-2:
+      2-NEPTUNE-AccessPoint-1:
+      2-NEPTUNE-AccessPoint-2:
+      2-NEPTUNE-AccessPoint-3:
+      2-NEPTUNE-AccessPoint-4:
+      2-NEPTUNE-AccessPoint-5:
+      2-NEPTUNE-AccessPoint-6:
+      2-NEPTUNE-AccessPoint-7:
+      2-NEPTUNE-AreaCentroid-1:
+      2-NEPTUNE-AreaCentroid-2:
+      2-NEPTUNE-Common-1:
+      2-NEPTUNE-Common-2:
+      2-NEPTUNE-ConnectionLink-1:
+      2-NEPTUNE-Facility-1:
+      2-NEPTUNE-Facility-2:
+      2-NEPTUNE-Facility-3:
+      2-NEPTUNE-Facility-4:
+      2-NEPTUNE-Facility-5:
+      2-NEPTUNE-Facility-6:
+      2-NEPTUNE-GroupOfLine-1:
+      2-NEPTUNE-ITL-1:
+      2-NEPTUNE-ITL-2:
+      2-NEPTUNE-ITL-3:
+      2-NEPTUNE-ITL-4:
+      2-NEPTUNE-ITL-5:
+      2-NEPTUNE-JourneyPattern-1:
+      2-NEPTUNE-JourneyPattern-2:
+      2-NEPTUNE-JourneyPattern-3:
+      2-NEPTUNE-Line-1:
+      2-NEPTUNE-Line-2:
+      2-NEPTUNE-Line-3:
+      2-NEPTUNE-Line-4:
+      2-NEPTUNE-Line-5:
+      2-NEPTUNE-Line-6:
+      2-NEPTUNE-Network-1:
+      2-NEPTUNE-Network-2:
+      2-NEPTUNE-PtLink-1:
+      2-NEPTUNE-Route-1:
+      2-NEPTUNE-Route-10:
+      2-NEPTUNE-Route-11:
+      2-NEPTUNE-Route-12:
+      2-NEPTUNE-Route-2:
+      2-NEPTUNE-Route-3:
+      2-NEPTUNE-Route-4:
+      2-NEPTUNE-Route-5:
+      2-NEPTUNE-Route-6:
+      2-NEPTUNE-Route-7:
+      2-NEPTUNE-Route-8:
+      2-NEPTUNE-Route-9:
+      2-NEPTUNE-StopArea-1:
+      2-NEPTUNE-StopArea-2:
+      2-NEPTUNE-StopArea-3:
+      2-NEPTUNE-StopArea-4:
+      2-NEPTUNE-StopArea-5:
+      2-NEPTUNE-StopArea-6:
+      2-NEPTUNE-StopPoint-1:
+      2-NEPTUNE-StopPoint-2:
+      2-NEPTUNE-StopPoint-3:
+      2-NEPTUNE-StopPoint-4:
+      2-NEPTUNE-Timetable-1:
+      2-NEPTUNE-Timetable-2:
+      2-NEPTUNE-Timetable-3:
+      2-NEPTUNE-VehicleJourney-1:
+      2-NEPTUNE-VehicleJourney-2:
+      2-NEPTUNE-VehicleJourney-3:
+      2-NEPTUNE-VehicleJourney-4:
+      2-NEPTUNE-VehicleJourney-5:
+      2-NEPTUNE-VehicleJourney-6:
+      2-NEPTUNE-VehicleJourney-7:
+      2-NEPTUNE-VehicleJourney-8:
+      2-NEPTUNE-VehicleJourneyAtStop-1:
+      2-NEPTUNE-VehicleJourneyAtStop-2:
+      2-NEPTUNE-VehicleJourneyAtStop-3:
+      2-NEPTUNE-VehicleJourneyAtStop-4:
+      3-AccessLink-1:
+      3-AccessLink-2:
+      3-AccessLink-3:
+      3-AccessPoint-1:
+      3-AccessPoint-2:
+      3-AccessPoint-3:
+      3-ConnectionLink-1:
+      3-ConnectionLink-2:
+      3-ConnectionLink-3:
+      3-Facility-1:
+      3-Facility-2:
+      3-JourneyPattern-1:
+      3-JourneyPattern-2:
+      3-JourneyPattern-3:
+      3-Line-1:
+      3-Line-2:
+      3-Route-1:
+      3-Route-2:
+      3-Route-3:
+      3-Route-4:
+      3-Route-5:
+      3-Route-6:
+      3-Route-7:
+      3-Route-8:
+      3-Route-9:
+      3-StopArea-1:
+      3-StopArea-2:
+      3-StopArea-3:
+      3-StopArea-4:
+      3-StopArea-5:
+      3-VehicleJourney-1:
+      3-VehicleJourney-2:
+      3-VehicleJourney-3:
+      3-VehicleJourney-4:
+      3-VehicleJourney-5:
+      4-AccessLink-1:
+      4-AccessPoint-1:
+      4-Company-1:
+      4-ConnectionLink-1:
+      4-ConnectionLink-2:
+      4-GroupOfLine-1:
+      4-JourneyPattern-1:
+      4-Line-1:
+      4-Line-2:
+      4-Line-3:
+      4-Line-4:
+      4-Network-1:
+      4-Route-1:
+      4-StopArea-1:
+      4-StopArea-2:
+      4-StopArea-3:
+      4-Timetable-1:
+      4-VehicleJourney-1:
+      4-VehicleJourney-2:
+      detail_1_gtfs_calendar_1:
+      detail_1_gtfs_calendar_2:
+      detail_1_gtfs_common_1:
+      detail_1_gtfs_common_10:
+      detail_1_gtfs_common_11:
+      detail_1_gtfs_common_12:
+      detail_1_gtfs_common_13:
+      detail_1_gtfs_common_14:
+      detail_1_gtfs_common_15_1:
+      detail_1_gtfs_common_15_2:
+      detail_1_gtfs_common_15_3:
+      detail_1_gtfs_common_16:
+      detail_1_gtfs_common_2:
+      detail_1_gtfs_common_3:
+      detail_1_gtfs_common_4:
+      detail_1_gtfs_common_5:
+      detail_1_gtfs_common_6:
+      detail_1_gtfs_common_7:
+      detail_1_gtfs_common_8:
+      detail_1_gtfs_common_9:
+      detail_1_gtfs_csv_1:
+      detail_1_gtfs_csv_2:
+      detail_1_gtfs_csv_3:
+      detail_1_gtfs_csv_4:
+      detail_1_gtfs_csv_5:
+      detail_1_gtfs_csv_6:
+      detail_1_gtfs_csv_7:
+      detail_1_gtfs_route_1:
+      detail_1_gtfs_route_2:
+      detail_1_neptune_xml_1:
+      detail_1_neptune_xml_2:
+      detail_1_regtopp_concistency_1:
+      detail_1_regtopp_concistency_2:
+      detail_1_regtopp_field_value_1:
+      detail_1_regtopp_file_dko:
+      detail_1_regtopp_file_dst:
+      detail_1_regtopp_file_gav:
+      detail_1_regtopp_file_hpl:
+      detail_1_regtopp_file_lin:
+      detail_1_regtopp_file_mrk:
+      detail_1_regtopp_file_stp:
+      detail_1_regtopp_file_tda:
+      detail_1_regtopp_file_tix:
+      detail_1_regtopp_file_tms:
+      detail_2_gtfs_common_1:
+      detail_2_gtfs_common_2:
+      detail_2_gtfs_common_3:
+      detail_2_gtfs_common_4:
+      detail_2_gtfs_route_1:
+      detail_2_gtfs_route_2:
+      detail_2_gtfs_route_3:
+      detail_2_gtfs_route_4:
+      detail_2_gtfs_stop_1:
+      detail_2_gtfs_stop_2:
+      detail_2_gtfs_stop_3:
+      detail_2_gtfs_stop_4:
+      detail_2_neptune_accesslink_1:
+      detail_2_neptune_accesslink_2:
+      detail_2_neptune_accesspoint_1:
+      detail_2_neptune_accesspoint_2:
+      detail_2_neptune_accesspoint_3:
+      detail_2_neptune_accesspoint_4:
+      detail_2_neptune_accesspoint_5:
+      detail_2_neptune_accesspoint_6:
+      detail_2_neptune_accesspoint_7:
+      detail_2_neptune_areacentroid_1:
+      detail_2_neptune_areacentroid_2:
+      detail_2_neptune_common_1:
+      detail_2_neptune_common_2:
+      detail_2_neptune_connectionlink_1:
+      detail_2_neptune_facility_1:
+      detail_2_neptune_facility_2:
+      detail_2_neptune_facility_3:
+      detail_2_neptune_facility_4:
+      detail_2_neptune_facility_5:
+      detail_2_neptune_facility_6:
+      detail_2_neptune_groupofline_1:
+      detail_2_neptune_itl_1:
+      detail_2_neptune_itl_2:
+      detail_2_neptune_itl_3:
+      detail_2_neptune_itl_4:
+      detail_2_neptune_itl_5:
+      detail_2_neptune_journeypattern_1:
+      detail_2_neptune_journeypattern_2:
+      detail_2_neptune_journeypattern_3:
+      detail_2_neptune_line_1:
+      detail_2_neptune_line_2:
+      detail_2_neptune_line_3:
+      detail_2_neptune_line_4:
+      detail_2_neptune_line_5:
+      detail_2_neptune_line_6:
+      detail_2_neptune_network_1:
+      detail_2_neptune_network_2:
+      detail_2_neptune_ptlink_1:
+      detail_2_neptune_route_1:
+      detail_2_neptune_route_10:
+      detail_2_neptune_route_11:
+      detail_2_neptune_route_12:
+      detail_2_neptune_route_2:
+      detail_2_neptune_route_3:
+      detail_2_neptune_route_4:
+      detail_2_neptune_route_5:
+      detail_2_neptune_route_6_1:
+      detail_2_neptune_route_6_2:
+      detail_2_neptune_route_7:
+      detail_2_neptune_route_8:
+      detail_2_neptune_route_9:
+      detail_2_neptune_stoparea_1:
+      detail_2_neptune_stoparea_2:
+      detail_2_neptune_stoparea_3:
+      detail_2_neptune_stoparea_4:
+      detail_2_neptune_stoparea_5:
+      detail_2_neptune_stoparea_6:
+      detail_2_neptune_stoppoint_1:
+      detail_2_neptune_stoppoint_2:
+      detail_2_neptune_stoppoint_3:
+      detail_2_neptune_stoppoint_4:
+      detail_2_neptune_timetable_1:
+      detail_2_neptune_timetable_2:
+      detail_2_neptune_timetable_3:
+      detail_2_neptune_vehiclejourney_1:
+      detail_2_neptune_vehiclejourney_2:
+      detail_2_neptune_vehiclejourney_3:
+      detail_2_neptune_vehiclejourney_4:
+      detail_2_neptune_vehiclejourney_5:
+      detail_2_neptune_vehiclejourney_6:
+      detail_2_neptune_vehiclejourney_7:
+      detail_2_neptune_vehiclejourney_8:
+      detail_2_neptune_vehiclejourneyatstop_1:
+      detail_2_neptune_vehiclejourneyatstop_2:
+      detail_2_neptune_vehiclejourneyatstop_3:
+      detail_2_neptune_vehiclejourneyatstop_4:
+      detail_2_regtopp_dko_1:
+      detail_2_regtopp_dko_2:
+      detail_2_regtopp_dko_3:
+      detail_2_regtopp_dko_4:
+      detail_2_regtopp_dst_1:
+      detail_2_regtopp_dst_2:
+      detail_2_regtopp_dst_3:
+      detail_2_regtopp_dst_4:
+      detail_2_regtopp_gav_1:
+      detail_2_regtopp_gav_2:
+      detail_2_regtopp_gav_3:
+      detail_2_regtopp_gav_4:
+      detail_2_regtopp_hpl_1:
+      detail_2_regtopp_hpl_2:
+      detail_2_regtopp_hpl_3:
+      detail_2_regtopp_hpl_4:
+      detail_2_regtopp_lin_1:
+      detail_2_regtopp_lin_2:
+      detail_2_regtopp_lin_3:
+      detail_2_regtopp_lin_4:
+      detail_2_regtopp_mrk_1:
+      detail_2_regtopp_mrk_2:
+      detail_2_regtopp_mrk_3:
+      detail_2_regtopp_mrk_4:
+      detail_2_regtopp_stp_1:
+      detail_2_regtopp_stp_2:
+      detail_2_regtopp_stp_3:
+      detail_2_regtopp_stp_4:
+      detail_2_regtopp_tda_1:
+      detail_2_regtopp_tda_2:
+      detail_2_regtopp_tda_3:
+      detail_2_regtopp_tda_4:
+      detail_2_regtopp_tix_1:
+      detail_2_regtopp_tix_2:
+      detail_2_regtopp_tix_3:
+      detail_2_regtopp_tix_4:
+      detail_2_regtopp_tms_1:
+      detail_2_regtopp_tms_2:
+      detail_2_regtopp_tms_3:
+      detail_2_regtopp_tms_4:
+      detail_3_accesslink_1:
+      detail_3_accesslink_2:
+      detail_3_accesslink_3_1:
+      detail_3_accesslink_3_2:
+      detail_3_accesslink_3_3:
+      detail_3_accesslink_3_4:
+      detail_3_accesspoint_1:
+      detail_3_accesspoint_2:
+      detail_3_accesspoint_3:
+      detail_3_connectionlink_1:
+      detail_3_connectionlink_2:
+      detail_3_connectionlink_3_1:
+      detail_3_connectionlink_3_2:
+      detail_3_connectionlink_3_3:
+      detail_3_connectionlink_3_4:
+      detail_3_facility_1:
+      detail_3_facility_2:
+      detail_3_journeypattern_1:
+      detail_3_line_1:
+      detail_3_line_2:
+      detail_3_route_1:
+      detail_3_route_2:
+      detail_3_route_3_1:
+      detail_3_route_3_2:
+      detail_3_route_4:
+      detail_3_route_5:
+      detail_3_route_6:
+      detail_3_route_7:
+      detail_3_route_8:
+      detail_3_route_9:
+      detail_3_stoparea_1:
+      detail_3_stoparea_2:
+      detail_3_stoparea_3:
+      detail_3_stoparea_4:
+      detail_3_stoparea_5:
+      detail_3_vehiclejourney_1:
+      detail_3_vehiclejourney_2_1:
+      detail_3_vehiclejourney_2_2:
+      detail_3_vehiclejourney_2_3:
+      detail_3_vehiclejourney_3:
+      detail_3_vehiclejourney_3_1:
+      detail_3_vehiclejourney_4:
+      detail_3_vehiclejourney_5_1:
+      detail_3_vehiclejourney_5_2:
+      detail_4_accesslink_1_max_size:
+      detail_4_accesslink_1_min_size:
+      detail_4_accesslink_1_pattern:
+      detail_4_accesslink_1_unique:
+      detail_4_accesspoint_1_max_size:
+      detail_4_accesspoint_1_min_size:
+      detail_4_accesspoint_1_pattern:
+      detail_4_accesspoint_1_unique:
+      detail_4_company_1_max_size:
+      detail_4_company_1_min_size:
+      detail_4_company_1_pattern:
+      detail_4_company_1_unique:
+      detail_4_connectionlink_1_max_size:
+      detail_4_connectionlink_1_min_size:
+      detail_4_connectionlink_1_pattern:
+      detail_4_connectionlink_1_unique:
+      detail_4_connectionlink_2:
+      detail_4_groupofline_1_max_size:
+      detail_4_groupofline_1_min_size:
+      detail_4_groupofline_1_pattern:
+      detail_4_groupofline_1_unique:
+      detail_4_journeypattern_1_max_size:
+      detail_4_journeypattern_1_min_size:
+      detail_4_journeypattern_1_pattern:
+      detail_4_journeypattern_1_unique:
+      detail_4_line_1_max_size:
+      detail_4_line_1_min_size:
+      detail_4_line_1_pattern:
+      detail_4_line_1_unique:
+      detail_4_line_2:
+      detail_4_line_3_1:
+      detail_4_line_3_2:
+      detail_4_line_4_1:
+      detail_4_line_4_2:
+      detail_4_network_1_max_size:
+      detail_4_network_1_min_size:
+      detail_4_network_1_pattern:
+      detail_4_network_1_unique:
+      detail_4_route_1_max_size:
+      detail_4_route_1_min_size:
+      detail_4_route_1_pattern:
+      detail_4_route_1_unique:
+      detail_4_stoparea_1_max_size:
+      detail_4_stoparea_1_min_size:
+      detail_4_stoparea_1_pattern:
+      detail_4_stoparea_1_unique:
+      detail_4_stoparea_2:
+      detail_4_timetable_1_max_size:
+      detail_4_timetable_1_min_size:
+      detail_4_timetable_1_pattern:
+      detail_4_timetable_1_unique:
+      detail_4_vehiclejourney_1_max_size:
+      detail_4_vehiclejourney_1_min_size:
+      detail_4_vehiclejourney_1_pattern:
+      detail_4_vehiclejourney_1_unique:
+      detail_4_vehiclejourney_2:
+      detail_rutebanken_3_stoppoint_1:
     errors: Feil
     file:
-      detailed_errors_file_prefix: 
-      summary_errors_file_prefix: 
-      zip_name_prefix: 
+      detailed_errors_file_prefix:
+      summary_errors_file_prefix:
+      zip_name_prefix:
     in_progress: Validering pågår
     index:
-      column: 
-      line: 
+      column:
+      line:
     severities:
-      error: 
-      error_txt: 
-      ignored: 
-      ignored_txt: 
-      none: 
-      none_txt: 
-      ok: 
-      ok_txt: 
-      success: 
-      success_txt: 
-      warning: 
-      warning_txt: 
+      error:
+      error_txt:
+      ignored:
+      ignored_txt:
+      none:
+      none_txt:
+      ok:
+      ok_txt:
+      success:
+      success_txt:
+      warning:
+      warning_txt:
     statuses:
-      nok: 
-      ok: 
-      uncheck: 
+      nok:
+      ok:
+      uncheck:
   compliance_check_tasks:
     actions:
-      new: 
+      new:
     new:
-      all: 
-      flash: 
-      submit: 
-      title: 
+      all:
+      flash:
+      submit:
+      title:
   compliance_checks:
     actions:
-      destroy: 
-      destroy_confirm: 
-      download: 
-      edit: 
-      report: 
-      rule_parameter_set: 
+      destroy:
+      destroy_confirm:
+      download:
+      edit:
+      report:
+      rule_parameter_set:
     edit:
-      title: 
-    error_count: 
-    fatal_count: 
-    import: 
+      title:
+    error_count:
+    fatal_count:
+    import:
     index:
-      title: 
-      warning: 
-    ok_count: 
+      title:
+      warning:
+    ok_count:
     report:
-      action_report: 
-      validation_success: 
-    rule_parameter_set: 
+      action_report:
+      validation_success:
+    rule_parameter_set:
     show:
-      completed: 
-      details: 
-      export: 
-      export_csv: 
-      failed: 
-      parameters: 
-      pending: 
-      processing: 
-      summary: 
-      title: 
+      completed:
+      details:
+      export:
+      export_csv:
+      failed:
+      parameters:
+      pending:
+      processing:
+      summary:
+      title:
     statuses:
-      aborted: 
-      canceled: 
-      completed: 
-      failed: 
-      pending: 
-      processing: 
-      scheduled: 
-      started: 
-      terminated: 
-    uncheck_count: 
-    warning_count: 
+      aborted:
+      canceled:
+      completed:
+      failed:
+      pending:
+      processing:
+      scheduled:
+      started:
+      terminated:
+    uncheck_count:
+    warning_count:
   connection_link_types:
     label:
-      mixed: 
-      overground: 
-      undefined: 
-      underground: 
+      mixed:
+      overground:
+      undefined:
+      underground:
   connection_links:
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
-      new: 
-      select_areas: 
+      destroy:
+      destroy_confirm:
+      edit:
+      new:
+      select_areas:
     connection_link:
-      from: 
-      to: 
+      from:
+      to:
     edit:
-      title: 
+      title:
     index:
-      arrival: 
-      departure: 
-      name: 
-      selection: 
-      selection_all: 
-      title: 
+      arrival:
+      departure:
+      name:
+      selection:
+      selection_all:
+      title:
     new:
-      title: 
+      title:
     select_areas:
-      title: 
+      title:
     select_arrival:
-      title: 
+      title:
     select_departure:
-      title: 
+      title:
     show:
-      durations: 
-      title: 
+      durations:
+      title:
   count_errors:
     one: 1 feil
     other: "%{count} feil"
   count_warnings:
     one: 1 advarsel
     other: "%{count} advarsler"
-  delete_periods: 
+  delete_periods:
   devise:
     confirmations:
       new:
-        title: 
+        title:
     invitations:
       edit:
-        header: 
-        submit_button: 
-      invitation_removed: 
-      invitation_token_invalid: 
+        header:
+        submit_button:
+      invitation_removed:
+      invitation_token_invalid:
       new:
-        header: 
-        submit_button: 
-      no_invitations_remaining: 
-      send_instructions: 
-      updated: 
+        header:
+        submit_button:
+      no_invitations_remaining:
+      send_instructions:
+      updated:
     links:
-      new_confirmation: 
-      new_password: 
-      sign_in: 
-      sign_up: 
+      new_confirmation:
+      new_password:
+      sign_in:
+      sign_up:
     mailer:
       invitation_instructions:
-        accept: 
-        hello: 
-        ignore: 
-        someone_invited_you: 
-        subject: 
+        accept:
+        hello:
+        ignore:
+        someone_invited_you:
+        subject:
     passwords:
       edit:
-        commit: 
-        new_password: 
-        new_password_confirmation: 
-        title: 
+        commit:
+        new_password:
+        new_password_confirmation:
+        title:
       new:
-        commit: 
-        title: 
+        commit:
+        title:
     registrations:
       edit:
         actions:
-          destroy: 
-          destroy_confirm: 
-        commit: 
-        title: 
+          destroy:
+          destroy_confirm:
+        commit:
+        title:
       new:
-        commit: 
-        title: 
+        commit:
+        title:
     sessions:
       new:
         commit: Logg inn
-        introduction1: 
-        introduction2: 
-        introduction_item1: 
-        introduction_item2: 
+        introduction1:
+        introduction2:
+        introduction_item1:
+        introduction_item2:
         title: Logg inn
         welcome: Velkommen til Chouette
   directions:
     label:
-      backward: 
+      backward:
       clock_wise: med klokkerettning
       counter_clock_wise: mot klokkeretning
       east: øst
@@ -1650,40 +1650,40 @@ nb:
       south_west: sørvest
       straight_forward: rett frem
       west: vest
-  edit_periods: 
+  edit_periods:
   enumerize:
     data_format:
-      gtfs: 
-      hub: 
-      kml: 
-      neptune: 
-      netex: 
-      netex_experimental: 
-      netex_france: 
-      regtopp: 
-      sig: 
+      gtfs:
+      hub:
+      kml:
+      neptune:
+      netex:
+      netex_experimental:
+      netex_france:
+      regtopp:
+      sig:
     data_format_detail:
-      gtfs: 
-      hub: 
-      kml: 
-      neptune: 
-      netex: 
+      gtfs:
+      hub:
+      kml:
+      neptune:
+      netex:
     for_alighting:
-      forbidden: 
-      is_flexible: 
-      normal: 
-      request_stop: 
+      forbidden:
+      is_flexible:
+      normal:
+      request_stop:
     for_boarding:
-      forbidden: 
-      is_flexible: 
-      normal: 
-      request_stop: 
+      forbidden:
+      is_flexible:
+      normal:
+      request_stop:
     references_type:
-      company: 
-      group_of_line: 
-      line: 
-      network: 
-      stop_area: 
+      company:
+      group_of_line:
+      line:
+      network:
+      stop_area:
   export_tasks:
     actions:
       new: Ny eksport
@@ -1700,7 +1700,7 @@ nb:
       new: ny eksport
     index:
       title: Eksporter
-      warning: 
+      warning:
     new:
       all: Alle
       flash: Eksportjobb i kø, oppdater side for å se progresjon
@@ -1721,20 +1721,20 @@ nb:
       scheduled: Behandling pågår...
       started: Startet
       terminated: Fullført
-  'false': 
+  'false':
   file_validation_log_messages:
-    import: 
+    import:
     messages:
-      ONE: 
-      TooMuchDetails: 
-      undefined: 
-    rule_parameter_set: 
+      ONE:
+      TooMuchDetails:
+      undefined:
+    rule_parameter_set:
     severities:
-      error: 
-      fatal: 
-      ok: 
-      uncheck: 
-      warning: 
+      error:
+      fatal:
+      ok:
+      uncheck:
+      warning:
   footnotes:
     actions:
       add_footnote: Legg til fotnote
@@ -1753,281 +1753,281 @@ nb:
         tag_search: eks helligdag, skoleferie
     required: påkrevd
     reset: Reset %{model}
-    submit: 
+    submit:
     titles:
       access_link:
-        objectid: 
+        objectid:
       access_point:
-        coordinates: 
-        objectid: 
-        projection_xy: 
+        coordinates:
+        objectid:
+        projection_xy:
       company:
-        name: 
-        objectid: 
-        registration_number: 
+        name:
+        objectid:
+        registration_number:
       connection_link:
-        link_distance: 
-        objectid: 
+        link_distance:
+        objectid:
       export_task:
         dates:
-          not_nul: 
-        end_date: 
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
-        object_id_prefix: 
-        start_date: 
-        time_zone: 
+          not_nul:
+        end_date:
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
+        object_id_prefix:
+        start_date:
+        time_zone:
       group_of_line:
-        name: 
-        objectid: 
-        registration_number: 
+        name:
+        objectid:
+        registration_number:
       gtfs:
         company:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         connection_link:
-          link_distance: 
-          objectid: 
+          link_distance:
+          objectid:
         group_of_line:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         journey_pattern:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         line:
-          name: 
-          number: 
-          objectid: 
-          registration_number: 
+          name:
+          number:
+          objectid:
+          registration_number:
         network:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         route:
-          objectid: 
+          objectid:
         stop_area:
-          city_name: 
-          comment: 
-          coordinates: 
-          name: 
-          nearest_topic_name: 
-          objectid: 
-          projection_xy: 
-          registration_number: 
-          zip_code: 
+          city_name:
+          comment:
+          coordinates:
+          name:
+          nearest_topic_name:
+          objectid:
+          projection_xy:
+          registration_number:
+          zip_code:
         time_table:
-          comment: 
-          objectid: 
+          comment:
+          objectid:
         vehicle_journey:
-          objectid: 
+          objectid:
       hub:
         company:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         connection_link:
-          link_distance: 
-          objectid: 
+          link_distance:
+          objectid:
         group_of_line:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         journey_pattern:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         line:
-          name: 
-          number: 
-          objectid: 
-          registration_number: 
+          name:
+          number:
+          objectid:
+          registration_number:
         network:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         route:
-          objectid: 
+          objectid:
         stop_area:
-          city_name: 
-          comment: 
-          coordinates: 
-          name: 
-          nearest_topic_name: 
-          objectid: 
-          projection_xy: 
-          registration_number: 
-          zip_code: 
+          city_name:
+          comment:
+          coordinates:
+          name:
+          nearest_topic_name:
+          objectid:
+          projection_xy:
+          registration_number:
+          zip_code:
         time_table:
-          comment: 
-          objectid: 
+          comment:
+          objectid:
         vehicle_journey:
-          objectid: 
+          objectid:
       import_task:
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
-        references_type: 
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
+        references_type:
       journey_pattern:
-        name: 
-        objectid: 
-        registration_number: 
+        name:
+        objectid:
+        registration_number:
       line:
-        name: 
-        number: 
-        objectid: 
-        registration_number: 
+        name:
+        number:
+        objectid:
+        registration_number:
       neptune:
         company:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         connection_link:
-          link_distance: 
-          objectid: 
+          link_distance:
+          objectid:
         group_of_line:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         journey_pattern:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         line:
-          name: 
-          number: 
-          objectid: 
-          registration_number: 
+          name:
+          number:
+          objectid:
+          registration_number:
         network:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         route:
-          objectid: 
+          objectid:
         stop_area:
-          city_name: 
-          comment: 
-          coordinates: 
-          name: 
-          nearest_topic_name: 
-          objectid: 
-          projection_xy: 
-          registration_number: 
-          zip_code: 
+          city_name:
+          comment:
+          coordinates:
+          name:
+          nearest_topic_name:
+          objectid:
+          projection_xy:
+          registration_number:
+          zip_code:
         time_table:
-          comment: 
-          objectid: 
+          comment:
+          objectid:
         vehicle_journey:
-          objectid: 
+          objectid:
       netex:
         company:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         connection_link:
-          link_distance: 
-          objectid: 
+          link_distance:
+          objectid:
         group_of_line:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         journey_pattern:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         line:
-          name: 
-          number: 
-          objectid: 
-          registration_number: 
+          name:
+          number:
+          objectid:
+          registration_number:
         network:
-          name: 
-          objectid: 
-          registration_number: 
+          name:
+          objectid:
+          registration_number:
         route:
-          objectid: 
+          objectid:
         stop_area:
-          city_name: 
-          comment: 
-          coordinates: 
-          name: 
-          nearest_topic_name: 
-          objectid: 
-          projection_xy: 
-          registration_number: 
-          zip_code: 
+          city_name:
+          comment:
+          coordinates:
+          name:
+          nearest_topic_name:
+          objectid:
+          projection_xy:
+          registration_number:
+          zip_code:
         time_table:
-          comment: 
-          objectid: 
+          comment:
+          objectid:
         vehicle_journey:
-          objectid: 
+          objectid:
       network:
-        name: 
-        objectid: 
-        registration_number: 
+        name:
+        objectid:
+        registration_number:
       referential:
-        lower_corner: 
-        prefix: 
-        slug: 
-        upper_corner: 
+        lower_corner:
+        prefix:
+        slug:
+        upper_corner:
       route:
-        objectid: 
+        objectid:
       stop_area:
-        city_name: 
-        comment: 
-        coordinates: 
-        name: 
-        nearest_topic_name: 
-        objectid: 
-        projection_xy: 
-        registration_number: 
-        zip_code: 
+        city_name:
+        comment:
+        coordinates:
+        name:
+        nearest_topic_name:
+        objectid:
+        projection_xy:
+        registration_number:
+        zip_code:
       time_table:
-        comment: 
-        objectid: 
+        comment:
+        objectid:
       validation:
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
       validation_task:
-        ignore_end_chars: 
-        ignore_last_word: 
-        max_distance_for_commercial: 
-        max_distance_for_connection_link: 
+        ignore_end_chars:
+        ignore_last_word:
+        max_distance_for_commercial:
+        max_distance_for_connection_link:
       vehicle_journey:
-        objectid: 
+        objectid:
     'true': Ja
     update: Oppdater %{model}
     validate: Start validering
   group_of_lines:
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
-      new: 
+      destroy:
+      destroy_confirm:
+      edit:
+      new:
     edit:
-      title: 
+      title:
     form:
-      lines: 
+      lines:
     index:
-      name: 
-      title: 
+      name:
+      title:
     new:
-      title: 
+      title:
     show:
-      lines: 
-      title: 
+      lines:
+      title:
   hub:
-    invalid: 
+    invalid:
     routes:
-      max_by_line: 
-      wayback_code_exclusive: 
+      max_by_line:
+      wayback_code_exclusive:
   iev:
     errors:
       duplicate_or_missing_data: Manglende eller duplikate data
@@ -2051,26 +2051,26 @@ nb:
       internal_error: Intern feil
       invalid_parameters: Ugyldige parametre
       invalid_request: Ugyldig forespørsel
-      missing_parameters: 
-      scheduled_job: 
-      unknown_action: 
-      unknown_file: 
-      unknown_job: 
-      unknown_referential: 
-      unreadable_parameters: 
+      missing_parameters:
+      scheduled_job:
+      unknown_action:
+      unknown_file:
+      unknown_job:
+      unknown_referential:
+      unreadable_parameters:
     failure:
-      internal_error: 
-      invalid_data: 
-      invalid_parameters: 
-      no_data_found: 
-      no_data_proceeded: 
+      internal_error:
+      invalid_data:
+      invalid_parameters:
+      no_data_found:
+      no_data_proceeded:
   import_tasks:
     actions:
-      new: 
+      new:
     new:
-      all: 
-      flash: 
-      title: 
+      all:
+      flash:
+      title:
   imports:
     actions:
       destroy: Slett
@@ -2079,18 +2079,18 @@ nb:
     compliance_check_task: Valideringsrapport
     index:
       title: Import
-      warning: 
+      warning:
     severities:
       error: Feil
-      fatal: 
+      fatal:
       info: Informasjon
       ok: Ok
-      uncheck: 
+      uncheck:
       warning: Advarsel
     show:
       compliance_check: Valideringsrapport
-      compliance_check_of: 
-      import_of_validation: 
+      compliance_check_of:
+      import_of_validation:
       imported_file: Orginal fil
       report: Rapport
       rule_parameter_set: Regelsett
@@ -2099,7 +2099,7 @@ nb:
       processed: Operasjon startet, klikk for å vise fremdrift.
   journey_frequencies:
     form:
-      add_line: 
+      add_line:
     time_band: Tidsbånd
   journey_patterns:
     actions:
@@ -2117,7 +2117,7 @@ nb:
     journey_pattern:
       from_to: Fra '%{departure}' til '%{arrival}'
       stop_count: "%{count}/%{route_count} stoppesteder"
-      vehicle_journey_at_stops: 
+      vehicle_journey_at_stops:
       vehicle_journeys_count: 'VEHICLE JOURNEYS: %{count}'
     new:
       title: Legg til nytt JOURNEY PATTERN
@@ -2178,7 +2178,7 @@ nb:
       export_hub: eksporter HUB LINE
       export_hub_all: Eksporter HUB LINES
       export_kml: Eksporter KML LINE
-      export_kml_all: 
+      export_kml_all:
       import: Importer LINES
       new: Legg til en ny LINE
     edit:
@@ -2211,19 +2211,19 @@ nb:
       title: LINEs
       unset: udefinert
     new:
-      title: 
+      title:
     show:
-      group_of_lines: 
-      itineraries: 
-      title: 
+      group_of_lines:
+      itineraries:
+      title:
   maps:
     google_hybrid: Google hybrid
     google_physical: Google fysisk
     google_satellite: Google orthofoto
     google_streets: Google streets
-    ign_cadastre: 
-    ign_map: 
-    ign_ortho: 
+    ign_cadastre:
+    ign_map:
+    ign_ortho:
   networks:
     actions:
       destroy: Slett NETWORK
@@ -2257,7 +2257,7 @@ nb:
       operator:
   progress_bar:
     level: Etasjer
-    step: 
+    step:
   referentials:
     actions:
       destroy: Slett dataområde
@@ -2270,8 +2270,8 @@ nb:
     edit:
       title: Rediger dataområde
     errors:
-      pg_excluded: 
-      public_excluded: 
+      pg_excluded:
+      public_excluded:
       user_excluded:
       no_access: Dataområdet '%{referential}' er ikke tilgjengelig for denne brukeren.
     new:
@@ -2290,55 +2290,55 @@ nb:
       validity_out_time_tables: Utgåtte TIMETABLES
   report:
     default_view:
-      access_point: 
-      access_points: 
-      companies: 
-      company: 
+      access_point:
+      access_points:
+      companies:
+      company:
       connection_link: Korrespondanse
       connection_links: Korrespondanse
       files: Filer
       line: LINE
       lines: LINES
-      network: 
-      networks: 
-      stop_area: 
-      stop_areas: 
-      tests: 
-      tests-1-2-error: 
-      tests-1-2-warning: 
-      tests-3-4-error: 
-      tests-3-4-warning: 
-      timetable: 
-      timetables: 
-      transport_datas: 
+      network:
+      networks:
+      stop_area:
+      stop_areas:
+      tests:
+      tests-1-2-error:
+      tests-1-2-warning:
+      tests-3-4-error:
+      tests-3-4-warning:
+      timetable:
+      timetables:
+      transport_datas:
     download: Last ned
     download_by:
-      files: 
-      tests: 
-      transport_datas: 
+      files:
+      tests:
+      transport_datas:
     icons:
-      error_txt: 
-      ignored_txt: 
-      none_txt: 
-      ok_txt: 
-      warning_txt: 
+      error_txt:
+      ignored_txt:
+      none_txt:
+      ok_txt:
+      warning_txt:
     search_form:
       label:
-        search: 
-        state: 
-      submit: 
+        search:
+        state:
+      submit:
     total_results:
-      files: 
+      files:
       synthesis:
-        access_point: 
-        company: 
-        connection_link: 
-        line: 
-        network: 
-        stop_area: 
-        timetable: 
-      tests: 
-      transport_datas: 
+        access_point:
+        company:
+        connection_link:
+        line:
+        network:
+        stop_area:
+        timetable:
+      tests:
+      transport_datas:
   route_sections:
     actions:
       destroy: Slett ROUTE SECTION
@@ -2418,150 +2418,150 @@ nb:
       undefined: Udefinert
   rule_parameter_sets:
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
-      index: 
-      new: 
+      destroy:
+      destroy_confirm:
+      edit:
+      index:
+      new:
     destroy:
-      last_rps_protected: 
+      last_rps_protected:
     edit:
-      title: 
+      title:
     form:
-      add_mode_parameter_set: 
+      add_mode_parameter_set:
     index:
-      title: 
+      title:
     labels:
-      alpha_char: 
-      attribute: 
-      columns_restrictions: 
-      free_char: 
-      lower_char: 
-      num_char: 
-      upper_char: 
+      alpha_char:
+      attribute:
+      columns_restrictions:
+      free_char:
+      lower_char:
+      num_char:
+      upper_char:
     new:
-      title: 
+      title:
     show:
-      facility_stop_area_distance_max: 
-      inter_access_link_distance_max: 
-      inter_access_point_distance_min: 
-      inter_connection_link_distance_max: 
-      inter_stop_area_distance_min: 
-      inter_stop_duration_max: 
-      max_distance: 
-      min_distance: 
-      modes_allowed: 
-      parent_stop_area_distance_max: 
-      rule_parameter_by_mode: 
-      title: 
-      walk_default_speed_max: 
-      walk_frequent_traveller_speed_max: 
-      walk_mobility_restricted_traveller_speed_max: 
-      walk_occasional_traveller_speed_max: 
-      walk_speed: 
-  search_hint: 
-  searching_term: 
-  select_all: 
+      facility_stop_area_distance_max:
+      inter_access_link_distance_max:
+      inter_access_point_distance_min:
+      inter_connection_link_distance_max:
+      inter_stop_area_distance_min:
+      inter_stop_duration_max:
+      max_distance:
+      min_distance:
+      modes_allowed:
+      parent_stop_area_distance_max:
+      rule_parameter_by_mode:
+      title:
+      walk_default_speed_max:
+      walk_frequent_traveller_speed_max:
+      walk_mobility_restricted_traveller_speed_max:
+      walk_occasional_traveller_speed_max:
+      walk_speed:
+  search_hint:
+  searching_term:
+  select_all:
   shared:
     ie_report:
-      search: 
+      search:
       tab:
-        file: 
-        line: 
+        file:
+        line:
     ie_report_file:
       table:
-        error: 
-        ignored: 
-        name: 
-        ok: 
-        state: 
-      title_default: 
+        error:
+        ignored:
+        name:
+        ok:
+        state:
+      title_default:
     ie_report_line:
-      read_lines: 
-      saved_lines: 
+      read_lines:
+      saved_lines:
       state:
         default:
-          invalid: 
-          valid: 
+          invalid:
+          valid:
         validation:
-          invalid: 
-          valid: 
+          invalid:
+          valid:
       table:
         line:
-          access_points: 
-          connection_links: 
-          details: 
-          journey_patterns: 
-          lines: 
-          not_saved: 
-          routes: 
-          save_error: 
-          saved: 
-          state: 
-          stop_areas: 
-          time_tables: 
-          vehicle_journeys: 
-      unsaved_lines: 
+          access_points:
+          connection_links:
+          details:
+          journey_patterns:
+          lines:
+          not_saved:
+          routes:
+          save_error:
+          saved:
+          state:
+          stop_areas:
+          time_tables:
+          vehicle_journeys:
+      unsaved_lines:
   simple_form:
     error_notification:
-      default_message: 
+      default_message:
     hints:
       user:
         edit:
-          current_password: 
-          password: 
+          current_password:
+          password:
     include_blanks:
       defaults:
-        for_alighting: 
-        for_boarding: 
+        for_alighting:
+        for_boarding:
     labels:
       stop_point:
-        for_alighting: 
-        for_boarding: 
+        for_alighting:
+        for_boarding:
       user:
-        current_password: 
-        email: 
-        name: 
+        current_password:
+        email:
+        name:
         organisation:
-          name: 
-        password: 
-        password_confirmation: 
-        remember_me: 
-    'no': 
+          name:
+        password:
+        password_confirmation:
+        remember_me:
+    'no':
     placeholders:
       user:
-        current_password: 
-        email: 
-        name: 
+        current_password:
+        email:
+        name:
         organisation:
-          name: 
-        password: 
-        password_confirmation: 
+          name:
+        password:
+        password_confirmation:
     required:
-      mark: 
-      text: 
-    'yes': 
+      mark:
+      text:
+    'yes':
   source_types:
     label:
-      individual_subject_of_travel_itinerary: 
-      other_information: 
-      passenger_transport_coordinating_authority: 
-      public_and_private_utilities: 
-      public_transport: 
-      road_authorities: 
-      transit_operator: 
-      travel_agency: 
-      travel_information_service_provider: 
-    name: 
+      individual_subject_of_travel_itinerary:
+      other_information:
+      passenger_transport_coordinating_authority:
+      public_and_private_utilities:
+      public_transport:
+      road_authorities:
+      transit_operator:
+      travel_agency:
+      travel_information_service_provider:
+    name:
   stop_area_copies:
     errors:
-      copy_aborted: 
-      exception: 
+      copy_aborted:
+      exception:
     new:
-      success: 
+      success:
       title:
-        child: 
-        parent: 
+        child:
+        parent:
   stop_areas:
     access_links:
       access_link_legend_1: grå pil for udefinerte linker, grønn for definerte
@@ -2571,496 +2571,494 @@ nb:
       title: ACCESS LINKS for %{stop_area}'s adkomst
     actions:
       add_children: Legg til eller rediger relasjon mor -> barn
-      add_routing_lines: 
-      add_routing_stops: 
+      add_routing_lines:
+      add_routing_stops:
       clone_as_child: Klon som barn
       clone_as_parent: Klon som mor
       default_geometry: Beregn manglende geometri
-      default_geometry_confirm: 
+      default_geometry_confirm:
       destroy: Slett stoppested
-      destroy_confirm: 
+      destroy_confirm:
       edit: Rediger STOP
-      export_hub_commercial: 
+      export_hub_commercial:
       export_hub_physical: Eksporter HUB fysisk
-      export_hub_place: 
-      export_kml_commercial: 
-      export_kml_physical: 
-      export_kml_place: 
-      manage_access_links: 
-      manage_access_points: 
-      new: 
-      select_parent: 
+      export_hub_place:
+      export_kml_commercial:
+      export_kml_physical:
+      export_kml_place:
+      manage_access_links:
+      manage_access_points:
+      new:
+      select_parent:
     add_children:
-      title: 
+      title:
     add_lines:
-      title: 
+      title:
     add_routing_lines:
-      title: 
+      title:
     add_routing_stops:
-      title: 
+      title:
     add_stops:
-      title: 
+      title:
     default_geometry_success: "%{count} modifiserte STOP AREAS"
     edit:
-      title: 
+      title:
     form:
-      address: 
-      geolocalize: 
+      address:
+      geolocalize:
     genealogical:
-      genealogical: 
-      genealogical_routing: 
+      genealogical:
+      genealogical_routing:
     index:
-      advanced_search: 
-      area_type: 
+      advanced_search:
+      area_type:
       name:
       name_or_objectid:
       no_transport_modes:
       no_transport_sub_modes:
-      selection: 
-      selection_all: 
-      title: 
-      zip_code: 
+      selection:
+      selection_all:
+      title:
+      zip_code:
     new:
-      title: 
+      title:
     select_parent:
-      title: 
+      title:
     show:
-      access_managment: 
-      access_points: 
-      geographic_data: 
-      itl_managment: 
-      no_geographic_data: 
-      not_editable: 
-      stop_managment: 
-      title: 
+      access_managment:
+      access_points:
+      geographic_data:
+      itl_managment:
+      no_geographic_data:
+      not_editable:
+      stop_managment:
+      title:
     stop_area:
-      accessibility: 
-      address: 
-      general: 
-      lines: 
-      localisation: 
-      no_object: 
-      no_position: 
+      accessibility:
+      address:
+      general:
+      lines:
+      localisation:
+      no_object:
+      no_position:
   stop_points:
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
-      index: 
-      new: 
-      show: 
-      sort: 
+      destroy:
+      destroy_confirm:
+      edit:
+      index:
+      new:
+      show:
+      sort:
     index:
-      move: 
-      no_stop_point: 
-      reorder_button: 
-      subtitle: 
-      title: 
+      move:
+      no_stop_point:
+      reorder_button:
+      subtitle:
+      title:
     new:
-      select_area: 
-      title: 
-    reorder_failure: 
-    reorder_success: 
+      select_area:
+      title:
+    reorder_failure:
+    reorder_success:
     stop_point:
-      address: 
-      lines: 
-      no_object: 
-      no_position: 
+      address:
+      lines:
+      no_object:
+      no_position:
   subscriptions:
     actions:
-      new: 
-    failure: 
+      new:
+    failure:
     new:
-      title: 
-    success: 
+      title:
+    success:
   time:
     formats:
-      hour: 
-      minute: 
+      hour:
+      minute:
   time_table_combinations:
     combine_form:
-      time_tables: 
-    failure: 
+      time_tables:
+    failure:
     operations:
-      disjunction: 
-      intersection: 
-      union: 
-    success: 
+      disjunction:
+      intersection:
+      union:
+    success:
   time_tables:
     actions:
-      add_date: 
-      add_excluded_date: 
-      add_period: 
-      combine: 
-      destroy: 
-      destroy_confirm: 
-      destroy_date_confirm: 
-      destroy_period_confirm: 
-      duplicate: 
-      edit: 
-      new: 
-    duplicate_success: 
+      add_date:
+      add_excluded_date:
+      add_period:
+      combine:
+      destroy:
+      destroy_confirm:
+      destroy_date_confirm:
+      destroy_period_confirm:
+      duplicate:
+      edit:
+      new:
+    duplicate_success:
     edit:
-      title: 
+      title:
     index:
-      advanced_search: 
-      comment: 
-      end_date: 
-      from: 
-      selection: 
-      selection_all: 
-      start_date: 
-      tag_search: 
-      title: 
-      to: 
+      advanced_search:
+      comment:
+      end_date:
+      from:
+      selection:
+      selection_all:
+      start_date:
+      tag_search:
+      title:
+      to:
     new:
-      title: 
+      title:
     show:
-      add_date: 
-      add_period: 
-      combine: 
-      combine_form: 
-      dates: 
-      from: 
-      periods: 
-      title: 
-      to: 
+      add_date:
+      add_period:
+      combine:
+      combine_form:
+      dates:
+      from:
+      periods:
+      title:
+      to:
     show_time_table:
-      excluded_date: 
-      legend: 
-      overlap_date: 
-      resume: 
-      resume_empty: 
-      selected_date: 
-      selected_period: 
+      excluded_date:
+      legend:
+      overlap_date:
+      resume:
+      resume_empty:
+      selected_date:
+      selected_period:
     time_table:
-      bounding: 
-      dates_count: 
-      empty: 
-      periods_count: 
-      periods_dates_count: 
+      bounding:
+      dates_count:
+      empty:
+      periods_count:
+      periods_dates_count:
   timebands:
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
-      new: 
+      destroy:
+      destroy_confirm:
+      edit:
+      new:
     edit:
-      title: 
+      title:
     index:
-      title: 
+      title:
     new:
-      title: 
+      title:
     show:
-      title: 
+      title:
   titles:
     clean_up:
       expected_date: Dato inkludert i opprydding
-  today: 
+  today:
   transport_modes:
     label:
-      air: 
-      bicycle: 
-      bus: 
-      coach: 
-      ferry: 
-      local_train: 
-      long_distance_train: 
-      metro: 
-      private_vehicle: 
-      rapid_transit: 
-      shuttle: 
-      taxi: 
-      train: 
-      tramway: 
-      trolleybus: 
-      unknown: 
-      val: 
-      walk: 
-      waterborne: 
-    name: 
-  'true': 
-  unknown: 
-  unselect_all: 
+      air:
+      bicycle:
+      bus:
+      coach:
+      ferry:
+      rail:
+      metro:
+      private_vehicle:
+      rapid_transit:
+      taxi:
+      train:
+      tram:
+      trolley_bus:
+      unknown:
+      val:
+      walk:
+      water:
+    name:
+  'true':
+  unknown:
+  unselect_all:
   users:
     actions:
-      destroy: 
-      destroy_confirm: 
-      edit: 
-      new: 
-      role_edit: 
+      destroy:
+      destroy_confirm:
+      edit:
+      new:
+      role_edit:
     edit:
-      title: 
+      title:
     index:
-      title: 
+      title:
     new:
-      title: 
+      title:
     role:
-      admin: 
-      read: 
-      read_write: 
-      title: 
+      admin:
+      read:
+      read_write:
+      title:
     show:
-      title: 
+      title:
   validation_result:
     details:
-      detail_1_neptune_xml_1: 
-      detail_1_neptune_xml_2: 
-      detail_1_regtopp_file_tix: 
-      detail_2_neptune_accesslink_1: 
-      detail_2_neptune_accesslink_2: 
-      detail_2_neptune_accesspoint_1: 
-      detail_2_neptune_accesspoint_2: 
-      detail_2_neptune_accesspoint_3: 
-      detail_2_neptune_accesspoint_4: 
-      detail_2_neptune_accesspoint_5: 
-      detail_2_neptune_accesspoint_6: 
-      detail_2_neptune_accesspoint_7: 
-      detail_2_neptune_areacentroid_1: 
-      detail_2_neptune_areacentroid_2: 
-      detail_2_neptune_common_1: 
-      detail_2_neptune_common_2: 
-      detail_2_neptune_connectionlink_1: 
-      detail_2_neptune_facility_1: 
-      detail_2_neptune_facility_2: 
-      detail_2_neptune_facility_3: 
-      detail_2_neptune_facility_4: 
-      detail_2_neptune_facility_5: 
-      detail_2_neptune_facility_6: 
-      detail_2_neptune_groupofline_1: 
-      detail_2_neptune_itl_1: 
-      detail_2_neptune_itl_2: 
-      detail_2_neptune_itl_3: 
-      detail_2_neptune_itl_4: 
-      detail_2_neptune_itl_5: 
-      detail_2_neptune_journeypattern_1: 
-      detail_2_neptune_journeypattern_2: 
-      detail_2_neptune_journeypattern_3: 
-      detail_2_neptune_line_1: 
-      detail_2_neptune_line_2: 
-      detail_2_neptune_line_3: 
-      detail_2_neptune_line_4: 
-      detail_2_neptune_line_5: 
-      detail_2_neptune_network_1: 
-      detail_2_neptune_ptlink_1: 
-      detail_2_neptune_route_1: 
-      detail_2_neptune_route_10: 
-      detail_2_neptune_route_11: 
-      detail_2_neptune_route_12: 
-      detail_2_neptune_route_2: 
-      detail_2_neptune_route_3: 
-      detail_2_neptune_route_4: 
-      detail_2_neptune_route_5: 
-      detail_2_neptune_route_6_1: 
-      detail_2_neptune_route_6_2: 
-      detail_2_neptune_route_7: 
-      detail_2_neptune_route_8: 
-      detail_2_neptune_route_9: 
-      detail_2_neptune_stoparea_1: 
-      detail_2_neptune_stoparea_2: 
-      detail_2_neptune_stoparea_3: 
-      detail_2_neptune_stoparea_4: 
-      detail_2_neptune_stoparea_5: 
-      detail_2_neptune_stoparea_6: 
-      detail_2_neptune_stoppoint_1: 
-      detail_2_neptune_stoppoint_2: 
-      detail_2_neptune_stoppoint_3: 
-      detail_2_neptune_stoppoint_4: 
-      detail_2_neptune_timetable_1: 
-      detail_2_neptune_timetable_2: 
-      detail_2_neptune_vehiclejourney_1: 
-      detail_2_neptune_vehiclejourney_2: 
-      detail_2_neptune_vehiclejourney_3: 
-      detail_2_neptune_vehiclejourney_4: 
-      detail_2_neptune_vehiclejourney_5: 
-      detail_2_neptune_vehiclejourney_6: 
-      detail_2_neptune_vehiclejourney_7: 
-      detail_2_neptune_vehiclejourneyatstop_1: 
-      detail_2_neptune_vehiclejourneyatstop_2: 
-      detail_2_neptune_vehiclejourneyatstop_3: 
-      detail_2_neptune_vehiclejourneyatstop_4: 
-      detail_3_accesslink_1: 
-      detail_3_accesslink_2: 
-      detail_3_accesslink_3_1: 
-      detail_3_accesslink_3_2: 
-      detail_3_accesslink_3_3: 
-      detail_3_accesslink_3_4: 
-      detail_3_accesspoint_1: 
-      detail_3_accesspoint_2: 
-      detail_3_accesspoint_3: 
-      detail_3_connectionlink_1: 
-      detail_3_connectionlink_2: 
-      detail_3_connectionlink_3_1: 
-      detail_3_connectionlink_3_2: 
-      detail_3_connectionlink_3_3: 
-      detail_3_connectionlink_3_4: 
-      detail_3_facility_1: 
-      detail_3_facility_2: 
-      detail_3_journeypattern_1: 
-      detail_3_line_1: 
-      detail_3_line_2: 
-      detail_3_route_1: 
-      detail_3_route_2: 
-      detail_3_route_3_1: 
-      detail_3_route_3_2: 
-      detail_3_route_4: 
-      detail_3_route_5: 
-      detail_3_route_6: 
-      detail_3_route_7: 
-      detail_3_route_8: 
-      detail_3_route_9: 
-      detail_3_stoparea_1: 
-      detail_3_stoparea_2: 
-      detail_3_stoparea_3: 
-      detail_3_stoparea_4: 
-      detail_3_stoparea_5: 
-      detail_3_vehiclejourney_1: 
-      detail_3_vehiclejourney_2_1: 
-      detail_3_vehiclejourney_2_2: 
-      detail_3_vehiclejourney_2_3: 
-      detail_3_vehiclejourney_3: 
-      detail_3_vehiclejourney_4: 
-      detail_4_accesslink_1_max_size: 
-      detail_4_accesslink_1_min_size: 
-      detail_4_accesslink_1_pattern: 
-      detail_4_accesslink_1_unique: 
-      detail_4_accesspoint_1_max_size: 
-      detail_4_accesspoint_1_min_size: 
-      detail_4_accesspoint_1_pattern: 
-      detail_4_accesspoint_1_unique: 
-      detail_4_company_1_max_size: 
-      detail_4_company_1_min_size: 
-      detail_4_company_1_pattern: 
-      detail_4_company_1_unique: 
-      detail_4_connectionlink_1_max_size: 
-      detail_4_connectionlink_1_min_size: 
-      detail_4_connectionlink_1_pattern: 
-      detail_4_connectionlink_1_unique: 
-      detail_4_connectionlink_2: 
-      detail_4_groupofline_1_max_size: 
-      detail_4_groupofline_1_min_size: 
-      detail_4_groupofline_1_pattern: 
-      detail_4_groupofline_1_unique: 
-      detail_4_journeypattern_1_max_size: 
-      detail_4_journeypattern_1_min_size: 
-      detail_4_journeypattern_1_pattern: 
-      detail_4_journeypattern_1_unique: 
-      detail_4_line_1_max_size: 
-      detail_4_line_1_min_size: 
-      detail_4_line_1_pattern: 
-      detail_4_line_1_unique: 
-      detail_4_line_2: 
-      detail_4_line_3_1: 
-      detail_4_line_3_2: 
-      detail_4_line_4_1: 
-      detail_4_line_4_2: 
-      detail_4_network_1_max_size: 
-      detail_4_network_1_min_size: 
-      detail_4_network_1_pattern: 
-      detail_4_network_1_unique: 
-      detail_4_route_1_max_size: 
-      detail_4_route_1_min_size: 
-      detail_4_route_1_pattern: 
-      detail_4_route_1_unique: 
-      detail_4_stoparea_1_max_size: 
-      detail_4_stoparea_1_min_size: 
-      detail_4_stoparea_1_pattern: 
-      detail_4_stoparea_1_unique: 
-      detail_4_stoparea_2: 
-      detail_4_timetable_1_max_size: 
-      detail_4_timetable_1_min_size: 
-      detail_4_timetable_1_pattern: 
-      detail_4_timetable_1_unique: 
-      detail_4_vehiclejourney_1_max_size: 
-      detail_4_vehiclejourney_1_min_size: 
-      detail_4_vehiclejourney_1_pattern: 
-      detail_4_vehiclejourney_1_unique: 
-      detail_4_vehiclejourney_2: 
+      detail_1_neptune_xml_1:
+      detail_1_neptune_xml_2:
+      detail_1_regtopp_file_tix:
+      detail_2_neptune_accesslink_1:
+      detail_2_neptune_accesslink_2:
+      detail_2_neptune_accesspoint_1:
+      detail_2_neptune_accesspoint_2:
+      detail_2_neptune_accesspoint_3:
+      detail_2_neptune_accesspoint_4:
+      detail_2_neptune_accesspoint_5:
+      detail_2_neptune_accesspoint_6:
+      detail_2_neptune_accesspoint_7:
+      detail_2_neptune_areacentroid_1:
+      detail_2_neptune_areacentroid_2:
+      detail_2_neptune_common_1:
+      detail_2_neptune_common_2:
+      detail_2_neptune_connectionlink_1:
+      detail_2_neptune_facility_1:
+      detail_2_neptune_facility_2:
+      detail_2_neptune_facility_3:
+      detail_2_neptune_facility_4:
+      detail_2_neptune_facility_5:
+      detail_2_neptune_facility_6:
+      detail_2_neptune_groupofline_1:
+      detail_2_neptune_itl_1:
+      detail_2_neptune_itl_2:
+      detail_2_neptune_itl_3:
+      detail_2_neptune_itl_4:
+      detail_2_neptune_itl_5:
+      detail_2_neptune_journeypattern_1:
+      detail_2_neptune_journeypattern_2:
+      detail_2_neptune_journeypattern_3:
+      detail_2_neptune_line_1:
+      detail_2_neptune_line_2:
+      detail_2_neptune_line_3:
+      detail_2_neptune_line_4:
+      detail_2_neptune_line_5:
+      detail_2_neptune_network_1:
+      detail_2_neptune_ptlink_1:
+      detail_2_neptune_route_1:
+      detail_2_neptune_route_10:
+      detail_2_neptune_route_11:
+      detail_2_neptune_route_12:
+      detail_2_neptune_route_2:
+      detail_2_neptune_route_3:
+      detail_2_neptune_route_4:
+      detail_2_neptune_route_5:
+      detail_2_neptune_route_6_1:
+      detail_2_neptune_route_6_2:
+      detail_2_neptune_route_7:
+      detail_2_neptune_route_8:
+      detail_2_neptune_route_9:
+      detail_2_neptune_stoparea_1:
+      detail_2_neptune_stoparea_2:
+      detail_2_neptune_stoparea_3:
+      detail_2_neptune_stoparea_4:
+      detail_2_neptune_stoparea_5:
+      detail_2_neptune_stoparea_6:
+      detail_2_neptune_stoppoint_1:
+      detail_2_neptune_stoppoint_2:
+      detail_2_neptune_stoppoint_3:
+      detail_2_neptune_stoppoint_4:
+      detail_2_neptune_timetable_1:
+      detail_2_neptune_timetable_2:
+      detail_2_neptune_vehiclejourney_1:
+      detail_2_neptune_vehiclejourney_2:
+      detail_2_neptune_vehiclejourney_3:
+      detail_2_neptune_vehiclejourney_4:
+      detail_2_neptune_vehiclejourney_5:
+      detail_2_neptune_vehiclejourney_6:
+      detail_2_neptune_vehiclejourney_7:
+      detail_2_neptune_vehiclejourneyatstop_1:
+      detail_2_neptune_vehiclejourneyatstop_2:
+      detail_2_neptune_vehiclejourneyatstop_3:
+      detail_2_neptune_vehiclejourneyatstop_4:
+      detail_3_accesslink_1:
+      detail_3_accesslink_2:
+      detail_3_accesslink_3_1:
+      detail_3_accesslink_3_2:
+      detail_3_accesslink_3_3:
+      detail_3_accesslink_3_4:
+      detail_3_accesspoint_1:
+      detail_3_accesspoint_2:
+      detail_3_accesspoint_3:
+      detail_3_connectionlink_1:
+      detail_3_connectionlink_2:
+      detail_3_connectionlink_3_1:
+      detail_3_connectionlink_3_2:
+      detail_3_connectionlink_3_3:
+      detail_3_connectionlink_3_4:
+      detail_3_facility_1:
+      detail_3_facility_2:
+      detail_3_journeypattern_1:
+      detail_3_line_1:
+      detail_3_line_2:
+      detail_3_route_1:
+      detail_3_route_2:
+      detail_3_route_3_1:
+      detail_3_route_3_2:
+      detail_3_route_4:
+      detail_3_route_5:
+      detail_3_route_6:
+      detail_3_route_7:
+      detail_3_route_8:
+      detail_3_route_9:
+      detail_3_stoparea_1:
+      detail_3_stoparea_2:
+      detail_3_stoparea_3:
+      detail_3_stoparea_4:
+      detail_3_stoparea_5:
+      detail_3_vehiclejourney_1:
+      detail_3_vehiclejourney_2_1:
+      detail_3_vehiclejourney_2_2:
+      detail_3_vehiclejourney_2_3:
+      detail_3_vehiclejourney_3:
+      detail_3_vehiclejourney_4:
+      detail_4_accesslink_1_max_size:
+      detail_4_accesslink_1_min_size:
+      detail_4_accesslink_1_pattern:
+      detail_4_accesslink_1_unique:
+      detail_4_accesspoint_1_max_size:
+      detail_4_accesspoint_1_min_size:
+      detail_4_accesspoint_1_pattern:
+      detail_4_accesspoint_1_unique:
+      detail_4_company_1_max_size:
+      detail_4_company_1_min_size:
+      detail_4_company_1_pattern:
+      detail_4_company_1_unique:
+      detail_4_connectionlink_1_max_size:
+      detail_4_connectionlink_1_min_size:
+      detail_4_connectionlink_1_pattern:
+      detail_4_connectionlink_1_unique:
+      detail_4_connectionlink_2:
+      detail_4_groupofline_1_max_size:
+      detail_4_groupofline_1_min_size:
+      detail_4_groupofline_1_pattern:
+      detail_4_groupofline_1_unique:
+      detail_4_journeypattern_1_max_size:
+      detail_4_journeypattern_1_min_size:
+      detail_4_journeypattern_1_pattern:
+      detail_4_journeypattern_1_unique:
+      detail_4_line_1_max_size:
+      detail_4_line_1_min_size:
+      detail_4_line_1_pattern:
+      detail_4_line_1_unique:
+      detail_4_line_2:
+      detail_4_line_3_1:
+      detail_4_line_3_2:
+      detail_4_line_4_1:
+      detail_4_line_4_2:
+      detail_4_network_1_max_size:
+      detail_4_network_1_min_size:
+      detail_4_network_1_pattern:
+      detail_4_network_1_unique:
+      detail_4_route_1_max_size:
+      detail_4_route_1_min_size:
+      detail_4_route_1_pattern:
+      detail_4_route_1_unique:
+      detail_4_stoparea_1_max_size:
+      detail_4_stoparea_1_min_size:
+      detail_4_stoparea_1_pattern:
+      detail_4_stoparea_1_unique:
+      detail_4_stoparea_2:
+      detail_4_timetable_1_max_size:
+      detail_4_timetable_1_min_size:
+      detail_4_timetable_1_pattern:
+      detail_4_timetable_1_unique:
+      detail_4_vehiclejourney_1_max_size:
+      detail_4_vehiclejourney_1_min_size:
+      detail_4_vehiclejourney_1_pattern:
+      detail_4_vehiclejourney_1_unique:
+      detail_4_vehiclejourney_2:
     severities:
-      error: 
-      error_txt: 
-      warning: 
-      warning_txt: 
+      error:
+      error_txt:
+      warning:
+      warning_txt:
     statuses:
-      na: 
-      nok: 
-      ok: 
+      na:
+      nok:
+      ok:
   validation_results:
     file:
-      detailed_errors_file_prefix: 
-      summary_errors_file_prefix: 
-      zip_name_prefix: 
+      detailed_errors_file_prefix:
+      summary_errors_file_prefix:
+      zip_name_prefix:
     index:
-      column: 
-      line: 
+      column:
+      line:
   validation_tasks:
     actions:
-      destroy: 
-      destroy_confirm: 
-      new: 
-    compliance_check_task: 
+      destroy:
+      destroy_confirm:
+      new:
+    compliance_check_task:
     index:
-      title: 
-      warning: 
+      title:
+      warning:
     new:
-      all: 
+      all:
       fields_gtfs_validation:
-        warning: 
-      flash: 
-      title: 
+        warning:
+      flash:
+      title:
     severities:
-      error: 
-      fatal: 
-      info: 
-      ok: 
-      uncheck: 
-      warning: 
+      error:
+      fatal:
+      info:
+      ok:
+      uncheck:
+      warning:
     show:
-      completed: 
-      failed: 
+      completed:
+      failed:
       graph:
         files:
-          error: 
-          ignored: 
-          ok: 
-          title_default: 
-          title_zip: 
+          error:
+          ignored:
+          ok:
+          title_default:
+          title_zip:
         lines:
-          access_points_stats: 
-          connection_links_stats: 
-          journey_patterns_stats: 
-          lines_stats: 
-          objects_label: 
-          routes_stats: 
-          stop_areas_stats: 
-          time_tables_stats: 
-          title: 
-          vehicle_journeys_stats: 
-      not_yet_started: 
-      pending: 
-      processing: 
-      report: 
+          access_points_stats:
+          connection_links_stats:
+          journey_patterns_stats:
+          lines_stats:
+          objects_label:
+          routes_stats:
+          stop_areas_stats:
+          time_tables_stats:
+          title:
+          vehicle_journeys_stats:
+      not_yet_started:
+      pending:
+      processing:
+      report:
       table:
         line:
-          access_points: 
-          connection_links: 
-          journey_patterns: 
-          name: 
-          not_saved: 
-          routes: 
-          save: 
-          save_error: 
-          saved: 
-          stop_areas: 
-          time_tables: 
-          vehicle_journeys: 
-      validated_file: 
+          access_points:
+          connection_links:
+          journey_patterns:
+          name:
+          not_saved:
+          routes:
+          save:
+          save_error:
+          saved:
+          stop_areas:
+          time_tables:
+          vehicle_journeys:
+      validated_file:
     statuses:
-      aborted: 
-      canceled: 
-      created: 
-      scheduled: 
-      terminated: 
+      aborted:
+      canceled:
+      created:
+      scheduled:
+      terminated:
   validations:
     actions:
       destroy: Slett
@@ -3069,130 +3067,130 @@ nb:
     compliance_check_task: Valideringsrapport
     index:
       title: Valideringer
-      warning: 
+      warning:
     new:
       all: Alle
       fields_gtfs_validation:
-        warning: 
+        warning:
       flash: Validering lagt i kø, oppdater siden for å se fremdrift
       title: Ny validering
     severities:
       error: Feil
-      fatal: 
+      fatal:
       info: Informasjon
       ok: Ok
-      uncheck: 
+      uncheck:
       warning: Advarsel
     show:
       completed: "[ Ferdig ]"
-      details: 
+      details:
       export: Last ned test rapport
       export_csv: CSV format
       failed: "[ Feilet ]"
       graph:
         files:
-          error: 
-          ignored: 
-          ok: 
-          title_default: 
-          title_zip: 
+          error:
+          ignored:
+          ok:
+          title_default:
+          title_zip:
         lines:
-          access_points_stats: 
-          connection_links_stats: 
-          journey_patterns_stats: 
-          lines_stats: 
-          objects_label: 
-          routes_stats: 
-          stop_areas_stats: 
-          time_tables_stats: 
-          title: 
-          vehicle_journeys_stats: 
-      parameters: 
-      pending: 
-      processing: 
-      report: 
-      summary: 
+          access_points_stats:
+          connection_links_stats:
+          journey_patterns_stats:
+          lines_stats:
+          objects_label:
+          routes_stats:
+          stop_areas_stats:
+          time_tables_stats:
+          title:
+          vehicle_journeys_stats:
+      parameters:
+      pending:
+      processing:
+      report:
+      summary:
       table:
         line:
-          access_points: 
-          connection_links: 
-          journey_patterns: 
-          name: 
-          not_saved: 
-          routes: 
-          save: 
-          save_error: 
-          saved: 
-          stop_areas: 
-          time_tables: 
-          vehicle_journeys: 
-      title: 
-      validated_file: 
+          access_points:
+          connection_links:
+          journey_patterns:
+          name:
+          not_saved:
+          routes:
+          save:
+          save_error:
+          saved:
+          stop_areas:
+          time_tables:
+          vehicle_journeys:
+      title:
+      validated_file:
     statuses:
-      aborted: 
-      canceled: 
-      created: 
-      scheduled: 
-      terminated: 
+      aborted:
+      canceled:
+      created:
+      scheduled:
+      terminated:
   vehicle_journey_exports:
     label:
-      b_false: 
-      b_true: 
-      first_departure_times: 
-      flexible_service: 
-      footnotes_ids: 
-      friday: 
-      ftn_columns: 
-      ftn_filename: 
-      last_departure_times: 
-      mobility: 
-      monday: 
-      number: 
-      published_journey_name: 
-      saturday: 
-      scheduled_headway_intervals: 
-      stop_id: 
-      stop_name: 
-      sunday: 
-      thursday: 
-      time_table_ids: 
-      tt_columns: 
-      tt_filename: 
-      tuesday: 
-      vehicle_journey_id: 
-      vj_filename: 
-      vjf_filename: 
-      wednesday: 
+      b_false:
+      b_true:
+      first_departure_times:
+      flexible_service:
+      footnotes_ids:
+      friday:
+      ftn_columns:
+      ftn_filename:
+      last_departure_times:
+      mobility:
+      monday:
+      number:
+      published_journey_name:
+      saturday:
+      scheduled_headway_intervals:
+      stop_id:
+      stop_name:
+      sunday:
+      thursday:
+      time_table_ids:
+      tt_columns:
+      tt_filename:
+      tuesday:
+      vehicle_journey_id:
+      vj_filename:
+      vjf_filename:
+      wednesday:
     new:
-      basename: 
-      title: 
+      basename:
+      title:
   vehicle_journey_frequencies:
     actions:
-      index: 
-      show: 
+      index:
+      show:
     vehicle_journeys_matrix:
-      line_routes: 
+      line_routes:
   vehicle_journey_frequency:
-    require_at_least_one_frequency: 
+    require_at_least_one_frequency:
   vehicle_journey_imports:
     errors:
-      exception: 
-      import_aborted: 
-      invalid_vehicle_journey: 
-      invalid_vehicle_journey_at_stop: 
-      not_same_stop_points: 
-      one_stop_point_used: 
+      exception:
+      import_aborted:
+      invalid_vehicle_journey:
+      invalid_vehicle_journey_at_stop:
+      not_same_stop_points:
+      one_stop_point_used:
     new:
-      export_vehicle_journeys: 
-      success: 
-      title: 
+      export_vehicle_journeys:
+      success:
+      title:
       tooltip:
-        file: 
+        file:
     success:
-      created_jp_count: 
-      created_vj_count: 
-      deleted_vj_count: 
-      updated_vj_count: 
+      created_jp_count:
+      created_vj_count:
+      deleted_vj_count:
+      updated_vj_count:
   vehicle_journeys:
     actions:
       destroy: Fjern denne VEHICLE JOURNEY
@@ -3202,14 +3200,14 @@ nb:
       index: Tidtabell
       new: Legg til ny VEHICLE JOURNEY
       new_frequency: Legg til ny frekvensbasert VEHICLE JOURNEY
-      show: 
+      show:
     edit:
       title: Endre VEHICLE JOURNEY %{name} som kjører fra %{stop} klokken %{time}
       title_stopless: Endre VEHICLE JOURNEY %{name}
     form:
       arrival: Ankomst
       departure: Avgang
-      set: 
+      set:
       slide: Flytt/juster
       slide_arrival: Ankomsttid første stopp
       slide_departure: Avgangstid første stopp
@@ -3217,72 +3215,72 @@ nb:
       stop_title: Stoppested
       submit_frequency: Opprett frekvensbasert VEHICLE JOURNEY
       submit_frequency_edit: Endre frekvensbasert VEHICLE JOURNEY
-      submit_timed: 
-      submit_timed_edit: 
-      time_tables: 
-      to: 
-      to_arrivals: 
-      to_departures: 
+      submit_timed:
+      submit_timed_edit:
+      time_tables:
+      to:
+      to_arrivals:
+      to_departures:
     index:
-      advanced_search: 
-      select_journey_patterns: 
-      select_time_tables: 
-      selection: 
-      selection_all: 
-      time_range: 
-      title: 
-      vehicle_journeys: 
+      advanced_search:
+      select_journey_patterns:
+      select_time_tables:
+      selection:
+      selection_all:
+      time_range:
+      title:
+      vehicle_journeys:
     new:
-      title: 
-      title_frequency: 
+      title:
+      title_frequency:
     show:
-      arrival: 
-      bounding: 
-      departure: 
-      journey_frequencies: 
-      stop_title: 
-      time_tables: 
-      title: 
-      translation_form: 
+      arrival:
+      bounding:
+      departure:
+      journey_frequencies:
+      stop_title:
+      time_tables:
+      title:
+      translation_form:
     sidebar:
-      timeless: 
+      timeless:
     time_filter:
-      time_range_filter: 
+      time_range_filter:
     timeless:
-      title: 
-      vehicle_journeys: 
-      vehicles_list: 
+      title:
+      vehicle_journeys:
+      vehicles_list:
     vehicle_journey:
-      title: 
-      title_stopless: 
+      title:
+      title_stopless:
     vehicle_journey_frequency:
-      title: 
-      title_frequency: 
-      title_stopless: 
+      title:
+      title_frequency:
+      title_stopless:
     vehicle_journeys_matrix:
-      line_routes: 
+      line_routes:
   vehicle_translations:
-    failure: 
-    success: 
+    failure:
+    success:
     translate_form:
       first_stop_arrival_time: Ankomsttid ved første stopp '%{stop_name}'
       first_stop_departure_time: Avgangstid ved første stopp '%{stop_name}'
-      multiple_cloning_form: 
-      set: 
-      to: 
+      multiple_cloning_form:
+      set:
+      to:
   waybacks:
     label:
-      backward: 
-      straight_forward: 
+      backward:
+      straight_forward:
   will_paginate:
-    next_label: 
+    next_label:
     page_entries_info:
-      list: 
-      multi_page: 
-      multi_page_html: 
-      search: 
-      single_page: 
-      single_page_html: 
-    page_gap: 
-    previous_label: 
-  yesterday: 
+      list:
+      multi_page:
+      multi_page_html:
+      search:
+      single_page:
+      single_page_html:
+    page_gap:
+    previous_label:
+  yesterday:
