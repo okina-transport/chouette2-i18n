@@ -652,8 +652,8 @@ en:
         front_text: Front text
         side_text: Side text
       footnote:
-        code: number
-        label: line text
+        code: Public code
+        label: Text
       group_of_line:
         comment: Comments
         creation_time: Created on
@@ -1483,10 +1483,21 @@ en:
       uncheck: Not tested
       warning: Warning
   footnotes:
+    show:
+      title: Footnote details
+    edit:
+      title: Edit footnote
+    new:
+      title: Add new footnote
     actions:
-      add_footnote: add footnote
+      add_footnote: Add footnote
+      new: New footnote
+      edit: Edit footnote
+      destroy: Delete footnote
+      destroy_confirm: Really delete footnote?
     index:
       title: Footnotes
+      label: Search by name
   formtastic:
     cancel: Cancel
     clone: Clone
@@ -2962,7 +2973,7 @@ en:
       b_true: 'Yes'
       first_departure_times: first departures
       flexible_service: on demand (Y(es)|N(o)|empty for unknown)
-      footnotes_ids: footnotes
+      footnotes_ids: Footnotes
       friday: Fr
       ftn_columns: ref;number;line text
       ftn_filename: notes
