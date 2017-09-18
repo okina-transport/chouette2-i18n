@@ -2416,6 +2416,7 @@ nb:
       stop_points: STOP POINT på ROUTE
       title: ROUTE %{route}
       undefined: Udefinert
+      scheduled_stop_point_in_use_warning: SCHEDULED STOP POINT er i bruk av flere STOP POINT. Navneendring vil påvirke alle
   rule_parameter_sets:
     actions:
       destroy:

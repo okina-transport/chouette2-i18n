@@ -2195,6 +2195,7 @@ en:
       stop_points: Stop point on route list
       title: Route %{route}
       undefined: Undefined
+      scheduled_stop_point_in_use_warning: Scheduled stop point is referred to by multiple stop points. Changing name will affect all
   rule_parameter_sets:
     actions:
       destroy: Remove this rule parameter set
