@@ -1409,12 +1409,15 @@ en:
       netex_france: NeTEx France
       regtopp: RegTopp
       sig: SIG
+      netexprofile: Netex Norwegian Profile
     data_format_detail:
       gtfs: General Transit Feed Specification
       hub: Specific Transdev Format
       kml: line, route, ... drawings on Keyhole Markup Language format
       neptune:
       netex: Experimental
+      netexprofile: Netex Norwegian Profile
+      regtopp: Deprecated Norwegian format
     for_alighting:
       forbidden: No drop off available
       is_flexible: Booking requested for drop off
@@ -2195,7 +2198,6 @@ en:
       stop_points: Stop point on route list
       title: Route %{route}
       undefined: Undefined
-      scheduled_stop_point_in_use_warning: Scheduled stop point is referred to by multiple stop points. Changing name will affect all
   rule_parameter_sets:
     actions:
       destroy: Remove this rule parameter set
