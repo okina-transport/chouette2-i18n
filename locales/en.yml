@@ -1886,6 +1886,7 @@ en:
   journey_patterns:
     actions:
       destroy: Remove this journey pattern
+      add_stop_point: Add stop point
       destroy_confirm: Are you sure you want destroy this journey pattern ?
       edit: Edit this journey pattern
       edit_route_sections: Edit Shape
@@ -2162,9 +2163,11 @@ en:
   routes:
     actions:
       add_stop_point: Add stop point
+       add_route_point: Add route point
       destroy: Remove this route
       destroy_confirm: Are you sure you want destroy this route?
       edit: Edit this route
+      edit_stops: Edit stops for this route
       edit_boarding_alighting: Stop alighting and boarding
       export_hub: Export HUB route
       export_hub_all: Export HUB routes
@@ -2195,9 +2198,11 @@ en:
     show:
       journey_patterns: Route journey patterns list
       no_opposite_route: No reversed route associated
+      route_points: Route point list
       stop_points: Stop point on route list
       title: Route %{route}
       undefined: Undefined
+      scheduled_stop_point_in_use_warning: Scheduled stop point is referred to by multiple stop points. Changing name will affect all
   rule_parameter_sets:
     actions:
       destroy: Remove this rule parameter set
