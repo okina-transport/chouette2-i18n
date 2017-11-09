@@ -2163,7 +2163,7 @@ en:
   routes:
     actions:
       add_stop_point: Add stop point
-       add_route_point: Add route point
+      add_route_point: Add route point
       destroy: Remove this route
       destroy_confirm: Are you sure you want destroy this route?
       edit: Edit this route
