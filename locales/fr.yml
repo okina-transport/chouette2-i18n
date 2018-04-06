@@ -647,8 +647,8 @@ fr:
         undefined: non défini
       destination_display:
         name: Nom
-        front_text:
-        side_text:
+        front_text: Affichage frontal
+        side_text: Affichage latéral
       footnote:
         code: numéro
         label: ligne de texte
@@ -944,6 +944,21 @@ fr:
         vehicle_journey_at_stop_ids: Liste des horaires
         vehicle_type_identifier: Type d'identifiant du véhicule
         vehicletypeidentifier: Identifiant de type de véhicule
+      interchange:
+        name: Nom
+        priority: Priorité
+        planned: Planifié
+        guaranteed: Garantie
+        advertised: Publié
+        stay_seated: Stay seated
+        maximum_wait_time: Temps d'attente maximum
+        minimum_transfer_time: Temps minimum de transfert
+        from_point: Feeder ScheduledStopPoint
+        from_visit_number: Feeder ScheduledStopPoint visit number
+        to_point: Consumer ScheduledStopPoint
+        to_visit_number: Consumer ScheduledStopPoint visit number
+        from_vehicle_journey: Feeder ServiceJourney
+        to_vehicle_journey: Consumer ServiceJourney
     copy: Copie de %{name}
     errors:
       models:
@@ -1005,9 +1020,9 @@ fr:
         other: validations
         zero: validation
       destination_display:
-        one: destination display
-        other: destination displays
-        zero: destination display
+        one: Destination affichée
+        other: Destinations affichées
+        zero: Destination affichée
       footnote: note en bas de page
       group_of_line:
         one: groupe de lignes
@@ -1748,20 +1763,20 @@ fr:
   delete_periods: Supprimer Périodes
   destination_displays:
     actions:
-      destroy: Remove this destination display
-      destroy_confirm: Are you sure you want destroy this destination display?
-      edit: Edit this destination display
-      new: Add a new destination display
+      destroy: Supprimer la destination affichée
+      destroy_confirm: Voulez-vous supprimer la destination affichée ?
+      edit: Modifier la destination affichée
+      new: Ajouter une nouvelle destination affichée
     edit:
-      title: Update destination display  %{destination_display}
+      title: Mise à jour de la destination affichée %{destination_display}
     index:
-      move: Move
-      name: Search by name or front text
-      title: Destination displays
+      move: Déplacer
+      name: Rechercher par nom ou affichage frontal
+      title: Destinations affichées
     new:
-      title: Add a new destination display
+      title: Ajouter une nouvelle destination affichée
     show:
-      title: Destination Display %{destination_display}
+      title: Destination affichée %{destination_display}
   devise:
     confirmations:
       new:
@@ -1918,10 +1933,25 @@ fr:
       uncheck: Non testé
       warning: Alerte
   footnotes:
+  show:
+        title: Détails note de bas de page
+      edit:
+        title: Modifier note de bas de page
+      new:
+        title: Ajouter une note de bas de page
+      actions:
+        add_footnote: Ajouter une note de bas de page
+        new: Nouvelle note de bas de page
+        edit: Modifier cette note de bas de page
+        destroy: Effacer la note de bas de page
+        destroy_confirm: Voulez-vous vraiment effacer cette note de bas de page ?
+      index:
+        title: Notes de bas de page
+        label: Recherche par nom
     actions:
-      add_footnote: ajouter une note en bas de page
+      add_footnote: ajouter une note de bas de page
     index:
-      title: Notes en bas de page
+      title: Notes de bas de page
   formtastic:
     cancel: Annuler
     clone: Cloner
@@ -2283,6 +2313,20 @@ fr:
       imported_file: Fichier source
       report: Rapport
       rule_parameter_set: Jeu de paramètres
+  interchanges:
+    actions:
+      new: Nouvelle correspondance
+      edit: Modifier la correspondance
+      destroy: Supprimer la correspondance
+    show:
+      title: Correspondance %{interchange}
+    new:
+      title: Nouvelle correspondance
+    edit:
+      title: Mise à jour de la correspondance %{interchange}
+    index:
+      title: Correspondances
+      name: Rechercher par nom ou ID
   job_status:
     title:
       processed: Opération lancée, cliquez pour afficher son état d'avancement.
@@ -2861,6 +2905,24 @@ fr:
       localisation: Localisation
       no_object: Aucun(e)
       no_position: Pas de position
+  stop_place_modes:
+    label:
+      unknown: Inconnu
+      onstreet_bus: Bus
+      onstreet_tram: Tramway
+      airport: Aéroport
+      rail_station: Gare
+      metro_station: Station de métro
+      bus_station: Station de bus
+      coach_station: Gare routière
+      tram_station: Station de tramway
+      harbour_port: Port
+      ferry_port: Port de ferry
+      ferry_stop: Arrêt de ferry
+      lift_station: Funiculaire
+      vehicle_rail_interchange: Echangeur ferroviaire de véhicules
+      other: Autre
+    name: Stop Area mode
   stop_points:
     actions:
       destroy: Supprimer cet arrêt de la séquence
@@ -3027,7 +3089,7 @@ fr:
     details:
       detail_1_neptune_xml_1: "%{source_label} : %{error_value}"
       detail_1_neptune_xml_2: "%{source_label} : %{error_value}"
-      detail_1_regtopp_file_tix:
+      detail_1_regtopp_file_tix: Erreur de lecture du fichier %{filename}
       detail_2_neptune_accesslink_1: La liaison d'accès %{source_objectid} référence %{error_value} qui n'existe pas
       detail_2_neptune_accesslink_2: Sur la liaison d'accès %{source_objectid}, les références startOfLink = %{error_value} et endOfLink = %{reference_value} sont de même type
       detail_2_neptune_accesspoint_1: L'accès %{source_objectid} référence un arrêt parent (containedIn = %{error_value}) inexistant
@@ -3197,7 +3259,7 @@ fr:
       detail_4_vehiclejourney_1_pattern: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) n'est pas au bon format (%{error_value})
       detail_4_vehiclejourney_1_unique: L'attribut %{reference_value} de la course %{source_label} (%{source_objectid}) a une valeur partagée avec la course %{target_0_label} (%{target_0_objectid})
       detail_4_vehiclejourney_2: La course %{source_label} (%{source_objectid}) a un mode de transport interdit %{error_value}
-      detail_rutebanken_3_stoppoint_1: StopPoint %{source_label} (%{source_objectid}) is not contained in StopArea
+      detail_rutebanken_3_stoppoint_1: L'arrêt %{source_label} (%{source_objectid}) n'est pas contenu dans StopArea
     severities:
       error: Obligatoires
       error_txt: Obligatoire
