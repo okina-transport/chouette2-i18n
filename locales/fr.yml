@@ -1933,25 +1933,21 @@ fr:
       uncheck: Non testé
       warning: Alerte
   footnotes:
-  show:
-        title: Détails note de bas de page
-      edit:
-        title: Modifier note de bas de page
-      new:
-        title: Ajouter une note de bas de page
-      actions:
-        add_footnote: Ajouter une note de bas de page
-        new: Nouvelle note de bas de page
-        edit: Modifier cette note de bas de page
-        destroy: Effacer la note de bas de page
-        destroy_confirm: Voulez-vous vraiment effacer cette note de bas de page ?
-      index:
-        title: Notes de bas de page
-        label: Recherche par nom
+    show:
+      title: Détails note de bas de page
+    edit:
+      title: Modifier note de bas de page
+    new:
+      title: Ajouter une note de bas de page
     actions:
-      add_footnote: ajouter une note de bas de page
+      add_footnote: Ajouter une note de bas de page
+      new: Nouvelle note de bas de page
+      edit: Modifier cette note de bas de page
+      destroy: Effacer la note de bas de page
+      destroy_confirm: Voulez-vous vraiment effacer cette note de bas de page ?
     index:
       title: Notes de bas de page
+      label: Recherche par nom
   formtastic:
     cancel: Annuler
     clone: Cloner
