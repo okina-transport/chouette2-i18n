@@ -2500,6 +2500,7 @@ fr:
       pg_excluded: ne peut pas commencer par pg_ (valeurs réservées)
       public_excluded: public est une valeur réservée
       user_excluded: "%{user} est une valeur réservée"
+      no_access: Espace de données '%{referential}' non trouvé pour l'utilisateur actuel.
     new:
       submit: Créer un espace de données
       title: Créer un nouvel espace de données
