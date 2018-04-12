@@ -2876,7 +2876,7 @@ fr:
       name: Recherche par nom
       name_or_objectid: Recherche par nom ou identifiant métier
       no_transport_modes: Aucun mode de transport
-      no_transport_modes: Aucun mode de sub transport
+      no_transport_modes: Aucun sous-mode de transport
       selection: Filtrer sur
       selection_all: Tous
       title: Arrêts
