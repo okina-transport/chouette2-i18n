@@ -265,6 +265,7 @@ fr:
         extensions: Extensions
         ignore_end_chars: ignorer les n derniers caractères
         ignore_last_word: ignorer le dernier mot
+        keep_original_id: Conserver l'identifiant original
         max_distance_for_commercial: Distance max pour créer les zones
         max_distance_for_connection_link: Distance max pour créer les correspondances
         name: Nom de l'export
@@ -274,6 +275,8 @@ fr:
         start_date: Date de début
         start_date_greater_than: La date de début doit être postérieure ou égale à %{tt_st_date}.
         status: Status
+        use_tpeg_hvt: Utiliser tpeg hvt
+        valid_after_export: Validation après export
       file_validation:
         created_at: Exécuté le
         file_name: Donnée testé
@@ -288,16 +291,23 @@ fr:
         full_message: Message
         position: N.
       import_task:
+        continue_on_line_errors:
         ignore_end_chars: ignorer les n derniers caractères
         ignore_last_word: ignorer le dernier mot
+        keep_obsolete_lines: Conserver les lignes obsolètes
         max_distance_for_commercial: Distance max pour créer les zones
         max_distance_for_connection_link: Distance max pour créer les correspondances
         name: Nom de l'import
         no_save: Pas de sauvegarde
         object_id_prefix: Préfixe d'identifiants
+        parse_connection_links: Extraire les tronçons de correspondance
+        parse_interchanges: Extraire les correspondances
+        parse_site_frames:
         references_type: Données à importer
         resources: Fichier à importer
         rule_parameter_set_id: Jeu de paramètres pour validation
+        validate_against_profile: Valider par rapport au profil
+        validate_against_schema: Valider par rapport au schéma
       stop_area_copy:
         area_type: Type d'arrêt
       subscription:
@@ -614,12 +624,16 @@ fr:
         creator_id: Créé par
         email: Email
         fax: Numéro de fax
+        legal_name: Nom légal
         name: Nom
         object_version: Version
         objectid: Identifiant Métier
         operating_department_name: Nom du département dans la société
         organizational_unit: Nom d'unité dans la société
         phone: Numéro de téléphone
+        public_email: Email public
+        public_phone: Téléphone public
+        public_url: Url public
         registration_number: Numéro d'enregistrement
         short_name: Nom court
         time_zone: Fuseau horaire
@@ -650,8 +664,8 @@ fr:
         front_text: Affichage frontal
         side_text: Affichage latéral
       footnote:
-        code: numéro
-        label: ligne de texte
+        code: code
+        label: libellé
       group_of_line:
         comment: Commentaire
         creation_time: Créé le
@@ -699,7 +713,7 @@ fr:
         creator_id: Créé par
         default_fs_msg: Ces courses sont considérées régulières
         flexible_service: Transport à la demande
-        footnotes: Notes de bas de page
+        footnotes: Notes
         group_of_line: Groupe de lignes
         mobility_restricted_suitability: Accessibilité PMR
         name: Nom
@@ -722,6 +736,7 @@ fr:
         stable_id: Identifiant externe pérenne
         text_color: Couleur du texte
         transport_mode: Mode de transport
+        transport_submode: Sous mode de transport
         unspecified_fs: Non spécifié
         unspecified_mrs: Non spécifié
         url: Page web associée
@@ -746,6 +761,7 @@ fr:
       referential:
         access_points: points d'accès
         boarding_positions: points d'embarquement
+        destination_displays: Destinations affichées
         commercial_stops: arrêts commerciaux
         codespaces: Codespaces
         companies: Transporteurs
@@ -755,8 +771,10 @@ fr:
         data_format_restrictions: Format d'export privilégié
         end_validity_period: au
         exports: Exports
+        footnotes: Notes
         group_of_lines: Groupes de lignes
         imports: Imports
+        interchanges: Correspondances
         itls: ITL
         lines: Lignes
         lower_corner: Point bas/gauche de l'emprise par défaut
@@ -877,6 +895,7 @@ fr:
         date: Le
         dates: Dates particulières
         day_types: Jours d'application des périodes
+        end_date: Date de fin
         excluded_dates: Dates exclues
         friday: Vendredi
         monday: Lundi
@@ -887,6 +906,7 @@ fr:
         period_start: Du
         periods: Périodes d'application
         saturday: Samedi
+        start_date: Date de début
         sunday: Dimanche
         tag_list: Etiquettes
         tag_search: Etiquettes
@@ -920,7 +940,7 @@ fr:
         creator_id: Créé par
         facility: Equipement
         flexible_service: Transport à la demande
-        footnote_ids: Notes de bas de page
+        footnote_ids: Notes
         journey_frequency_ids: Créneau horaire
         journey_pattern: Mission
         line: Ligne
@@ -947,18 +967,18 @@ fr:
       interchange:
         name: Nom
         priority: Priorité
-        planned: Planifié
+        planned: Planifiée
         guaranteed: Garantie
-        advertised: Publié
-        stay_seated: Stay seated
+        advertised: Affichée
+        stay_seated: Rester assis
         maximum_wait_time: Temps d'attente maximum
         minimum_transfer_time: Temps minimum de transfert
-        from_point: Feeder ScheduledStopPoint
+        from_point: De l'arrêt
         from_visit_number: Feeder ScheduledStopPoint visit number
-        to_point: Consumer ScheduledStopPoint
+        to_point: Vers l'arrêt
         to_visit_number: Consumer ScheduledStopPoint visit number
-        from_vehicle_journey: Feeder ServiceJourney
-        to_vehicle_journey: Consumer ServiceJourney
+        from_vehicle_journey: De la course
+        to_vehicle_journey: Vers la course
     copy: Copie de %{name}
     errors:
       models:
@@ -1023,7 +1043,7 @@ fr:
         one: Destination affichée
         other: Destinations affichées
         zero: Destination affichée
-      footnote: note en bas de page
+      footnote: note
       group_of_line:
         one: groupe de lignes
         other: groupes de lignes
@@ -1763,10 +1783,12 @@ fr:
   delete_periods: Supprimer Périodes
   destination_displays:
     actions:
+      add_via: Ajouter Via
       destroy: Supprimer la destination affichée
       destroy_confirm: Voulez-vous supprimer la destination affichée ?
       edit: Modifier la destination affichée
       new: Ajouter une nouvelle destination affichée
+      new_destination_display: Ajouter une nouvelle destination affichée
     edit:
       title: Mise à jour de la destination affichée %{destination_display}
     index:
@@ -1859,12 +1881,15 @@ fr:
       netex_france: NeTEx France
       regtopp: RegTopp
       sig: SIG
+      netexprofile: Profil Netex Français
     data_format_detail:
       gtfs: General Transit Feed Specification défini par Google
       hub: Format spécifique Transdev
       kml: Tracés de lignes, séquences d'arrêts, ...  en 'Keyhole Markup Language'
       neptune: Neptune
       netex: Expérimental
+      netexprofile: Profil Netex Français
+      regtopp: Deprecated Norwegian format
     for_alighting:
       forbidden: Descente interdite
       is_flexible: Descente sur réservation
@@ -1934,19 +1959,19 @@ fr:
       warning: Alerte
   footnotes:
     show:
-      title: Détails note de bas de page
+      title: Détails note
     edit:
-      title: Modifier note de bas de page
+      title: Modifier note
     new:
-      title: Ajouter une note de bas de page
+      title: Ajouter une note
     actions:
-      add_footnote: Ajouter une note de bas de page
-      new: Nouvelle note de bas de page
-      edit: Modifier cette note de bas de page
-      destroy: Effacer la note de bas de page
-      destroy_confirm: Voulez-vous vraiment effacer cette note de bas de page ?
+      add_footnote: Ajouter une note
+      new: Nouvelle note
+      edit: Modifier cette note
+      destroy: Effacer la note
+      destroy_confirm: Voulez-vous vraiment effacer cette note ?
     index:
-      title: Notes de bas de page
+      title: Notes
       label: Recherche par nom
   formtastic:
     cancel: Annuler
@@ -1981,8 +2006,8 @@ fr:
         objectid: "[prefixe]:ConnectionLink:[clé_unique]  caractères autorisés : alphanumériques et 'souligné (underscore ou tiret du 8)' pour le préfixe, la clé unique accepte en plus le 'moins'"
       destination_display:
         name: Nom
-        front_text:
-        side_text:
+        front_text: Affichage frontal
+        side_text: Affichage latéral
       export_task:
         dates:
           not_nul: Export HUB interrompu. Les dates de début et de fin doivent êtres renseignées.
@@ -2642,10 +2667,12 @@ fr:
       destroy_confirm: Etes vous sûr de supprimer cette séquence d'arrêts ?
       edit: Modifier cette séquence d'arrêts
       edit_boarding_alighting: Contraintes de montée - descente
+      edit_stops: Modifier les arrêts
       export_hub: Export HUB de la séquence d'arrêts
       export_hub_all: Export HUB des séquences d'arrêts
       export_kml: Export KML de la séquence d'arrêts
       export_kml_all: Export KML des séquences d'arrêts
+      footnote: Note
       new: Ajouter une séquence d'arrêts
       new_stop_point: Créer un arrêt pour l'ajouter
     edit:
@@ -2662,6 +2689,7 @@ fr:
     new:
       title: Ajouter une séquence d'arrêts
     route:
+      destination_display: Destination affichée
       no_journey_pattern: Pas de mission
       no_opposite: Pas de séquence opposée
       opposite: Séquence opposée
@@ -2809,7 +2837,7 @@ fr:
       road_authorities: Autorité routière
       transit_operator: Exploitant de transport public
       travel_agency: Agence de voyage
-      travel_information_service_provider: Opérateur de voyage (voyagiste/tour operator ...)
+      travel_information_service_provider: Opérateur de voyage (voyagiste/tour operateur ...)
     name: Type de source
   stop_area_copies:
     errors:
@@ -2876,7 +2904,7 @@ fr:
       name: Recherche par nom
       name_or_objectid: Recherche par nom ou identifiant métier
       no_transport_modes: Aucun mode de transport
-      no_transport_modes: Aucun sous-mode de transport
+      no_transport_sub_modes: Aucun sous-mode de transport
       selection: Filtrer sur
       selection_all: Tous
       title: Arrêts
@@ -2990,7 +3018,7 @@ fr:
       selection: Sélection
       selection_all: Tous
       start_date: jj/mm/aaaa
-      tag_search: 'Tags : vacances,jour fériés'
+      tag_search: 'Tags : vacances, jour fériés'
       title: calendriers
       to: " à : "
     new:
@@ -3421,7 +3449,7 @@ fr:
       b_true: Oui
       first_departure_times: premiers départs
       flexible_service: TAD (O(ui)|N(on)|vide si inconnu)
-      footnotes_ids: notes de bas de page
+      footnotes_ids: notes
       friday: Ve
       ftn_columns: clé;numéro;ligne de texte
       ftn_filename: notes
