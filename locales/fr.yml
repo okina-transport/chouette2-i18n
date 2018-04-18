@@ -885,8 +885,11 @@ fr:
         routing_stop_ids: Arrêts concernés par l'ITL
         stairs_availability: Escalator
         stop_area_type: Type d'arrêt
+        stop_place_type: Type lieu d'arrêt
         street_name: Nom de la rue
         time_zone: Fuseau horaire
+        transport_mode: Mode de transport
+        transport_sub_mode: Sous mode de transport
         url: Page web associée
         zip_code: Code postal
       stop_point:
@@ -2419,9 +2422,7 @@ fr:
     help: Aide
     history_tag:
       created_at: Créé le
-      creation_time: Date de création
       no_save: Pas de sauvergarde
-      objectid: Object Id
       title: Métadonnées
       updated_at: Mise à jour le
       user_name: Auteur
@@ -2484,6 +2485,8 @@ fr:
       group_of_lines: Groupes de lignes
       itineraries: Liste des séquences d'arrêts de la ligne
       title: Ligne %{line}
+    line:
+      footnotes: Notes
   maps:
     google_hybrid: Hybride Google
     google_physical: Relief Google
@@ -3110,42 +3113,41 @@ fr:
     name: Mode de transport
   'true': oui
   transport_sub_modes:
-    label:
-      airport_link_bus: Bus de liaison aéroport
-      express_bus: Bus express
-      local_bus: Bus local
-      night_bus: Bus de nuit
-      rail_replacement_bus: Bus de remplacement de train
-      regional_bus: Bus régional
-      school_bus: Bus scolaire
-      shuttle_bus: Navette
-      sightseeing_bus: Bus touristique
-      local_tram: Tram local
-      international: International
-      interregional_rail: Train interrégional
-      local: Local
-      long_distance: Long distance
-      night_rail: Train de nuit
-      regional_rail: Train régional
-      tourist_railway: Train touristique
-      metro: Métro
-      domestic_flight: Vol national
-      helicopter_service: Service d'hélicoptère
-      international_flight: Vol international
-      high_speed_passenger_service: Service voyageurs à grande vitesse
-      high_speed_vehicle_service: Service de véhicule à grande vitesse
-      international_car_ferry: Ferry international
-      international_passenger_ferry: Ferry international de passagers
-      local_car_ferry: Voiture locale ferry
-      local_passenger_ferry: Ferry de passagers local
-      national_car_ferry: Ferry-boat national
-      sightseeing_service: Service de visites
-      telecabin: Télécabine
-      funicular: Funiculaire
-      airport_link_rail: Liaison ferroviaire de l'aéroport
-      international_coach: Autocar international
-      national_coach: Autocar national
-      tourist_coach: Autocar touristique
+    airport_link_bus: Bus de liaison aéroport
+    express_bus: Bus express
+    local_bus: Bus local
+    night_bus: Bus de nuit
+    rail_replacement_bus: Bus de remplacement de train
+    regional_bus: Bus régional
+    school_bus: Bus scolaire
+    shuttle_bus: Navette
+    sightseeing_bus: Bus touristique
+    local_tram: Tram local
+    international: International
+    interregional_rail: Train interrégional
+    local: Local
+    long_distance: Long distance
+    night_rail: Train de nuit
+    regional_rail: Train régional
+    tourist_railway: Train touristique
+    metro: Métro
+    domestic_flight: Vol national
+    helicopter_service: Service d'hélicoptère
+    international_flight: Vol international
+    high_speed_passenger_service: Service voyageurs à grande vitesse
+    high_speed_vehicle_service: Service de véhicule à grande vitesse
+    international_car_ferry: Ferry international
+    international_passenger_ferry: Ferry international de passagers
+    local_car_ferry: Voiture locale ferry
+    local_passenger_ferry: Ferry de passagers local
+    national_car_ferry: Ferry-boat national
+    sightseeing_service: Service de visites
+    telecabin: Télécabine
+    funicular: Funiculaire
+    airport_link_rail: Liaison ferroviaire de l'aéroport
+    international_coach: Autocar international
+    national_coach: Autocar national
+    tourist_coach: Autocar touristique
   unknown: Non précisé
   unselect_all: Tout décocher
   users:
