@@ -629,6 +629,7 @@ fr:
         object_version: Version
         objectid: Identifiant Métier
         operating_department_name: Nom du département dans la société
+        organisation_type: Type d'organisation
         organizational_unit: Nom d'unité dans la société
         phone: Numéro de téléphone
         public_email: Email public
@@ -713,7 +714,7 @@ fr:
         creator_id: Créé par
         default_fs_msg: Ces courses sont considérées régulières
         flexible_service: Transport à la demande
-        footnotes: Notes
+        footnote: Notes
         group_of_line: Groupe de lignes
         mobility_restricted_suitability: Accessibilité PMR
         name: Nom
@@ -730,6 +731,7 @@ fr:
         object_version: Version
         objectid: Identifiant Métier
         on_demaond_fs: Service à la demande
+        operator: Opérateur
         published_name: Nom public
         registration_number: Numéro d'enregistrement
         regular_fs: Service régulier
@@ -742,6 +744,8 @@ fr:
         url: Page web associée
       network:
         comment: Commentaire
+        company:
+          name: Transporteur
         creation_time: Créé le
         creator_id: Créé par
         description: Description
@@ -763,7 +767,7 @@ fr:
         boarding_positions: points d'embarquement
         destination_displays: Destinations affichées
         commercial_stops: arrêts commerciaux
-        codespaces: Codespaces
+        codespaces: Préfixes d'identifiants
         companies: Transporteurs
         compliance_checks: Validations
         connection_links: Correspondances
@@ -854,6 +858,7 @@ fr:
         children_ids: Fils
         city_name: Commune
         comment: Commentaire
+        compass_bearing: Orientation
         coordinates: Coordonnées (lat,lng) WGS84
         country_code: Code INSEE
         creation_time: Créé le
@@ -1020,9 +1025,9 @@ fr:
         zero: accès
       api_key: Clé d'accès API
       codespace:
-        one: codespace
-        other: codespaces
-        zero: codespace
+        one: préfixe d'identifiant
+        other: préfixes d'identifiants
+        zero: préfixe d'identifiant
       company:
         one: transporteur
         other: transporteurs
@@ -1170,19 +1175,19 @@ fr:
     success_vj: "%{count} course(s) supprimée(s)"
   codespaces:
     actions:
-      destroy: Supprimer ce codespace
-      destroy_confirm: Etes vous sûr de supprimer ce codespace?
-      edit: Modifier ce codespace
-      new: Ajouter un codespace
+      destroy: Supprimer ce préfixe d'identifiant
+      destroy_confirm: Etes vous sûr de supprimer ce préfixe d'identifiant ?
+      edit: Modifier ce préfixe d'identifiant
+      new: Ajouter un préfixe d'identifiant
     edit:
-      title: Modifier le codespace %{codespace}
+      title: Modifier le préfixe d'identifiant %{codespace}
     index:
       name: Recherche par nom
-      title: Codespaces
+      title: Préfixes d'identifiants
     new:
-      title: Ajouter un codespace
+      title: Ajouter un préfixe d'identifiant
     show:
-      title: Codespace  %{codespace}
+      title: Préfixes d'identifiants  %{codespace}
   companies:
     actions:
       destroy: Supprimer ce transporteur
@@ -1198,6 +1203,9 @@ fr:
       title: Ajouter un transporteur
     show:
       title: Transporteur %{company}
+    contact:
+      private: Informations privées
+      public: Informations publiques
   compliance_check_results:
     details:
       1-GTFS-CSV-1: Contrôle de la lecture du fichier
@@ -1799,6 +1807,12 @@ fr:
       title: Ajouter une nouvelle destination affichée
     show:
       title: Destination affichée %{destination_display}
+    destination_display:
+      front_text: Affichage frontal
+      lines: Lignes
+      side_text: Affichage latéral
+      stop_points: Points d'arrêt
+      vias: Vias
   devise:
     confirmations:
       new:
@@ -2405,7 +2419,9 @@ fr:
     help: Aide
     history_tag:
       created_at: Créé le
+      creation_time: Date de création
       no_save: Pas de sauvergarde
+      objectid: Object Id
       title: Métadonnées
       updated_at: Mise à jour le
       user_name: Auteur
@@ -2505,13 +2521,14 @@ fr:
       users: Utilisateurs
   organisation_type:
     label:
-      authority: Autorité organisatrice
-      operator: Operator
+      authority: Autorité
+      operator: Opérateur
   progress_bar:
     level: Etapes
     step: Sous étapes
   referentials:
     actions:
+      codespaces: Préfixes d'identifiants
       destroy: Supprimer cet espace de données
       destroy_confirm: Etes vous sûr de vouloir supprimer cet espace de données ?
       edit: Modifier cet espace de données
@@ -2544,7 +2561,7 @@ fr:
     default_view:
       access_point: Accès
       access_points: Accès
-      codespaces: Codespaces
+      codespaces: Préfixes d'identifiants
       companies: Transporteurs
       company: Transporteur
       connection_link: Correspondance
@@ -3019,7 +3036,7 @@ fr:
       selection_all: Tous
       start_date: jj/mm/aaaa
       tag_search: 'Tags : vacances, jour fériés'
-      title: calendriers
+      title: Calendriers
       to: " à : "
     new:
       title: Ajouter un calendrier
@@ -3070,12 +3087,16 @@ fr:
       air: Air
       bicycle: Vélo
       bus: Bus
+      cableway: Téléphérique
       coach: Autocar
       ferry: Ferry
-      rail: Rail
+      funicular: Funiculaire
+      lift: Ascenseur
+      local_train: TER
 #      long_distance_train: Train Grande Ligne
       metro: Métro
-      private_vehicle: Voiture particulière
+      other: Autre
+      private_vehicle: Véhicule privé
       rapid_transit: RER
       shuttle: Navette
       taxi: Taxi
@@ -3088,6 +3109,43 @@ fr:
       water: Bac
     name: Mode de transport
   'true': oui
+  transport_sub_modes:
+    label:
+      airport_link_bus: Bus de liaison aéroport
+      express_bus: Bus express
+      local_bus: Bus local
+      night_bus: Bus de nuit
+      rail_replacement_bus: Bus de remplacement de train
+      regional_bus: Bus régional
+      school_bus: Bus scolaire
+      shuttle_bus: Navette
+      sightseeing_bus: Bus touristique
+      local_tram: Tram local
+      international: International
+      interregional_rail: Train interrégional
+      local: Local
+      long_distance: Long distance
+      night_rail: Train de nuit
+      regional_rail: Train régional
+      tourist_railway: Train touristique
+      metro: Métro
+      domestic_flight: Vol national
+      helicopter_service: Service d'hélicoptère
+      international_flight: Vol international
+      high_speed_passenger_service: Service voyageurs à grande vitesse
+      high_speed_vehicle_service: Service de véhicule à grande vitesse
+      international_car_ferry: Ferry international
+      international_passenger_ferry: Ferry international de passagers
+      local_car_ferry: Voiture locale ferry
+      local_passenger_ferry: Ferry de passagers local
+      national_car_ferry: Ferry-boat national
+      sightseeing_service: Service de visites
+      telecabin: Télécabine
+      funicular: Funiculaire
+      airport_link_rail: Liaison ferroviaire de l'aéroport
+      international_coach: Autocar international
+      national_coach: Autocar national
+      tourist_coach: Autocar touristique
   unknown: Non précisé
   unselect_all: Tout décocher
   users:
