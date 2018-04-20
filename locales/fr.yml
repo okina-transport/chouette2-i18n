@@ -3151,7 +3151,7 @@ fr:
       national_coach: Autocar national
       tourist_coach: Autocar touristique
     name: Sous mode de transport
-  'true': oui
+  'true': 'Oui'
   unknown: Non précisé
   unselect_all: Tout décocher
   users:

@@ -2588,7 +2588,7 @@ en:
   transport_sub_modes:
     label:
       unknown: Unknown
-      airport_link_bus: Airport Link Bus
+      airport_link_bus: Test
       express_bus: Express Bus
       local_bus: Local Bus
       night_bus: Night Bus
