@@ -744,8 +744,6 @@ fr:
         url: Page web associée
       network:
         comment: Commentaire
-        company:
-          name: Transporteur
         creation_time: Créé le
         creator_id: Créé par
         description: Description
