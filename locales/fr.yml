@@ -744,6 +744,7 @@ fr:
         url: Page web associée
       network:
         comment: Commentaire
+        company: Transporteur
         creation_time: Créé le
         creator_id: Créé par
         description: Description
@@ -981,9 +982,9 @@ fr:
         maximum_wait_time: Temps d'attente maximum
         minimum_transfer_time: Temps minimum de transfert
         from_point: De l'arrêt
-        from_visit_number: Feeder ScheduledStopPoint visit number
+        from_visit_number: Nombre de personnes en provenance
         to_point: Vers l'arrêt
-        to_visit_number: Consumer ScheduledStopPoint visit number
+        to_visit_number: Nombre de personnes à destination
         from_vehicle_journey: De la course
         to_vehicle_journey: Vers la course
     copy: Copie de %{name}
@@ -1067,6 +1068,10 @@ fr:
         one: import
         other: imports
         zero: import
+      interchange:
+        one: correspondance
+        other: correspondances
+        zero: correspondance
       journey_pattern:
         one: mission
         other: missions
@@ -2682,6 +2687,7 @@ fr:
       title: Modification du parcours de la mission %{journey_pattern}
   routes:
     actions:
+      add_route_point: Ajouter un arrêt
       add_stop_point: Ajouter un arrêt
       destroy: Supprimer cette séquence d'arrêts
       destroy_confirm: Etes vous sûr de supprimer cette séquence d'arrêts ?
