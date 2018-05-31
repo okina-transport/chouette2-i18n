@@ -698,6 +698,7 @@ fr:
         comment: Commentaire
         creation_time: Créé le
         creator_id: Créé par
+        footnotes: Notes
         name: Nom
         object_version: Version
         objectid: Identifiant Métier
@@ -963,7 +964,8 @@ fr:
         published_journey_name: Nom public
         regular_fs: Service régulier
         route: Itinéraire
-        service_alteration_name: Nom de modification de service
+        service_alteration: Modification de service
+        service_alteration_name: Modification de service
         status_value: Etat de trafic
         time_slot: Fréquence
         time_table_ids: Liste des calendriers
@@ -2386,6 +2388,7 @@ fr:
       destroy_confirm: Etes vous sûr de vouloir détruire ce parcours ?
       edit: Modifier ce parcours
       edit_route_sections: Modifier le tracé
+      generate_route_sections: Générer des sections de routes
       new: Ajouter un parcours
     edit:
       title: Modifier le parcours %{journey_pattern}
@@ -2498,6 +2501,7 @@ fr:
       title: Ligne %{line}
     line:
       footnotes: Notes
+    operator: Exploitant
   maps:
     google_hybrid: Hybride Google
     google_physical: Relief Google
@@ -2535,8 +2539,8 @@ fr:
       users: Utilisateurs
   organisation_type:
     label:
-      authority: Autorité
-      operator: Opérateur
+      Authority: Autorité
+      Operator: Opérateur
   progress_bar:
     level: Etapes
     step: Sous étapes
@@ -2551,6 +2555,7 @@ fr:
       count: Qté
       objects: Eléments
     edit:
+      codespaces: Préfixes d'identifiants
       title: Modifier l'espace de données
     errors:
       pg_excluded: ne peut pas commencer par pg_ (valeurs réservées)
@@ -3032,7 +3037,7 @@ fr:
   time_tables:
     actions:
       add_date: Ajouter une date particulière
-      add_excluded_date: Ajouter une date exclue
+      add_excluded_date: Ajouter une date à exclure
       add_period: Ajouter une période
       combine: Combiner ce calendrier
       destroy: Supprimer ce calendrier
@@ -3679,3 +3684,12 @@ fr:
     page_gap: "&hellip;"
     previous_label: "&#8592; Précédent"
   yesterday: Hier
+  day: Jour
+  hour: Heure
+  minute: Minute
+  service_alterations:
+    label:
+      cancellation: Annulation
+      extra_journey: Voyage supplémentaire
+      planned: Pas de modification de service
+
