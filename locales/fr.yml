@@ -2549,7 +2549,7 @@ fr:
       codespaces: Préfixes d'identifiants
       destroy: Supprimer cet espace de données
       destroy_confirm: Etes vous sûr de vouloir supprimer cet espace de données ?
-      edit:
+      edit: Modifier cet espace de données
         codespaces: Notes
       new: Ajouter un espace de données
     counts:
