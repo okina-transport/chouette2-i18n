@@ -2707,7 +2707,7 @@ fr:
       edit: Modifier cet itinéraire
       edit_stops: Modifier les points de description de l'itinéraire
       edit_boarding_alighting: Contraintes de montée - descente
-      edit_stops: Modifier les arrêts
+      edit_stops: Modifier les arrêts desservis
       export_hub: Export HUB de l'itinéraire
       export_hub_all: Export HUB des itinéraires
       export_kml: Export KML de l'itinéraire
