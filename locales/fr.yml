@@ -2699,13 +2699,12 @@ fr:
       title: Modification du tracé du parcours %{journey_pattern}
   routes:
     actions:
-      add_route_point: Ajouter un arrêt
       add_route_point: Ajouter un point de description d'itinéraire
-      add_stop_point: Ajouter un arrêt
+      add_stop_point: Ajouter un arrêt de desserte
       destroy: Supprimer cet itinéraire
       destroy_confirm: Etes vous sûr de supprimer cet itinéraire ?
       edit: Modifier cet itinéraire
-      edit_stops: Modifier les points de description de l'itinéraire
+      edit_stops: Modifier les arrêts de desserte
       edit_boarding_alighting: Contraintes de montée - descente
       edit_stops: Modifier les arrêts desservis
       export_hub: Export HUB de l'itinéraire
@@ -2714,7 +2713,7 @@ fr:
       export_kml_all: Export KML des itinéraires
       footnote: Note
       new: Ajouter un itinéraire
-      new_stop_point: Créer un arrêt pour l'ajouter
+      new_stop_point: Créer un arrêt de desserte pour l'ajouter
     edit:
       title: Modifier l'itinéraire %{route}
     edit_boarding_alighting:
@@ -2740,7 +2739,7 @@ fr:
       journey_patterns: Liste des parcours
       no_opposite_route: Aucun itinéraire associée en sens opposé
       route_points: Arrêts
-      stop_points: Liste des arrêts de l'itinéraire
+      stop_points: Liste des arrêts de desserte de l'itinéraire
       title: L'itinéraire %{route} de la ligne %{line}
       undefined: Non défini
       scheduled_stop_point_in_use_warning: Ce point d'arrêt est utilisé à plusieurs endroits. Le changement de nom affectera toutes les utilisations du point d'arrêt.
