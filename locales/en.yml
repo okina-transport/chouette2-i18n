@@ -1887,6 +1887,7 @@ en:
     actions:
       destroy: Remove this journey pattern
       add_stop_point: Add stop point
+      add_stop_point_hint: This sould not be the complete stop points list, but the list of points needed to caracterize this journey amongst other. Typically, you'll add here art en end point, plus any vias or other remarkable point.
       destroy_confirm: Are you sure you want destroy this journey pattern ?
       edit: Edit this journey pattern
       edit_route_sections: Edit Shape

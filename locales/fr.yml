@@ -2699,7 +2699,8 @@ fr:
       title: Modification du tracé du parcours %{journey_pattern}
   routes:
     actions:
-      add_route_point: Ajouter un point de description d'itinéraire
+      add_route_point: Ajouter un point caractéristique
+      add_route_point_hint: Ceci n'est pas la liste des points d'arrêts desservis, mais la liste des points permettant de caractériser l'itinéraire. Typiquement on retrouvera les points de départ et d'arrivée, ainsi que les vias ou autres points remarquables dans le cas de plusieurs itinéraires ayant les mêmes points de départ et d'arrivée.
       add_stop_point: Ajouter un arrêt desservi
       destroy: Supprimer cet itinéraire
       destroy_confirm: Etes vous sûr de supprimer cet itinéraire ?
@@ -2737,7 +2738,7 @@ fr:
     show:
       journey_patterns: Liste des parcours
       no_opposite_route: Aucun itinéraire associée en sens opposé
-      route_points: Arrêts
+      route_points: Points caractéristiques
       stop_points: Liste des arrêts de desserte de l'itinéraire
       title: L'itinéraire %{route} de la ligne %{line}
       undefined: Non défini
