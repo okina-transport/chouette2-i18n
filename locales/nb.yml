@@ -2380,7 +2380,6 @@ nb:
   routes:
     actions:
       add_stop_point: Legg til STOP POINT
-      add_stop_point_hint: This sould not be the complete stop points list, but the list of points needed to caracterize this journey amongst other. Typically, you'll add here art en end point, plus any vias or other remarkable point.
       destroy: Slett ROUTE
       destroy_confirm: Er du sikker på at du vil slette ROUTE?
       edit: Rediger ROUTE
