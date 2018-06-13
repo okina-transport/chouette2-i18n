@@ -2700,11 +2700,10 @@ fr:
   routes:
     actions:
       add_route_point: Ajouter un point de description d'itinéraire
-      add_stop_point: Ajouter un arrêt de desserte
+      add_stop_point: Ajouter un arrêt desservi
       destroy: Supprimer cet itinéraire
       destroy_confirm: Etes vous sûr de supprimer cet itinéraire ?
       edit: Modifier cet itinéraire
-      edit_stops: Modifier les arrêts de desserte
       edit_boarding_alighting: Contraintes de montée - descente
       edit_stops: Modifier les arrêts desservis
       export_hub: Export HUB de l'itinéraire
