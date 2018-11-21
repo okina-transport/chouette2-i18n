@@ -615,6 +615,21 @@ fr:
       api_key:
         name: Nom
         token: Token
+      booking_arrangements:
+        booking_access: Accès de réservation
+        book_when: Quand réserver
+        buy_when: Quand payer
+        booking_methods: Comment réserver
+        latest_booking_time: Heure limite pour réserver
+        minimum_booking_period: Période de réservation minimum
+        booking_note: Note de réservation
+        booking_contact: Contact de réservation
+        contact_person: Contact
+        phone: Téléphone
+        url: Url
+        email: E-mail
+        fax: Fax
+        further_detail: Détails supplémentaires
       codespace:
         xmlns: Xmlns
         xmlns_url: XmlnsUrl
@@ -714,6 +729,7 @@ fr:
         creation_time: Créé le
         creator_id: Créé par
         default_fs_msg: Ces courses sont considérées régulières
+        flexible_line_type: Type de transport à la demande
         flexible_service: Transport à la demande
         footnote: Notes
         group_of_line: Groupe de lignes
@@ -948,6 +964,7 @@ fr:
         creation_time: Créé le
         creator_id: Créé par
         facility: Equipement
+        flexible_line_type: Type de transport à la demande
         flexible_service: Transport à la demande
         footnote_ids: Notes
         journey_frequency_ids: Créneau horaire
