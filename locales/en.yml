@@ -700,7 +700,7 @@ en:
         creation_time: Created on
         creator_id: Created by
         default_fs_msg: These vehicle journeys are considered as regular
-        flexible_service: On demond transportation
+        flexible_service: On demand transportation
         footnotes: Footnotes
         group_of_line: Group of lines
         mobility_restricted_suitability: PRM accessibility
@@ -708,16 +708,16 @@ en:
         network: Network
         not_accessible: Not accessible
         number: Number
-        number_of_fs_vj: On demond vehicle journeys
+        number_of_fs_vj: On demand vehicle journeys
         number_of_mrs_vj: Accessible vehicle journeys
-        number_of_non_fs_vj: Non on demond vehicle journeys
+        number_of_non_fs_vj: Non on demand vehicle journeys
         number_of_non_mrs_vj: Non accessible vehicle journeys
-        number_of_null_fs_vj: Unspecified on demond vehicle journeys
+        number_of_null_fs_vj: Unspecified on demand vehicle journeys
         number_of_null_mrs_vj: Unspecified accessible vehicle journeys
         number_of_vj: Total number of vehicle journeys
         object_version: Version
         objectid: Identifier
-        on_demaond_fs: On demond service
+        on_demaond_fs: On demand service
         published_name: Published name
         registration_number: Registration number
         regular_fs: Regular service
@@ -921,7 +921,7 @@ en:
         creation_time: Created on
         creator_id: Created by
         facility: Facility
-        flexible_service: On demond transportation
+        flexible_service: On demand transportation
         footnote_ids: Footnotes
         journey_frequency_ids: Timeband
         journey_pattern: Journey Pattern
@@ -2164,6 +2164,7 @@ en:
     actions:
       add_stop_point: Add stop point
       add_route_point: Add route point
+      add_stop_point_hint: This sould not be the complete stop points list, but the list of points needed to caracterize this journey amongst other. Typically, you'll add here art en end point, plus any vias or other remarkable point.
       destroy: Remove this route
       destroy_confirm: Are you sure you want destroy this route?
       edit: Edit this route
