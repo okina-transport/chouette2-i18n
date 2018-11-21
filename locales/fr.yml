@@ -615,21 +615,6 @@ fr:
       api_key:
         name: Nom
         token: Token
-      booking_arrangements:
-        booking_access: Accès de réservation
-        book_when: Quand réserver
-        buy_when: Quand payer
-        booking_methods: Comment réserver
-        latest_booking_time: Heure limite pour réserver
-        minimum_booking_period: Période de réservation minimum
-        booking_note: Note de réservation
-        booking_contact: Contact de réservation
-        contact_person: Contact
-        phone: Téléphone
-        url: Url
-        email: E-mail
-        fax: Fax
-        further_detail: Détails supplémentaires
       codespace:
         xmlns: Xmlns
         xmlns_url: XmlnsUrl
@@ -723,6 +708,21 @@ fr:
         stop_point_ids: Sélection des arrêts desservis
       line:
         accessible: Accessible
+        booking_arrangements:
+          booking_access: Accès de réservation
+          book_when: Quand réserver
+          buy_when: Quand payer
+          booking_methods: Comment réserver
+          latest_booking_time: Heure limite pour réserver
+          minimum_booking_period: Période de réservation minimum
+          booking_note: Note de réservation
+          booking_contact: Contact de réservation
+          contact_person: Contact
+          phone: Téléphone
+          url: Url
+          email: E-mail
+          fax: Fax
+          further_detail: Détails supplémentaires
         color: Couleur du tracé
         comment: Commentaire
         company: Transporteur
