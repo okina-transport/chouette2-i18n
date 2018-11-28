@@ -708,31 +708,29 @@ fr:
         stop_point_ids: Sélection des arrêts desservis
       line:
         accessible: Accessible
-        booking_arrangements:
-          booking_access: Accès de réservation
-          book_when: Quand réserver
-          buy_when: Quand payer
-          booking_methods: Comment réserver
-          latest_booking_time: Heure limite pour réserver
-          minimum_booking_period: Période de réservation minimum
-          booking_note: Note de réservation
-          booking_contact: Contact de réservation
-          contact_person: Contact
-          phone: Téléphone
-          url: Url
-          email: E-mail
-          fax: Fax
-          further_detail: Détails supplémentaires
+        booking_access: Accès à la réservation
+        booking_contact: Coordonnées réservation
+        booking_methods: Comment réserver
+        booking_note: Note de réservation
+        book_when: Date réservation
+        buy_when: Paiement
         color: Couleur du tracé
         comment: Commentaire
         company: Transporteur
+        contact_person: Personne à contacter
         creation_time: Créé le
         creator_id: Créé par
         default_fs_msg: Ces courses sont considérées régulières
+        email: Email
+        fax: Fax
         flexible_line_type: Type de transport à la demande
         flexible_service: Transport à la demande
         footnote: Notes
+        further_detail: Détails complémentaires
         group_of_line: Groupe de lignes
+        key_values: Clés-Valeurs
+        latest_booking_time: Horaire limite pour réserver
+        minimum_booking_period: Horaire minimum pour réserver
         mobility_restricted_suitability: Accessibilité PMR
         name: Nom
         network: Réseau
@@ -749,6 +747,7 @@ fr:
         objectid: Identifiant Métier
         on_demaond_fs: Service à la demande
         operator: Opérateur
+        phone: Téléphone
         published_name: Nom public
         registration_number: Numéro d'enregistrement
         regular_fs: Service régulier
@@ -1182,6 +1181,18 @@ fr:
     created_at: Créé le
     updated_at: Modifié le
   back: Revenir
+  booking_access_types:
+    label:
+      publicAccess: Accès public
+      authorisedPublic: Public autorisé
+      staff: Réservé au personnel
+  booking_method_types:
+    label:
+      callDriver: Contacter le chauffeur
+      callOffice: Contacter le centre de réservation
+      online: En ligne
+      phoneAtStop: Téléphone à l'arrêt
+      text: SMS
   breadcrumbs:
     referentials: Accueil
     users: Utilisateurs
@@ -2001,6 +2012,17 @@ fr:
       ok: Ok
       uncheck: Non testé
       warning: Alerte
+  flexible_line_types:
+    label:
+      corridorService: Ligne flexible sans itinéraire principal (Corridor)
+      mainRouteWithFlexibleEnds: Ligne flexible avec itinéraire principal
+      flexibleAreasOnly: Zone flexible sans arrêts fixes (flexibleAreasOnly)
+      hailAndRideSections: Hall and Ride (Premier et dernier points fixés)
+      fixedStopAreaWide: Zone flexible avec arrêts fixes
+      freeAreaAreaWide: Zone flexible sans arrêts fixes (freeAreaAreaWide)
+      mixedFlexible: Mélange de différents types de services flexibles
+      mixedFlexibleAndFixed: Mélange de service régulier et services flexibles
+      fixed: Ligne virtuelle
   footnotes:
     show:
       title: Détails note
@@ -2562,6 +2584,18 @@ fr:
   progress_bar:
     level: Etapes
     step: Sous étapes
+  purchase_moment_types:
+    label:
+      onReservation: Sur réservation
+      beforeBoarding: Avant d'embarquer
+      afterBoarding: Après l'embarquement
+      onCheckOut: À la descente
+  purchase_when_types:
+    label:
+      timeOfTravelOnly: À l'heure du trajet seulement
+      dayOfTravelOnly: Le jour du trajet seulement
+      untilPreviousDay: Jusqu'au jour précédent le trajet
+      advanceAndDayOfTravel: Avant et jusqu'au jour du trajet
   referentials:
     actions:
       codespaces: Préfixes d'identifiants
@@ -3151,7 +3185,7 @@ fr:
       walk: Marche à pied
       water: Bac
     name: Mode de transport
-  transport_sub_modes:
+  transport_submodes:
     label:
       unknown: Inconnu
       airport_link_bus: Bus de liaison aéroport
