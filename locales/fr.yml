@@ -971,12 +971,12 @@ fr:
             cancellation_possible: Annulation possible
             change_of_time_possible: Changement d'heure possible
         flexible_service_type: Type de transport à la demande
-        flexibles_service_types:
+        flexible_service_types:
           label:
             dynamicPassingTimes: Temps de passages dynamiques
             fixedHeadwayFrequency: Fréquences fixes
             fixedPassingTimes: Temps de passages fixes
-            other: Autre
+            notFlexible: Non flexible
         footnote_ids: Notes
         journey_frequency_ids: Créneau horaire
         journey_pattern: Parcours
@@ -2044,7 +2044,7 @@ fr:
       dynamicPassingTimes: Temps de passages dynamiques
       fixedHeadwayFrequency: Fréquences fixes
       fixedPassingTimes: Temps de passages fixes
-      other: Autre
+      notFlexible: Non flexible
   footnotes:
     show:
       title: Détails note
