@@ -965,6 +965,18 @@ fr:
         facility: Equipement
         flexible_line_type: Type de transport à la demande
         flexible_service: Transport à la demande
+        flexible_service_properties_objectid: Identifiant Transport à la demande
+        flexible_service_properties:
+          label:
+            cancellation_possible: Annulation possible
+            change_of_time_possible: Changement d'heure possible
+        flexible_service_type: Type de transport à la demande
+        flexibles_service_types:
+          label:
+            dynamicPassingTimes: Temps de passages dynamiques
+              fixedHeadwayFrequency: Fréquences fixes
+              fixedPassingTimes: Temps de passages fixes
+              other: Autre
         footnote_ids: Notes
         journey_frequency_ids: Créneau horaire
         journey_pattern: Parcours
@@ -2012,17 +2024,27 @@ fr:
       ok: Ok
       uncheck: Non testé
       warning: Alerte
+  flexible_properties_cancellation_possible: Annulation possible
+  flexible_properties_change_of_time_possible: Changement d'heure possible
   flexible_line_types:
     label:
       corridorService: Ligne flexible sans itinéraire principal (Corridor)
       mainRouteWithFlexibleEnds: Ligne flexible avec itinéraire principal
       flexibleAreasOnly: Zone flexible sans arrêts fixes (flexibleAreasOnly)
-      hailAndRideSections: Hall and Ride (Premier et dernier points fixés)
+      hailAndRideSections: Hall and Ride (Premier et dernier points fixes)
       fixedStopAreaWide: Zone flexible avec arrêts fixes
       freeAreaAreaWide: Zone flexible sans arrêts fixes (freeAreaAreaWide)
       mixedFlexible: Mélange de différents types de services flexibles
       mixedFlexibleAndFixed: Mélange de service régulier et services flexibles
       fixed: Ligne virtuelle
+  flexible_service_properties_objectid: Identifiant Transport à la demande
+  flexible_service_type: Type de transport à la demande
+  flexible_service_types:
+    label:
+      dynamicPassingTimes: Temps de passages dynamiques
+      fixedHeadwayFrequency: Fréquences fixes
+      fixedPassingTimes: Temps de passages fixes
+      other: Autre
   footnotes:
     show:
       title: Détails note
@@ -2628,6 +2650,7 @@ fr:
     validity_out:
       validity_out_soon_time_tables: Calendriers à échoir dans %{count} jours
       validity_out_time_tables: Calendriers échus
+  remove_flexible_service_properties: Supprimer les propriétés Transport à la demande
   report:
     default_view:
       access_point: Accès
@@ -3641,6 +3664,7 @@ fr:
       updated_vj_count: "%{count} course(s) mise(s) à jour"
   vehicle_journeys:
     actions:
+      add_flexible_service_properties: Ajouter des propriétés Transport à la demande
       destroy: Supprimer cette course
       destroy_confirm: Etes vous sûr de supprimer cette course ?
       edit: Modifier cette course à horaire
