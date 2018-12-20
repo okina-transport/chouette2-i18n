@@ -974,9 +974,9 @@ fr:
         flexibles_service_types:
           label:
             dynamicPassingTimes: Temps de passages dynamiques
-              fixedHeadwayFrequency: Fréquences fixes
-              fixedPassingTimes: Temps de passages fixes
-              other: Autre
+            fixedHeadwayFrequency: Fréquences fixes
+            fixedPassingTimes: Temps de passages fixes
+            other: Autre
         footnote_ids: Notes
         journey_frequency_ids: Créneau horaire
         journey_pattern: Parcours
