@@ -958,6 +958,8 @@ fr:
         status: Status
       vehicle_journey:
         accessible: Accessible
+        cancellation_possible: Annulation possible
+        change_of_time_possible: Changement d'heure possible
         comment: Commentaires
         company: Transporteur
         creation_time: Créé le
@@ -970,6 +972,8 @@ fr:
           label:
             cancellation_possible: Annulation possible
             change_of_time_possible: Changement d'heure possible
+            false: Non
+            true: Oui
         flexible_service_type: Type de transport à la demande
         flexible_service_types:
           label:
@@ -2038,6 +2042,12 @@ fr:
       mixedFlexibleAndFixed: Mélange de service régulier et services flexibles
       fixed: Ligne virtuelle
   flexible_service_properties_objectid: Identifiant Transport à la demande
+  flexible_service_properties:
+    label:
+      cancellation_possible: Annulation possible
+      change_of_time_possible: Changement d'heure possible
+      false: Non
+      true: Oui
   flexible_service_type: Type de transport à la demande
   flexible_service_types:
     label:
