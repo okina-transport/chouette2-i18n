@@ -615,6 +615,8 @@ fr:
       api_key:
         name: Nom
         token: Token
+      booking_arrangement:
+        booking_method_objects: Comment réserver
       codespace:
         xmlns: Xmlns
         xmlns_url: XmlnsUrl
