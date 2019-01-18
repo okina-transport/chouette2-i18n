@@ -616,7 +616,8 @@ fr:
         name: Nom
         token: Token
       booking_arrangement:
-        booking_method_objects: Comment réserver
+        booking_method_objects: Le champ "Comment réserver"
+        buy_when_objects: Le champ "Paiement"
       codespace:
         xmlns: Xmlns
         xmlns_url: XmlnsUrl
